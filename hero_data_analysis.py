@@ -103,6 +103,16 @@ class HeroDataAnalyzer:
         cbet_turn = self.df['CBet_Turn'].sum()
         cbet_river = self.df['CBet_River'].sum()
         
+        # C-bet opportunities
+        cbet_flop_opportunities = self.df['CBet_Flop_Opportunity'].sum()
+        cbet_turn_opportunities = self.df['CBet_Turn_Opportunity'].sum()
+        cbet_river_opportunities = self.df['CBet_River_Opportunity'].sum()
+        
+        # C-bet rates (as percentage of opportunities)
+        cbet_flop_rate = (cbet_flop / cbet_flop_opportunities * 100) if cbet_flop_opportunities > 0 else 0
+        cbet_turn_rate = (cbet_turn / cbet_turn_opportunities * 100) if cbet_turn_opportunities > 0 else 0
+        cbet_river_rate = (cbet_river / cbet_river_opportunities * 100) if cbet_river_opportunities > 0 else 0
+        
         return {
             'total_hands': total_hands,
             'total_profit': total_profit,
@@ -128,7 +138,13 @@ class HeroDataAnalyzer:
             'preflop_call_rate': preflop_call_rate,
             'cbet_flop': cbet_flop,
             'cbet_turn': cbet_turn,
-            'cbet_river': cbet_river
+            'cbet_river': cbet_river,
+            'cbet_flop_opportunities': cbet_flop_opportunities,
+            'cbet_turn_opportunities': cbet_turn_opportunities,
+            'cbet_river_opportunities': cbet_river_opportunities,
+            'cbet_flop_rate': cbet_flop_rate,
+            'cbet_turn_rate': cbet_turn_rate,
+            'cbet_river_rate': cbet_river_rate
         }
     
     def render_overview_metrics(self, metrics):
@@ -438,7 +454,7 @@ def main():
             with col2:
                 st.metric("Saw Flop Rate", f"{metrics['flop_rate']:.1f}%")
                 st.metric("Flop Win Rate", f"{metrics['flop_win_rate']:.1f}%")
-                st.metric("C-Bet Flop Rate", f"{(metrics['cbet_flop'] / metrics['total_hands'] * 100) if metrics['total_hands'] > 0 else 0:.1f}%")
+                st.metric("C-Bet Flop Rate", f"{metrics['cbet_flop_rate']:.1f}%")
             
             with col3:
                 st.metric("Showdown Rate (of Flop)", f"{metrics['showdown_rate']:.1f}%")
@@ -446,9 +462,25 @@ def main():
                 st.metric("Won at Showdown Count", f"{metrics['won_at_showdown']} times")
             
             with col4:
-                st.metric("C-Bet Turn Rate", f"{(metrics['cbet_turn'] / metrics['total_hands'] * 100) if metrics['total_hands'] > 0 else 0:.1f}%")
-                st.metric("C-Bet River Rate", f"{(metrics['cbet_river'] / metrics['total_hands'] * 100) if metrics['total_hands'] > 0 else 0:.1f}%")
+                st.metric("C-Bet Turn Rate", f"{metrics['cbet_turn_rate']:.1f}%")
+                st.metric("C-Bet River Rate", f"{metrics['cbet_river_rate']:.1f}%")
                 st.metric("Total Hands", f"{metrics['total_hands']:,}")
+            
+            # C-Bet Details Section
+            st.subheader("🔄 C-Bet Details")
+            col1, col2, col3 = st.columns(3)
+            
+            with col1:
+                st.metric("Flop C-Bets", f"{metrics['cbet_flop']}/{metrics['cbet_flop_opportunities']}", 
+                         f"{metrics['cbet_flop_rate']:.1f}%")
+            
+            with col2:
+                st.metric("Turn C-Bets", f"{metrics['cbet_turn']}/{metrics['cbet_turn_opportunities']}", 
+                         f"{metrics['cbet_turn_rate']:.1f}%")
+            
+            with col3:
+                st.metric("River C-Bets", f"{metrics['cbet_river']}/{metrics['cbet_river_opportunities']}", 
+                         f"{metrics['cbet_river_rate']:.1f}%")
         
         if show_profit_chart:
             st.header("💰 Profit Analysis")
