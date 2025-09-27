@@ -177,7 +177,7 @@ class HeroDataAnalyzer:
             hovermode='x unified'
         )
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     
     def render_rake_analysis_chart(self):
         """Render rake analysis chart comparing profit with and without rake"""
@@ -237,7 +237,7 @@ class HeroDataAnalyzer:
         fig.update_yaxes(title_text="Cumulative Profit ($)", row=1, col=1)
         fig.update_yaxes(title_text="Cumulative Rake ($)", row=2, col=1)
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     
     def render_position_analysis(self):
         """Render position-based analysis"""
@@ -258,7 +258,7 @@ class HeroDataAnalyzer:
         ]
         
         st.subheader("Position Analysis")
-        st.dataframe(position_stats, use_container_width=True)
+        st.dataframe(position_stats, width="stretch")
     
     def render_stakes_analysis(self):
         """Render stakes-based analysis"""
@@ -274,7 +274,7 @@ class HeroDataAnalyzer:
         stakes_stats.columns = ['Hands', 'Total_Profit', 'Avg_Profit', 'Showdown_Rate', 'Flop_Win_Rate']
         
         st.subheader("Stakes Analysis")
-        st.dataframe(stakes_stats, use_container_width=True)
+        st.dataframe(stakes_stats, width="stretch")
     
     def render_hand_strength_analysis(self):
         """Render hand strength analysis"""
@@ -330,7 +330,7 @@ class HeroDataAnalyzer:
         hand_type_stats.columns = ['Hands', 'Total_Profit', 'Avg_Profit', 'Showdown_Rate', 'Flop_Win_Rate']
         
         st.subheader("Hand Type Analysis")
-        st.dataframe(hand_type_stats, use_container_width=True)
+        st.dataframe(hand_type_stats, width="stretch")
     
     def render_detailed_data(self):
         """Render detailed hand data"""
@@ -370,7 +370,7 @@ class HeroDataAnalyzer:
             filtered_df[['Hand_ID', 'Timestamp', 'Position', 'Stakes', 'Hole_Cards', 
                        'Net_Profit', 'Went_to_Showdown', 'Won_When_Saw_Flop', 
                        'Preflop_Raised', 'CBet_Flop']],
-            use_container_width=True
+            width="stretch"
         )
     
     def export_data(self):
@@ -401,6 +401,8 @@ def main():
         st.header("📁 Data Controls")
         
         folder_path = st.text_input("Hand History Folder:", "hand_histories")
+
+        folder_path = f"data/{folder_path}"
         
         if st.button("🔄 Load Data"):
             if analyzer.load_data(folder_path):

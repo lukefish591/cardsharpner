@@ -6,6 +6,7 @@ Test script to verify the new c-bet logic
 import os
 import sys
 
+
 print("🚀 Testing new c-bet logic...")
 
 # Test 1: Check if SPE file exists
@@ -18,7 +19,7 @@ if os.path.exists(file_path):
     
     # Test 2: Try to import parser
     try:
-        from hero_analysis_parser import HeroAnalysisParser
+        from src.hero_analysis_parser import HeroAnalysisParser
         print("✅ Parser imported successfully!")
         
         parser = HeroAnalysisParser()

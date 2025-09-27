@@ -28,7 +28,7 @@ if os.path.exists(file_path):
             
             # Test 4: Try to import parser and run enhanced debug
             try:
-                from hero_analysis_parser import HeroAnalysisParser
+                from src.hero_analysis_parser import HeroAnalysisParser
                 print("✅ Parser imported successfully!")
                 
                 parser = HeroAnalysisParser()
