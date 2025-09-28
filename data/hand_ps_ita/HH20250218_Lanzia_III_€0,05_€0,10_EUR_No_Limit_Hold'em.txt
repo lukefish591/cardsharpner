@@ -1,0 +1,299 @@
+﻿Mano PokerStars n° 254933079392:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:34:57 CET [18/02/2025 17:34:57 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 1
+Posto 1: ProPlayerMaximo (€10.05 chips) 
+Posto 2: sorvegliante82 (€9.34 chips) 
+Posto 3: caduceus369 (€10 chips) 
+Posto 4: coluccetto (€6.78 chips) 
+Posto 5: bonni89F (€3.92 chips) 
+Posto 6: Rovoplastick (€19.28 chips) 
+sorvegliante82: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As Kh]
+coluccetto: rilancia €0.20 fino a €0.30
+bonni89F: folda 
+Rovoplastick: folda 
+ProPlayerMaximo: chiama €0.30
+sorvegliante82: folda 
+caduceus369: rilancia €0.90 fino a €1.20
+coluccetto: folda 
+ProPlayerMaximo: chiama €0.90
+*** FLOP *** [2c 4c 3c]
+coluccetto si alza dal tavolo
+caduceus369: punta €0.80
+ProPlayerMaximo: chiama €0.80
+*** TURN *** [2c 4c 3c] [4h]
+caduceus369: fa check 
+ProPlayerMaximo: punta €2.06
+caduceus369: rilancia €5.94 fino a €8 ed è all-in
+ProPlayerMaximo: chiama €5.94
+*** RIVER *** [2c 4c 3c 4h] [7h]
+*** SHOW DOWN ***
+caduceus369: mostra [As Kh] (una coppia di Quattro)
+ProPlayerMaximo: mostra [8s 4s] (un tris di Quattro)
+ProPlayerMaximo ha raccolto €19.24 dal piatto
+*** RIASSUNTO ***
+Piatto totale €20.35 | Rake €1.11 
+Board [2c 4c 3c 4h 7h]
+Posto 1: ProPlayerMaximo (bottone) ha mostrato [8s 4s] e ha vinto (€19.24) con un tris di Quattro
+Posto 2: sorvegliante82 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha mostrato [As Kh] e ha perso con una coppia di Quattro
+Posto 4: coluccetto ha foldato prima del Flop
+Posto 5: bonni89F ha foldato prima del Flop (non ha puntato)
+Posto 6: Rovoplastick ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933112043:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:36:55 CET [18/02/2025 17:36:55 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 5
+Posto 1: ProPlayerMaximo (€18.04 chips) 
+Posto 2: sorvegliante82 (€9.29 chips) 
+Posto 3: caduceus369 (€10 chips) 
+Posto 5: bonni89F (€3.87 chips) 
+Posto 6: Rovoplastick (€20.44 chips) 
+Rovoplastick: versa il piccolo buio €0.05
+ProPlayerMaximo: versa il grande buio €0.10
+caduceus369: versa il piccolo buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h Ts]
+sorvegliante82: folda 
+caduceus369: folda 
+bonni89F: rilancia €0.20 fino a €0.30
+Rovoplastick: folda 
+ProPlayerMaximo: chiama €0.20
+*** FLOP *** [8h 9h 4s]
+ProPlayerMaximo: punta €0.34
+bonni89F: chiama €0.34
+*** TURN *** [8h 9h 4s] [6d]
+ProPlayerMaximo: punta €0.66
+bonni89F: chiama €0.66
+*** RIVER *** [8h 9h 4s 6d] [8c]
+ProPlayerMaximo: punta €0.10
+bonni89F: chiama €0.10
+*** SHOW DOWN ***
+ProPlayerMaximo: mostra [6s 8s] (un full di Otto con Sei)
+bonni89F: non mostra le carte 
+ProPlayerMaximo ha raccolto €2.75 dal piatto
+*** RIASSUNTO ***
+Piatto totale €2.90 | Rake €0.15 
+Board [8h 9h 4s 6d 8c]
+Posto 1: ProPlayerMaximo (big blind) ha mostrato [6s 8s] e ha vinto (€2.75) con un full di Otto con Sei
+Posto 2: sorvegliante82 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: bonni89F (bottone) non ha mostrato le carte [Tc Th]
+Posto 6: Rovoplastick (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933126294:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:37:47 CET [18/02/2025 17:37:47 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 6
+Posto 1: ProPlayerMaximo (€19.39 chips) 
+Posto 2: sorvegliante82 (€9.29 chips) 
+Posto 3: caduceus369 (€9.95 chips) 
+Posto 5: bonni89F (€2.47 chips) 
+Posto 6: Rovoplastick (€20.39 chips) 
+ProPlayerMaximo: versa il piccolo buio €0.05
+sorvegliante82: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td Qh]
+Mentaleo si siede al tavolo al posto #4 
+caduceus369: folda 
+bonni89F: chiama €0.10
+Rovoplastick: folda 
+ProPlayerMaximo: chiama €0.05
+sorvegliante82: fa check 
+*** FLOP *** [7s 4d 5d]
+ProPlayerMaximo: punta €0.20
+sorvegliante82: chiama €0.20
+bonni89F: rilancia €0.60 fino a €0.80
+ProPlayerMaximo: chiama €0.60
+sorvegliante82: chiama €0.60
+*** TURN *** [7s 4d 5d] [Jh]
+ProPlayerMaximo: fa check 
+sorvegliante82: fa check 
+bonni89F: punta €1.57 ed è all-in
+ProPlayerMaximo: folda 
+sorvegliante82: folda 
+La puntata non vista (€1.57) è restituita a bonni89F
+bonni89F ha raccolto €2.56 dal piatto
+*** RIASSUNTO ***
+Piatto totale €2.70 | Rake €0.14 
+Board [7s 4d 5d Jh]
+Posto 1: ProPlayerMaximo (small blind) ha foldato sul Turn
+Posto 2: sorvegliante82 (big blind) ha foldato sul Turn
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: bonni89F ha raccolto (€2.56)
+Posto 6: Rovoplastick (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933141176:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:38:41 CET [18/02/2025 17:38:41 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 1
+Posto 4: Mentaleo (€10 chips) è in sit-out
+Posto 1: ProPlayerMaximo (€18.49 chips) 
+Posto 2: sorvegliante82 (€8.39 chips) 
+Posto 3: caduceus369 (€9.95 chips) 
+Posto 5: bonni89F (€4.13 chips) 
+Posto 6: Rovoplastick (€20.39 chips) 
+sorvegliante82: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+Mentaleo: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2d Js]
+bonni89F: folda 
+Rovoplastick: folda 
+ProPlayerMaximo: chiama €0.10
+sorvegliante82: folda 
+caduceus369: fa check 
+*** FLOP *** [8s As 8c]
+caduceus369: fa check 
+ProPlayerMaximo: fa check 
+*** TURN *** [8s As 8c] [Ac]
+caduceus369: fa check 
+ProPlayerMaximo: punta €0.10
+caduceus369: folda 
+La puntata non vista (€0.10) è restituita a ProPlayerMaximo
+ProPlayerMaximo ha raccolto €0.24 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0.01 
+Board [8s As 8c Ac]
+Posto 4: Mentaleo
+Posto 1: ProPlayerMaximo (bottone) ha raccolto (€0.24)
+Posto 2: sorvegliante82 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha foldato sul Turn
+Posto 5: bonni89F ha foldato prima del Flop (non ha puntato)
+Posto 6: Rovoplastick ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933151488:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:39:19 CET [18/02/2025 17:39:19 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 2
+Posto 1: ProPlayerMaximo (€18.63 chips) 
+Posto 2: sorvegliante82 (€8.34 chips) 
+Posto 3: caduceus369 (€9.85 chips) 
+Posto 4: Mentaleo (€10 chips) 
+Posto 5: bonni89F (€4.13 chips) 
+Posto 6: Rovoplastick (€20.39 chips) 
+caduceus369: versa il piccolo buio €0.05
+Mentaleo: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s 4c]
+bonni89F: folda 
+Rovoplastick: rilancia €0.18 fino a €0.28
+ProPlayerMaximo: chiama €0.28
+sorvegliante82: folda 
+caduceus369: folda 
+Mentaleo: folda 
+*** FLOP *** [2h Kc Qc]
+Rovoplastick: punta €0.20
+ProPlayerMaximo: chiama €0.20
+*** TURN *** [2h Kc Qc] [Jh]
+Rovoplastick: fa check 
+ProPlayerMaximo: fa check 
+*** RIVER *** [2h Kc Qc Jh] [8h]
+Rovoplastick: punta €0.54
+ProPlayerMaximo: chiama €0.54
+*** SHOW DOWN ***
+Rovoplastick: mostra [6s 5s] (carta alta Re)
+ProPlayerMaximo: mostra [Qd 5d] (una coppia di Donne)
+ProPlayerMaximo ha raccolto €2.07 dal piatto
+sorvegliante82 si alza dal tavolo
+*** RIASSUNTO ***
+Piatto totale €2.19 | Rake €0.12 
+Board [2h Kc Qc Jh 8h]
+Posto 1: ProPlayerMaximo ha mostrato [Qd 5d] e ha vinto (€2.07) con una coppia di Donne
+Posto 2: sorvegliante82 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 4: Mentaleo (big blind) ha foldato prima del Flop
+Posto 5: bonni89F ha foldato prima del Flop (non ha puntato)
+Posto 6: Rovoplastick ha mostrato [6s 5s] e ha perso con carta alta Re
+
+
+
+Mano PokerStars n° 254933165279:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:40:10 CET [18/02/2025 17:40:10 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 3
+Posto 1: ProPlayerMaximo (€19.68 chips) 
+Posto 3: caduceus369 (€9.80 chips) 
+Posto 4: Mentaleo (€10 chips) 
+Posto 5: bonni89F (€4.13 chips) 
+Posto 6: Rovoplastick (€19.37 chips) 
+Mentaleo: versa il piccolo buio €0.05
+bonni89F: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c Qh]
+Rovoplastick: folda 
+ProPlayerMaximo: chiama €0.10
+caduceus369: folda 
+Mentaleo: folda 
+bonni89F: fa check 
+*** FLOP *** [7s 4h 9h]
+bonni89F: fa check 
+ProPlayerMaximo: fa check 
+*** TURN *** [7s 4h 9h] [Kh]
+bonni89F: fa check 
+ProPlayerMaximo: fa check 
+*** RIVER *** [7s 4h 9h Kh] [Qd]
+bonni89F: fa check 
+ProPlayerMaximo: punta €0.10
+bonni89F: chiama €0.10
+*** SHOW DOWN ***
+ProPlayerMaximo: mostra [Js 2s] (carta alta Re)
+bonni89F: mostra [5c Qc] (una coppia di Donne)
+bonni89F ha raccolto €0.43 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.45 | Rake €0.02 
+Board [7s 4h 9h Kh Qd]
+Posto 1: ProPlayerMaximo ha mostrato [Js 2s] e ha perso con carta alta Re
+Posto 3: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: Mentaleo (small blind) ha foldato prima del Flop
+Posto 5: bonni89F (big blind) ha mostrato [5c Qc] e ha vinto (€0.43) con una coppia di Donne
+Posto 6: Rovoplastick ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933173444:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116F95BH] - 18/02/2025 23:40:40 CET [18/02/2025 17:40:40 ET]
+Tavolo 'Lanzia III' 6-max Il bottone è al posto 4
+Posto 1: ProPlayerMaximo (€19.48 chips) 
+Posto 3: caduceus369 (€9.80 chips) 
+Posto 4: Mentaleo (€10 chips) 
+Posto 5: bonni89F (€4.36 chips) 
+Posto 6: Rovoplastick (€19.37 chips) 
+bonni89F: versa il piccolo buio €0.05
+Rovoplastick: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9d 4s]
+ProPlayerMaximo: chiama €0.10
+caduceus369: folda 
+Mentaleo: folda 
+bonni89F: chiama €0.05
+Rovoplastick: rilancia €0.40 fino a €0.50
+ProPlayerMaximo: chiama €0.40
+bonni89F: folda 
+*** FLOP *** [4d Jd 8s]
+Rovoplastick: punta €0.53
+ProPlayerMaximo: rilancia €0.53 fino a €1.06
+Rovoplastick: chiama €0.53
+*** TURN *** [4d Jd 8s] [Ac]
+Rovoplastick: fa check 
+ninja1000m6 si siede al tavolo al posto #2 
+ProPlayerMaximo: punta €1.53
+Rovoplastick: chiama €1.53
+*** RIVER *** [4d Jd 8s Ac] [7c]
+Rovoplastick: fa check 
+ProPlayerMaximo: punta €2.97
+Rovoplastick: chiama €2.97
+*** SHOW DOWN ***
+ProPlayerMaximo: mostra [Jh 6h] (una coppia di Jack)
+Rovoplastick: mostra [6d Ad] (una coppia di Assi)
+Rovoplastick ha raccolto €11.55 dal piatto
+*** RIASSUNTO ***
+Piatto totale €12.22 | Rake €0.67 
+Board [4d Jd 8s Ac 7c]
+Posto 1: ProPlayerMaximo ha mostrato [Jh 6h] e ha perso con una coppia di Jack
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Mentaleo (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: bonni89F (small blind) ha foldato prima del Flop
+Posto 6: Rovoplastick (big blind) ha mostrato [6d Ad] e ha vinto (€11.55) con una coppia di Assi
+
+
+

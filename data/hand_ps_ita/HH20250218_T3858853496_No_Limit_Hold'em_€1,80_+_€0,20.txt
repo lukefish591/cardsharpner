@@ -1,0 +1,1934 @@
+﻿Mano PokerStars n° 254933828730:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello I (1500/3000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:24:59 CET [18/02/2025 18:24:59 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: DioIbra10 (90000 chips) 
+Posto 4: Giulia1Pgrazie (90000 chips) 
+Posto 5: caduceus369 (90000 chips) 
+DioIbra10: mette l'ante 750
+Giulia1Pgrazie: mette l'ante 750
+caduceus369: mette l'ante 750
+Giulia1Pgrazie: versa il piccolo buio 1500
+caduceus369: versa il grande buio 3000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h Kd]
+DioIbra10 è connesso 
+caduceus369 è disconnesso 
+DioIbra10: chiama 3000
+AjayMoro è disconnesso 
+Giulia1Pgrazie: chiama 1500
+iasflorin è disconnesso 
+caduceus369: fa check 
+*** FLOP *** [Jh 5h 9c]
+Giulia1Pgrazie: punta 6000
+caduceus369: folda 
+DioIbra10: folda 
+La puntata non vista (6000) è restituita a Giulia1Pgrazie
+Giulia1Pgrazie ha raccolto 11250 dal piatto
+*** RIASSUNTO ***
+Piatto totale 11250 | Rake 0 
+Board [Jh 5h 9c]
+Posto 1: DioIbra10 (bottone) ha foldato sul Flop
+Posto 4: Giulia1Pgrazie (small blind) ha raccolto (11250)
+Posto 5: caduceus369 (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933836342:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello I (1500/3000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:25:31 CET [18/02/2025 18:25:31 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 4
+Posto 1: DioIbra10 (86250 chips) 
+Posto 2: starmik950 (90000 chips) 
+Posto 3: iasflorin (90000 chips) 
+Posto 4: Giulia1Pgrazie (97500 chips) 
+Posto 5: caduceus369 (86250 chips) 
+Posto 6: AjayMoro (89250 chips) 
+DioIbra10: mette l'ante 750
+starmik950: mette l'ante 750
+iasflorin: mette l'ante 750
+Giulia1Pgrazie: mette l'ante 750
+caduceus369: mette l'ante 750
+AjayMoro: mette l'ante 750
+caduceus369: versa il piccolo buio 1500
+AjayMoro: versa il grande buio 3000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5h 8d]
+DioIbra10: rilancia 82500 fino a 85500 ed è all-in
+starmik950: folda 
+iasflorin: folda 
+Giulia1Pgrazie: chiama 85500
+caduceus369: folda 
+AjayMoro: folda [Jd Ad]
+*** FLOP *** [8h 6d Td]
+*** TURN *** [8h 6d Td] [Qd]
+*** RIVER *** [8h 6d Td Qd] [Kc]
+*** SHOW DOWN ***
+DioIbra10: mostra [As Kh] (una coppia di Re)
+Giulia1Pgrazie: mostra [Jc Qc] (una coppia di Donne)
+DioIbra10 ha raccolto 180000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 180000 | Rake 0 
+Board [8h 6d Td Qd Kc]
+Posto 1: DioIbra10 ha mostrato [As Kh] e ha vinto (180000) con una coppia di Re
+Posto 2: starmik950 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Giulia1Pgrazie (bottone) ha mostrato [Jc Qc] e ha perso con una coppia di Donne
+Posto 5: caduceus369 (small blind) ha foldato prima del Flop
+Posto 6: AjayMoro (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933850250:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello I (1500/3000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:26:26 CET [18/02/2025 18:26:26 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 5
+Posto 1: DioIbra10 (180000 chips) 
+Posto 2: starmik950 (89250 chips) 
+Posto 3: iasflorin (89250 chips) 
+Posto 4: Giulia1Pgrazie (11250 chips) 
+Posto 5: caduceus369 (84000 chips) 
+Posto 6: AjayMoro (85500 chips) 
+DioIbra10: mette l'ante 750
+starmik950: mette l'ante 750
+iasflorin: mette l'ante 750
+Giulia1Pgrazie: mette l'ante 750
+caduceus369: mette l'ante 750
+AjayMoro: mette l'ante 750
+AjayMoro: versa il piccolo buio 1500
+DioIbra10: versa il grande buio 3000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qd 5d]
+starmik950 ha esaurito il tempo
+starmik950: folda 
+starmik950 è in sit-out
+iasflorin: folda 
+Giulia1Pgrazie: rilancia 7500 fino a 10500 ed è all-in
+caduceus369: rilancia 72750 fino a 83250 ed è all-in
+AjayMoro: folda 
+DioIbra10: folda 
+La puntata non vista (72750) è restituita a caduceus369
+*** FLOP *** [2c 2h 3c]
+starmik950 è tornato
+*** TURN *** [2c 2h 3c] [Qc]
+*** RIVER *** [2c 2h 3c Qc] [3s]
+*** SHOW DOWN ***
+Giulia1Pgrazie: mostra [4c Jh] (una doppia coppia, Tre e Due)
+caduceus369: mostra [Qd 5d] (una doppia coppia, Donne e Tre)
+caduceus369 ha raccolto 30000 dal piatto
+Giulia1Pgrazie ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 30000 | Rake 0 
+Board [2c 2h 3c Qc 3s]
+Posto 1: DioIbra10 (big blind) ha foldato prima del Flop
+Posto 2: starmik950 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Giulia1Pgrazie ha mostrato [4c Jh] e ha perso con una doppia coppia, Tre e Due
+Posto 5: caduceus369 (bottone) ha mostrato [Qd 5d] e ha vinto (30000) con una doppia coppia, Donne e Tre
+Posto 6: AjayMoro (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933863564:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello II (1625/3250) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:27:20 CET [18/02/2025 18:27:20 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 6
+Posto 1: DioIbra10 (176250 chips) 
+Posto 3: iasflorin (88500 chips) 
+Posto 5: caduceus369 (102750 chips) 
+Posto 6: AjayMoro (83250 chips) 
+DioIbra10: mette l'ante 800
+iasflorin: mette l'ante 800
+caduceus369: mette l'ante 800
+AjayMoro: mette l'ante 800
+DioIbra10: versa il piccolo buio 1625
+iasflorin: versa il grande buio 3250
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As 7s]
+caduceus369: rilancia 3250 fino a 6500
+AjayMoro: folda 
+DioIbra10: chiama 4875
+iasflorin: folda 
+*** FLOP *** [3d Tc 9c]
+DioIbra10: fa check 
+caduceus369: fa check 
+*** TURN *** [3d Tc 9c] [Jh]
+DioIbra10: fa check 
+caduceus369: fa check 
+*** RIVER *** [3d Tc 9c Jh] [5h]
+DioIbra10: fa check 
+caduceus369: fa check 
+*** SHOW DOWN ***
+DioIbra10: mostra [3c Ac] (una coppia di Tre)
+caduceus369: non mostra le carte 
+DioIbra10 ha raccolto 19450 dal piatto
+*** RIASSUNTO ***
+Piatto totale 19450 | Rake 0 
+Board [3d Tc 9c Jh 5h]
+Posto 1: DioIbra10 (small blind) ha mostrato [3c Ac] e ha vinto (19450) con una coppia di Tre
+Posto 3: iasflorin (big blind) ha foldato prima del Flop
+Posto 5: caduceus369 non ha mostrato le carte [As 7s]
+Posto 6: AjayMoro (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933871132:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello II (1625/3250) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:27:51 CET [18/02/2025 18:27:51 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: DioIbra10 (188400 chips) 
+Posto 3: iasflorin (84450 chips) 
+Posto 4: crinano2019 (81000 chips) 
+Posto 5: caduceus369 (95450 chips) 
+Posto 6: AjayMoro (82450 chips) 
+DioIbra10: mette l'ante 800
+iasflorin: mette l'ante 800
+crinano2019: mette l'ante 800
+caduceus369: mette l'ante 800
+AjayMoro: mette l'ante 800
+iasflorin: versa il piccolo buio 1625
+crinano2019: versa il grande buio 3250
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2c 9d]
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: chiama 3250
+iasflorin: chiama 1625
+crinano2019: fa check 
+*** FLOP *** [3c 9s Kd]
+Magani22 è disconnesso 
+iasflorin: fa check 
+crinano2019: fa check 
+DioIbra10: punta 9750
+iasflorin: folda 
+crinano2019: folda 
+La puntata non vista (9750) è restituita a DioIbra10
+DioIbra10 ha raccolto 13750 dal piatto
+*** RIASSUNTO ***
+Piatto totale 13750 | Rake 0 
+Board [3c 9s Kd]
+Posto 1: DioIbra10 (bottone) ha raccolto (13750)
+Posto 3: iasflorin (small blind) ha foldato sul Flop
+Posto 4: crinano2019 (big blind) ha foldato sul Flop
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933879626:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello II (1625/3250) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:28:25 CET [18/02/2025 18:28:25 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 3
+Posto 1: DioIbra10 (198100 chips) 
+Posto 2: Magani22 (90000 chips) 
+Posto 3: iasflorin (80400 chips) 
+Posto 4: crinano2019 (76950 chips) 
+Posto 5: caduceus369 (94650 chips) 
+Posto 6: AjayMoro (81650 chips) 
+DioIbra10: mette l'ante 800
+Magani22: mette l'ante 800
+iasflorin: mette l'ante 800
+crinano2019: mette l'ante 800
+caduceus369: mette l'ante 800
+AjayMoro: mette l'ante 800
+crinano2019: versa il piccolo buio 1625
+caduceus369: versa il grande buio 3250
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s 2h]
+AjayMoro: folda 
+DioIbra10: chiama 3250
+Magani22: rilancia 3250 fino a 6500
+iasflorin: folda 
+crinano2019: chiama 4875
+caduceus369: folda 
+DioIbra10: chiama 3250
+*** FLOP *** [Qd Qc 5h]
+crinano2019: fa check 
+DioIbra10: fa check 
+Magani22: punta 9750
+crinano2019: chiama 9750
+DioIbra10: folda 
+*** TURN *** [Qd Qc 5h] [Kd]
+crinano2019: fa check 
+Magani22: fa check 
+*** RIVER *** [Qd Qc 5h Kd] [9d]
+crinano2019: punta 59900 ed è all-in
+Magani22: folda 
+La puntata non vista (59900) è restituita a crinano2019
+crinano2019 ha raccolto 47050 dal piatto
+*** RIASSUNTO ***
+Piatto totale 47050 | Rake 0 
+Board [Qd Qc 5h Kd 9d]
+Posto 1: DioIbra10 ha foldato sul Flop
+Posto 2: Magani22 ha foldato sul River
+Posto 3: iasflorin (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: crinano2019 (small blind) ha raccolto (47050)
+Posto 5: caduceus369 (big blind) ha foldato prima del Flop
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933888471:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello III (1750/3500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:29:02 CET [18/02/2025 18:29:02 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 4
+Posto 1: DioIbra10 (190800 chips) 
+Posto 2: Magani22 (72950 chips) 
+Posto 3: iasflorin (79600 chips) 
+Posto 4: crinano2019 (106950 chips) 
+Posto 5: caduceus369 (90600 chips) 
+Posto 6: AjayMoro (80850 chips) 
+DioIbra10: mette l'ante 875
+Magani22: mette l'ante 875
+iasflorin: mette l'ante 875
+crinano2019: mette l'ante 875
+caduceus369: mette l'ante 875
+AjayMoro: mette l'ante 875
+caduceus369: versa il piccolo buio 1750
+AjayMoro: versa il grande buio 3500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd Jh]
+DioIbra10: chiama 3500
+Magani22: folda 
+iasflorin: chiama 3500
+crinano2019: chiama 3500
+caduceus369: rilancia 14000 fino a 17500
+AjayMoro: folda 
+DioIbra10: folda 
+iasflorin: chiama 14000
+crinano2019: chiama 14000
+*** FLOP *** [Th Kc 6h]
+caduceus369: punta 21368
+iasflorin: folda 
+crinano2019: folda 
+La puntata non vista (21368) è restituita a caduceus369
+caduceus369 ha raccolto 64750 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 64750 | Rake 0 
+Board [Th Kc 6h]
+Posto 1: DioIbra10 ha foldato prima del Flop
+Posto 2: Magani22 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha foldato sul Flop
+Posto 4: crinano2019 (bottone) ha foldato sul Flop
+Posto 5: caduceus369 (small blind) ha raccolto (64750)
+Posto 6: AjayMoro (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933897315:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello III (1750/3500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:29:38 CET [18/02/2025 18:29:38 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 5
+Posto 1: DioIbra10 (186425 chips) 
+Posto 2: Magani22 (72075 chips) 
+Posto 3: iasflorin (61225 chips) 
+Posto 4: crinano2019 (88575 chips) 
+Posto 5: caduceus369 (136975 chips) 
+Posto 6: AjayMoro (76475 chips) 
+DioIbra10: mette l'ante 875
+Magani22: mette l'ante 875
+iasflorin: mette l'ante 875
+crinano2019: mette l'ante 875
+caduceus369: mette l'ante 875
+AjayMoro: mette l'ante 875
+AjayMoro: versa il piccolo buio 1750
+DioIbra10: versa il grande buio 3500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Tc 3c]
+Magani22: folda 
+iasflorin: folda 
+crinano2019: chiama 3500
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: fa check 
+*** FLOP *** [7c 5s 5d]
+DioIbra10: fa check 
+crinano2019: punta 7000
+DioIbra10: folda 
+La puntata non vista (7000) è restituita a crinano2019
+crinano2019 ha raccolto 14000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 14000 | Rake 0 
+Board [7c 5s 5d]
+Posto 1: DioIbra10 (big blind) ha foldato sul Flop
+Posto 2: Magani22 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: crinano2019 ha raccolto (14000)
+Posto 5: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933902244:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello III (1750/3500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:29:58 CET [18/02/2025 18:29:58 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 6
+Posto 1: DioIbra10 (182050 chips) 
+Posto 2: Magani22 (71200 chips) 
+Posto 3: iasflorin (60350 chips) 
+Posto 4: crinano2019 (98200 chips) 
+Posto 5: caduceus369 (136100 chips) 
+Posto 6: AjayMoro (73850 chips) 
+DioIbra10: mette l'ante 875
+Magani22: mette l'ante 875
+iasflorin: mette l'ante 875
+crinano2019: mette l'ante 875
+caduceus369: mette l'ante 875
+AjayMoro: mette l'ante 875
+DioIbra10: versa il piccolo buio 1750
+Magani22: versa il grande buio 3500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3c Jd]
+iasflorin: chiama 3500
+crinano2019: chiama 3500
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: chiama 1750
+Magani22: fa check 
+*** FLOP *** [9h Js 6s]
+DioIbra10: punta 10500
+Magani22: chiama 10500
+iasflorin: chiama 10500
+crinano2019: folda 
+*** TURN *** [9h Js 6s] [Jc]
+DioIbra10: punta 10500
+Magani22: chiama 10500
+iasflorin: folda 
+*** RIVER *** [9h Js 6s Jc] [6c]
+DioIbra10: fa check 
+Magani22: punta 21000
+DioIbra10: folda 
+La puntata non vista (21000) è restituita a Magani22
+Magani22 ha raccolto 71750 dal piatto
+Magani22: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 71750 | Rake 0 
+Board [9h Js 6s Jc 6c]
+Posto 1: DioIbra10 (small blind) ha foldato sul River
+Posto 2: Magani22 (big blind) ha raccolto (71750)
+Posto 3: iasflorin ha foldato sul Turn
+Posto 4: crinano2019 ha foldato sul Flop
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933913644:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello III (1750/3500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:30:44 CET [18/02/2025 18:30:44 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: DioIbra10 (156675 chips) 
+Posto 2: Magani22 (117575 chips) 
+Posto 3: iasflorin (45475 chips) 
+Posto 4: crinano2019 (93825 chips) 
+Posto 5: caduceus369 (135225 chips) 
+Posto 6: AjayMoro (72975 chips) 
+DioIbra10: mette l'ante 875
+Magani22: mette l'ante 875
+iasflorin: mette l'ante 875
+crinano2019: mette l'ante 875
+caduceus369: mette l'ante 875
+AjayMoro: mette l'ante 875
+Magani22: versa il piccolo buio 1750
+iasflorin: versa il grande buio 3500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3d 4h]
+crinano2019: chiama 3500
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: folda 
+Magani22: chiama 1750
+iasflorin: rilancia 41100 fino a 44600 ed è all-in
+crinano2019: folda 
+Magani22: folda 
+La puntata non vista (41100) è restituita a iasflorin
+iasflorin ha raccolto 15750 dal piatto
+iasflorin: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 15750 | Rake 0 
+Posto 1: DioIbra10 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: Magani22 (small blind) ha foldato prima del Flop
+Posto 3: iasflorin (big blind) ha raccolto (15750)
+Posto 4: crinano2019 ha foldato prima del Flop
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933921524:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IV (1875/3750) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:31:16 CET [18/02/2025 18:31:16 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 2
+Posto 1: DioIbra10 (155800 chips) 
+Posto 2: Magani22 (113200 chips) 
+Posto 3: iasflorin (56850 chips) 
+Posto 5: caduceus369 (134350 chips) 
+Posto 6: AjayMoro (72100 chips) 
+DioIbra10: mette l'ante 925
+Magani22: mette l'ante 925
+iasflorin: mette l'ante 925
+caduceus369: mette l'ante 925
+AjayMoro: mette l'ante 925
+iasflorin: versa il piccolo buio 1875
+caduceus369: versa il grande buio 3750
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3s 6c]
+AjayMoro: rilancia 3750 fino a 7500
+DioIbra10: chiama 7500
+Magani22: chiama 7500
+iasflorin: folda 
+caduceus369: folda 
+*** FLOP *** [Qh 7d 9s]
+AjayMoro: punta 22598
+DioIbra10: folda 
+Magani22: folda 
+La puntata non vista (22598) è restituita a AjayMoro
+AjayMoro ha raccolto 32750 dal piatto
+AjayMoro: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 32750 | Rake 0 
+Board [Qh 7d 9s]
+Posto 1: DioIbra10 ha foldato sul Flop
+Posto 2: Magani22 (bottone) ha foldato sul Flop
+Posto 3: iasflorin (small blind) ha foldato prima del Flop
+Posto 5: caduceus369 (big blind) ha foldato prima del Flop
+Posto 6: AjayMoro ha raccolto (32750)
+
+
+
+Mano PokerStars n° 254933927518:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IV (1875/3750) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:31:41 CET [18/02/2025 18:31:41 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 3
+Posto 1: DioIbra10 (147375 chips) 
+Posto 2: Magani22 (104775 chips) 
+Posto 3: iasflorin (54050 chips) 
+Posto 5: caduceus369 (129675 chips) 
+Posto 6: AjayMoro (96425 chips) 
+DioIbra10: mette l'ante 925
+Magani22: mette l'ante 925
+iasflorin: mette l'ante 925
+caduceus369: mette l'ante 925
+AjayMoro: mette l'ante 925
+caduceus369: versa il piccolo buio 1875
+AjayMoro: versa il grande buio 3750
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 9d]
+DioIbra10: folda 
+Magani22: chiama 3750
+iasflorin: folda 
+caduceus369: chiama 1875
+AjayMoro: fa check 
+*** FLOP *** [Kc Qs 5h]
+caduceus369: fa check 
+AjayMoro: fa check 
+Magani22: punta 7500
+caduceus369: chiama 7500
+AjayMoro: folda 
+*** TURN *** [Kc Qs 5h] [Ts]
+caduceus369: fa check 
+Magani22: fa check 
+*** RIVER *** [Kc Qs 5h Ts] [3s]
+caduceus369: punta 7500
+Magani22: chiama 7500
+*** SHOW DOWN ***
+caduceus369: mostra [Ks 9d] (una coppia di Re)
+Magani22: non mostra le carte 
+caduceus369 ha raccolto 45875 dal piatto
+*** RIASSUNTO ***
+Piatto totale 45875 | Rake 0 
+Board [Kc Qs 5h Ts 3s]
+Posto 1: DioIbra10 ha foldato prima del Flop (non ha puntato)
+Posto 2: Magani22 non ha mostrato le carte [Tc 7c]
+Posto 3: iasflorin (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: caduceus369 (small blind) ha mostrato [Ks 9d] e ha vinto (45875) con una coppia di Re
+Posto 6: AjayMoro (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933935856:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IV (1875/3750) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:32:16 CET [18/02/2025 18:32:16 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 5
+Posto 1: DioIbra10 (146450 chips) 
+Posto 2: Magani22 (85100 chips) 
+Posto 3: iasflorin (53125 chips) 
+Posto 4: Wokhard710 (90000 chips) 
+Posto 5: caduceus369 (155875 chips) 
+Posto 6: AjayMoro (91750 chips) 
+DioIbra10: mette l'ante 925
+Magani22: mette l'ante 925
+iasflorin: mette l'ante 925
+Wokhard710: mette l'ante 925
+caduceus369: mette l'ante 925
+AjayMoro: mette l'ante 925
+AjayMoro: versa il piccolo buio 1875
+DioIbra10: versa il grande buio 3750
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As 4d]
+Magani22: folda 
+iasflorin: rilancia 7500 fino a 11250
+Wokhard710: folda 
+caduceus369: folda 
+AjayMoro: chiama 9375
+DioIbra10: chiama 7500
+*** FLOP *** [2d 8c Jh]
+AjayMoro: punta 79575 ed è all-in
+DioIbra10: folda 
+iasflorin: chiama 40950 ed è all-in
+La puntata non vista (38625) è restituita a AjayMoro
+*** TURN *** [2d 8c Jh] [7d]
+*** RIVER *** [2d 8c Jh 7d] [4c]
+*** SHOW DOWN ***
+AjayMoro: mostra [Js Ac] (una coppia di Jack)
+iasflorin: mostra [Ks Kd] (una coppia di Re)
+iasflorin ha raccolto 121200 dal piatto
+*** RIASSUNTO ***
+Piatto totale 121200 | Rake 0 
+Board [2d 8c Jh 7d 4c]
+Posto 1: DioIbra10 (big blind) ha foldato sul Flop
+Posto 2: Magani22 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha mostrato [Ks Kd] e ha vinto (121200) con una coppia di Re
+Posto 4: Wokhard710 ha foldato prima del Flop (non ha puntato)
+Posto 5: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (small blind) ha mostrato [Js Ac] e ha perso con una coppia di Jack
+
+
+
+Mano PokerStars n° 254933943031:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IV (1875/3750) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:32:45 CET [18/02/2025 18:32:45 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 6
+Posto 1: DioIbra10 (134275 chips) 
+Posto 2: Magani22 (84175 chips) 
+Posto 3: iasflorin (121200 chips) 
+Posto 4: Wokhard710 (89075 chips) 
+Posto 5: caduceus369 (154950 chips) 
+Posto 6: AjayMoro (38625 chips) 
+DioIbra10: mette l'ante 925
+Magani22: mette l'ante 925
+iasflorin: mette l'ante 925
+Wokhard710: mette l'ante 925
+caduceus369: mette l'ante 925
+AjayMoro: mette l'ante 925
+DioIbra10: versa il piccolo buio 1875
+Magani22: versa il grande buio 3750
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d 3s]
+iasflorin: folda 
+Wokhard710: folda 
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: chiama 1875
+Magani22: fa check 
+*** FLOP *** [Qd 2s Qc]
+DioIbra10: fa check 
+Magani22: punta 3750
+DioIbra10: chiama 3750
+*** TURN *** [Qd 2s Qc] [Ad]
+DioIbra10: fa check 
+Magani22: fa check 
+*** RIVER *** [Qd 2s Qc Ad] [5c]
+DioIbra10: fa check 
+Magani22: fa check 
+*** SHOW DOWN ***
+DioIbra10: mostra [8s 9d] (una coppia di Donne)
+Magani22: mostra [8d Jd] (una coppia di Donne - Asso+Jack kicker)
+Magani22 ha raccolto 20550 dal piatto
+*** RIASSUNTO ***
+Piatto totale 20550 | Rake 0 
+Board [Qd 2s Qc Ad 5c]
+Posto 1: DioIbra10 (small blind) ha mostrato [8s 9d] e ha perso con una coppia di Donne
+Posto 2: Magani22 (big blind) ha mostrato [8d Jd] e ha vinto (20550) con una coppia di Donne
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Wokhard710 ha foldato prima del Flop (non ha puntato)
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933950784:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello V (2000/4000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:33:18 CET [18/02/2025 18:33:18 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: DioIbra10 (125850 chips) 
+Posto 2: Magani22 (96300 chips) 
+Posto 3: iasflorin (120275 chips) 
+Posto 4: Wokhard710 (88150 chips) 
+Posto 5: caduceus369 (154025 chips) 
+Posto 6: AjayMoro (37700 chips) 
+DioIbra10: mette l'ante 1000
+Magani22: mette l'ante 1000
+iasflorin: mette l'ante 1000
+Wokhard710: mette l'ante 1000
+caduceus369: mette l'ante 1000
+AjayMoro: mette l'ante 1000
+Magani22: versa il piccolo buio 2000
+iasflorin: versa il grande buio 4000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th 3d]
+Wokhard710: rilancia 4000 fino a 8000
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: chiama 8000
+Magani22: chiama 6000
+iasflorin: chiama 4000
+*** FLOP *** [Jc 8c 4c]
+Magani22: punta 19000
+iasflorin: folda 
+Wokhard710: rilancia 60150 fino a 79150 ed è all-in
+DioIbra10: folda 
+Magani22: chiama 60150
+*** TURN *** [Jc 8c 4c] [9s]
+*** RIVER *** [Jc 8c 4c 9s] [6c]
+*** SHOW DOWN ***
+Magani22: mostra [Ad As] (una coppia di Assi)
+Wokhard710: mostra [Td Tc] (un colore al Jack)
+Wokhard710 ha raccolto 196300 dal piatto
+*** RIASSUNTO ***
+Piatto totale 196300 | Rake 0 
+Board [Jc 8c 4c 9s 6c]
+Posto 1: DioIbra10 (bottone) ha foldato sul Flop
+Posto 2: Magani22 (small blind) ha mostrato [Ad As] e ha perso con una coppia di Assi
+Posto 3: iasflorin (big blind) ha foldato sul Flop
+Posto 4: Wokhard710 ha mostrato [Td Tc] e ha vinto (196300) con un colore al Jack
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933960916:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello V (2000/4000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:34:01 CET [18/02/2025 18:34:01 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 2
+Posto 1: DioIbra10 (116850 chips) 
+Posto 2: Magani22 (8150 chips) 
+Posto 3: iasflorin (111275 chips) 
+Posto 4: Wokhard710 (196300 chips) 
+Posto 5: caduceus369 (153025 chips) 
+Posto 6: AjayMoro (36700 chips) 
+DioIbra10: mette l'ante 1000
+Magani22: mette l'ante 1000
+iasflorin: mette l'ante 1000
+Wokhard710: mette l'ante 1000
+caduceus369: mette l'ante 1000
+AjayMoro: mette l'ante 1000
+iasflorin: versa il piccolo buio 2000
+Wokhard710: versa il grande buio 4000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2d 7h]
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: folda 
+Magani22: rilancia 3150 fino a 7150 ed è all-in
+iasflorin: folda 
+Wokhard710: chiama 3150
+*** FLOP *** [Ah 5d 9c]
+*** TURN *** [Ah 5d 9c] [6h]
+*** RIVER *** [Ah 5d 9c 6h] [7c]
+*** SHOW DOWN ***
+Wokhard710: mostra [Ts Jd] (carta alta Asso)
+Magani22: mostra [4d Ac] (una coppia di Assi)
+Magani22 ha raccolto 22300 dal piatto
+*** RIASSUNTO ***
+Piatto totale 22300 | Rake 0 
+Board [Ah 5d 9c 6h 7c]
+Posto 1: DioIbra10 ha foldato prima del Flop (non ha puntato)
+Posto 2: Magani22 (bottone) ha mostrato [4d Ac] e ha vinto (22300) con una coppia di Assi
+Posto 3: iasflorin (small blind) ha foldato prima del Flop
+Posto 4: Wokhard710 (big blind) ha mostrato [Ts Jd] e ha perso con carta alta Asso
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933968023:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello V (2000/4000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:34:30 CET [18/02/2025 18:34:30 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 3
+Posto 1: DioIbra10 (115850 chips) 
+Posto 2: Magani22 (22300 chips) 
+Posto 3: iasflorin (108275 chips) 
+Posto 4: Wokhard710 (188150 chips) 
+Posto 5: caduceus369 (152025 chips) 
+Posto 6: AjayMoro (35700 chips) 
+DioIbra10: mette l'ante 1000
+Magani22: mette l'ante 1000
+iasflorin: mette l'ante 1000
+Wokhard710: mette l'ante 1000
+caduceus369: mette l'ante 1000
+AjayMoro: mette l'ante 1000
+Wokhard710: versa il piccolo buio 2000
+caduceus369: versa il grande buio 4000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ah 6d]
+AjayMoro: folda 
+DioIbra10: folda 
+Magani22: chiama 4000
+iasflorin: chiama 4000
+Wokhard710: rilancia 183150 fino a 187150 ed è all-in
+caduceus369: folda 
+Magani22: chiama 17300 ed è all-in
+iasflorin: folda 
+La puntata non vista (165850) è restituita a Wokhard710
+*** FLOP *** [Ts 5c 4h]
+*** TURN *** [Ts 5c 4h] [Kh]
+*** RIVER *** [Ts 5c 4h Kh] [Th]
+*** SHOW DOWN ***
+Wokhard710: mostra [Jd Ac] (una coppia di Dieci)
+Magani22: mostra [9s 8c] (una coppia di Dieci - più basso kicker)
+Wokhard710 ha raccolto 56600 dal piatto
+Magani22 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 56600 | Rake 0 
+Board [Ts 5c 4h Kh Th]
+Posto 1: DioIbra10 ha foldato prima del Flop (non ha puntato)
+Posto 2: Magani22 ha mostrato [9s 8c] e ha perso con una coppia di Dieci
+Posto 3: iasflorin (bottone) ha foldato prima del Flop
+Posto 4: Wokhard710 (small blind) ha mostrato [Jd Ac] e ha vinto (56600) con una coppia di Dieci
+Posto 5: caduceus369 (big blind) ha foldato prima del Flop
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933979090:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VI (2250/4500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:35:17 CET [18/02/2025 18:35:17 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 4
+Posto 1: DioIbra10 (114850 chips) 
+Posto 3: iasflorin (103275 chips) 
+Posto 4: Wokhard710 (222450 chips) 
+Posto 5: caduceus369 (147025 chips) 
+Posto 6: AjayMoro (34700 chips) 
+DioIbra10: mette l'ante 1125
+iasflorin: mette l'ante 1125
+Wokhard710: mette l'ante 1125
+caduceus369: mette l'ante 1125
+AjayMoro: mette l'ante 1125
+caduceus369: versa il piccolo buio 2250
+AjayMoro: versa il grande buio 4500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h Tc]
+DioIbra10: folda 
+iasflorin: folda 
+Wokhard710: folda 
+caduceus369: folda 
+La puntata non vista (2250) è restituita a AjayMoro
+AjayMoro ha raccolto 10125 dal piatto
+AjayMoro: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 10125 | Rake 0 
+Posto 1: DioIbra10 ha foldato prima del Flop (non ha puntato)
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Wokhard710 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: caduceus369 (small blind) ha foldato prima del Flop
+Posto 6: AjayMoro (big blind) ha raccolto (10125)
+
+
+
+Mano PokerStars n° 254933986787:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VI (2250/4500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:35:49 CET [18/02/2025 18:35:49 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 5
+Posto 1: DioIbra10 (113725 chips) 
+Posto 2: crinano2019 (90000 chips) 
+Posto 3: iasflorin (102150 chips) 
+Posto 4: Wokhard710 (221325 chips) 
+Posto 5: caduceus369 (143650 chips) 
+Posto 6: AjayMoro (41450 chips) 
+DioIbra10: mette l'ante 1125
+crinano2019: mette l'ante 1125
+iasflorin: mette l'ante 1125
+Wokhard710: mette l'ante 1125
+caduceus369: mette l'ante 1125
+AjayMoro: mette l'ante 1125
+AjayMoro: versa il piccolo buio 2250
+DioIbra10: versa il grande buio 4500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d 3s]
+crinano2019: rilancia 4500 fino a 9000
+iasflorin: folda 
+Wokhard710: chiama 9000
+caduceus369: folda 
+AjayMoro: folda 
+DioIbra10: chiama 4500
+*** FLOP *** [3d Ts 4c]
+DioIbra10: punta 13500
+crinano2019: chiama 13500
+Wokhard710: folda 
+*** TURN *** [3d Ts 4c] [7s]
+DioIbra10: punta 18000
+crinano2019: chiama 18000
+*** RIVER *** [3d Ts 4c 7s] [Kd]
+DioIbra10: punta 72100 ed è all-in
+crinano2019: chiama 48375 ed è all-in
+La puntata non vista (23725) è restituita a DioIbra10
+*** SHOW DOWN ***
+DioIbra10: mostra [3c 2c] (una coppia di Tre)
+crinano2019: mostra [8h 8c] (una coppia di Otto)
+crinano2019 ha raccolto 195750 dal piatto
+*** RIASSUNTO ***
+Piatto totale 195750 | Rake 0 
+Board [3d Ts 4c 7s Kd]
+Posto 1: DioIbra10 (big blind) ha mostrato [3c 2c] e ha perso con una coppia di Tre
+Posto 2: crinano2019 ha mostrato [8h 8c] e ha vinto (195750) con una coppia di Otto
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Wokhard710 ha foldato sul Flop
+Posto 5: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933995583:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VI (2250/4500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:36:27 CET [18/02/2025 18:36:27 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 6
+Posto 1: DioIbra10 (23725 chips) 
+Posto 2: crinano2019 (195750 chips) 
+Posto 3: iasflorin (101025 chips) 
+Posto 4: Wokhard710 (211200 chips) 
+Posto 5: caduceus369 (142525 chips) 
+Posto 6: AjayMoro (38075 chips) 
+DioIbra10: mette l'ante 1125
+crinano2019: mette l'ante 1125
+iasflorin: mette l'ante 1125
+Wokhard710: mette l'ante 1125
+caduceus369: mette l'ante 1125
+AjayMoro: mette l'ante 1125
+DioIbra10: versa il piccolo buio 2250
+crinano2019: versa il grande buio 4500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2c 3h]
+iasflorin: folda 
+Wokhard710: folda 
+caduceus369: folda 
+AjayMoro: rilancia 6705 fino a 11205
+DioIbra10: rilancia 11395 fino a 22600 ed è all-in
+crinano2019: folda 
+AjayMoro: chiama 11395
+*** FLOP *** [Tc Jc 9d]
+*** TURN *** [Tc Jc 9d] [6s]
+*** RIVER *** [Tc Jc 9d 6s] [8d]
+*** SHOW DOWN ***
+DioIbra10: mostra [6d As] (una coppia di Sei)
+AjayMoro: mostra [4d 4c] (una coppia di Quattro)
+DioIbra10 ha raccolto 56450 dal piatto
+*** RIASSUNTO ***
+Piatto totale 56450 | Rake 0 
+Board [Tc Jc 9d 6s 8d]
+Posto 1: DioIbra10 (small blind) ha mostrato [6d As] e ha vinto (56450) con una coppia di Sei
+Posto 2: crinano2019 (big blind) ha foldato prima del Flop
+Posto 3: iasflorin ha foldato prima del Flop (non ha puntato)
+Posto 4: Wokhard710 ha foldato prima del Flop (non ha puntato)
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro (bottone) ha mostrato [4d 4c] e ha perso con una coppia di Quattro
+
+
+
+Mano PokerStars n° 254934001420:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VI (2250/4500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:36:52 CET [18/02/2025 18:36:52 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: DioIbra10 (56450 chips) 
+Posto 2: crinano2019 (190125 chips) 
+Posto 3: iasflorin (99900 chips) 
+Posto 4: Wokhard710 (210075 chips) 
+Posto 5: caduceus369 (141400 chips) 
+Posto 6: AjayMoro (14350 chips) 
+DioIbra10: mette l'ante 1125
+crinano2019: mette l'ante 1125
+iasflorin: mette l'ante 1125
+Wokhard710: mette l'ante 1125
+caduceus369: mette l'ante 1125
+AjayMoro: mette l'ante 1125
+crinano2019: versa il piccolo buio 2250
+iasflorin: versa il grande buio 4500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9c Qc]
+Wokhard710: rilancia 4500 fino a 9000
+caduceus369: chiama 9000
+AjayMoro: folda 
+DioIbra10: rilancia 46325 fino a 55325 ed è all-in
+crinano2019: chiama 53075
+iasflorin: folda 
+Wokhard710: folda 
+caduceus369: folda 
+*** FLOP *** [As 5h 2s]
+*** TURN *** [As 5h 2s] [Ac]
+*** RIVER *** [As 5h 2s Ac] [6c]
+*** SHOW DOWN ***
+crinano2019: mostra [Qs 5s] (una doppia coppia, Assi e Cinque)
+DioIbra10: mostra [7c Th] (una coppia di Assi)
+crinano2019 ha raccolto 139900 dal piatto
+DioIbra10 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 139900 | Rake 0 
+Board [As 5h 2s Ac 6c]
+Posto 1: DioIbra10 (bottone) ha mostrato [7c Th] e ha perso con una coppia di Assi
+Posto 2: crinano2019 (small blind) ha mostrato [Qs 5s] e ha vinto (139900) con una doppia coppia, Assi e Cinque
+Posto 3: iasflorin (big blind) ha foldato prima del Flop
+Posto 4: Wokhard710 ha foldato prima del Flop
+Posto 5: caduceus369 ha foldato prima del Flop
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934008841:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VII (2500/5000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:37:24 CET [18/02/2025 18:37:24 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 2
+Posto 2: crinano2019 (273575 chips) 
+Posto 3: iasflorin (94275 chips) 
+Posto 4: Wokhard710 (199950 chips) 
+Posto 5: caduceus369 (131275 chips) 
+Posto 6: AjayMoro (13225 chips) 
+crinano2019: mette l'ante 1250
+iasflorin: mette l'ante 1250
+Wokhard710: mette l'ante 1250
+caduceus369: mette l'ante 1250
+AjayMoro: mette l'ante 1250
+iasflorin: versa il piccolo buio 2500
+Wokhard710: versa il grande buio 5000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd 5d]
+caduceus369: folda 
+AjayMoro: folda 
+crinano2019: chiama 5000
+iasflorin: chiama 2500
+Wokhard710: fa check 
+*** FLOP *** [Qh Ac 7c]
+iasflorin: fa check 
+Wokhard710: fa check 
+crinano2019: fa check 
+*** TURN *** [Qh Ac 7c] [Th]
+iasflorin: punta 5000
+Wokhard710: rilancia 15625 fino a 20625
+crinano2019: folda 
+iasflorin: folda 
+La puntata non vista (15625) è restituita a Wokhard710
+Wokhard710 ha raccolto 31250 dal piatto
+*** RIASSUNTO ***
+Piatto totale 31250 | Rake 0 
+Board [Qh Ac 7c Th]
+Posto 2: crinano2019 (bottone) ha foldato sul Turn
+Posto 3: iasflorin (small blind) ha foldato sul Turn
+Posto 4: Wokhard710 (big blind) ha raccolto (31250)
+Posto 5: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934018898:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VII (2500/5000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:38:06 CET [18/02/2025 18:38:06 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 3
+Posto 1: Fabcan23 (90000 chips) 
+Posto 2: crinano2019 (267325 chips) 
+Posto 3: iasflorin (83025 chips) 
+Posto 4: Wokhard710 (219950 chips) 
+Posto 5: caduceus369 (130025 chips) 
+Posto 6: AjayMoro (11975 chips) 
+Fabcan23: mette l'ante 1250
+crinano2019: mette l'ante 1250
+iasflorin: mette l'ante 1250
+Wokhard710: mette l'ante 1250
+caduceus369: mette l'ante 1250
+AjayMoro: mette l'ante 1250
+Wokhard710: versa il piccolo buio 2500
+caduceus369: versa il grande buio 5000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd Qh]
+AjayMoro è disconnesso 
+AjayMoro ha esaurito il tempo  mentre era disconnesso
+AjayMoro: folda 
+AjayMoro è in sit-out
+Fabcan23: chiama 5000
+crinano2019: chiama 5000
+iasflorin: chiama 5000
+Wokhard710: rilancia 213700 fino a 218700 ed è all-in
+caduceus369: chiama 123775 ed è all-in
+AjayMoro è disconnesso 
+AjayMoro è tornato
+Fabcan23: folda 
+crinano2019: folda 
+iasflorin: folda 
+La puntata non vista (89925) è restituita a Wokhard710
+*** FLOP *** [5s 7c Ts]
+*** TURN *** [5s 7c Ts] [8s]
+*** RIVER *** [5s 7c Ts 8s] [5h]
+*** SHOW DOWN ***
+Wokhard710: mostra [Tc Ad] (una doppia coppia, Dieci e Cinque)
+caduceus369: mostra [Jd Qh] (una coppia di Cinque)
+Wokhard710 ha raccolto 280050 dal piatto
+caduceus369 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 280050 | Rake 0 
+Board [5s 7c Ts 8s 5h]
+Posto 1: Fabcan23 ha foldato prima del Flop
+Posto 2: crinano2019 ha foldato prima del Flop
+Posto 3: iasflorin (bottone) ha foldato prima del Flop
+Posto 4: Wokhard710 (small blind) ha mostrato [Tc Ad] e ha vinto (280050) con una doppia coppia, Dieci e Cinque
+Posto 5: caduceus369 (big blind) ha mostrato [Jd Qh] e ha perso con una coppia di Cinque
+Posto 6: AjayMoro ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934035106:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VIII (2750/5500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:39:16 CET [18/02/2025 18:39:16 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 1
+Posto 1: Fabcan23 (80000 chips) 
+Posto 2: crinano2019 (282325 chips) 
+Posto 3: iasflorin (75525 chips) 
+Posto 4: Wokhard710 (353725 chips) 
+Posto 5: MisterPride10 (127725 chips) 
+Posto 6: caduceus369 (90000 chips) 
+Fabcan23: mette l'ante 1375
+crinano2019: mette l'ante 1375
+iasflorin: mette l'ante 1375
+Wokhard710: mette l'ante 1375
+MisterPride10: mette l'ante 1375
+caduceus369: mette l'ante 1375
+crinano2019: versa il piccolo buio 2750
+iasflorin: versa il grande buio 5500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6d 3s]
+Wokhard710: rilancia 5500 fino a 11000
+MisterPride10: rilancia 115350 fino a 126350 ed è all-in
+caduceus369: folda 
+Fabcan23: folda 
+crinano2019: folda 
+iasflorin: folda 
+Wokhard710: folda 
+La puntata non vista (115350) è restituita a MisterPride10
+MisterPride10 ha raccolto 38500 dal piatto
+MisterPride10: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 38500 | Rake 0 
+Posto 1: Fabcan23 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: crinano2019 (small blind) ha foldato prima del Flop
+Posto 3: iasflorin (big blind) ha foldato prima del Flop
+Posto 4: Wokhard710 ha foldato prima del Flop
+Posto 5: MisterPride10 ha raccolto (38500)
+Posto 6: caduceus369 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934041124:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VIII (2750/5500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:39:42 CET [18/02/2025 18:39:42 ET]
+Tavolo '3858853496 22' 6-max Il bottone è al posto 2
+Posto 1: Fabcan23 (78625 chips) 
+Posto 2: crinano2019 (278200 chips) 
+Posto 3: iasflorin (68650 chips) 
+Posto 4: Wokhard710 (341350 chips) 
+Posto 5: MisterPride10 (153850 chips) 
+Posto 6: caduceus369 (88625 chips) 
+Fabcan23: mette l'ante 1375
+crinano2019: mette l'ante 1375
+iasflorin: mette l'ante 1375
+Wokhard710: mette l'ante 1375
+MisterPride10: mette l'ante 1375
+caduceus369: mette l'ante 1375
+iasflorin: versa il piccolo buio 2750
+Wokhard710: versa il grande buio 5500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kc 3d]
+MisterPride10: folda 
+caduceus369: folda 
+Fabcan23: rilancia 5500 fino a 11000
+crinano2019: chiama 11000
+iasflorin: folda 
+Wokhard710: chiama 5500
+*** FLOP *** [Jd 4h Ks]
+Wokhard710: fa check 
+Fabcan23: fa check 
+crinano2019: punta 11000
+Wokhard710: chiama 11000
+Fabcan23: folda 
+*** TURN *** [Jd 4h Ks] [Qs]
+Wokhard710: fa check 
+crinano2019: punta 11000
+Wokhard710: chiama 11000
+*** RIVER *** [Jd 4h Ks Qs] [9s]
+Wokhard710: fa check 
+crinano2019: punta 5500
+Wokhard710: rilancia 49500 fino a 55000
+crinano2019: folda 
+La puntata non vista (49500) è restituita a Wokhard710
+Wokhard710 ha raccolto 99000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 99000 | Rake 0 
+Board [Jd 4h Ks Qs 9s]
+Posto 1: Fabcan23 ha foldato sul Flop
+Posto 2: crinano2019 (bottone) ha foldato sul River
+Posto 3: iasflorin (small blind) ha foldato prima del Flop
+Posto 4: Wokhard710 (big blind) ha raccolto (99000)
+Posto 5: MisterPride10 ha foldato prima del Flop (non ha puntato)
+Posto 6: caduceus369 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934055203:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello VIII (2750/5500) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:40:43 CET [18/02/2025 18:40:43 ET]
+Tavolo '3858853496 25' 6-max Il bottone è al posto 5
+Posto 2: caduceus369 (87250 chips) 
+Posto 3: Dimka1991md (86800 chips) 
+Posto 4: riko70 (426699 chips) 
+Posto 5: Ferb089 (173876 chips) 
+Posto 6: Fuerta55 (83125 chips) 
+caduceus369: mette l'ante 1375
+Dimka1991md: mette l'ante 1375
+riko70: mette l'ante 1375
+Ferb089: mette l'ante 1375
+Fuerta55: mette l'ante 1375
+Fuerta55: versa il piccolo buio 2750
+caduceus369: versa il grande buio 5500
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Tc 2d]
+Dimka1991md: folda 
+riko70: chiama 5500
+Ferb089: chiama 5500
+Fuerta55: chiama 2750
+caduceus369: fa check 
+*** FLOP *** [2h Ah 8s]
+Fuerta55: fa check 
+caduceus369: fa check 
+riko70: punta 14438
+Ferb089: chiama 14438
+Fuerta55: folda 
+caduceus369: folda 
+*** TURN *** [2h Ah 8s] [Jh]
+riko70: punta 28876
+Ferb089: chiama 28876
+*** RIVER *** [2h Ah 8s Jh] [5c]
+riko70: punta 57752
+Ferb089: chiama 57752
+*** SHOW DOWN ***
+riko70: mostra [Ad 8h] (una doppia coppia, Assi e Otto)
+Ferb089: mostra [7h 9h] (un colore al Asso)
+Ferb089 ha raccolto 231007 dal piatto
+*** RIASSUNTO ***
+Piatto totale 231007 | Rake 0 
+Board [2h Ah 8s Jh 5c]
+Posto 2: caduceus369 (big blind) ha foldato sul Flop
+Posto 3: Dimka1991md ha foldato prima del Flop (non ha puntato)
+Posto 4: riko70 ha mostrato [Ad 8h] e ha perso con una doppia coppia, Assi e Otto
+Posto 5: Ferb089 (bottone) ha mostrato [7h 9h] e ha vinto (231007) con un colore al Asso
+Posto 6: Fuerta55 (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254934065808:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IX (3000/6000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:41:28 CET [18/02/2025 18:41:28 ET]
+Tavolo '3858853496 25' 6-max Il bottone è al posto 6
+Posto 1: Crisiriguuuu (90000 chips) fuori dalla mano (spostato da un altro tavolo al piccolo buio)
+Posto 2: caduceus369 (80375 chips) 
+Posto 3: Dimka1991md (85425 chips) 
+Posto 4: riko70 (318758 chips) 
+Posto 5: Ferb089 (296942 chips) 
+Posto 6: Fuerta55 (76250 chips) 
+Crisiriguuuu potrà giocare dopo il bottone
+caduceus369: mette l'ante 1500
+Dimka1991md: mette l'ante 1500
+riko70: mette l'ante 1500
+Ferb089: mette l'ante 1500
+Fuerta55: mette l'ante 1500
+caduceus369: versa il piccolo buio 3000
+Dimka1991md: versa il grande buio 6000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6h 7s]
+riko70: rilancia 311258 fino a 317258 ed è all-in
+Ferb089: folda 
+Fuerta55: folda 
+caduceus369: folda 
+Dimka1991md: folda 
+La puntata non vista (311258) è restituita a riko70
+riko70 ha raccolto 22500 dal piatto
+*** RIASSUNTO ***
+Piatto totale 22500 | Rake 0 
+Posto 2: caduceus369 (small blind) ha foldato prima del Flop
+Posto 3: Dimka1991md (big blind) ha foldato prima del Flop
+Posto 4: riko70 ha raccolto (22500)
+Posto 5: Ferb089 ha foldato prima del Flop (non ha puntato)
+Posto 6: Fuerta55 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934069798:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IX (3000/6000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:41:45 CET [18/02/2025 18:41:45 ET]
+Tavolo '3858853496 25' 6-max Il bottone è al posto 2
+Posto 1: Crisiriguuuu (90000 chips) 
+Posto 2: caduceus369 (75875 chips) 
+Posto 3: Dimka1991md (77925 chips) 
+Posto 4: riko70 (333758 chips) 
+Posto 5: Ferb089 (295442 chips) 
+Posto 6: Fuerta55 (74750 chips) 
+Crisiriguuuu: mette l'ante 1500
+caduceus369: mette l'ante 1500
+Dimka1991md: mette l'ante 1500
+riko70: mette l'ante 1500
+Ferb089: mette l'ante 1500
+Fuerta55: mette l'ante 1500
+Dimka1991md: versa il piccolo buio 3000
+riko70: versa il grande buio 6000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s 3d]
+Ferb089: chiama 6000
+Fuerta55: folda 
+Crisiriguuuu: folda 
+caduceus369: folda 
+Dimka1991md: folda 
+riko70: fa check 
+*** FLOP *** [Ac 7s 3h]
+riko70: fa check 
+Ferb089: punta 6000
+riko70: folda 
+La puntata non vista (6000) è restituita a Ferb089
+Ferb089 ha raccolto 24000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 24000 | Rake 0 
+Board [Ac 7s 3h]
+Posto 1: Crisiriguuuu ha foldato prima del Flop (non ha puntato)
+Posto 2: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Dimka1991md (small blind) ha foldato prima del Flop
+Posto 4: riko70 (big blind) ha foldato sul Flop
+Posto 5: Ferb089 ha raccolto (24000)
+Posto 6: Fuerta55 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934075010:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IX (3000/6000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:42:08 CET [18/02/2025 18:42:08 ET]
+Tavolo '3858853496 25' 6-max Il bottone è al posto 3
+Posto 1: Crisiriguuuu (88500 chips) 
+Posto 2: caduceus369 (74375 chips) 
+Posto 3: Dimka1991md (73425 chips) 
+Posto 4: riko70 (326258 chips) 
+Posto 5: Ferb089 (311942 chips) 
+Posto 6: Fuerta55 (73250 chips) 
+Crisiriguuuu: mette l'ante 1500
+caduceus369: mette l'ante 1500
+Dimka1991md: mette l'ante 1500
+riko70: mette l'ante 1500
+Ferb089: mette l'ante 1500
+Fuerta55: mette l'ante 1500
+riko70: versa il piccolo buio 3000
+Ferb089: versa il grande buio 6000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2c 4d]
+Fuerta55: folda 
+Crisiriguuuu: folda 
+caduceus369: folda 
+Dimka1991md: folda 
+riko70: folda 
+La puntata non vista (3000) è restituita a Ferb089
+Ferb089 ha raccolto 15000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 15000 | Rake 0 
+Posto 1: Crisiriguuuu ha foldato prima del Flop (non ha puntato)
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: Dimka1991md (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: riko70 (small blind) ha foldato prima del Flop
+Posto 5: Ferb089 (big blind) ha raccolto (15000)
+Posto 6: Fuerta55 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934079166:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello IX (3000/6000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:42:26 CET [18/02/2025 18:42:26 ET]
+Tavolo '3858853496 25' 6-max Il bottone è al posto 4
+Posto 1: Crisiriguuuu (87000 chips) 
+Posto 2: caduceus369 (72875 chips) 
+Posto 3: Dimka1991md (71925 chips) 
+Posto 4: riko70 (321758 chips) 
+Posto 5: Ferb089 (322442 chips) 
+Posto 6: Fuerta55 (71750 chips) 
+Crisiriguuuu: mette l'ante 1500
+caduceus369: mette l'ante 1500
+Dimka1991md: mette l'ante 1500
+riko70: mette l'ante 1500
+Ferb089: mette l'ante 1500
+Fuerta55: mette l'ante 1500
+Ferb089: versa il piccolo buio 3000
+Fuerta55: versa il grande buio 6000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c Jc]
+Crisiriguuuu: chiama 6000
+caduceus369: rilancia 65375 fino a 71375 ed è all-in
+Dimka1991md: folda 
+riko70: folda 
+Ferb089: folda 
+Fuerta55: folda 
+Crisiriguuuu: chiama 65375
+*** FLOP *** [6h 4h Qs]
+*** TURN *** [6h 4h Qs] [5h]
+*** RIVER *** [6h 4h Qs 5h] [Ks]
+*** SHOW DOWN ***
+Crisiriguuuu: mostra [5d Ad] (una coppia di Cinque)
+caduceus369: mostra [7c Jc] (carta alta Re)
+Crisiriguuuu ha raccolto 160750 dal piatto
+caduceus369 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 160750 | Rake 0 
+Board [6h 4h Qs 5h Ks]
+Posto 1: Crisiriguuuu ha mostrato [5d Ad] e ha vinto (160750) con una coppia di Cinque
+Posto 2: caduceus369 ha mostrato [7c Jc] e ha perso con carta alta Re
+Posto 3: Dimka1991md ha foldato prima del Flop (non ha puntato)
+Posto 4: riko70 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: Ferb089 (small blind) ha foldato prima del Flop
+Posto 6: Fuerta55 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254934092390:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello X (3500/7000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:43:22 CET [18/02/2025 18:43:22 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 5
+Posto 1: totonni (173750 chips) 
+Posto 2: fabietti8 (159000 chips) 
+Posto 3: Parolino92 (171291 chips) 
+Posto 4: caduceus369 (90000 chips) 
+Posto 5: tania91 (89000 chips) 
+Posto 6: piatek9999 (5400 chips) è in sit-out
+totonni: mette l'ante 1750
+fabietti8: mette l'ante 1750
+Parolino92: mette l'ante 1750
+caduceus369: mette l'ante 1750
+tania91: mette l'ante 1750
+piatek9999: mette l'ante 1750
+piatek9999: versa il piccolo buio 3500
+totonni: versa il grande buio 7000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6h Th]
+fabietti8: rilancia 7000 fino a 14000
+Parolino92: folda 
+caduceus369: folda 
+tania91: folda 
+piatek9999: folda 
+totonni: folda 
+La puntata non vista (7000) è restituita a fabietti8
+fabietti8 ha raccolto 28000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 28000 | Rake 0 
+Posto 1: totonni (big blind) ha foldato prima del Flop
+Posto 2: fabietti8 ha raccolto (28000)
+Posto 3: Parolino92 ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: tania91 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: piatek9999 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254934094528:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello X (3500/7000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:43:32 CET [18/02/2025 18:43:32 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 6
+Posto 1: totonni (165000 chips) 
+Posto 2: fabietti8 (178250 chips) 
+Posto 3: Parolino92 (169541 chips) 
+Posto 4: caduceus369 (88250 chips) 
+Posto 5: tania91 (87250 chips) 
+Posto 6: piatek9999 (150 chips) è in sit-out
+totonni: mette l'ante 1750
+fabietti8: mette l'ante 1750
+Parolino92: mette l'ante 1750
+caduceus369: mette l'ante 1750
+tania91: mette l'ante 1750
+piatek9999: mette l'ante 150 ed è all-in
+totonni: versa il piccolo buio 3500
+fabietti8: versa il grande buio 7000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5s Kc]
+Parolino92: rilancia 160791 fino a 167791 ed è all-in
+caduceus369: folda 
+tania91: folda 
+piatek9999: folda 
+totonni: folda 
+fabietti8: folda 
+La puntata non vista (160791) è restituita a Parolino92
+Parolino92 ha raccolto 26400 dal piatto
+piatek9999 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 26400 | Rake 0 
+Posto 1: totonni (small blind) ha foldato prima del Flop
+Posto 2: fabietti8 (big blind) ha foldato prima del Flop
+Posto 3: Parolino92 ha raccolto (26400)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: tania91 ha foldato prima del Flop (non ha puntato)
+Posto 6: piatek9999 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254934096606:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello X (3500/7000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:43:41 CET [18/02/2025 18:43:41 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 1
+Posto 1: totonni (159750 chips) 
+Posto 2: fabietti8 (169500 chips) 
+Posto 3: Parolino92 (187191 chips) 
+Posto 4: caduceus369 (86500 chips) 
+Posto 5: tania91 (85500 chips) 
+totonni: mette l'ante 1750
+fabietti8: mette l'ante 1750
+Parolino92: mette l'ante 1750
+caduceus369: mette l'ante 1750
+tania91: mette l'ante 1750
+fabietti8: versa il piccolo buio 3500
+Parolino92: versa il grande buio 7000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc 9c]
+caduceus369: rilancia 77750 fino a 84750 ed è all-in
+tania91: chiama 83750 ed è all-in
+totonni: folda 
+fabietti8: folda 
+Parolino92: folda 
+La puntata non vista (1000) è restituita a caduceus369
+moisesbolo è disconnesso 
+*** FLOP *** [Qc 9h 9s]
+*** TURN *** [Qc 9h 9s] [Ad]
+*** RIVER *** [Qc 9h 9s Ad] [Tc]
+*** SHOW DOWN ***
+caduceus369: mostra [Jc 9c] (un tris di Nove)
+tania91: mostra [Kh Kc] (una doppia coppia, Re e Nove)
+caduceus369 ha raccolto 186750 dal piatto
+tania91 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 186750 | Rake 0 
+Board [Qc 9h 9s Ad Tc]
+Posto 1: totonni (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: fabietti8 (small blind) ha foldato prima del Flop
+Posto 3: Parolino92 (big blind) ha foldato prima del Flop
+Posto 4: caduceus369 ha mostrato [Jc 9c] e ha vinto (186750) con un tris di Nove
+Posto 5: tania91 ha mostrato [Kh Kc] e ha perso con una doppia coppia, Re e Nove
+
+
+
+Mano PokerStars n° 254934102046:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello X (3500/7000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:44:05 CET [18/02/2025 18:44:05 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 2
+Posto 1: totonni (158000 chips) 
+Posto 2: fabietti8 (164250 chips) 
+Posto 3: Parolino92 (178441 chips) 
+Posto 4: caduceus369 (187750 chips) 
+Posto 6: moisesbolo (90000 chips) 
+totonni: mette l'ante 1750
+fabietti8: mette l'ante 1750
+Parolino92: mette l'ante 1750
+caduceus369: mette l'ante 1750
+moisesbolo: mette l'ante 1750
+Parolino92: versa il piccolo buio 3500
+caduceus369: versa il grande buio 7000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qh Qs]
+moisesbolo: rilancia 7000 fino a 14000
+totonni: chiama 14000
+fabietti8: folda 
+Parolino92: folda 
+caduceus369: rilancia 21000 fino a 35000
+moisesbolo: chiama 21000
+totonni: chiama 21000
+*** FLOP *** [7s Js 3h]
+caduceus369: punta 21000
+moisesbolo: chiama 21000
+totonni: folda 
+*** TURN *** [7s Js 3h] [7h]
+caduceus369: punta 130000 ed è all-in
+moisesbolo: chiama 32250 ed è all-in
+La puntata non vista (97750) è restituita a caduceus369
+*** RIVER *** [7s Js 3h 7h] [9d]
+*** SHOW DOWN ***
+caduceus369: mostra [Qh Qs] (una doppia coppia, Donne e Sette)
+moisesbolo: mostra [9h 8h] (una doppia coppia, Nove e Sette)
+caduceus369 ha raccolto 223750 dal piatto
+moisesbolo ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 223750 | Rake 0 
+Board [7s Js 3h 7h 9d]
+Posto 1: totonni ha foldato sul Flop
+Posto 2: fabietti8 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Parolino92 (small blind) ha foldato prima del Flop
+Posto 4: caduceus369 (big blind) ha mostrato [Qh Qs] e ha vinto (223750) con una doppia coppia, Donne e Sette
+Posto 6: moisesbolo ha mostrato [9h 8h] e ha perso con una doppia coppia, Nove e Sette
+
+
+
+Mano PokerStars n° 254934112153:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello X (3500/7000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:44:49 CET [18/02/2025 18:44:49 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 3
+Posto 1: totonni (121250 chips) 
+Posto 2: fabietti8 (162500 chips) 
+Posto 3: Parolino92 (173191 chips) 
+Posto 4: caduceus369 (321500 chips) 
+Posto 5: tania91 (90000 chips) 
+totonni: mette l'ante 1750
+fabietti8: mette l'ante 1750
+Parolino92: mette l'ante 1750
+caduceus369: mette l'ante 1750
+tania91: mette l'ante 1750
+caduceus369: versa il piccolo buio 3500
+tania91: versa il grande buio 7000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Js 4c]
+totonni: folda 
+fabietti8: folda 
+Parolino92: folda 
+caduceus369: folda 
+La puntata non vista (3500) è restituita a tania91
+tania91 ha raccolto 15750 dal piatto
+*** RIASSUNTO ***
+Piatto totale 15750 | Rake 0 
+Posto 1: totonni ha foldato prima del Flop (non ha puntato)
+Posto 2: fabietti8 ha foldato prima del Flop (non ha puntato)
+Posto 3: Parolino92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: tania91 (big blind) ha raccolto (15750)
+
+
+
+Mano PokerStars n° 254934115418:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XI (4000/8000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:45:03 CET [18/02/2025 18:45:03 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 4
+Posto 1: totonni (119500 chips) 
+Posto 2: fabietti8 (160750 chips) 
+Posto 3: Parolino92 (171441 chips) 
+Posto 4: caduceus369 (316250 chips) 
+Posto 5: tania91 (100500 chips) 
+Posto 6: Mirco1924 (170092 chips) 
+totonni: mette l'ante 2000
+fabietti8: mette l'ante 2000
+Parolino92: mette l'ante 2000
+caduceus369: mette l'ante 2000
+tania91: mette l'ante 2000
+Mirco1924: mette l'ante 2000
+tania91: versa il piccolo buio 4000
+Mirco1924: versa il grande buio 8000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qs 2h]
+totonni: rilancia 8000 fino a 16000
+fabietti8: folda 
+Parolino92: folda 
+caduceus369: folda 
+tania91: folda 
+Mirco1924: chiama 8000
+*** FLOP *** [Ah Qh 8h]
+Mirco1924: fa check 
+totonni: punta 8000
+Mirco1924: folda 
+La puntata non vista (8000) è restituita a totonni
+totonni ha raccolto 48000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 48000 | Rake 0 
+Board [Ah Qh 8h]
+Posto 1: totonni ha raccolto (48000)
+Posto 2: fabietti8 ha foldato prima del Flop (non ha puntato)
+Posto 3: Parolino92 ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: tania91 (small blind) ha foldato prima del Flop
+Posto 6: Mirco1924 (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254934122454:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XI (4000/8000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:45:33 CET [18/02/2025 18:45:33 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 5
+Posto 1: totonni (149500 chips) 
+Posto 2: fabietti8 (158750 chips) 
+Posto 3: Parolino92 (169441 chips) 
+Posto 4: caduceus369 (314250 chips) 
+Posto 5: tania91 (94500 chips) 
+Posto 6: Mirco1924 (152092 chips) 
+totonni: mette l'ante 2000
+fabietti8: mette l'ante 2000
+Parolino92: mette l'ante 2000
+caduceus369: mette l'ante 2000
+tania91: mette l'ante 2000
+Mirco1924: mette l'ante 2000
+Mirco1924: versa il piccolo buio 4000
+totonni: versa il grande buio 8000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks Jd]
+fabietti8: chiama 8000
+Parolino92: chiama 8000
+caduceus369: rilancia 32000 fino a 40000
+tania91: folda 
+Mirco1924: folda 
+totonni: folda 
+fabietti8: folda 
+Parolino92: chiama 32000
+*** FLOP *** [9c 9s 3h]
+Parolino92: fa check 
+caduceus369: punta 32000
+Parolino92: folda 
+La puntata non vista (32000) è restituita a caduceus369
+caduceus369 ha raccolto 112000 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 112000 | Rake 0 
+Board [9c 9s 3h]
+Posto 1: totonni (big blind) ha foldato prima del Flop
+Posto 2: fabietti8 ha foldato prima del Flop
+Posto 3: Parolino92 ha foldato sul Flop
+Posto 4: caduceus369 ha raccolto (112000)
+Posto 5: tania91 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: Mirco1924 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254934131830:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XI (4000/8000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:46:14 CET [18/02/2025 18:46:14 ET]
+Tavolo '3858853496 1' 6-max Il bottone è al posto 6
+Posto 1: totonni (139500 chips) 
+Posto 2: fabietti8 (148750 chips) 
+Posto 3: Parolino92 (127441 chips) 
+Posto 4: caduceus369 (384250 chips) 
+Posto 5: tania91 (92500 chips) 
+Posto 6: Mirco1924 (146092 chips) 
+totonni: mette l'ante 2000
+fabietti8: mette l'ante 2000
+Parolino92: mette l'ante 2000
+caduceus369: mette l'ante 2000
+tania91: mette l'ante 2000
+Mirco1924: mette l'ante 2000
+totonni: versa il piccolo buio 4000
+fabietti8: versa il grande buio 8000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s 3d]
+Parolino92: folda 
+caduceus369: folda 
+tania91: folda 
+Mirco1924: chiama 8000
+totonni: folda 
+fabietti8: rilancia 138750 fino a 146750 ed è all-in
+Mirco1924: folda 
+La puntata non vista (138750) è restituita a fabietti8
+fabietti8 ha raccolto 32000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 32000 | Rake 0 
+Posto 1: totonni (small blind) ha foldato prima del Flop
+Posto 2: fabietti8 (big blind) ha raccolto (32000)
+Posto 3: Parolino92 ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: tania91 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mirco1924 (bottone) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254934139418:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XI (4000/8000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:46:47 CET [18/02/2025 18:46:47 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 6
+Posto 2: azzoK367 (129534 chips) 
+Posto 3: danielegreco3 (167750 chips) 
+Posto 4: caduceus369 (382250 chips) 
+Posto 5: locadadi94 (72500 chips) 
+Posto 6: CosenzaS (736275 chips) 
+azzoK367: mette l'ante 2000
+danielegreco3: mette l'ante 2000
+caduceus369: mette l'ante 2000
+locadadi94: mette l'ante 2000
+CosenzaS: mette l'ante 2000
+azzoK367: versa il piccolo buio 4000
+danielegreco3: versa il grande buio 8000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8d Th]
+caduceus369: folda 
+locadadi94: folda 
+CosenzaS: chiama 8000
+azzoK367: chiama 4000
+danielegreco3: fa check 
+*** FLOP *** [7s Qc 5d]
+azzoK367: fa check 
+danielegreco3: fa check 
+CosenzaS: punta 8000
+azzoK367: chiama 8000
+danielegreco3: folda 
+*** TURN *** [7s Qc 5d] [3d]
+azzoK367: fa check 
+CosenzaS: punta 16000
+azzoK367: chiama 16000
+*** RIVER *** [7s Qc 5d 3d] [Kd]
+azzoK367: punta 95534 ed è all-in
+CosenzaS: chiama 95534
+*** SHOW DOWN ***
+azzoK367: mostra [As 8s] (carta alta Asso)
+CosenzaS: mostra [Qh 7h] (una doppia coppia, Donne e Sette)
+CosenzaS ha raccolto 273068 dal piatto
+azzoK367 ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 273068 | Rake 0 
+Board [7s Qc 5d 3d Kd]
+Posto 2: azzoK367 (small blind) ha mostrato [As 8s] e ha perso con carta alta Asso
+Posto 3: danielegreco3 (big blind) ha foldato sul Flop
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: locadadi94 ha foldato prima del Flop (non ha puntato)
+Posto 6: CosenzaS (bottone) ha mostrato [Qh 7h] e ha vinto (273068) con una doppia coppia, Donne e Sette
+
+
+
+Mano PokerStars n° 254934155656:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XII (4500/9000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:47:58 CET [18/02/2025 18:47:58 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 3
+Posto 1: red19031966 (90000 chips) 
+Posto 2: Fabricalef (90000 chips) 
+Posto 3: danielegreco3 (157750 chips) 
+Posto 4: caduceus369 (380250 chips) 
+Posto 5: locadadi94 (70500 chips) 
+Posto 6: CosenzaS (879809 chips) 
+red19031966: mette l'ante 2250
+Fabricalef: mette l'ante 2250
+danielegreco3: mette l'ante 2250
+caduceus369: mette l'ante 2250
+locadadi94: mette l'ante 2250
+CosenzaS: mette l'ante 2250
+caduceus369: versa il piccolo buio 4500
+locadadi94: versa il grande buio 9000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts 9h]
+CosenzaS: chiama 9000
+red19031966: folda 
+Fabricalef: folda 
+danielegreco3: folda 
+caduceus369: folda 
+locadadi94: fa check 
+*** FLOP *** [4s 7h Tc]
+locadadi94: punta 9000
+CosenzaS: chiama 9000
+*** TURN *** [4s 7h Tc] [Ad]
+locadadi94: punta 9000
+CosenzaS: folda 
+La puntata non vista (9000) è restituita a locadadi94
+locadadi94 ha raccolto 54000 dal piatto
+*** RIASSUNTO ***
+Piatto totale 54000 | Rake 0 
+Board [4s 7h Tc Ad]
+Posto 1: red19031966 ha foldato prima del Flop (non ha puntato)
+Posto 2: Fabricalef ha foldato prima del Flop (non ha puntato)
+Posto 3: danielegreco3 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: locadadi94 (big blind) ha raccolto (54000)
+Posto 6: CosenzaS ha foldato sul Turn
+
+
+
+Mano PokerStars n° 254934161116:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XII (4500/9000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:48:23 CET [18/02/2025 18:48:23 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 4
+Posto 1: red19031966 (87750 chips) 
+Posto 2: Fabricalef (87750 chips) 
+Posto 3: danielegreco3 (155500 chips) 
+Posto 4: caduceus369 (373500 chips) 
+Posto 5: locadadi94 (104250 chips) 
+Posto 6: CosenzaS (859559 chips) 
+red19031966: mette l'ante 2250
+Fabricalef: mette l'ante 2250
+danielegreco3: mette l'ante 2250
+caduceus369: mette l'ante 2250
+locadadi94: mette l'ante 2250
+CosenzaS: mette l'ante 2250
+locadadi94: versa il piccolo buio 4500
+CosenzaS: versa il grande buio 9000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts Qs]
+red19031966: chiama 9000
+Fabricalef: folda 
+danielegreco3: folda 
+caduceus369: chiama 9000
+locadadi94: chiama 4500
+CosenzaS: fa check 
+*** FLOP *** [9d 6s Qc]
+locadadi94: fa check 
+CosenzaS: fa check 
+red19031966: fa check 
+caduceus369: punta 49500
+locadadi94: folda 
+CosenzaS: folda 
+red19031966: folda 
+La puntata non vista (49500) è restituita a caduceus369
+caduceus369 ha raccolto 49500 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 49500 | Rake 0 
+Board [9d 6s Qc]
+Posto 1: red19031966 ha foldato sul Flop
+Posto 2: Fabricalef ha foldato prima del Flop (non ha puntato)
+Posto 3: danielegreco3 ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha raccolto (49500)
+Posto 5: locadadi94 (small blind) ha foldato sul Flop
+Posto 6: CosenzaS (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254934169237:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XIII (5000/10000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:48:59 CET [18/02/2025 18:48:59 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 5
+Posto 1: red19031966 (76500 chips) 
+Posto 2: Fabricalef (85500 chips) 
+Posto 3: danielegreco3 (153250 chips) 
+Posto 4: caduceus369 (411750 chips) 
+Posto 5: locadadi94 (93000 chips) 
+Posto 6: CosenzaS (848309 chips) 
+red19031966: mette l'ante 2500
+Fabricalef: mette l'ante 2500
+danielegreco3: mette l'ante 2500
+caduceus369: mette l'ante 2500
+locadadi94: mette l'ante 2500
+CosenzaS: mette l'ante 2500
+CosenzaS: versa il piccolo buio 5000
+red19031966: versa il grande buio 10000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4c 9s]
+Fabricalef: rilancia 73000 fino a 83000 ed è all-in
+danielegreco3: rilancia 67750 fino a 150750 ed è all-in
+caduceus369: folda 
+locadadi94: folda 
+CosenzaS: folda 
+red19031966: folda 
+La puntata non vista (67750) è restituita a danielegreco3
+*** FLOP *** [Qs 5d 3h]
+*** TURN *** [Qs 5d 3h] [9d]
+*** RIVER *** [Qs 5d 3h 9d] [Ah]
+*** SHOW DOWN ***
+Fabricalef: mostra [Jd Qd] (una coppia di Donne)
+danielegreco3: mostra [Kc Ks] (una coppia di Re)
+danielegreco3 ha raccolto 196000 dal piatto
+Fabricalef ha concluso il torneo
+*** RIASSUNTO ***
+Piatto totale 196000 | Rake 0 
+Board [Qs 5d 3h 9d Ah]
+Posto 1: red19031966 (big blind) ha foldato prima del Flop
+Posto 2: Fabricalef ha mostrato [Jd Qd] e ha perso con una coppia di Donne
+Posto 3: danielegreco3 ha mostrato [Kc Ks] e ha vinto (196000) con una coppia di Re
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: locadadi94 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: CosenzaS (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254934179233:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XIII (5000/10000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:49:43 CET [18/02/2025 18:49:43 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 6
+Posto 1: red19031966 (64000 chips) 
+Posto 2: Lollis993 (529760 chips) 
+Posto 3: danielegreco3 (263750 chips) 
+Posto 4: caduceus369 (409250 chips) 
+Posto 5: locadadi94 (90500 chips) 
+Posto 6: CosenzaS (840809 chips) 
+red19031966: mette l'ante 2500
+Lollis993: mette l'ante 2500
+danielegreco3: mette l'ante 2500
+caduceus369: mette l'ante 2500
+locadadi94: mette l'ante 2500
+CosenzaS: mette l'ante 2500
+red19031966: versa il piccolo buio 5000
+Lollis993: versa il grande buio 10000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8c 7c]
+danielegreco3: rilancia 20000 fino a 30000
+caduceus369: folda 
+locadadi94: folda 
+CosenzaS: chiama 30000
+red19031966: folda 
+Lollis993: folda 
+*** FLOP *** [7d Qc 4c]
+danielegreco3: punta 45000
+CosenzaS: chiama 45000
+*** TURN *** [7d Qc 4c] [4h]
+danielegreco3: punta 90000
+CosenzaS: folda 
+La puntata non vista (90000) è restituita a danielegreco3
+danielegreco3 ha raccolto 180000 dal piatto
+danielegreco3: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale 180000 | Rake 0 
+Board [7d Qc 4c 4h]
+Posto 1: red19031966 (small blind) ha foldato prima del Flop
+Posto 2: Lollis993 (big blind) ha foldato prima del Flop
+Posto 3: danielegreco3 ha raccolto (180000)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: locadadi94 ha foldato prima del Flop (non ha puntato)
+Posto 6: CosenzaS (bottone) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 254934187317:  Torneo #3858853496, €0.90+€0.90+€0.20 EUR Hold'em No Limit - Livello XIII (5000/10000) [ID ADM: M61D91230C75A6DW] - 19/02/2025 0:50:19 CET [18/02/2025 18:50:19 ET]
+Tavolo '3858853496 3' 6-max Il bottone è al posto 1
+Posto 1: red19031966 (56500 chips) 
+Posto 2: Lollis993 (517260 chips) 
+Posto 3: danielegreco3 (366250 chips) 
+Posto 4: caduceus369 (406750 chips) 
+Posto 5: locadadi94 (88000 chips) 
+Posto 6: CosenzaS (763309 chips) 
+red19031966: mette l'ante 2500
+Lollis993: mette l'ante 2500
+danielegreco3: mette l'ante 2500
+caduceus369: mette l'ante 2500
+locadadi94: mette l'ante 2500
+CosenzaS: mette l'ante 2500
+Lollis993: versa il piccolo buio 5000
+danielegreco3: versa il grande buio 10000
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8d 7d]
+caduceus369: rilancia 10000 fino a 20000
+locadadi94: folda 
+CosenzaS: chiama 20000
+red19031966: rilancia 34000 fino a 54000 ed è all-in
+Lollis993: folda 
+danielegreco3: folda 
+caduceus369: chiama 34000
+CosenzaS: chiama 34000
+*** FLOP *** [2s 3h 6d]
+caduceus369: fa check 
+CosenzaS: punta 96000
+caduceus369: rilancia 254250 fino a 350250 ed è all-in
+CosenzaS: chiama 254250
+*** TURN *** [2s 3h 6d] [Jh]
+*** RIVER *** [2s 3h 6d Jh] [4h]
+*** SHOW DOWN ***
+caduceus369: mostra [8d 7d] (carta alta Jack)
+CosenzaS: mostra [7h 6h] (un colore al Jack)
+CosenzaS ha raccolto 700500 dal secondario piatto
+red19031966: mostra [Qh Ah] (un colore al Asso)
+red19031966 ha raccolto 192000 dal principale piatto
+caduceus369 ha concluso il torneo al 156° posto
+*** RIASSUNTO ***
+Piatto totale 892500 Principale piatto 192000. Secondario piatto 700500. | Rake 0 
+Board [2s 3h 6d Jh 4h]
+Posto 1: red19031966 (bottone) ha mostrato [Qh Ah] e ha vinto (192000) con un colore al Asso
+Posto 2: Lollis993 (small blind) ha foldato prima del Flop
+Posto 3: danielegreco3 (big blind) ha foldato prima del Flop
+Posto 4: caduceus369 ha mostrato [8d 7d] e ha perso con carta alta Jack
+Posto 5: locadadi94 ha foldato prima del Flop (non ha puntato)
+Posto 6: CosenzaS ha mostrato [7h 6h] e ha vinto (700500) con un colore al Jack
+
+
+

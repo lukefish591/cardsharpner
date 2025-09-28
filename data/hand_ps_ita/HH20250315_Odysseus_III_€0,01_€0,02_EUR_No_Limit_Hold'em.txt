@@ -1,0 +1,2969 @@
+﻿Mano PokerStars n° 255302666057:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:02:10 CET [15/03/2025 16:02:10 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€2 chips) 
+Posto 2: Micaceo11 (€1.28 chips) 
+Posto 6: falgio (€2 chips) 
+caduceus369: versa il piccolo buio €0.01
+Micaceo11: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac 6c]
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+Micaceo11 ha esaurito il tempo
+Micaceo11: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.04 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.04 | Rake €0 
+Posto 1: caduceus369 (small blind) ha raccolto (€0.04)
+Posto 2: Micaceo11 (big blind) ha foldato prima del Flop
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302673373:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:02:37 CET [15/03/2025 16:02:37 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 2: Micaceo11 (€1.26 chips) è in sit-out
+Posto 1: caduceus369 (€2.02 chips) 
+Posto 6: falgio (€2 chips) 
+caduceus369: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Js Ah]
+caduceus369: rilancia €0.04 fino a €0.06
+falgio: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.04 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.04 | Rake €0 
+Posto 2: Micaceo11
+Posto 1: caduceus369 (bottone) (small blind) ha raccolto (€0.04)
+Posto 6: falgio (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255302676283:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:02:49 CET [15/03/2025 16:02:49 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 2: Micaceo11 (€1.26 chips) è in sit-out
+Posto 1: caduceus369 (€2.04 chips) 
+Posto 6: falgio (€1.98 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac 5c]
+falgio: chiama €0.01
+caduceus369: rilancia €0.04 fino a €0.06
+falgio: chiama €0.04
+*** FLOP *** [Js 2d 8s]
+caduceus369: fa check 
+falgio: fa check 
+*** TURN *** [Js 2d 8s] [7c]
+caduceus369: punta €0.04
+Cicciovicenza24 si siede al tavolo al posto #3 
+falgio: chiama €0.04
+*** RIVER *** [Js 2d 8s 7c] [2h]
+shapiro102 si siede al tavolo al posto #4 
+caduceus369: punta €0.14
+falgio: chiama €0.14
+*** SHOW DOWN ***
+caduceus369: mostra [Ac 5c] (una coppia di Due)
+falgio: mostra [4c Jc] (una doppia coppia, Jack e Due)
+falgio ha raccolto €0.46 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.48 | Rake €0.02 
+Board [Js 2d 8s 7c 2h]
+Posto 2: Micaceo11
+Posto 1: caduceus369 (big blind) ha mostrato [Ac 5c] e ha perso con una coppia di Due
+Posto 6: falgio (bottone) (small blind) ha mostrato [4c Jc] e ha vinto (€0.46) con una doppia coppia, Jack e Due
+
+
+
+Mano PokerStars n° 255302695010:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:03:57 CET [15/03/2025 16:03:57 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: Cicciovicenza24 (€2 chips) è in sit-out
+Posto 4: shapiro102 (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€1.80 chips) 
+Posto 2: Micaceo11 (€1.26 chips) 
+Posto 6: falgio (€2.20 chips) 
+caduceus369: versa il piccolo buio €0.01
+Micaceo11: versa il grande buio €0.02
+Cicciovicenza24: va in sit-out 
+shapiro102: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Js Ad]
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: rilancia €0.06 fino a €0.10
+Micaceo11: chiama €0.08
+falgio: folda 
+*** FLOP *** [2h Ac 9h]
+caduceus369: fa check 
+Micaceo11: fa check 
+*** TURN *** [2h Ac 9h] [Qd]
+Paoloskyi si siede al tavolo al posto #5 
+caduceus369: fa check 
+Micaceo11: fa check 
+*** RIVER *** [2h Ac 9h Qd] [As]
+caduceus369: punta €0.04
+Micaceo11: chiama €0.04
+*** SHOW DOWN ***
+caduceus369: mostra [Js Ad] (un tris di Assi)
+Micaceo11: non mostra le carte 
+caduceus369 ha raccolto €0.31 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.32 | Rake €0.01 
+Board [2h Ac 9h Qd As]
+Posto 3: Cicciovicenza24
+Posto 4: shapiro102
+Posto 1: caduceus369 (small blind) ha mostrato [Js Ad] e ha vinto (€0.31) con un tris di Assi
+Posto 2: Micaceo11 (big blind) non ha mostrato le carte [3c 2c]
+Posto 6: falgio (bottone) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255302705719:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:04:36 CET [15/03/2025 16:04:36 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 4: shapiro102 (€1.20 chips) è in sit-out
+Posto 5: Paoloskyi (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€1.97 chips) 
+Posto 2: Micaceo11 (€1.12 chips) 
+Posto 3: Cicciovicenza24 (€2 chips) 
+Posto 6: falgio (€2.16 chips) 
+Micaceo11: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+shapiro102: va in sit-out 
+Paoloskyi: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4h Kd]
+falgio: rilancia €0.03 fino a €0.05
+caduceus369: folda 
+Micaceo11: folda 
+Cicciovicenza24: chiama €0.03
+*** FLOP *** [Js 5h Qd]
+Micaceo11 si alza dal tavolo
+Cicciovicenza24: fa check 
+falgio: punta €0.04
+Cicciovicenza24: chiama €0.04
+*** TURN *** [Js 5h Qd] [Jc]
+Cicciovicenza24: fa check 
+falgio: fa check 
+*** RIVER *** [Js 5h Qd Jc] [9c]
+Cicciovicenza24: punta €0.18
+falgio: folda 
+La puntata non vista (€0.18) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.18 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.19 | Rake €0.01 
+Board [Js 5h Qd Jc 9c]
+Posto 4: shapiro102
+Posto 5: Paoloskyi
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: Micaceo11 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha raccolto (€0.18)
+Posto 6: falgio ha foldato sul River
+
+
+
+Mano PokerStars n° 255302717256:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:05:16 CET [15/03/2025 16:05:16 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 4: shapiro102 (€1.20 chips) è in sit-out
+Posto 5: Paoloskyi (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€1.97 chips) 
+Posto 3: Cicciovicenza24 (€2.09 chips) 
+Posto 6: falgio (€2.07 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts 3s]
+Cicciovicenza24: chiama €0.02
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [Kh Ac 7h]
+falgio: fa check 
+caduceus369: fa check 
+Cicciovicenza24: punta €0.06
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.06) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.06 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [Kh Ac 7h]
+Posto 4: shapiro102
+Posto 5: Paoloskyi
+Posto 1: caduceus369 (big blind) ha foldato sul Flop
+Posto 3: Cicciovicenza24 (bottone) ha raccolto (€0.06)
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255302726910:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:05:51 CET [15/03/2025 16:05:51 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 4: shapiro102 (€1.20 chips) è in sit-out
+Posto 5: Paoloskyi (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€1.95 chips) 
+Posto 3: Cicciovicenza24 (€2.13 chips) 
+Posto 6: falgio (€2.05 chips) 
+caduceus369: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+shapiro102: va in sit-out 
+Paoloskyi: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7s 7d]
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: rilancia €0.06 fino a €0.10
+Cicciovicenza24: chiama €0.08
+falgio: chiama €0.06
+*** FLOP *** [Js Ac 4d]
+caduceus369: fa check 
+Cicciovicenza24: fa check 
+falgio: fa check 
+*** TURN *** [Js Ac 4d] [4h]
+AgiR6 si siede al tavolo al posto #2 
+caduceus369: fa check 
+Cicciovicenza24: punta €0.29
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.29) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.29 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.30 | Rake €0.01 
+Board [Js Ac 4d 4h]
+Posto 4: shapiro102
+Posto 5: Paoloskyi
+Posto 1: caduceus369 (small blind) ha foldato sul Turn
+Posto 3: Cicciovicenza24 (big blind) ha raccolto (€0.29)
+Posto 6: falgio (bottone) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255302795515:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:09:57 CET [15/03/2025 16:09:57 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 1: caduceus369 (€1.85 chips) 
+Posto 2: AgiR6 (€2.24 chips) 
+Posto 3: Cicciovicenza24 (€0.95 chips) 
+Posto 4: shapiro102 (€1.13 chips) 
+Posto 5: Paoloskyi (€2.27 chips) 
+Posto 6: falgio (€1.95 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 4h]
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+Paoloskyi: chiama €0.02
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [5h Ac 2s]
+falgio: fa check 
+caduceus369: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+Paoloskyi: fa check 
+*** TURN *** [5h Ac 2s] [8d]
+falgio: fa check 
+caduceus369: fa check 
+Cicciovicenza24: punta €0.10
+shapiro102: folda 
+Paoloskyi: folda 
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.10) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.10 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Board [5h Ac 2s 8d]
+Posto 1: caduceus369 (big blind) ha foldato sul Turn
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha raccolto (€0.10)
+Posto 4: shapiro102 ha foldato sul Turn
+Posto 5: Paoloskyi (bottone) ha foldato sul Turn
+Posto 6: falgio (small blind) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255302811948:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:10:56 CET [15/03/2025 16:10:56 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€1.83 chips) 
+Posto 2: AgiR6 (€2.24 chips) 
+Posto 3: Cicciovicenza24 (€1.03 chips) 
+Posto 4: shapiro102 (€1.11 chips) 
+Posto 5: Paoloskyi (€2.25 chips) 
+Posto 6: falgio (€1.93 chips) 
+caduceus369: versa il piccolo buio €0.01
+AgiR6: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 5s]
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+Paoloskyi: chiama €0.02
+falgio: folda 
+caduceus369: folda 
+AgiR6: fa check 
+*** FLOP *** [7s 8h 2c]
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+Paoloskyi: fa check 
+*** TURN *** [7s 8h 2c] [6s]
+AgiR6: fa check 
+Cicciovicenza24: punta €0.09
+shapiro102: folda 
+Paoloskyi: folda 
+AgiR6: folda 
+La puntata non vista (€0.09) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.09 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.09 | Rake €0 
+Board [7s 8h 2c 6s]
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: AgiR6 (big blind) ha foldato sul Turn
+Posto 3: Cicciovicenza24 ha raccolto (€0.09)
+Posto 4: shapiro102 ha foldato sul Turn
+Posto 5: Paoloskyi ha foldato sul Turn
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302821751:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:11:32 CET [15/03/2025 16:11:32 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€1.82 chips) 
+Posto 2: AgiR6 (€2.22 chips) 
+Posto 3: Cicciovicenza24 (€1.10 chips) 
+Posto 4: shapiro102 (€1.09 chips) 
+Posto 5: Paoloskyi (€2.23 chips) 
+Posto 6: falgio (€1.93 chips) 
+AgiR6: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4h Th]
+shapiro102: folda 
+Paoloskyi: folda 
+falgio: rilancia €0.03 fino a €0.05
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: chiama €0.03
+*** FLOP *** [9s 2c Kc]
+Cicciovicenza24: fa check 
+falgio: punta €0.06
+Cicciovicenza24: chiama €0.06
+*** TURN *** [9s 2c Kc] [Qs]
+Cicciovicenza24: fa check 
+falgio: punta €0.12
+Cicciovicenza24: folda 
+La puntata non vista (€0.12) è restituita a falgio
+falgio ha raccolto €0.22 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.23 | Rake €0.01 
+Board [9s 2c Kc Qs]
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha foldato sul Turn
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: Paoloskyi ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha raccolto (€0.22)
+
+
+
+Mano PokerStars n° 255302833563:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:12:14 CET [15/03/2025 16:12:14 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 1: caduceus369 (€1.82 chips) 
+Posto 2: AgiR6 (€2.21 chips) 
+Posto 3: Cicciovicenza24 (€0.99 chips) 
+Posto 4: shapiro102 (€1.09 chips) 
+Posto 5: Paoloskyi (€2.23 chips) 
+Posto 6: falgio (€2.04 chips) 
+Cicciovicenza24: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th Tc]
+Paoloskyi: folda 
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+AgiR6: folda 
+Cicciovicenza24: folda 
+shapiro102: chiama €0.04
+*** FLOP *** [Jh Ac As]
+shapiro102: fa check 
+caduceus369: punta €0.06
+shapiro102: chiama €0.06
+*** TURN *** [Jh Ac As] [2s]
+shapiro102: fa check 
+caduceus369: fa check 
+*** RIVER *** [Jh Ac As 2s] [9d]
+shapiro102: fa check 
+caduceus369: fa check 
+*** SHOW DOWN ***
+shapiro102: mostra [7d 7s] (una doppia coppia, Assi e Sette)
+caduceus369: mostra [Th Tc] (una doppia coppia, Assi e Dieci)
+caduceus369 ha raccolto €0.24 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0.01 
+Board [Jh Ac As 2s 9d]
+Posto 1: caduceus369 ha mostrato [Th Tc] e ha vinto (€0.24) con una doppia coppia, Assi e Dieci
+Posto 2: AgiR6 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (small blind) ha foldato prima del Flop
+Posto 4: shapiro102 (big blind) ha mostrato [7d 7s] e ha perso con una doppia coppia, Assi e Sette
+Posto 5: Paoloskyi ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302848300:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:13:08 CET [15/03/2025 16:13:08 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 1: caduceus369 (€1.94 chips) 
+Posto 2: AgiR6 (€2.21 chips) 
+Posto 3: Cicciovicenza24 (€0.98 chips) 
+Posto 4: shapiro102 (€0.97 chips) 
+Posto 5: Paoloskyi (€2.23 chips) 
+Posto 6: falgio (€2.04 chips) 
+shapiro102: versa il piccolo buio €0.01
+Paoloskyi: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kc 3c]
+falgio: folda 
+caduceus369: folda 
+AgiR6: rilancia €0.04 fino a €0.06
+Cicciovicenza24: chiama €0.06
+shapiro102: chiama €0.05
+Paoloskyi: folda 
+*** FLOP *** [2d 2s Tc]
+shapiro102: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+*** TURN *** [2d 2s Tc] [Th]
+shapiro102: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+*** RIVER *** [2d 2s Tc Th] [6h]
+shapiro102: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+*** SHOW DOWN ***
+shapiro102: mostra [9d Jh] (una doppia coppia, Dieci e Due)
+AgiR6: mostra [7h 7d] (una doppia coppia, Dieci e Sette)
+Cicciovicenza24: non mostra le carte 
+AgiR6 ha raccolto €0.19 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0.01 
+Board [2d 2s Tc Th 6h]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha mostrato [7h 7d] e ha vinto (€0.19) con una doppia coppia, Dieci e Sette
+Posto 3: Cicciovicenza24 (bottone) non ha mostrato le carte [Kh 8s]
+Posto 4: shapiro102 (small blind) ha mostrato [9d Jh] e ha perso con una doppia coppia, Dieci e Due
+Posto 5: Paoloskyi (big blind) ha foldato prima del Flop
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302862060:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:13:58 CET [15/03/2025 16:13:58 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 1: caduceus369 (€1.94 chips) 
+Posto 2: AgiR6 (€2.34 chips) 
+Posto 3: Cicciovicenza24 (€0.92 chips) 
+Posto 4: shapiro102 (€0.91 chips) 
+Posto 5: Paoloskyi (€2.21 chips) 
+Posto 6: falgio (€2.04 chips) 
+Paoloskyi: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4h 3h]
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+Paoloskyi: folda 
+falgio: fa check 
+*** FLOP *** [Ks 3c 9h]
+falgio: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** TURN *** [Ks 3c 9h] [Jd]
+falgio: fa check 
+Cicciovicenza24: fa check 
+shapiro102: punta €0.02
+falgio: folda 
+Cicciovicenza24: chiama €0.02
+*** RIVER *** [Ks 3c 9h Jd] [Ah]
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** SHOW DOWN ***
+Cicciovicenza24: mostra [Qc 7h] (carta alta Asso)
+shapiro102: mostra [Js Tc] (una coppia di Jack)
+shapiro102 ha raccolto €0.11 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.11 | Rake €0 
+Board [Ks 3c 9h Jd Ah]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha mostrato [Qc 7h] e ha perso con carta alta Asso
+Posto 4: shapiro102 (bottone) ha mostrato [Js Tc] e ha vinto (€0.11) con una coppia di Jack
+Posto 5: Paoloskyi (small blind) ha foldato prima del Flop
+Posto 6: falgio (big blind) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255302876743:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:14:51 CET [15/03/2025 16:14:51 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 1: caduceus369 (€1.94 chips) 
+Posto 2: AgiR6 (€2.34 chips) 
+Posto 3: Cicciovicenza24 (€0.88 chips) 
+Posto 4: shapiro102 (€0.98 chips) 
+Posto 5: Paoloskyi (€2.20 chips) 
+Posto 6: falgio (€2.02 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d 2c]
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+Paoloskyi: chiama €0.02
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [Ts Td 9s]
+falgio: fa check 
+caduceus369: fa check 
+Cicciovicenza24: fa check 
+shapiro102: punta €0.05
+Paoloskyi: folda 
+falgio: folda 
+caduceus369: folda 
+Cicciovicenza24: folda 
+La puntata non vista (€0.05) è restituita a shapiro102
+shapiro102 ha raccolto €0.10 dal piatto
+shapiro102: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Board [Ts Td 9s]
+Posto 1: caduceus369 (big blind) ha foldato sul Flop
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha foldato sul Flop
+Posto 4: shapiro102 ha raccolto (€0.10)
+Posto 5: Paoloskyi (bottone) ha foldato sul Flop
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255302891078:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:15:42 CET [15/03/2025 16:15:42 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€1.92 chips) 
+Posto 2: AgiR6 (€2.34 chips) 
+Posto 3: Cicciovicenza24 (€0.86 chips) 
+Posto 4: shapiro102 (€1.06 chips) 
+Posto 5: Paoloskyi (€2.18 chips) 
+Posto 6: falgio (€2 chips) 
+caduceus369: versa il piccolo buio €0.01
+AgiR6: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As 9c]
+Cicciovicenza24: chiama €0.02
+shapiro102: folda 
+Paoloskyi: folda 
+falgio: folda 
+caduceus369: chiama €0.01
+AgiR6: fa check 
+*** FLOP *** [Ah Js 8d]
+caduceus369: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+*** TURN *** [Ah Js 8d] [9h]
+caduceus369: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+*** RIVER *** [Ah Js 8d 9h] [8h]
+caduceus369: punta €0.04
+AgiR6: folda 
+Cicciovicenza24: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.06 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [Ah Js 8d 9h 8h]
+Posto 1: caduceus369 (small blind) ha raccolto (€0.06)
+Posto 2: AgiR6 (big blind) ha foldato sul River
+Posto 3: Cicciovicenza24 ha foldato sul River
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: Paoloskyi ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302902139:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:16:23 CET [15/03/2025 16:16:23 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€1.96 chips) 
+Posto 2: AgiR6 (€2.32 chips) 
+Posto 3: Cicciovicenza24 (€0.84 chips) 
+Posto 4: shapiro102 (€1.06 chips) 
+Posto 5: Paoloskyi (€2.18 chips) 
+Posto 6: falgio (€2 chips) 
+AgiR6: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8c Kd]
+shapiro102: folda 
+Paoloskyi: folda 
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: chiama €0.04
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+*** FLOP *** [Qh Qs Ac]
+Cicciovicenza24: fa check 
+falgio: fa check 
+caduceus369: fa check 
+*** TURN *** [Qh Qs Ac] [4c]
+Cicciovicenza24: fa check 
+falgio: fa check 
+caduceus369: punta €0.04
+Cicciovicenza24: chiama €0.04
+falgio: folda 
+*** RIVER *** [Qh Qs Ac 4c] [Ts]
+Cicciovicenza24: fa check 
+caduceus369: punta €0.10
+Cicciovicenza24: folda 
+La puntata non vista (€0.10) è restituita a caduceus369
+caduceus369 ha raccolto €0.20 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.21 | Rake €0.01 
+Board [Qh Qs Ac 4c Ts]
+Posto 1: caduceus369 (bottone) ha raccolto (€0.20)
+Posto 2: AgiR6 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha foldato sul River
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: Paoloskyi ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255302915863:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:17:12 CET [15/03/2025 16:17:12 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 1: caduceus369 (€2.08 chips) 
+Posto 2: AgiR6 (€2.31 chips) 
+Posto 3: Cicciovicenza24 (€0.76 chips) 
+Posto 4: shapiro102 (€1.06 chips) 
+Posto 5: Paoloskyi (€2.18 chips) 
+Posto 6: falgio (€1.96 chips) 
+Cicciovicenza24: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5c 6h]
+Paoloskyi: folda 
+falgio: folda 
+Paoloskyi si alza dal tavolo
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: chiama €0.01
+shapiro102: fa check 
+*** FLOP *** [8s Js Qs]
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** TURN *** [8s Js Qs] [3h]
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** RIVER *** [8s Js Qs 3h] [6s]
+Cicciovicenza24: punta €0.04
+shapiro102: folda 
+La puntata non vista (€0.04) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.04 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.04 | Rake €0 
+Board [8s Js Qs 3h 6s]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (small blind) ha raccolto (€0.04)
+Posto 4: shapiro102 (big blind) ha foldato sul River
+Posto 5: Paoloskyi ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302925745:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:17:48 CET [15/03/2025 16:17:48 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 1: caduceus369 (€2.08 chips) 
+Posto 2: AgiR6 (€2.31 chips) 
+Posto 3: Cicciovicenza24 (€0.78 chips) 
+Posto 4: shapiro102 (€1.04 chips) 
+Posto 6: falgio (€1.96 chips) 
+shapiro102: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d 5d]
+caduceus369: folda 
+AgiR6: folda 
+GlebGN7418 si siede al tavolo al posto #5 
+Cicciovicenza24: rilancia €0.02 fino a €0.04
+shapiro102: folda 
+falgio: chiama €0.02
+*** FLOP *** [2d Kc 7h]
+falgio: fa check 
+Cicciovicenza24: punta €0.09
+falgio: folda 
+La puntata non vista (€0.09) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.09 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.09 | Rake €0 
+Board [2d Kc 7h]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (bottone) ha raccolto (€0.09)
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 6: falgio (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255302932497:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:18:12 CET [15/03/2025 16:18:12 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 5: GlebGN7418 (€0.80 chips) è in sit-out
+Posto 1: caduceus369 (€2.08 chips) 
+Posto 2: AgiR6 (€2.31 chips) 
+Posto 3: Cicciovicenza24 (€0.83 chips) 
+Posto 4: shapiro102 (€1.03 chips) 
+Posto 6: falgio (€1.92 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc Ad]
+AgiR6: rilancia €0.04 fino a €0.06
+Cicciovicenza24: folda 
+shapiro102: folda 
+falgio: folda 
+caduceus369: rilancia €0.12 fino a €0.18
+AgiR6: folda 
+La puntata non vista (€0.12) è restituita a caduceus369
+caduceus369 ha raccolto €0.13 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.13 | Rake €0 
+Posto 5: GlebGN7418
+Posto 1: caduceus369 (big blind) ha raccolto (€0.13)
+Posto 2: AgiR6 ha foldato prima del Flop
+Posto 3: Cicciovicenza24 ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255302941072:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:18:43 CET [15/03/2025 16:18:43 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€2.15 chips) 
+Posto 2: AgiR6 (€2.25 chips) 
+Posto 3: Cicciovicenza24 (€0.83 chips) 
+Posto 4: shapiro102 (€1.03 chips) 
+Posto 5: GlebGN7418 (€0.80 chips) 
+Posto 6: falgio (€1.91 chips) 
+caduceus369: versa il piccolo buio €0.01
+AgiR6: versa il grande buio €0.02
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c Th]
+Cicciovicenza24: folda 
+shapiro102: folda 
+GlebGN7418: fa check 
+falgio: folda 
+caduceus369: folda 
+AgiR6: fa check 
+*** FLOP *** [Kc Qh 2h]
+AgiR6: fa check 
+GlebGN7418: fa check 
+*** TURN *** [Kc Qh 2h] [5s]
+AgiR6: punta €0.03
+GlebGN7418: folda 
+La puntata non vista (€0.03) è restituita a AgiR6
+AgiR6 ha raccolto €0.05 dal piatto
+AgiR6: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Board [Kc Qh 2h 5s]
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: AgiR6 (big blind) ha raccolto (€0.05)
+Posto 3: Cicciovicenza24 ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha foldato sul Turn (non ha puntato)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302949339:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:19:13 CET [15/03/2025 16:19:13 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€2.14 chips) 
+Posto 2: AgiR6 (€2.28 chips) 
+Posto 3: Cicciovicenza24 (€0.83 chips) 
+Posto 4: shapiro102 (€1.03 chips) 
+Posto 5: GlebGN7418 (€0.78 chips) 
+Posto 6: falgio (€1.91 chips) 
+AgiR6: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s Jh]
+shapiro102 ha esaurito il tempo
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: folda 
+caduceus369 ha esaurito il tempo
+caduceus369: folda 
+AgiR6: folda 
+La puntata non vista (€0.01) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.02 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha raccolto (€0.02)
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255302986351:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:21:24 CET [15/03/2025 16:21:24 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 1: caduceus369 (€2.14 chips) 
+Posto 2: AgiR6 (€2.21 chips) 
+Posto 3: Cicciovicenza24 (€1.07 chips) 
+Posto 4: shapiro102 (€1.08 chips) 
+Posto 5: GlebGN7418 (€0.68 chips) 
+Posto 6: falgio (€1.78 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2c Qs]
+AgiR6: folda 
+Cicciovicenza24: folda 
+shapiro102: chiama €0.02
+GlebGN7418: folda 
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [5c Jh Ah]
+falgio: fa check 
+caduceus369: fa check 
+shapiro102: punta €0.02
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.02) è restituita a shapiro102
+shapiro102 ha raccolto €0.06 dal piatto
+shapiro102: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [5c Jh Ah]
+Posto 1: caduceus369 (big blind) ha foldato sul Flop
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha raccolto (€0.06)
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303001406:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:22:15 CET [15/03/2025 16:22:15 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€2.12 chips) 
+Posto 2: AgiR6 (€2.21 chips) 
+Posto 3: Cicciovicenza24 (€1.07 chips) 
+Posto 4: shapiro102 (€1.12 chips) 
+Posto 5: GlebGN7418 (€0.68 chips) 
+Posto 6: falgio (€1.76 chips) 
+caduceus369: versa il piccolo buio €0.01
+AgiR6: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4d 4c]
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.02
+falgio: chiama €0.02
+caduceus369: chiama €0.01
+AgiR6: fa check 
+*** FLOP *** [Qc Ah 7c]
+caduceus369: fa check 
+AgiR6: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+GlebGN7418: fa check 
+falgio: punta €0.06
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: chiama €0.06
+shapiro102: chiama €0.06
+GlebGN7418: folda 
+*** TURN *** [Qc Ah 7c] [6s]
+Cicciovicenza24: fa check 
+shapiro102: punta €0.02
+falgio: chiama €0.02
+Cicciovicenza24: chiama €0.02
+*** RIVER *** [Qc Ah 7c 6s] [3c]
+Cicciovicenza24: fa check 
+shapiro102: punta €0.02
+falgio: rilancia €0.16 fino a €0.18
+Cicciovicenza24: folda 
+shapiro102: chiama €0.16
+*** SHOW DOWN ***
+falgio: mostra [Jc 6c] (un colore al Donna)
+shapiro102: non mostra le carte 
+falgio ha raccolto €0.69 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.72 | Rake €0.03 
+Board [Qc Ah 7c 6s 3c]
+Posto 1: caduceus369 (small blind) ha foldato sul Flop
+Posto 2: AgiR6 (big blind) ha foldato sul Flop
+Posto 3: Cicciovicenza24 ha foldato sul River
+Posto 4: shapiro102 non ha mostrato le carte [Ac 6d]
+Posto 5: GlebGN7418 ha foldato sul Flop
+Posto 6: falgio (bottone) ha mostrato [Jc 6c] e ha vinto (€0.69) con un colore al Donna
+
+
+
+Mano PokerStars n° 255303029543:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:23:53 CET [15/03/2025 16:23:53 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€2.10 chips) 
+Posto 2: AgiR6 (€2.19 chips) 
+Posto 3: Cicciovicenza24 (€0.97 chips) 
+Posto 4: shapiro102 (€0.84 chips) 
+Posto 5: GlebGN7418 (€0.66 chips) 
+Posto 6: falgio (€2.17 chips) 
+AgiR6: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As 4h]
+shapiro102: folda 
+GlebGN7418: chiama €0.02
+falgio: folda 
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: fa check 
+*** FLOP *** [9c 6c 8d]
+Cicciovicenza24: fa check 
+GlebGN7418: fa check 
+*** TURN *** [9c 6c 8d] [9s]
+Cicciovicenza24: fa check 
+GlebGN7418: fa check 
+*** RIVER *** [9c 6c 8d 9s] [Ad]
+Cicciovicenza24: fa check 
+GlebGN7418: fa check 
+*** SHOW DOWN ***
+Cicciovicenza24: mostra [Qh 3d] (una coppia di Nove)
+GlebGN7418: mostra [Kc 2c] (una coppia di Nove - Asso+Re kicker)
+GlebGN7418 ha raccolto €0.05 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Board [9c 6c 8d 9s Ad]
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha mostrato [Qh 3d] e ha perso con una coppia di Nove
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha mostrato [Kc 2c] e ha vinto (€0.05) con una coppia di Nove
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303036115:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:24:15 CET [15/03/2025 16:24:15 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 1: caduceus369 (€2.10 chips) 
+Posto 2: AgiR6 (€2.18 chips) 
+Posto 3: Cicciovicenza24 (€0.95 chips) 
+Posto 4: shapiro102 (€0.84 chips) 
+Posto 5: GlebGN7418 (€0.69 chips) 
+Posto 6: falgio (€2.17 chips) 
+Cicciovicenza24: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts Ad]
+GlebGN7418: chiama €0.02
+falgio: chiama €0.02
+caduceus369: rilancia €0.08 fino a €0.10
+AgiR6: folda 
+Cicciovicenza24: folda 
+shapiro102: chiama €0.08
+GlebGN7418: folda 
+falgio: folda 
+*** FLOP *** [8c Tc Td]
+shapiro102: fa check 
+caduceus369: punta €0.06
+shapiro102: chiama €0.06
+*** TURN *** [8c Tc Td] [Ac]
+shapiro102: fa check 
+caduceus369: punta €0.08
+shapiro102: folda 
+La puntata non vista (€0.08) è restituita a caduceus369
+caduceus369 ha raccolto €0.35 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.37 | Rake €0.02 
+Board [8c Tc Td Ac]
+Posto 1: caduceus369 ha raccolto (€0.35)
+Posto 2: AgiR6 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (small blind) ha foldato prima del Flop
+Posto 4: shapiro102 (big blind) ha foldato sul Turn
+Posto 5: GlebGN7418 ha foldato prima del Flop
+Posto 6: falgio ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303051683:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:25:09 CET [15/03/2025 16:25:09 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 1: caduceus369 (€2.29 chips) 
+Posto 2: AgiR6 (€2.18 chips) 
+Posto 3: Cicciovicenza24 (€0.94 chips) 
+Posto 4: shapiro102 (€0.68 chips) 
+Posto 5: GlebGN7418 (€0.67 chips) 
+Posto 6: falgio (€2.15 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4d 4h]
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+AgiR6: folda 
+Cicciovicenza24: folda 
+shapiro102: folda 
+GlebGN7418: chiama €0.04
+*** FLOP *** [Jd Kh Jh]
+GlebGN7418: punta €0.08
+caduceus369: folda 
+La puntata non vista (€0.08) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.13 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.13 | Rake €0 
+Board [Jd Kh Jh]
+Posto 1: caduceus369 ha foldato sul Flop
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.13)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303060823:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:25:41 CET [15/03/2025 16:25:41 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 1: caduceus369 (€2.23 chips) 
+Posto 2: AgiR6 (€2.18 chips) 
+Posto 3: Cicciovicenza24 (€0.94 chips) 
+Posto 4: shapiro102 (€0.67 chips) 
+Posto 5: GlebGN7418 (€0.74 chips) 
+Posto 6: falgio (€2.15 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8h Ad]
+caduceus369: folda 
+AgiR6: rilancia €0.04 fino a €0.06
+Cicciovicenza24: folda 
+shapiro102: chiama €0.06
+GlebGN7418: chiama €0.05
+falgio: folda 
+*** FLOP *** [Jd 6s Jc]
+GlebGN7418: fa check 
+AgiR6: fa check 
+shapiro102: punta €0.02
+GlebGN7418: chiama €0.02
+AgiR6: folda 
+*** TURN *** [Jd 6s Jc] [Js]
+GlebGN7418: fa check 
+shapiro102: punta €0.02
+GlebGN7418: chiama €0.02
+*** RIVER *** [Jd 6s Jc Js] [3s]
+GlebGN7418: fa check 
+shapiro102: fa check 
+*** SHOW DOWN ***
+GlebGN7418: mostra [Qh Tc] (un tris di Jack)
+shapiro102: mostra [Kh Qd] (un tris di Jack - Re kicker)
+shapiro102 ha raccolto €0.27 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.28 | Rake €0.01 
+Board [Jd 6s Jc Js 3s]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha foldato sul Flop
+Posto 3: Cicciovicenza24 ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (bottone) ha mostrato [Kh Qd] e ha vinto (€0.27) con un tris di Jack
+Posto 5: GlebGN7418 (small blind) ha mostrato [Qh Tc] e ha perso con un tris di Jack
+Posto 6: falgio (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303070743:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:26:15 CET [15/03/2025 16:26:15 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 1: caduceus369 (€2.23 chips) 
+Posto 2: AgiR6 (€2.12 chips) 
+Posto 3: Cicciovicenza24 (€0.94 chips) 
+Posto 4: shapiro102 (€0.84 chips) 
+Posto 5: GlebGN7418 (€0.64 chips) 
+Posto 6: falgio (€2.13 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc 9c]
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: chiama €0.01
+caduceus369: rilancia €0.06 fino a €0.08
+Cicciovicenza24: chiama €0.06
+falgio: folda 
+*** FLOP *** [7s 3c 3s]
+caduceus369: punta €0.08
+Cicciovicenza24: folda 
+La puntata non vista (€0.08) è restituita a caduceus369
+caduceus369 ha raccolto €0.18 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.18 | Rake €0 
+Board [7s 3c 3s]
+Posto 1: caduceus369 (big blind) ha raccolto (€0.18)
+Posto 2: AgiR6 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha foldato sul Flop
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303081353:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:26:52 CET [15/03/2025 16:26:52 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 1: caduceus369 (€2.33 chips) 
+Posto 2: AgiR6 (€2.12 chips) 
+Posto 3: Cicciovicenza24 (€0.86 chips) 
+Posto 4: shapiro102 (€0.84 chips) 
+Posto 5: GlebGN7418 (€0.64 chips) 
+Posto 6: falgio (€2.11 chips) 
+caduceus369: versa il piccolo buio €0.01
+AgiR6: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9d Td]
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.02
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: rilancia €0.15 fino a €0.19
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: folda 
+La puntata non vista (€0.15) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.15 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.15 | Rake €0 
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: AgiR6 (big blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 ha raccolto (€0.15)
+Posto 4: shapiro102 ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato prima del Flop
+Posto 6: falgio (bottone) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303088102:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:27:15 CET [15/03/2025 16:27:15 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€2.32 chips) 
+Posto 2: AgiR6 (€2.10 chips) 
+Posto 3: Cicciovicenza24 (€0.97 chips) 
+Posto 4: shapiro102 (€0.82 chips) 
+Posto 5: GlebGN7418 (€0.62 chips) 
+Posto 6: falgio (€2.07 chips) 
+AgiR6: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6d 3s]
+shapiro102: folda 
+GlebGN7418: rilancia €0.02 fino a €0.04
+falgio: chiama €0.04
+caduceus369: folda 
+AgiR6: folda 
+Cicciovicenza24: chiama €0.02
+*** FLOP *** [8d As Ts]
+Cicciovicenza24: fa check 
+GlebGN7418: punta €0.08
+falgio: folda 
+Cicciovicenza24: chiama €0.08
+*** TURN *** [8d As Ts] [5d]
+Cicciovicenza24: fa check 
+GlebGN7418: punta €0.10
+Cicciovicenza24: chiama €0.10
+*** RIVER *** [8d As Ts 5d] [Jh]
+Cicciovicenza24: fa check 
+GlebGN7418: fa check 
+*** SHOW DOWN ***
+Cicciovicenza24: mostra [Jd 7d] (una coppia di Jack)
+GlebGN7418: mostra [Ac Kc] (una coppia di Assi)
+GlebGN7418 ha raccolto €0.47 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.49 | Rake €0.02 
+Board [8d As Ts 5d Jh]
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (small blind) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (big blind) ha mostrato [Jd 7d] e ha perso con una coppia di Jack
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha mostrato [Ac Kc] e ha vinto (€0.47) con una coppia di Assi
+Posto 6: falgio ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303099625:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:27:54 CET [15/03/2025 16:27:54 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 1: caduceus369 (€2.32 chips) 
+Posto 2: AgiR6 (€2.09 chips) 
+Posto 3: Cicciovicenza24 (€0.75 chips) 
+Posto 4: shapiro102 (€0.82 chips) 
+Posto 5: GlebGN7418 (€0.87 chips) 
+Posto 6: falgio (€2.03 chips) 
+Cicciovicenza24: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d Qs]
+GlebGN7418: chiama €0.02
+falgio: rilancia €0.04 fino a €0.06
+caduceus369: folda 
+AgiR6: chiama €0.06
+Cicciovicenza24: rilancia €0.22 fino a €0.28
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: rilancia €1.75 fino a €2.03 ed è all-in
+AgiR6: folda 
+Cicciovicenza24: chiama €0.47 ed è all-in
+La puntata non vista (€1.28) è restituita a falgio
+*** FLOP *** [3h Tc 9d]
+*** TURN *** [3h Tc 9d] [6h]
+*** RIVER *** [3h Tc 9d 6h] [8d]
+*** SHOW DOWN ***
+Cicciovicenza24: mostra [Qd Ac] (carta alta Asso)
+falgio: mostra [Qh As] (carta alta Asso)
+Cicciovicenza24 ha raccolto €0.76 dal piatto
+falgio ha raccolto €0.76 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1.60 | Rake €0.08 
+Board [3h Tc 9d 6h 8d]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 (bottone) ha foldato prima del Flop
+Posto 3: Cicciovicenza24 (small blind) ha mostrato [Qd Ac] e ha vinto (€0.76) con carta alta Asso
+Posto 4: shapiro102 (big blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato prima del Flop
+Posto 6: falgio ha mostrato [Qh As] e ha vinto (€0.76) con carta alta Asso
+
+
+
+Mano PokerStars n° 255303108975:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:28:26 CET [15/03/2025 16:28:26 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 1: caduceus369 (€2.32 chips) 
+Posto 2: AgiR6 (€2.03 chips) 
+Posto 3: Cicciovicenza24 (€0.76 chips) 
+Posto 4: shapiro102 (€0.80 chips) 
+Posto 5: GlebGN7418 (€0.85 chips) 
+Posto 6: falgio (€2.04 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s 5c]
+falgio: folda 
+caduceus369: folda 
+AgiR6: rilancia €0.04 fino a €0.06
+Cicciovicenza24: chiama €0.06
+shapiro102: chiama €0.05
+GlebGN7418: chiama €0.04
+*** FLOP *** [4d 7s Tc]
+shapiro102: fa check 
+GlebGN7418: punta €0.06
+AgiR6: chiama €0.06
+Cicciovicenza24: rilancia €0.64 fino a €0.70 ed è all-in
+shapiro102: folda 
+GlebGN7418: folda 
+AgiR6: folda 
+La puntata non vista (€0.64) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.40 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.42 | Rake €0.02 
+Board [4d 7s Tc]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha foldato sul Flop
+Posto 3: Cicciovicenza24 (bottone) ha raccolto (€0.40)
+Posto 4: shapiro102 (small blind) ha foldato sul Flop
+Posto 5: GlebGN7418 (big blind) ha foldato sul Flop
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303118043:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:28:58 CET [15/03/2025 16:28:58 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 1: caduceus369 (€2.32 chips) 
+Posto 2: AgiR6 (€1.91 chips) 
+Posto 3: Cicciovicenza24 (€1.04 chips) 
+Posto 4: shapiro102 (€0.74 chips) 
+Posto 5: GlebGN7418 (€0.73 chips) 
+Posto 6: falgio (€2.04 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6s 3c]
+caduceus369: folda 
+AgiR6: rilancia €0.05 fino a €0.07
+Cicciovicenza24: folda 
+shapiro102: folda 
+GlebGN7418: rilancia €0.07 fino a €0.14
+falgio: folda 
+AgiR6: chiama €0.07
+*** FLOP *** [9c 2s 2d]
+GlebGN7418: punta €0.59 ed è all-in
+AgiR6: folda 
+La puntata non vista (€0.59) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.29 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.30 | Rake €0.01 
+Board [9c 2s 2d]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: AgiR6 ha foldato sul Flop
+Posto 3: Cicciovicenza24 ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (small blind) ha raccolto (€0.29)
+Posto 6: falgio (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303128339:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:29:34 CET [15/03/2025 16:29:34 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 1: caduceus369 (€2.32 chips) 
+Posto 2: AgiR6 (€1.77 chips) 
+Posto 3: Cicciovicenza24 (€1.04 chips) 
+Posto 4: shapiro102 (€0.74 chips) 
+Posto 5: GlebGN7418 (€0.88 chips) 
+Posto 6: falgio (€2.02 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd Ac]
+AgiR6: rilancia €0.04 fino a €0.06
+Cicciovicenza24: chiama €0.06
+shapiro102: chiama €0.06
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: rilancia €0.18 fino a €0.24
+AgiR6: rilancia €1.53 fino a €1.77 ed è all-in
+Cicciovicenza24: folda 
+shapiro102: folda 
+caduceus369: chiama €1.53
+*** FLOP *** [Tc 5h 9c]
+*** TURN *** [Tc 5h 9c] [7h]
+*** RIVER *** [Tc 5h 9c 7h] [Jh]
+*** SHOW DOWN ***
+caduceus369: mostra [Jd Ac] (una coppia di Jack)
+AgiR6: mostra [As Qh] (carta alta Asso)
+caduceus369 ha raccolto €3.47 dal piatto
+*** RIASSUNTO ***
+Piatto totale €3.67 | Rake €0.20 
+Board [Tc 5h 9c 7h Jh]
+Posto 1: caduceus369 (big blind) ha mostrato [Jd Ac] e ha vinto (€3.47) con una coppia di Jack
+Posto 2: AgiR6 ha mostrato [As Qh] e ha perso con carta alta Asso
+Posto 3: Cicciovicenza24 ha foldato prima del Flop
+Posto 4: shapiro102 ha foldato prima del Flop
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303143552:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:30:26 CET [15/03/2025 16:30:26 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 2: AgiR6 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.02 chips) 
+Posto 3: Cicciovicenza24 (€0.98 chips) 
+Posto 4: shapiro102 (€0.68 chips) 
+Posto 5: GlebGN7418 (€0.88 chips) 
+Posto 6: falgio (€2.01 chips) 
+caduceus369: versa il piccolo buio €0.01
+Cicciovicenza24: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9d Qs]
+AgiR6 si alza dal tavolo
+shapiro102: chiama €0.02
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: rilancia €0.06 fino a €0.08
+Cicciovicenza24: chiama €0.06
+shapiro102: chiama €0.06
+*** FLOP *** [Jc 4d Tc]
+caduceus369: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** TURN *** [Jc 4d Tc] [6d]
+caduceus369: punta €0.04
+Cicciovicenza24: chiama €0.04
+shapiro102: chiama €0.04
+*** RIVER *** [Jc 4d Tc 6d] [7d]
+caduceus369: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** SHOW DOWN ***
+caduceus369: mostra [9d Qs] (carta alta Donna)
+Cicciovicenza24: mostra [8s 4s] (una coppia di Quattro)
+shapiro102: mostra [7h 8h] (una coppia di Sette)
+shapiro102 ha raccolto €0.35 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.36 | Rake €0.01 
+Board [Jc 4d Tc 6d 7d]
+Posto 2: AgiR6
+Posto 1: caduceus369 (small blind) ha mostrato [9d Qs] e ha perso con carta alta Donna
+Posto 3: Cicciovicenza24 (big blind) ha mostrato [8s 4s] e ha perso con una coppia di Quattro
+Posto 4: shapiro102 ha mostrato [7h 8h] e ha vinto (€0.35) con una coppia di Sette
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303164953:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:31:39 CET [15/03/2025 16:31:39 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 1: caduceus369 (€3.90 chips) 
+Posto 3: Cicciovicenza24 (€0.86 chips) 
+Posto 4: shapiro102 (€0.91 chips) 
+Posto 5: GlebGN7418 (€0.88 chips) 
+Posto 6: falgio (€2.01 chips) 
+Cicciovicenza24: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2h Ts]
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: folda 
+Cicciovicenza24: chiama €0.01
+shapiro102: fa check 
+*** FLOP *** [5h 4c Qs]
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** TURN *** [5h 4c Qs] [4s]
+Cicciovicenza24: fa check 
+shapiro102: punta €0.02
+Cicciovicenza24: chiama €0.02
+*** RIVER *** [5h 4c Qs 4s] [Kd]
+Cicciovicenza24: fa check 
+shapiro102: punta €0.04
+Cicciovicenza24: folda 
+La puntata non vista (€0.04) è restituita a shapiro102
+shapiro102 ha raccolto €0.08 dal piatto
+shapiro102: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.08 | Rake €0 
+Board [5h 4c Qs 4s Kd]
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (small blind) ha foldato sul River
+Posto 4: shapiro102 (big blind) ha raccolto (€0.08)
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303173790:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:32:10 CET [15/03/2025 16:32:10 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 1: caduceus369 (€3.90 chips) 
+Posto 3: Cicciovicenza24 (€0.82 chips) 
+Posto 4: shapiro102 (€0.95 chips) 
+Posto 5: GlebGN7418 (€0.88 chips) 
+Posto 6: falgio (€2.01 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9c 3s]
+falgio: folda 
+giacomo84fr si siede al tavolo al posto #2 
+caduceus369 ha esaurito il tempo
+caduceus369: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: folda 
+GlebGN7418: fa check 
+*** FLOP *** [5d Qh Ah]
+GlebGN7418: fa check 
+Cicciovicenza24: fa check 
+*** TURN *** [5d Qh Ah] [Th]
+GlebGN7418: fa check 
+Cicciovicenza24: fa check 
+*** RIVER *** [5d Qh Ah Th] [5c]
+GlebGN7418: fa check 
+Cicciovicenza24: punta €0.05
+GlebGN7418: folda 
+La puntata non vista (€0.05) è restituita a Cicciovicenza24
+Cicciovicenza24 ha raccolto €0.05 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Board [5d Qh Ah Th 5c]
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 (bottone) ha raccolto (€0.05)
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha foldato sul River
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303186586:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:32:53 CET [15/03/2025 16:32:53 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 2: giacomo84fr (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€3.90 chips) 
+Posto 3: Cicciovicenza24 (€0.85 chips) 
+Posto 4: shapiro102 (€0.94 chips) 
+Posto 5: GlebGN7418 (€0.86 chips) 
+Posto 6: falgio (€2.01 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+giacomo84fr: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d Th]
+caduceus369: folda 
+Cicciovicenza24: chiama €0.02
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.01
+falgio: fa check 
+*** FLOP *** [Kh 6h Ks]
+GlebGN7418: fa check 
+falgio: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** TURN *** [Kh 6h Ks] [Kc]
+GlebGN7418: fa check 
+falgio: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** RIVER *** [Kh 6h Ks Kc] [4h]
+GlebGN7418: fa check 
+falgio: fa check 
+Cicciovicenza24: fa check 
+shapiro102: fa check 
+*** SHOW DOWN ***
+GlebGN7418: mostra [5c 2c] (un tris di Re)
+falgio: mostra [9s 4c] (un full di Re con Quattro)
+Cicciovicenza24: mostra [6s Qc] (un full di Re con Sei)
+shapiro102: non mostra le carte 
+Cicciovicenza24 ha raccolto €0.08 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.08 | Rake €0 
+Board [Kh 6h Ks Kc 4h]
+Posto 2: giacomo84fr
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: Cicciovicenza24 ha mostrato [6s Qc] e ha vinto (€0.08) con un full di Re con Sei
+Posto 4: shapiro102 (bottone) non ha mostrato le carte [9h Tc]
+Posto 5: GlebGN7418 (small blind) ha mostrato [5c 2c] e ha perso con un tris di Re
+Posto 6: falgio (big blind) ha mostrato [9s 4c] e ha perso con un full di Re con Quattro
+
+
+
+Mano PokerStars n° 255303202920:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:33:49 CET [15/03/2025 16:33:49 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 2: giacomo84fr (€1.20 chips) è in sit-out
+Posto 1: caduceus369 (€3.90 chips) 
+Posto 3: Cicciovicenza24 (€0.91 chips) 
+Posto 4: shapiro102 (€0.92 chips) 
+Posto 5: GlebGN7418 (€0.84 chips) 
+Posto 6: falgio (€1.99 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+giacomo84fr: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5h Qh]
+Cicciovicenza24: chiama €0.02
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [Qd 9h 3h]
+falgio: fa check 
+caduceus369: punta €0.04
+Cicciovicenza24: chiama €0.04
+falgio: folda 
+*** TURN *** [Qd 9h 3h] [7c]
+caduceus369: punta €0.08
+Cicciovicenza24: chiama €0.08
+*** RIVER *** [Qd 9h 3h 7c] [5d]
+caduceus369: punta €0.14
+Cicciovicenza24: rilancia €0.63 fino a €0.77 ed è all-in
+caduceus369: chiama €0.63
+*** SHOW DOWN ***
+Cicciovicenza24: mostra [9s As] (una coppia di Nove)
+caduceus369: mostra [5h Qh] (una doppia coppia, Donne e Cinque)
+caduceus369 ha raccolto €1.74 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1.84 | Rake €0.10 
+Board [Qd 9h 3h 7c 5d]
+Posto 2: giacomo84fr
+Posto 1: caduceus369 (big blind) ha mostrato [5h Qh] e ha vinto (€1.74) con una doppia coppia, Donne e Cinque
+Posto 3: Cicciovicenza24 ha mostrato [9s As] e ha perso con una coppia di Nove
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303234584:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:35:38 CET [15/03/2025 16:35:38 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.73 chips) 
+Posto 2: giacomo84fr (€1.20 chips) 
+Posto 4: shapiro102 (€0.92 chips) 
+Posto 5: GlebGN7418 (€0.84 chips) 
+Posto 6: falgio (€1.97 chips) 
+caduceus369: versa il piccolo buio €0.01
+giacomo84fr: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc 3c]
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.02
+Cicciovicenza24 è disconnesso 
+falgio: folda 
+caduceus369: folda 
+giacomo84fr: fa check 
+*** FLOP *** [6h 8s 6d]
+giacomo84fr: fa check 
+shapiro102: punta €0.02
+GlebGN7418: chiama €0.02
+giacomo84fr: folda 
+*** TURN *** [6h 8s 6d] [8d]
+shapiro102: punta €0.02
+GlebGN7418: folda 
+La puntata non vista (€0.02) è restituita a shapiro102
+shapiro102 ha raccolto €0.11 dal piatto
+shapiro102: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.11 | Rake €0 
+Board [6h 8s 6d 8d]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: giacomo84fr (big blind) ha foldato sul Flop
+Posto 4: shapiro102 ha raccolto (€0.11)
+Posto 5: GlebGN7418 ha foldato sul Turn
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303245682:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:36:15 CET [15/03/2025 16:36:15 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.72 chips) 
+Posto 2: giacomo84fr (€1.18 chips) 
+Posto 4: shapiro102 (€0.99 chips) 
+Posto 5: GlebGN7418 (€0.80 chips) 
+Posto 6: falgio (€1.97 chips) 
+giacomo84fr: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6d 9d]
+GlebGN7418: chiama €0.02
+falgio: folda 
+caduceus369: chiama €0.02
+Cicciovicenza24 è disconnesso 
+giacomo84fr: chiama €0.01
+shapiro102: fa check 
+*** FLOP *** [Qc Js Ac]
+giacomo84fr: fa check 
+shapiro102: fa check 
+GlebGN7418: fa check 
+caduceus369: fa check 
+*** TURN *** [Qc Js Ac] [Qh]
+giacomo84fr: fa check 
+shapiro102: fa check 
+GlebGN7418: fa check 
+caduceus369: fa check 
+*** RIVER *** [Qc Js Ac Qh] [Kc]
+giacomo84fr: punta €0.04
+shapiro102: folda 
+GlebGN7418: folda 
+caduceus369: rilancia €0.18 fino a €0.22
+giacomo84fr: folda 
+La puntata non vista (€0.18) è restituita a caduceus369
+caduceus369 ha raccolto €0.16 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.16 | Rake €0 
+Board [Qc Js Ac Qh Kc]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (bottone) ha raccolto (€0.16)
+Posto 2: giacomo84fr (small blind) ha foldato sul River
+Posto 4: shapiro102 (big blind) ha foldato sul River
+Posto 5: GlebGN7418 ha foldato sul River
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303271639:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:37:45 CET [15/03/2025 16:37:45 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.82 chips) 
+Posto 2: giacomo84fr (€1.12 chips) 
+Posto 4: shapiro102 (€0.97 chips) 
+Posto 5: GlebGN7418 (€0.78 chips) 
+Posto 6: falgio (€1.97 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qd 9d]
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: folda 
+giacomo84fr: folda 
+shapiro102: folda 
+GlebGN7418: chiama €0.02
+*** FLOP *** [5h 8d 3d]
+GlebGN7418: fa check 
+falgio: fa check 
+*** TURN *** [5h 8d 3d] [Kd]
+GlebGN7418: punta €0.08
+falgio: folda 
+La puntata non vista (€0.08) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.09 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.09 | Rake €0 
+Board [5h 8d 3d Kd]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: giacomo84fr (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.09)
+Posto 6: falgio ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255303281623:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:38:19 CET [15/03/2025 16:38:19 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.82 chips) 
+Posto 2: giacomo84fr (€1.12 chips) 
+Posto 4: shapiro102 (€0.96 chips) 
+Posto 5: GlebGN7418 (€0.83 chips) 
+Posto 6: falgio (€1.93 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6h 9s]
+caduceus369: folda 
+giacomo84fr: rilancia €0.04 fino a €0.06
+shapiro102: folda 
+GlebGN7418: chiama €0.05
+falgio: folda 
+*** FLOP *** [Jd Kc 6s]
+GlebGN7418: fa check 
+giacomo84fr: fa check 
+*** TURN *** [Jd Kc 6s] [4h]
+GlebGN7418: punta €0.08
+giacomo84fr: folda 
+La puntata non vista (€0.08) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.14 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.14 | Rake €0 
+Board [Jd Kc 6s 4h]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: giacomo84fr ha foldato sul Turn
+Posto 4: shapiro102 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (small blind) ha raccolto (€0.14)
+Posto 6: falgio (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303290491:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:38:49 CET [15/03/2025 16:38:49 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.82 chips) 
+Posto 2: giacomo84fr (€1.06 chips) 
+Posto 4: shapiro102 (€0.96 chips) 
+Posto 5: GlebGN7418 (€0.91 chips) 
+Posto 6: falgio (€1.91 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As 9s]
+giacomo84fr: folda 
+shapiro102: chiama €0.02
+GlebGN7418: folda 
+falgio: chiama €0.01
+caduceus369: rilancia €0.06 fino a €0.08
+giacomo84fr si alza dal tavolo
+shapiro102: chiama €0.06
+falgio: folda 
+*** FLOP *** [Jd 2h Ah]
+caduceus369: punta €0.08
+shapiro102: chiama €0.08
+*** TURN *** [Jd 2h Ah] [6h]
+caduceus369: fa check 
+shapiro102: fa check 
+*** RIVER *** [Jd 2h Ah 6h] [2c]
+caduceus369: punta €0.12
+shapiro102: chiama €0.12
+*** SHOW DOWN ***
+caduceus369: mostra [As 9s] (una doppia coppia, Assi e Due)
+shapiro102: mostra [Ac Qs] (una doppia coppia, Assi e Due - Donna kicker)
+shapiro102 ha raccolto €0.55 dal piatto
+EasyToRule si siede al tavolo al posto #2 
+*** RIASSUNTO ***
+Piatto totale €0.58 | Rake €0.03 
+Board [Jd 2h Ah 6h 2c]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (big blind) ha mostrato [As 9s] e ha perso con una doppia coppia, Assi e Due
+Posto 2: giacomo84fr ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha mostrato [Ac Qs] e ha vinto (€0.55) con una doppia coppia, Assi e Due
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303315353:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:40:14 CET [15/03/2025 16:40:14 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.54 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.23 chips) 
+Posto 5: GlebGN7418 (€0.91 chips) 
+Posto 6: falgio (€1.89 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule è connesso 
+EasyToRule: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9c 7s]
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: folda 
+EasyToRule: folda 
+La puntata non vista (€0.02) è restituita a falgio
+falgio ha raccolto €0.05 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: EasyToRule (big blind) ha foldato prima del Flop
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (bottone) ha raccolto (€0.05)
+
+
+
+Mano PokerStars n° 255303322311:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:40:38 CET [15/03/2025 16:40:38 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.53 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.23 chips) 
+Posto 5: GlebGN7418 (€0.91 chips) 
+Posto 6: falgio (€1.92 chips) 
+EasyToRule: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc 8h]
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+shapiro102: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.05 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (bottone) ha raccolto (€0.05)
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 4: shapiro102 (big blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303329336:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:41:02 CET [15/03/2025 16:41:02 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.56 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.21 chips) 
+Posto 5: GlebGN7418 (€0.91 chips) 
+Posto 6: falgio (€1.92 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h 9c]
+falgio: folda 
+caduceus369: folda 
+EasyToRule: rilancia €0.03 fino a €0.05
+shapiro102: folda 
+GlebGN7418: chiama €0.03
+*** FLOP *** [9d 8c Ah]
+GlebGN7418: fa check 
+EasyToRule: fa check 
+*** TURN *** [9d 8c Ah] [4d]
+GlebGN7418: punta €0.08
+EasyToRule: folda 
+La puntata non vista (€0.08) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.11 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.11 | Rake €0 
+Board [9d 8c Ah 4d]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule (bottone) ha foldato sul Turn
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.11)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303343150:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:41:49 CET [15/03/2025 16:41:49 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.56 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.20 chips) 
+Posto 5: GlebGN7418 (€0.97 chips) 
+Posto 6: falgio (€1.92 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8c 9h]
+caduceus369: folda 
+EasyToRule: folda 
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.01
+falgio: fa check 
+*** FLOP *** [Ad 7s 7h]
+GlebGN7418: fa check 
+falgio: punta €0.03
+shapiro102: folda 
+GlebGN7418: folda 
+La puntata non vista (€0.03) è restituita a falgio
+falgio ha raccolto €0.06 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [Ad 7s 7h]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (bottone) ha foldato sul Flop
+Posto 5: GlebGN7418 (small blind) ha foldato sul Flop
+Posto 6: falgio (big blind) ha raccolto (€0.06)
+
+
+
+Mano PokerStars n° 255303351365:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:42:18 CET [15/03/2025 16:42:18 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.56 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.18 chips) 
+Posto 5: GlebGN7418 (€0.95 chips) 
+Posto 6: falgio (€1.96 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s 8d]
+EasyToRule: folda 
+shapiro102: chiama €0.02
+GlebGN7418: folda 
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [4c 8s 8c]
+falgio: fa check 
+caduceus369: fa check 
+shapiro102: fa check 
+*** TURN *** [4c 8s 8c] [Kd]
+falgio: fa check 
+caduceus369: punta €0.02
+shapiro102: folda 
+falgio: folda 
+La puntata non vista (€0.02) è restituita a caduceus369
+caduceus369 ha raccolto €0.06 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [4c 8s 8c Kd]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (big blind) ha raccolto (€0.06)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha foldato sul Turn
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255303366371:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:43:09 CET [15/03/2025 16:43:09 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.60 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.16 chips) 
+Posto 5: GlebGN7418 (€0.95 chips) 
+Posto 6: falgio (€1.94 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2s Jd]
+shapiro102: folda 
+GlebGN7418: chiama €0.02
+falgio: rilancia €0.03 fino a €0.05
+caduceus369: folda 
+EasyToRule: chiama €0.03
+GlebGN7418: chiama €0.03
+*** FLOP *** [Ks 3s Qc]
+EasyToRule: fa check 
+GlebGN7418: punta €0.06
+falgio: chiama €0.06
+EasyToRule: folda 
+*** TURN *** [Ks 3s Qc] [Ts]
+GlebGN7418: fa check 
+falgio: punta €0.09
+GlebGN7418: folda 
+La puntata non vista (€0.09) è restituita a falgio
+falgio ha raccolto €0.27 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.28 | Rake €0.01 
+Board [Ks 3s Qc Ts]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: EasyToRule (big blind) ha foldato sul Flop
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha foldato sul Turn
+Posto 6: falgio (bottone) ha raccolto (€0.27)
+
+
+
+Mano PokerStars n° 255303377901:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:43:48 CET [15/03/2025 16:43:48 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.59 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.16 chips) 
+Posto 5: GlebGN7418 (€0.84 chips) 
+Posto 6: falgio (€2.10 chips) 
+EasyToRule: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6h Td]
+GlebGN7418: rilancia €0.02 fino a €0.04
+falgio: folda 
+caduceus369: folda 
+EasyToRule: folda 
+shapiro102: folda 
+La puntata non vista (€0.02) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.05 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 4: shapiro102 (big blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 ha raccolto (€0.05)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303380789:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:43:58 CET [15/03/2025 16:43:58 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.59 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.14 chips) 
+Posto 5: GlebGN7418 (€0.87 chips) 
+Posto 6: falgio (€2.10 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4h 3h]
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+shapiro102: folda 
+GlebGN7418: chiama €0.04
+*** FLOP *** [7c 8s 8d]
+GlebGN7418: punta €0.08
+caduceus369: folda 
+La puntata non vista (€0.08) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.13 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.13 | Rake €0 
+Board [7c 8s 8d]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato sul Flop
+Posto 2: EasyToRule (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.13)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303386266:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:44:17 CET [15/03/2025 16:44:17 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.53 chips) 
+Posto 2: EasyToRule (€2 chips) 
+Posto 4: shapiro102 (€1.13 chips) 
+Posto 5: GlebGN7418 (€0.94 chips) 
+Posto 6: falgio (€2.10 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ad 7d]
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: rilancia €0.14 fino a €0.20
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.14) è restituita a EasyToRule
+EasyToRule ha raccolto €0.15 dal piatto
+EasyToRule: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.15 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 ha foldato prima del Flop
+Posto 2: EasyToRule ha raccolto (€0.15)
+Posto 4: shapiro102 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (small blind) ha foldato prima del Flop
+Posto 6: falgio (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303392446:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:44:38 CET [15/03/2025 16:44:38 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.47 chips) 
+Posto 2: EasyToRule (€2.09 chips) 
+Posto 4: shapiro102 (€1.13 chips) 
+Posto 5: GlebGN7418 (€0.93 chips) 
+Posto 6: falgio (€2.08 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd 9c]
+EasyToRule: folda 
+shapiro102: folda 
+GlebGN7418: folda 
+falgio: folda 
+La puntata non vista (€0.01) è restituita a caduceus369
+caduceus369 ha raccolto €0.02 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (big blind) ha raccolto (€0.02)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303394723:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:44:45 CET [15/03/2025 16:44:45 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€4.48 chips) 
+Posto 2: EasyToRule (€2.09 chips) 
+Posto 4: shapiro102 (€1.13 chips) 
+Posto 5: GlebGN7418 (€0.93 chips) 
+Posto 6: falgio (€2.07 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kc Qs]
+shapiro102: chiama €0.02
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: rilancia €0.08 fino a €0.10
+EasyToRule: rilancia €0.18 fino a €0.28
+shapiro102: folda 
+caduceus369: rilancia €0.46 fino a €0.74
+EasyToRule: rilancia €1.35 fino a €2.09 ed è all-in
+caduceus369: folda 
+La puntata non vista (€1.35) è restituita a EasyToRule
+EasyToRule ha raccolto €1.50 dal piatto
+EasyToRule: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €1.50 | Rake €0 
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: EasyToRule (big blind) ha raccolto (€1.50)
+Posto 4: shapiro102 ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303414461:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:45:52 CET [15/03/2025 16:45:52 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 3: Cicciovicenza24 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€3.74 chips) 
+Posto 2: EasyToRule (€2.85 chips) 
+Posto 4: shapiro102 (€1.11 chips) 
+Posto 5: GlebGN7418 (€0.93 chips) 
+Posto 6: falgio (€2.07 chips) 
+EasyToRule: versa il piccolo buio €0.01
+shapiro102: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5s 5c]
+GlebGN7418: chiama €0.02
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+shapiro102: folda 
+GlebGN7418: chiama €0.04
+*** FLOP *** [6c 9d Kd]
+GlebGN7418: fa check 
+caduceus369: fa check 
+*** TURN *** [6c 9d Kd] [3s]
+GlebGN7418: fa check 
+caduceus369: punta €0.04
+GlebGN7418: chiama €0.04
+*** RIVER *** [6c 9d Kd 3s] [4s]
+GlebGN7418: fa check 
+caduceus369: punta €0.08
+GlebGN7418: folda 
+La puntata non vista (€0.08) è restituita a caduceus369
+caduceus369 ha raccolto €0.22 dal piatto
+Cicciovicenza24 si alza dal tavolo
+caduceus369: non mostra il punto 
+Sempere17 si siede al tavolo al posto #3 
+*** RIASSUNTO ***
+Piatto totale €0.23 | Rake €0.01 
+Board [6c 9d Kd 3s 4s]
+Posto 3: Cicciovicenza24
+Posto 1: caduceus369 (bottone) ha raccolto (€0.22)
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 4: shapiro102 (big blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato sul River
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303426049:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:46:31 CET [15/03/2025 16:46:31 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 3: Sempere17 (€2 chips) è in sit-out
+Posto 1: caduceus369 (€3.86 chips) 
+Posto 2: EasyToRule (€2.84 chips) 
+Posto 4: shapiro102 (€1.09 chips) 
+Posto 5: GlebGN7418 (€0.83 chips) 
+Posto 6: falgio (€2.07 chips) 
+shapiro102: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3d Ad]
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: folda 
+EasyToRule: folda 
+shapiro102: chiama €0.03
+GlebGN7418: chiama €0.02
+*** FLOP *** [5d 2c Jh]
+shapiro102: fa check 
+GlebGN7418: fa check 
+falgio: fa check 
+*** TURN *** [5d 2c Jh] [Qd]
+Sempere17 si alza dal tavolo
+shapiro102: fa check 
+GlebGN7418: fa check 
+falgio: fa check 
+*** RIVER *** [5d 2c Jh Qd] [3s]
+shapiro102: fa check 
+GlebGN7418: fa check 
+falgio: fa check 
+*** SHOW DOWN ***
+shapiro102: mostra [4d Jd] (una coppia di Jack)
+GlebGN7418: non mostra le carte 
+falgio: non mostra le carte 
+shapiro102 ha raccolto €0.12 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.12 | Rake €0 
+Board [5d 2c Jh Qd 3s]
+Posto 3: Sempere17
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (small blind) ha mostrato [4d Jd] e ha vinto (€0.12) con una coppia di Jack
+Posto 5: GlebGN7418 (big blind) non ha mostrato le carte [4c 7h]
+Posto 6: falgio non ha mostrato le carte [7c 5c]
+
+
+
+Mano PokerStars n° 255303437357:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:47:10 CET [15/03/2025 16:47:10 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 4
+Posto 1: caduceus369 (€3.86 chips) 
+Posto 2: EasyToRule (€2.84 chips) 
+Posto 4: shapiro102 (€1.17 chips) 
+Posto 5: GlebGN7418 (€0.79 chips) 
+Posto 6: falgio (€2.03 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kd Jc]
+NicolaD.78 si siede al tavolo al posto #3 
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+shapiro102: chiama €0.06
+GlebGN7418: folda 
+falgio: chiama €0.04
+*** FLOP *** [8d 4d Jd]
+falgio: punta €0.08
+caduceus369: chiama €0.08
+shapiro102: folda 
+*** TURN *** [8d 4d Jd] [8s]
+falgio: punta €0.07
+caduceus369: chiama €0.07
+*** RIVER *** [8d 4d Jd 8s] [Td]
+falgio: fa check 
+caduceus369: punta €0.08
+falgio: chiama €0.08
+*** SHOW DOWN ***
+caduceus369: mostra [Kd Jc] (un colore al Re)
+falgio: non mostra le carte 
+caduceus369 ha raccolto €0.62 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.65 | Rake €0.03 
+Board [8d 4d Jd 8s Td]
+Posto 1: caduceus369 ha mostrato [Kd Jc] e ha vinto (€0.62) con un colore al Re
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 (bottone) ha foldato sul Flop
+Posto 5: GlebGN7418 (small blind) ha foldato prima del Flop
+Posto 6: falgio (big blind) non ha mostrato le carte [Jh Th]
+
+
+
+Mano PokerStars n° 255303449296:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:47:52 CET [15/03/2025 16:47:52 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 3: NicolaD.78 (€2 chips) è in sit-out
+Posto 1: caduceus369 (€4.19 chips) 
+Posto 2: EasyToRule (€2.84 chips) 
+Posto 4: shapiro102 (€1.11 chips) 
+Posto 5: GlebGN7418 (€0.78 chips) 
+Posto 6: falgio (€1.74 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+NicolaD.78: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d 9d]
+EasyToRule: folda 
+shapiro102: folda 
+GlebGN7418: chiama €0.02
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [7s 6h 3c]
+falgio: fa check 
+caduceus369: punta €0.10
+GlebGN7418: folda 
+falgio: folda 
+La puntata non vista (€0.10) è restituita a caduceus369
+caduceus369 ha raccolto €0.06 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [7s 6h 3c]
+Posto 3: NicolaD.78
+Posto 1: caduceus369 (big blind) ha raccolto (€0.06)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 4: shapiro102 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha foldato sul Flop
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303456560:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:48:17 CET [15/03/2025 16:48:17 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 3: NicolaD.78 (€2 chips) è in sit-out
+Posto 1: caduceus369 (€4.23 chips) 
+Posto 2: EasyToRule (€2.84 chips) 
+Posto 4: shapiro102 (€1.11 chips) 
+Posto 5: GlebGN7418 (€0.76 chips) 
+Posto 6: falgio (€1.72 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule: versa il grande buio €0.02
+NicolaD.78: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qh Jh]
+shapiro102: chiama €0.02
+GlebGN7418: chiama €0.02
+falgio: chiama €0.02
+caduceus369: chiama €0.01
+EasyToRule: fa check 
+*** FLOP *** [Qs 4d Th]
+caduceus369: fa check 
+EasyToRule: punta €0.03
+shapiro102: chiama €0.03
+GlebGN7418: chiama €0.03
+falgio: folda 
+caduceus369: rilancia €0.22 fino a €0.25
+EasyToRule: folda 
+shapiro102: rilancia €0.84 fino a €1.09 ed è all-in
+GlebGN7418: folda 
+caduceus369: chiama €0.84
+*** TURN *** [Qs 4d Th] [6h]
+*** RIVER *** [Qs 4d Th 6h] [3d]
+*** SHOW DOWN ***
+caduceus369: mostra [Qh Jh] (una coppia di Donne)
+shapiro102: mostra [2d Td] (una coppia di Dieci)
+caduceus369 ha raccolto €2.22 dal piatto
+*** RIASSUNTO ***
+Piatto totale €2.34 | Rake €0.12 
+Board [Qs 4d Th 6h 3d]
+Posto 3: NicolaD.78
+Posto 1: caduceus369 (small blind) ha mostrato [Qh Jh] e ha vinto (€2.22) con una coppia di Donne
+Posto 2: EasyToRule (big blind) ha foldato sul Flop
+Posto 4: shapiro102 ha mostrato [2d Td] e ha perso con una coppia di Dieci
+Posto 5: GlebGN7418 ha foldato sul Flop
+Posto 6: falgio (bottone) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303474904:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:49:21 CET [15/03/2025 16:49:21 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.34 chips) 
+Posto 2: EasyToRule (€2.79 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.71 chips) 
+Posto 6: falgio (€1.70 chips) 
+EasyToRule: versa il piccolo buio €0.01
+NicolaD.78: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td Js]
+shapiro102 è disconnesso 
+GlebGN7418: folda 
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: chiama €0.04
+EasyToRule: folda 
+NicolaD.78: folda 
+*** FLOP *** [7h 8h 2s]
+falgio: fa check 
+caduceus369: fa check 
+*** TURN *** [7h 8h 2s] [3d]
+falgio: fa check 
+caduceus369: punta €0.04
+falgio: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.11 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.11 | Rake €0 
+Board [7h 8h 2s 3d]
+Posto 4: shapiro102
+Posto 1: caduceus369 (bottone) ha raccolto (€0.11)
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 3: NicolaD.78 (big blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255303489214:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:50:11 CET [15/03/2025 16:50:11 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.41 chips) 
+Posto 2: EasyToRule (€2.78 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.71 chips) 
+Posto 6: falgio (€1.66 chips) 
+NicolaD.78: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3d Ah]
+falgio: folda 
+caduceus369: folda 
+EasyToRule: folda 
+NicolaD.78: folda 
+La puntata non vista (€0.01) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.02 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 4: shapiro102
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: NicolaD.78 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.02)
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303493977:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:50:28 CET [15/03/2025 16:50:28 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.41 chips) 
+Posto 2: EasyToRule (€2.78 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.72 chips) 
+Posto 6: falgio (€1.66 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kh 5d]
+caduceus369: folda 
+EasyToRule: folda 
+NicolaD.78: rilancia €0.04 fino a €0.06
+GlebGN7418: chiama €0.05
+falgio: chiama €0.04
+*** FLOP *** [Ks 5c 6d]
+GlebGN7418: fa check 
+falgio: fa check 
+NicolaD.78: fa check 
+*** TURN *** [Ks 5c 6d] [4h]
+GlebGN7418: punta €0.08
+falgio: chiama €0.08
+NicolaD.78: chiama €0.08
+*** RIVER *** [Ks 5c 6d 4h] [Js]
+GlebGN7418: fa check 
+falgio: punta €0.28
+NicolaD.78: folda 
+GlebGN7418: folda 
+La puntata non vista (€0.28) è restituita a falgio
+falgio ha raccolto €0.40 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.42 | Rake €0.02 
+Board [Ks 5c 6d 4h Js]
+Posto 4: shapiro102
+Posto 1: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 3: NicolaD.78 (bottone) ha foldato sul River
+Posto 5: GlebGN7418 (small blind) ha foldato sul River
+Posto 6: falgio (big blind) ha raccolto (€0.40)
+
+
+
+Mano PokerStars n° 255303511806:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:51:29 CET [15/03/2025 16:51:29 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.41 chips) 
+Posto 2: EasyToRule (€2.78 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.58 chips) 
+Posto 6: falgio (€1.92 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td 2h]
+EasyToRule: folda 
+NicolaD.78: folda 
+GlebGN7418: chiama €0.02
+falgio: chiama €0.01
+caduceus369: fa check 
+*** FLOP *** [Qs Ad 5c]
+falgio: fa check 
+caduceus369: fa check 
+GlebGN7418: punta €0.10
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.10) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.06 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.06 | Rake €0 
+Board [Qs Ad 5c]
+Posto 4: shapiro102
+Posto 1: caduceus369 (big blind) ha foldato sul Flop
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 3: NicolaD.78 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha raccolto (€0.06)
+Posto 6: falgio (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 255303522305:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:52:06 CET [15/03/2025 16:52:06 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.39 chips) 
+Posto 2: EasyToRule (€2.78 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.62 chips) 
+Posto 6: falgio (€1.90 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2h As]
+NicolaD.78: folda 
+GlebGN7418: rilancia €0.10 fino a €0.12
+falgio: folda 
+caduceus369: folda 
+EasyToRule: folda 
+La puntata non vista (€0.10) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.05 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.05 | Rake €0 
+Posto 4: shapiro102
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: EasyToRule (big blind) ha foldato prima del Flop
+Posto 3: NicolaD.78 ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 ha raccolto (€0.05)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303527054:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:52:23 CET [15/03/2025 16:52:23 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.38 chips) 
+Posto 2: EasyToRule (€2.76 chips) 
+Posto 3: NicolaD.78 (€2 chips) 
+Posto 5: GlebGN7418 (€0.65 chips) 
+Posto 6: falgio (€1.90 chips) 
+EasyToRule: versa il piccolo buio €0.01
+NicolaD.78: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td Jh]
+GlebGN7418: chiama €0.02
+falgio: rilancia €0.03 fino a €0.05
+caduceus369: chiama €0.05
+EasyToRule: folda 
+NicolaD.78: rilancia €0.21 fino a €0.26
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.21) è restituita a NicolaD.78
+NicolaD.78 ha raccolto €0.18 dal piatto
+NicolaD.78: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.18 | Rake €0 
+Posto 4: shapiro102
+Posto 1: caduceus369 (bottone) ha foldato prima del Flop
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 3: NicolaD.78 (big blind) ha raccolto (€0.18)
+Posto 5: GlebGN7418 ha foldato prima del Flop
+Posto 6: falgio ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303542257:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:53:16 CET [15/03/2025 16:53:16 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.33 chips) 
+Posto 2: EasyToRule (€2.75 chips) 
+Posto 3: NicolaD.78 (€2.13 chips) 
+Posto 5: GlebGN7418 (€0.63 chips) 
+Posto 6: falgio (€1.85 chips) 
+NicolaD.78: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8c 7c]
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: chiama €0.04
+EasyToRule: rilancia €0.16 fino a €0.20
+NicolaD.78: folda 
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: rilancia €0.28 fino a €0.48
+EasyToRule: chiama €0.28
+*** FLOP *** [2h 9h Ks]
+caduceus369: fa check 
+EasyToRule: fa check 
+*** TURN *** [2h 9h Ks] [9c]
+caduceus369: punta €0.56
+EasyToRule: folda 
+La puntata non vista (€0.56) è restituita a caduceus369
+caduceus369 ha raccolto €0.98 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €1.03 | Rake €0.05 
+Board [2h 9h Ks 9c]
+Posto 4: shapiro102
+Posto 1: caduceus369 ha raccolto (€0.98)
+Posto 2: EasyToRule (bottone) ha foldato sul Turn
+Posto 3: NicolaD.78 (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha foldato prima del Flop
+Posto 6: falgio ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303567434:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:54:43 CET [15/03/2025 16:54:43 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 3
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.83 chips) 
+Posto 2: EasyToRule (€2.27 chips) 
+Posto 3: NicolaD.78 (€2.12 chips) 
+Posto 5: GlebGN7418 (€0.61 chips) 
+Posto 6: falgio (€1.81 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qh Jd]
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+NicolaD.78: folda 
+GlebGN7418: chiama €0.05
+falgio: chiama €0.04
+*** FLOP *** [5s 5h Ks]
+GlebGN7418: fa check 
+falgio: punta €0.06
+caduceus369: folda 
+GlebGN7418: folda 
+La puntata non vista (€0.06) è restituita a falgio
+NicolaD.78 si alza dal tavolo
+falgio ha raccolto €0.18 dal piatto
+falgio: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.18 | Rake €0 
+Board [5s 5h Ks]
+Posto 4: shapiro102
+Posto 1: caduceus369 ha foldato sul Flop
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 3: NicolaD.78 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (small blind) ha foldato sul Flop
+Posto 6: falgio (big blind) ha raccolto (€0.18)
+
+
+
+Mano PokerStars n° 255303574587:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:55:08 CET [15/03/2025 16:55:08 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.77 chips) 
+Posto 2: EasyToRule (€2.27 chips) 
+Posto 5: GlebGN7418 (€0.55 chips) 
+Posto 6: falgio (€1.93 chips) 
+falgio: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ad Kh]
+EasyToRule: folda 
+GlebGN7418: folda 
+falgio: rilancia €0.02 fino a €0.04
+caduceus369: rilancia €0.08 fino a €0.12
+falgio: folda 
+La puntata non vista (€0.08) è restituita a caduceus369
+caduceus369 ha raccolto €0.08 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.08 | Rake €0 
+Posto 4: shapiro102
+Posto 1: caduceus369 (big blind) ha raccolto (€0.08)
+Posto 2: EasyToRule ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303577558:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:55:24 CET [15/03/2025 16:55:24 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 6
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.81 chips) 
+Posto 2: EasyToRule (€2.27 chips) 
+Posto 5: GlebGN7418 (€0.55 chips) 
+Posto 6: falgio (€1.89 chips) 
+caduceus369: versa il piccolo buio €0.01
+EasyToRule: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5c Td]
+GlebGN7418: folda 
+falgio: folda 
+caduceus369: folda 
+La puntata non vista (€0.01) è restituita a EasyToRule
+EasyToRule ha raccolto €0.02 dal piatto
+EasyToRule: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 4: shapiro102
+Posto 1: caduceus369 (small blind) ha foldato prima del Flop
+Posto 2: EasyToRule (big blind) ha raccolto (€0.02)
+Posto 5: GlebGN7418 ha foldato prima del Flop (non ha puntato)
+Posto 6: falgio (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303581257:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:55:43 CET [15/03/2025 16:55:43 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 1: caduceus369 (€5.80 chips) 
+Posto 2: EasyToRule (€2.28 chips) 
+Posto 5: GlebGN7418 (€0.55 chips) 
+Posto 6: falgio (€1.89 chips) 
+EasyToRule: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kh 7h]
+falgio: folda 
+caduceus369: rilancia €0.04 fino a €0.06
+EasyToRule: folda 
+GlebGN7418 è connesso 
+GlebGN7418: chiama €0.04
+*** FLOP *** [2c Ah 5c]
+GlebGN7418: fa check 
+caduceus369: punta €0.04
+GlebGN7418: folda 
+La puntata non vista (€0.04) è restituita a caduceus369
+caduceus369 ha raccolto €0.13 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.13 | Rake €0 
+Board [2c Ah 5c]
+Posto 4: shapiro102
+Posto 1: caduceus369 (bottone) ha raccolto (€0.13)
+Posto 2: EasyToRule (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha foldato sul Flop
+Posto 6: falgio ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255303591735:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:56:39 CET [15/03/2025 16:56:39 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 2
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.87 chips) 
+Posto 2: EasyToRule (€2.27 chips) 
+Posto 5: GlebGN7418 (€0.49 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+falgio: è in sit-out 
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2h 7d]
+EasyToRule: folda 
+GlebGN7418: folda 
+La puntata non vista (€0.01) è restituita a caduceus369
+EasyToRule si alza dal tavolo
+caduceus369 ha raccolto €0.02 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 4: shapiro102
+Posto 6: falgio
+Posto 1: caduceus369 (big blind) ha raccolto (€0.02)
+Posto 2: EasyToRule (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: GlebGN7418 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303592923:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:56:45 CET [15/03/2025 16:56:45 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 4: shapiro102 (€0 chips) è in sit-out
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.88 chips) 
+Posto 5: GlebGN7418 (€0.48 chips) 
+caduceus369: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7s Ad]
+caduceus369: rilancia €0.04 fino a €0.06
+GlebGN7418: chiama €0.04
+*** FLOP *** [Qd 3d Th]
+GlebGN7418: fa check 
+caduceus369: fa check 
+*** TURN *** [Qd 3d Th] [Jc]
+GlebGN7418: fa check 
+caduceus369: fa check 
+*** RIVER *** [Qd 3d Th Jc] [Kc]
+GlebGN7418: punta €0.16
+caduceus369: rilancia €0.50 fino a €0.66
+GlebGN7418: chiama €0.26 ed è all-in
+La puntata non vista (€0.24) è restituita a caduceus369
+*** SHOW DOWN ***
+caduceus369: mostra [7s Ad] (una scala, da Dieci a Asso)
+GlebGN7418: mostra [Ah 7d] (una scala, da Dieci a Asso)
+GlebGN7418 ha raccolto €0.46 dal piatto
+caduceus369 ha raccolto €0.45 dal piatto
+shapiro102 si alza dal tavolo
+*** RIASSUNTO ***
+Piatto totale €0.96 | Rake €0.05 
+Board [Qd 3d Th Jc Kc]
+Posto 4: shapiro102
+Posto 6: falgio
+Posto 1: caduceus369 (bottone) (small blind) ha mostrato [7s Ad] e ha vinto (€0.45) con una scala, da Dieci a Asso
+Posto 5: GlebGN7418 (big blind) ha mostrato [Ah 7d] e ha vinto (€0.46) con una scala, da Dieci a Asso
+
+
+
+Mano PokerStars n° 255303601420:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:57:29 CET [15/03/2025 16:57:29 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.85 chips) 
+Posto 5: GlebGN7418 (€0.46 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d 7h]
+GlebGN7418: folda 
+La puntata non vista (€0.01) è restituita a caduceus369
+caduceus369 ha raccolto €0.02 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 6: falgio
+Posto 1: caduceus369 (big blind) ha raccolto (€0.02)
+Posto 5: GlebGN7418 (bottone) (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303602953:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:57:37 CET [15/03/2025 16:57:37 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.86 chips) 
+Posto 5: GlebGN7418 (€0.45 chips) 
+caduceus369: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c 9d]
+caduceus369: folda 
+La puntata non vista (€0.01) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.02 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 6: falgio
+Posto 1: caduceus369 (bottone) (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.02)
+
+
+
+Mano PokerStars n° 255303604477:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:57:45 CET [15/03/2025 16:57:45 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.85 chips) 
+Posto 5: GlebGN7418 (€0.46 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s Td]
+GlebGN7418: folda 
+La puntata non vista (€0.01) è restituita a caduceus369
+caduceus369 ha raccolto €0.02 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 6: falgio
+Posto 1: caduceus369 (big blind) ha raccolto (€0.02)
+Posto 5: GlebGN7418 (bottone) (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255303605619:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:57:51 CET [15/03/2025 16:57:51 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 1
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.86 chips) 
+Posto 5: GlebGN7418 (€0.45 chips) 
+caduceus369: versa il piccolo buio €0.01
+GlebGN7418: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5h Js]
+caduceus369: folda 
+La puntata non vista (€0.01) è restituita a GlebGN7418
+GlebGN7418 ha raccolto €0.02 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.02 | Rake €0 
+Posto 6: falgio
+Posto 1: caduceus369 (bottone) (small blind) ha foldato prima del Flop
+Posto 5: GlebGN7418 (big blind) ha raccolto (€0.02)
+
+
+
+Mano PokerStars n° 255303606956:   Hold'em No Limit (€0.01/€0.02 EUR) [ID ADM: M61F230417F207VP] - 15/03/2025 21:57:58 CET [15/03/2025 16:57:58 ET]
+Tavolo 'Odysseus III' 6-max Il bottone è al posto 5
+Posto 6: falgio (€1.89 chips) è in sit-out
+Posto 1: caduceus369 (€5.85 chips) 
+Posto 5: GlebGN7418 (€0.46 chips) 
+GlebGN7418: versa il piccolo buio €0.01
+caduceus369: versa il grande buio €0.02
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th As]
+GlebGN7418: chiama €0.01
+caduceus369: rilancia €0.06 fino a €0.08
+GlebGN7418: rilancia €0.06 fino a €0.14
+caduceus369: rilancia €5.71 fino a €5.85 ed è all-in
+GlebGN7418: chiama €0.32 ed è all-in
+La puntata non vista (€5.39) è restituita a caduceus369
+*** FLOP *** [Ts Ks Tc]
+*** TURN *** [Ts Ks Tc] [7s]
+*** RIVER *** [Ts Ks Tc 7s] [2c]
+*** SHOW DOWN ***
+caduceus369: mostra [Th As] (un tris di Dieci)
+GlebGN7418: mostra [Qh Qd] (una doppia coppia, Donne e Dieci)
+caduceus369 ha raccolto €0.87 dal piatto
+GlebGN7418 è disconnesso 
+*** RIASSUNTO ***
+Piatto totale €0.92 | Rake €0.05 
+Board [Ts Ks Tc 7s 2c]
+Posto 6: falgio
+Posto 1: caduceus369 (big blind) ha mostrato [Th As] e ha vinto (€0.87) con un tris di Dieci
+Posto 5: GlebGN7418 (bottone) (small blind) ha mostrato [Qh Qd] e ha perso con una doppia coppia, Donne e Dieci
+
+
+

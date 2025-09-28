@@ -1,0 +1,33 @@
+﻿Mano PokerStars n° 255302867429:  Torneo #3869262276, €0.46+€0.04 EUR Hold'em No Limit - Livello I (10/20) [ID ADM: M61F21234B1F84RQ] - 15/03/2025 21:14:17 CET [15/03/2025 16:14:17 ET]
+Tavolo '3869262276 1' 3-max Il bottone è al posto 1
+Posto 1: caduceus369 (500 chips) 
+Posto 2: babel766 (500 chips) 
+Posto 3: 1010BOMBER1010 (500 chips) 
+babel766: versa il piccolo buio 10
+1010BOMBER1010: versa il grande buio 20
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac 8d]
+caduceus369: rilancia 480 fino a 500 ed è all-in
+babel766: chiama 490 ed è all-in
+1010BOMBER1010: chiama 480 ed è all-in
+*** FLOP *** [8h Td 6h]
+*** TURN *** [8h Td 6h] [3d]
+*** RIVER *** [8h Td 6h 3d] [2h]
+*** SHOW DOWN ***
+babel766: mostra [3c 4d] (una coppia di Tre)
+1010BOMBER1010: mostra [2s 6s] (una doppia coppia, Sei e Due)
+caduceus369: mostra [Ac 8d] (una coppia di Otto)
+1010BOMBER1010 ha raccolto 1500 dal piatto
+caduceus369 ha concluso il torneo al 2° posto
+babel766 ha concluso il torneo al 2° posto
+1010BOMBER1010 vince il torneo - congratulazioni!
+1010BOMBER1010 vince un ticket'€1 Power Path Step 2'
+*** RIASSUNTO ***
+Piatto totale 1500 | Rake 0 
+Board [8h Td 6h 3d 2h]
+Posto 1: caduceus369 (bottone) ha mostrato [Ac 8d] e ha perso con una coppia di Otto
+Posto 2: babel766 (small blind) ha mostrato [3c 4d] e ha perso con una coppia di Tre
+Posto 3: 1010BOMBER1010 (big blind) ha mostrato [2s 6s] e ha vinto (1500) con una doppia coppia, Sei e Due
+
+
+

@@ -1,0 +1,1628 @@
+﻿Mano PokerStars n° 254933199660:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:42:18 CET [18/02/2025 17:42:18 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 3: caduceus369 (€10 chips) 
+Posto 6: madmike2850 (€10 chips) 
+madmike2850: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d Qs]
+madmike2850: chiama €0.05
+caduceus369: fa check 
+*** FLOP *** [8s Kh Tc]
+caduceus369: fa check 
+madmike2850: punta €0.19
+caduceus369: chiama €0.19
+*** TURN *** [8s Kh Tc] [5d]
+caduceus369: fa check 
+madmike2850: fa check 
+*** RIVER *** [8s Kh Tc 5d] [8c]
+caduceus369: punta €0.30
+MaxRebelda si siede al tavolo al posto #1 
+madmike2850: chiama €0.30
+*** SHOW DOWN ***
+caduceus369: mostra [7d Qs] (una coppia di Otto)
+madmike2850: mostra [Th Qh] (una doppia coppia, Dieci e Otto)
+madmike2850 ha raccolto €1.12 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1.18 | Rake €0.06 
+Board [8s Kh Tc 5d 8c]
+Posto 3: caduceus369 (big blind) ha mostrato [7d Qs] e ha perso con una coppia di Otto
+Posto 6: madmike2850 (bottone) (small blind) ha mostrato [Th Qh] e ha vinto (€1.12) con una doppia coppia, Dieci e Otto
+
+
+
+Mano PokerStars n° 254933209580:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:42:55 CET [18/02/2025 17:42:55 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: MaxRebelda (€10 chips) 
+Posto 3: caduceus369 (€9.41 chips) 
+Posto 6: madmike2850 (€10.53 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac Td]
+caduceus369: rilancia €0.20 fino a €0.30
+madmike2850: folda 
+MaxRebelda: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: MaxRebelda (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 (bottone) ha raccolto (€0.25)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933213499:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:43:09 CET [18/02/2025 17:43:09 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: MaxRebelda (€10 chips) 
+Posto 3: caduceus369 (€9.56 chips) 
+Posto 6: madmike2850 (€10.48 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6c Qs]
+madmike2850: folda 
+MaxRebelda: rilancia €0.13 fino a €0.23
+caduceus369: chiama €0.13
+*** FLOP *** [Ac Ad Ts]
+brusco92 si siede al tavolo al posto #2 
+MaxRebelda: fa check 
+caduceus369: fa check 
+*** TURN *** [Ac Ad Ts] [Qd]
+MaxRebelda: fa check 
+caduceus369: punta €0.20
+MaxRebelda: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.44 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.46 | Rake €0.02 
+Board [Ac Ad Ts Qd]
+Posto 1: MaxRebelda (small blind) ha foldato sul Turn
+Posto 3: caduceus369 (big blind) ha raccolto (€0.44)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933224867:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:43:52 CET [18/02/2025 17:43:52 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10 chips) 
+Posto 3: caduceus369 (€9.77 chips) 
+Posto 6: madmike2850 (€10.48 chips) 
+caduceus369: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th Td]
+MaxRebelda: rilancia €0.13 fino a €0.23
+caduceus369: rilancia €0.63 fino a €0.86
+madmike2850: folda 
+MaxRebelda: folda 
+La puntata non vista (€0.63) è restituita a caduceus369
+caduceus369 ha raccolto €0.56 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.56 | Rake €0 
+Posto 2: brusco92
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop
+Posto 3: caduceus369 (small blind) ha raccolto (€0.56)
+Posto 6: madmike2850 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933232364:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:44:20 CET [18/02/2025 17:44:20 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10 chips) 
+Posto 3: caduceus369 (€10.10 chips) 
+Posto 6: madmike2850 (€10.38 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+brusco92: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th 7d]
+caduceus369: folda 
+DMIXERJ si siede al tavolo al posto #4 
+madmike2850: folda 
+La puntata non vista (€0.05) è restituita a MaxRebelda
+MaxRebelda ha raccolto €0.10 dal piatto
+MaxRebelda: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 2: brusco92
+Posto 1: MaxRebelda (big blind) ha raccolto (€0.10)
+Posto 3: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933235444:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:44:32 CET [18/02/2025 17:44:32 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 4: DMIXERJ (€6 chips) è in sit-out
+Posto 1: MaxRebelda (€10.05 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€10.10 chips) 
+Posto 6: madmike2850 (€10.33 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+DMIXERJ: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td 5c]
+caduceus369: folda 
+DMIXERJ si alza dal tavolo
+madmike2850: rilancia €0.15 fino a €0.25
+MaxRebelda è disconnesso 
+MaxRebelda ha esaurito il tempo  mentre era disconnesso
+MaxRebelda: folda 
+brusco92: folda 
+La puntata non vista (€0.15) è restituita a madmike2850
+madmike2850 ha raccolto €0.25 dal piatto
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 4: DMIXERJ
+Posto 1: MaxRebelda (small blind) ha foldato prima del Flop
+Posto 2: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha raccolto (€0.25)
+
+
+
+Mano PokerStars n° 254933245394:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:45:09 CET [18/02/2025 17:45:09 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 1: MaxRebelda (€10 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€10.10 chips) 
+Posto 6: madmike2850 (€10.48 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td Qh]
+madmike2850: folda 
+MaxRebelda: folda 
+brusco92: folda 
+La puntata non vista (€0.05) è restituita a caduceus369
+caduceus369 ha raccolto €0.10 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha raccolto (€0.10)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933248918:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:45:22 CET [18/02/2025 17:45:22 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: MaxRebelda (€10 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€10.15 chips) 
+Posto 6: madmike2850 (€10.48 chips) 
+caduceus369: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Tc 9s]
+MaxRebelda: rilancia €0.13 fino a €0.23
+brusco92: chiama €0.23
+caduceus369: folda 
+madmike2850: folda 
+*** FLOP *** [7c 4h 4d]
+MaxRebelda: punta €0.40
+brusco92: folda 
+La puntata non vista (€0.40) è restituita a MaxRebelda
+MaxRebelda ha raccolto €0.58 dal piatto
+MaxRebelda: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.61 | Rake €0.03 
+Board [7c 4h 4d]
+Posto 1: MaxRebelda ha raccolto (€0.58)
+Posto 2: brusco92 (bottone) ha foldato sul Flop
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933254985:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:45:45 CET [18/02/2025 17:45:45 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: MaxRebelda (€10.35 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€10.10 chips) 
+Posto 6: madmike2850 (€10.38 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s As]
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+madmike2850: folda 
+MaxRebelda: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: MaxRebelda (big blind) ha foldato prima del Flop
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha raccolto (€0.25)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933258118:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:45:56 CET [18/02/2025 17:45:56 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: MaxRebelda (€10.25 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€10.25 chips) 
+Posto 6: madmike2850 (€10.33 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4s 9s]
+caduceus369: folda 
+madmike2850: folda 
+MaxRebelda: chiama €0.05
+brusco92: fa check 
+*** FLOP *** [7s 4h 3d]
+MaxRebelda: punta €0.10
+brusco92: folda 
+La puntata non vista (€0.10) è restituita a MaxRebelda
+MaxRebelda ha raccolto €0.19 dal piatto
+MaxRebelda: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0.01 
+Board [7s 4h 3d]
+Posto 1: MaxRebelda (small blind) ha raccolto (€0.19)
+Posto 2: brusco92 (big blind) ha foldato sul Flop
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933265286:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:46:23 CET [18/02/2025 17:46:23 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10.34 chips) 
+Posto 3: caduceus369 (€10.25 chips) 
+Posto 6: madmike2850 (€10.33 chips) 
+caduceus369: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2h Ad]
+MaxRebelda: folda 
+caduceus369: chiama €0.05
+madmike2850: fa check 
+*** FLOP *** [9s 8s Jc]
+caduceus369: fa check 
+madmike2850: fa check 
+*** TURN *** [9s 8s Jc] [3c]
+caduceus369: punta €0.20
+madmike2850: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.19 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0.01 
+Board [9s 8s Jc 3c]
+Posto 2: brusco92
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha raccolto (€0.19)
+Posto 6: madmike2850 (big blind) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 254933274275:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:46:57 CET [18/02/2025 17:46:57 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10.34 chips) 
+Posto 3: caduceus369 (€10.34 chips) 
+Posto 6: madmike2850 (€10.23 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3d 8s]
+caduceus369: folda 
+madmike2850: folda 
+La puntata non vista (€0.05) è restituita a MaxRebelda
+MaxRebelda ha raccolto €0.10 dal piatto
+MaxRebelda: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 2: brusco92
+Posto 1: MaxRebelda (big blind) ha raccolto (€0.10)
+Posto 3: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933276823:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:47:06 CET [18/02/2025 17:47:06 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10.39 chips) 
+Posto 3: caduceus369 (€10.34 chips) 
+Posto 6: madmike2850 (€10.18 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7s 6c]
+madmike2850: folda 
+MaxRebelda: rilancia €0.13 fino a €0.23
+caduceus369: chiama €0.13
+*** FLOP *** [Th 8s 6s]
+MaxRebelda: punta €0.15
+caduceus369: chiama €0.15
+*** TURN *** [Th 8s 6s] [As]
+MaxRebelda: fa check 
+caduceus369: punta €0.30
+MaxRebelda: folda 
+La puntata non vista (€0.30) è restituita a caduceus369
+caduceus369 ha raccolto €0.72 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.76 | Rake €0.04 
+Board [Th 8s 6s As]
+Posto 2: brusco92
+Posto 1: MaxRebelda (small blind) ha foldato sul Turn
+Posto 3: caduceus369 (big blind) ha raccolto (€0.72)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933291586:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:48:01 CET [18/02/2025 17:48:01 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10.01 chips) 
+Posto 3: caduceus369 (€10.68 chips) 
+Posto 6: madmike2850 (€10.18 chips) 
+caduceus369: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qd 7h]
+MaxRebelda ha esaurito il tempo
+MaxRebelda: folda 
+caduceus369: rilancia €0.10 fino a €0.20
+madmike2850: chiama €0.10
+*** FLOP *** [7s 5c 9c]
+caduceus369: punta €0.20
+madmike2850: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.38 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.40 | Rake €0.02 
+Board [7s 5c 9c]
+Posto 2: brusco92
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha raccolto (€0.38)
+Posto 6: madmike2850 (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933301841:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:48:40 CET [18/02/2025 17:48:40 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€10.01 chips) 
+Posto 3: caduceus369 (€10.86 chips) 
+Posto 6: madmike2850 (€9.98 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6h Kh]
+caduceus369: rilancia €0.20 fino a €0.30
+madmike2850: folda 
+MaxRebelda: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 2: brusco92
+Posto 1: MaxRebelda (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 (bottone) ha raccolto (€0.25)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933305801:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:48:55 CET [18/02/2025 17:48:55 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€9.91 chips) 
+Posto 3: caduceus369 (€11.01 chips) 
+Posto 6: madmike2850 (€9.93 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 5s]
+madmike2850: folda 
+MaxRebelda: rilancia €0.20 fino a €0.30
+caduceus369: chiama €0.20
+*** FLOP *** [Ts 8s 7d]
+MaxRebelda: punta €0.38
+caduceus369: chiama €0.38
+*** TURN *** [Ts 8s 7d] [5h]
+MaxRebelda: punta €0.43
+caduceus369: chiama €0.43
+*** RIVER *** [Ts 8s 7d 5h] [Kh]
+MaxRebelda: punta €0.69
+caduceus369: chiama €0.69
+*** SHOW DOWN ***
+MaxRebelda: mostra [9c 8c] (una coppia di Otto)
+caduceus369: mostra [Ks 5s] (una doppia coppia, Re e Cinque)
+caduceus369 ha raccolto €3.41 dal piatto
+*** RIASSUNTO ***
+Piatto totale €3.60 | Rake €0.19 
+Board [Ts 8s 7d 5h Kh]
+Posto 2: brusco92
+Posto 1: MaxRebelda (small blind) ha mostrato [9c 8c] e ha perso con una coppia di Otto
+Posto 3: caduceus369 (big blind) ha mostrato [Ks 5s] e ha vinto (€3.41) con una doppia coppia, Re e Cinque
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933323010:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:50:00 CET [18/02/2025 17:50:00 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€8.11 chips) 
+Posto 3: caduceus369 (€12.62 chips) 
+Posto 6: madmike2850 (€9.93 chips) 
+caduceus369: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6c 8c]
+MaxRebelda: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+madmike2850: chiama €0.20
+*** FLOP *** [Ts As 4d]
+caduceus369: fa check 
+madmike2850: fa check 
+*** TURN *** [Ts As 4d] [8d]
+caduceus369: fa check 
+madmike2850: fa check 
+*** RIVER *** [Ts As 4d 8d] [5c]
+caduceus369: punta €0.20
+madmike2850: chiama €0.20
+*** SHOW DOWN ***
+caduceus369: mostra [6c 8c] (una coppia di Otto)
+madmike2850: mostra [8s 9c] (una coppia di Otto - Asso+Dieci+Nove kicker)
+madmike2850 ha raccolto €0.95 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1 | Rake €0.05 
+Board [Ts As 4d 8d 5c]
+Posto 2: brusco92
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha mostrato [6c 8c] e ha perso con una coppia di Otto
+Posto 6: madmike2850 (big blind) ha mostrato [8s 9c] e ha vinto (€0.95) con una coppia di Otto
+
+
+
+Mano PokerStars n° 254933331614:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:50:32 CET [18/02/2025 17:50:32 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 2: brusco92 (€10 chips) è in sit-out
+Posto 1: MaxRebelda (€8.11 chips) 
+Posto 3: caduceus369 (€12.12 chips) 
+Posto 6: madmike2850 (€10.38 chips) 
+sorvegliante82 si siede al tavolo al posto #4 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac Qc]
+caduceus369: rilancia €0.20 fino a €0.30
+madmike2850: chiama €0.25
+vena2001 si siede al tavolo al posto #5 
+MaxRebelda: folda 
+*** FLOP *** [2h Kh Qs]
+madmike2850: fa check 
+caduceus369: punta €0.24
+madmike2850: folda 
+La puntata non vista (€0.24) è restituita a caduceus369
+caduceus369 ha raccolto €0.67 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.70 | Rake €0.03 
+Board [2h Kh Qs]
+Posto 2: brusco92
+Posto 1: MaxRebelda (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 (bottone) ha raccolto (€0.67)
+Posto 6: madmike2850 (small blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933343926:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:51:20 CET [18/02/2025 17:51:20 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: MaxRebelda (€10 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€12.49 chips) 
+Posto 4: sorvegliante82 (€10 chips) 
+Posto 5: vena2001 (€4 chips) 
+Posto 6: madmike2850 (€10.08 chips) 
+MaxRebelda: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+sorvegliante82: versa il grande buio €0.10
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd 2d]
+caduceus369: folda 
+sorvegliante82: fa check 
+vena2001: fa check 
+madmike2850: chiama €0.10
+MaxRebelda è disconnesso 
+MaxRebelda è connesso 
+MaxRebelda: rilancia €0.70 fino a €0.80
+brusco92: folda 
+sorvegliante82: folda 
+vena2001: folda 
+madmike2850: chiama €0.70
+*** FLOP *** [6d Tc 5h]
+MaxRebelda: punta €1.80
+madmike2850: chiama €1.80
+*** TURN *** [6d Tc 5h] [9c]
+MaxRebelda: punta €5.20
+madmike2850: folda 
+La puntata non vista (€5.20) è restituita a MaxRebelda
+MaxRebelda ha raccolto €5.20 dal piatto
+MaxRebelda: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €5.50 | Rake €0.30 
+Board [6d Tc 5h 9c]
+Posto 1: MaxRebelda (small blind) ha raccolto (€5.20)
+Posto 2: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: sorvegliante82 ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 254933360865:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:52:25 CET [18/02/2025 17:52:25 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 1: MaxRebelda (€12.60 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€12.49 chips) 
+Posto 4: sorvegliante82 (€9.90 chips) 
+Posto 5: vena2001 (€3.90 chips) 
+Posto 6: madmike2850 (€7.48 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c Th]
+sorvegliante82: rilancia €0.25 fino a €0.35
+vena2001: folda 
+madmike2850: folda 
+MaxRebelda: folda 
+brusco92: folda 
+caduceus369: folda 
+La puntata non vista (€0.25) è restituita a sorvegliante82
+sorvegliante82 ha raccolto €0.25 dal piatto
+sorvegliante82: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: MaxRebelda (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha foldato prima del Flop
+Posto 4: sorvegliante82 ha raccolto (€0.25)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933367716:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:52:51 CET [18/02/2025 17:52:51 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: MaxRebelda (€12.60 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€12.39 chips) 
+Posto 4: sorvegliante82 (€10.05 chips) 
+Posto 5: vena2001 (€3.90 chips) 
+Posto 6: madmike2850 (€7.48 chips) 
+caduceus369: versa il piccolo buio €0.05
+sorvegliante82: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc Qd]
+vena2001: folda 
+madmike2850 ha esaurito il tempo
+madmike2850: folda 
+MaxRebelda: folda 
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+sorvegliante82: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.20 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0 
+Posto 1: MaxRebelda ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha raccolto (€0.20)
+Posto 4: sorvegliante82 (big blind) ha foldato prima del Flop
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933374397:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:53:16 CET [18/02/2025 17:53:16 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: MaxRebelda (€12.60 chips) 
+Posto 2: brusco92 (€10 chips) 
+Posto 3: caduceus369 (€12.49 chips) 
+Posto 4: sorvegliante82 (€9.95 chips) 
+Posto 5: vena2001 (€3.90 chips) 
+Posto 6: madmike2850 (€7.48 chips) 
+sorvegliante82: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks Jh]
+madmike2850: folda 
+MaxRebelda: folda 
+brusco92: rilancia €0.20 fino a €0.30
+caduceus369: chiama €0.30
+sorvegliante82: folda 
+vena2001: folda 
+*** FLOP *** [6c 5s 6s]
+brusco92: punta €0.36
+caduceus369: folda 
+La puntata non vista (€0.36) è restituita a brusco92
+brusco92 ha raccolto €0.71 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.75 | Rake €0.04 
+Board [6c 5s 6s]
+Posto 1: MaxRebelda ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 ha raccolto (€0.71)
+Posto 3: caduceus369 (bottone) ha foldato sul Flop
+Posto 4: sorvegliante82 (small blind) ha foldato prima del Flop
+Posto 5: vena2001 (big blind) ha foldato prima del Flop
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933384118:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:53:54 CET [18/02/2025 17:53:54 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 4
+Posto 1: MaxRebelda (€12.60 chips) 
+Posto 2: brusco92 (€10.41 chips) 
+Posto 3: caduceus369 (€12.19 chips) 
+Posto 4: sorvegliante82 (€9.90 chips) 
+Posto 5: vena2001 (€3.80 chips) 
+Posto 6: madmike2850 (€10 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8h Th]
+MaxRebelda: folda 
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+sorvegliante82: folda 
+sorvegliante82 si alza dal tavolo
+vena2001: folda 
+madmike2850: chiama €0.20
+*** FLOP *** [Qs 4h Ac]
+madmike2850: fa check 
+caduceus369: punta €0.20
+madmike2850: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.62 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.65 | Rake €0.03 
+Board [Qs 4h Ac]
+Posto 1: MaxRebelda ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha raccolto (€0.62)
+Posto 4: sorvegliante82 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933392265:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:54:25 CET [18/02/2025 17:54:25 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: MaxRebelda (€12.60 chips) 
+Posto 2: brusco92 (€10.41 chips) 
+Posto 3: caduceus369 (€12.51 chips) 
+Posto 5: vena2001 (€3.75 chips) 
+Posto 6: madmike2850 (€9.70 chips) 
+madmike2850: versa il piccolo buio €0.05
+MaxRebelda: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4c Kh]
+brusco92: rilancia €0.20 fino a €0.30
+caduceus369: folda 
+vena2001: folda 
+madmike2850: folda 
+MaxRebelda: folda 
+La puntata non vista (€0.20) è restituita a brusco92
+brusco92 ha raccolto €0.25 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: MaxRebelda (big blind) ha foldato prima del Flop
+Posto 2: brusco92 ha raccolto (€0.25)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933397744:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:54:46 CET [18/02/2025 17:54:46 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.56 chips) 
+Posto 3: caduceus369 (€12.51 chips) 
+Posto 5: vena2001 (€3.75 chips) 
+Posto 6: madmike2850 (€9.65 chips) 
+MaxRebelda ha esaurito il tempo
+MaxRebelda: è in sit-out 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 4d]
+vena2001: folda 
+madmike2850: folda 
+brusco92: rilancia €0.20 fino a €0.30
+MaxRebelda è disconnesso 
+caduceus369: folda 
+La puntata non vista (€0.20) è restituita a brusco92
+brusco92 ha raccolto €0.20 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0 
+Posto 1: MaxRebelda
+Posto 2: brusco92 (small blind) ha raccolto (€0.20)
+Posto 3: caduceus369 (big blind) ha foldato prima del Flop
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933404615:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:55:16 CET [18/02/2025 17:55:16 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.66 chips) 
+Posto 3: caduceus369 (€12.41 chips) 
+Posto 5: vena2001 (€3.75 chips) 
+Posto 6: madmike2850 (€9.65 chips) 
+caduceus369: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h 4c]
+MaxRebelda è disconnesso 
+madmike2850: folda 
+brusco92: folda 
+caduceus369: folda 
+La puntata non vista (€0.05) è restituita a vena2001
+vena2001 ha raccolto €0.10 dal piatto
+vena2001: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: MaxRebelda
+Posto 2: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: vena2001 (big blind) ha raccolto (€0.10)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933406602:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:55:27 CET [18/02/2025 17:55:27 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.66 chips) 
+Posto 3: caduceus369 (€12.36 chips) 
+Posto 5: vena2001 (€3.80 chips) 
+Posto 6: madmike2850 (€9.65 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8d Js]
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+vena2001: folda 
+madmike2850: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: MaxRebelda
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha raccolto (€0.25)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933408401:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:55:36 CET [18/02/2025 17:55:36 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.66 chips) 
+Posto 3: caduceus369 (€12.51 chips) 
+Posto 5: vena2001 (€3.75 chips) 
+Posto 6: madmike2850 (€9.55 chips) 
+madmike2850: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6d 2h]
+caduceus369: folda 
+vena2001: folda 
+madmike2850: folda 
+La puntata non vista (€0.05) è restituita a brusco92
+brusco92 ha raccolto €0.10 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: MaxRebelda
+Posto 2: brusco92 (big blind) ha raccolto (€0.10)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933410024:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:55:45 CET [18/02/2025 17:55:45 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.71 chips) 
+Posto 3: caduceus369 (€12.51 chips) 
+Posto 5: vena2001 (€3.75 chips) 
+Posto 6: madmike2850 (€9.50 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qs 5h]
+vena2001: rilancia €0.10 fino a €0.20
+madmike2850: folda 
+brusco92: chiama €0.15
+caduceus369: folda 
+*** FLOP *** [3s 4c Td]
+brusco92: fa check 
+vena2001: fa check 
+*** TURN *** [3s 4c Td] [2h]
+brusco92: punta €0.34
+vena2001: folda 
+La puntata non vista (€0.34) è restituita a brusco92
+brusco92 ha raccolto €0.48 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.50 | Rake €0.02 
+Board [3s 4c Td 2h]
+Posto 1: MaxRebelda
+Posto 2: brusco92 (small blind) ha raccolto (€0.48)
+Posto 3: caduceus369 (big blind) ha foldato prima del Flop
+Posto 5: vena2001 ha foldato sul Turn
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933414172:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:56:07 CET [18/02/2025 17:56:07 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.99 chips) 
+Posto 3: caduceus369 (€12.41 chips) 
+Posto 5: vena2001 (€3.55 chips) 
+Posto 6: madmike2850 (€9.50 chips) 
+caduceus369: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8h 4h]
+madmike2850: rilancia €0.15 fino a €0.25
+brusco92: folda 
+caduceus369: folda 
+vena2001: chiama €0.15
+*** FLOP *** [Qd Kh Jd]
+vena2001: fa check 
+madmike2850: punta €0.35
+vena2001: folda 
+La puntata non vista (€0.35) è restituita a madmike2850
+madmike2850 ha raccolto €0.52 dal piatto
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.55 | Rake €0.03 
+Board [Qd Kh Jd]
+Posto 1: MaxRebelda
+Posto 2: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: vena2001 (big blind) ha foldato sul Flop
+Posto 6: madmike2850 ha raccolto (€0.52)
+
+
+
+Mano PokerStars n° 254933421103:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:56:43 CET [18/02/2025 17:56:43 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.99 chips) 
+Posto 3: caduceus369 (€12.36 chips) 
+Posto 5: vena2001 (€3.30 chips) 
+Posto 6: madmike2850 (€9.77 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8c Js]
+brusco92: folda 
+caduceus369 ha esaurito il tempo
+caduceus369: folda 
+vena2001: folda 
+La puntata non vista (€0.05) è restituita a madmike2850
+madmike2850 ha raccolto €0.10 dal piatto
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: MaxRebelda
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha raccolto (€0.10)
+
+
+
+Mano PokerStars n° 254933425064:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:57:04 CET [18/02/2025 17:57:04 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: MaxRebelda (€12.50 chips) è in sit-out
+Posto 2: brusco92 (€10.99 chips) 
+Posto 3: caduceus369 (€12.36 chips) 
+Posto 5: vena2001 (€3.25 chips) 
+Posto 6: madmike2850 (€9.82 chips) 
+madmike2850: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jd 7d]
+caduceus369: rilancia €0.20 fino a €0.30
+vena2001: folda 
+madmike2850: chiama €0.25
+brusco92: folda 
+*** FLOP *** [Ts 5s 9d]
+Ghjinni si siede al tavolo al posto #4 
+madmike2850: fa check 
+caduceus369: fa check 
+*** TURN *** [Ts 5s 9d] [6d]
+madmike2850: punta €1.01
+caduceus369: folda 
+La puntata non vista (€1.01) è restituita a madmike2850
+madmike2850 ha raccolto €0.67 dal piatto
+MaxRebelda si alza dal tavolo
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.70 | Rake €0.03 
+Board [Ts 5s 9d 6d]
+Posto 1: MaxRebelda
+Posto 2: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 ha foldato sul Turn
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha raccolto (€0.67)
+
+
+
+Mano PokerStars n° 254933434561:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:57:55 CET [18/02/2025 17:57:55 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 2: brusco92 (€10.89 chips) 
+Posto 3: caduceus369 (€12.06 chips) 
+Posto 4: Ghjinni (€4.63 chips) 
+Posto 5: vena2001 (€3.25 chips) 
+Posto 6: madmike2850 (€10.19 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+Ghjinni: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc 7s]
+Dade_Giada si siede al tavolo al posto #1 
+Ghjinni: fa check 
+vena2001: folda 
+madmike2850: folda 
+brusco92: folda 
+caduceus369: fa check 
+*** FLOP *** [Td 8c 9d]
+caduceus369: fa check 
+Ghjinni: fa check 
+*** TURN *** [Td 8c 9d] [Qh]
+caduceus369: punta €0.20
+Ghjinni: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.24 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0.01 
+Board [Td 8c 9d Qh]
+Posto 2: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha raccolto (€0.24)
+Posto 4: Ghjinni ha foldato sul Turn (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933439929:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:58:23 CET [18/02/2025 17:58:23 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: Dade_Giada (€6 chips) è in sit-out
+Posto 2: brusco92 (€10.84 chips) 
+Posto 3: caduceus369 (€12.20 chips) 
+Posto 4: Ghjinni (€4.53 chips) 
+Posto 5: vena2001 (€3.25 chips) 
+Posto 6: madmike2850 (€10.19 chips) 
+caduceus369: versa il piccolo buio €0.05
+Ghjinni: versa il grande buio €0.10
+Dade_Giada: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6s 4c]
+vena2001: folda 
+madmike2850: folda 
+brusco92: folda 
+caduceus369: folda 
+La puntata non vista (€0.05) è restituita a Ghjinni
+Ghjinni ha raccolto €0.10 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada
+Posto 2: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 4: Ghjinni (big blind) ha raccolto (€0.10)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933443809:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:58:43 CET [18/02/2025 17:58:43 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: Dade_Giada (€6 chips) è in sit-out
+Posto 2: brusco92 (€10.84 chips) 
+Posto 3: caduceus369 (€12.15 chips) 
+Posto 4: Ghjinni (€4.58 chips) 
+Posto 5: vena2001 (€3.25 chips) 
+Posto 6: madmike2850 (€10.19 chips) 
+Ghjinni: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+Dade_Giada ha esaurito il tempo
+Dade_Giada: è in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac 6c]
+madmike2850: folda 
+Dade_Giada è disconnesso 
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+Ghjinni: folda 
+vena2001: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: Dade_Giada
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha raccolto (€0.25)
+Posto 4: Ghjinni (small blind) ha foldato prima del Flop
+Posto 5: vena2001 (big blind) ha foldato prima del Flop
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933449554:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:59:14 CET [18/02/2025 17:59:14 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 4
+Posto 1: Dade_Giada (€6 chips) è in sit-out
+Posto 2: brusco92 (€10.84 chips) 
+Posto 3: caduceus369 (€12.30 chips) 
+Posto 4: Ghjinni (€4.53 chips) 
+Posto 5: vena2001 (€3.15 chips) 
+Posto 6: madmike2850 (€10.19 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+Dade_Giada: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts Jc]
+brusco92: folda 
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+La puntata non vista (€0.05) è restituita a madmike2850
+madmike2850 ha raccolto €0.10 dal piatto
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha raccolto (€0.10)
+
+
+
+Mano PokerStars n° 254933453561:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:59:35 CET [18/02/2025 17:59:35 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: Dade_Giada (€6 chips) 
+Posto 2: brusco92 (€10.84 chips) 
+Posto 3: caduceus369 (€12.30 chips) 
+Posto 4: Ghjinni (€4.53 chips) 
+Posto 5: vena2001 (€3.10 chips) 
+Posto 6: madmike2850 (€10.24 chips) 
+madmike2850: versa il piccolo buio €0.05
+Dade_Giada: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6c Ks]
+brusco92: folda 
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+La puntata non vista (€0.05) è restituita a Dade_Giada
+Dade_Giada ha raccolto €0.10 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada (big blind) ha raccolto (€0.10)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933455582:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 18/02/2025 23:59:46 CET [18/02/2025 17:59:46 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: Dade_Giada (€6.05 chips) 
+Posto 2: brusco92 (€10.84 chips) 
+Posto 3: caduceus369 (€12.30 chips) 
+Posto 4: Ghjinni (€4.53 chips) 
+Posto 5: vena2001 (€3.10 chips) 
+Posto 6: madmike2850 (€10.19 chips) 
+Dade_Giada: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h 6d]
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: rilancia €0.15 fino a €0.25
+Dade_Giada: folda 
+brusco92: folda 
+La puntata non vista (€0.15) è restituita a madmike2850
+madmike2850 ha raccolto €0.25 dal piatto
+madmike2850: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: Dade_Giada (small blind) ha foldato prima del Flop
+Posto 2: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha raccolto (€0.25)
+
+
+
+Mano PokerStars n° 254933458572:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:00:01 CET [18/02/2025 18:00:01 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 1: Dade_Giada (€6 chips) 
+Posto 2: brusco92 (€10.74 chips) 
+Posto 3: caduceus369 (€12.30 chips) 
+Posto 4: Ghjinni (€4.53 chips) 
+Posto 5: vena2001 (€3.10 chips) 
+Posto 6: madmike2850 (€10.34 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7s 3c]
+Ghjinni: chiama €0.10
+vena2001: chiama €0.10
+madmike2850: folda 
+Dade_Giada: chiama €0.10
+brusco92: folda 
+caduceus369: fa check 
+*** FLOP *** [Ac Kd Ah]
+caduceus369: fa check 
+Ghjinni: fa check 
+vena2001: fa check 
+Dade_Giada: punta €0.20
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+La puntata non vista (€0.20) è restituita a Dade_Giada
+Dade_Giada ha raccolto €0.43 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.45 | Rake €0.02 
+Board [Ac Kd Ah]
+Posto 1: Dade_Giada (bottone) ha raccolto (€0.43)
+Posto 2: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha foldato sul Flop
+Posto 4: Ghjinni ha foldato sul Flop
+Posto 5: vena2001 ha foldato sul Flop
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933468161:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:00:49 CET [18/02/2025 18:00:49 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: Dade_Giada (€6.33 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€12.20 chips) 
+Posto 4: Ghjinni (€4.43 chips) 
+Posto 5: vena2001 (€3 chips) 
+Posto 6: madmike2850 (€10.34 chips) 
+caduceus369: versa il piccolo buio €0.05
+Ghjinni: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc Jd]
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: folda 
+brusco92: folda 
+caduceus369: chiama €0.05
+Ghjinni: fa check 
+*** FLOP *** [6c Jh As]
+caduceus369: fa check 
+Ghjinni: fa check 
+*** TURN *** [6c Jh As] [3h]
+caduceus369: punta €0.20
+Ghjinni: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.19 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0.01 
+Board [6c Jh As 3h]
+Posto 1: Dade_Giada ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (small blind) ha raccolto (€0.19)
+Posto 4: Ghjinni (big blind) ha foldato sul Turn
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933473689:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:01:13 CET [18/02/2025 18:01:13 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: Dade_Giada (€6.33 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€12.29 chips) 
+Posto 4: Ghjinni (€4.33 chips) 
+Posto 5: vena2001 (€3 chips) 
+Posto 6: madmike2850 (€10.34 chips) 
+Ghjinni: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc Kc]
+madmike2850: rilancia €0.15 fino a €0.25
+Dade_Giada: folda 
+brusco92: folda 
+caduceus369: rilancia €0.55 fino a €0.80
+Ghjinni: folda 
+vena2001: chiama €0.70
+madmike2850: folda 
+*** FLOP *** [8d 9c 2s]
+vena2001: fa check 
+caduceus369: punta €0.70
+vena2001: chiama €0.70
+*** TURN *** [8d 9c 2s] [Js]
+vena2001: fa check 
+caduceus369: fa check 
+*** RIVER *** [8d 9c 2s Js] [As]
+vena2001: punta €1.50 ed è all-in
+caduceus369: folda 
+La puntata non vista (€1.50) è restituita a vena2001
+vena2001 ha raccolto €3.12 dal piatto
+vena2001: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €3.30 | Rake €0.18 
+Board [8d 9c 2s Js As]
+Posto 1: Dade_Giada ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha foldato sul River
+Posto 4: Ghjinni (small blind) ha foldato prima del Flop
+Posto 5: vena2001 (big blind) ha raccolto (€3.12)
+Posto 6: madmike2850 ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933496216:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:02:44 CET [18/02/2025 18:02:44 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 4
+Posto 1: Dade_Giada (€6.33 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€10.79 chips) 
+Posto 4: Ghjinni (€4.28 chips) 
+Posto 5: vena2001 (€4.62 chips) 
+Posto 6: madmike2850 (€10.09 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s 9s]
+Dade_Giada: chiama €0.10
+brusco92: folda 
+caduceus369: rilancia €0.40 fino a €0.50
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: folda 
+La puntata non vista (€0.40) è restituita a caduceus369
+caduceus369 ha raccolto €0.35 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.35 | Rake €0 
+Posto 1: Dade_Giada ha foldato prima del Flop
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha raccolto (€0.35)
+Posto 4: Ghjinni (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933504225:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:03:16 CET [18/02/2025 18:03:16 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: Dade_Giada (€6.23 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€11.04 chips) 
+Posto 4: Ghjinni (€4.28 chips) 
+Posto 5: vena2001 (€4.57 chips) 
+Posto 6: madmike2850 (€9.99 chips) 
+madmike2850: versa il piccolo buio €0.05
+Dade_Giada: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kc 7c]
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: chiama €0.20
+*** FLOP *** [9d Ts 3h]
+Dade_Giada: fa check 
+caduceus369: fa check 
+*** TURN *** [9d Ts 3h] [8c]
+Dade_Giada: punta €0.31
+caduceus369: rilancia €0.61 fino a €0.92
+Dade_Giada: chiama €0.61
+*** RIVER *** [9d Ts 3h 8c] [3c]
+Dade_Giada: punta €1.18
+caduceus369: folda 
+La puntata non vista (€1.18) è restituita a Dade_Giada
+Dade_Giada ha raccolto €2.36 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €2.49 | Rake €0.13 
+Board [9d Ts 3h 8c 3c]
+Posto 1: Dade_Giada (big blind) ha raccolto (€2.36)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato sul River
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933519721:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:04:17 CET [18/02/2025 18:04:17 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: Dade_Giada (€7.37 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€9.82 chips) 
+Posto 4: Ghjinni (€4.28 chips) 
+Posto 5: vena2001 (€4.57 chips) 
+Posto 6: madmike2850 (€9.94 chips) 
+Dade_Giada: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6d Jh]
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: folda 
+La puntata non vista (€0.05) è restituita a brusco92
+brusco92 ha raccolto €0.10 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada (small blind) ha foldato prima del Flop
+Posto 2: brusco92 (big blind) ha raccolto (€0.10)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933523695:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:04:32 CET [18/02/2025 18:04:32 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 1
+Posto 1: Dade_Giada (€7.32 chips) 
+Posto 2: brusco92 (€10.74 chips) 
+Posto 3: caduceus369 (€9.82 chips) 
+Posto 4: Ghjinni (€4.28 chips) 
+Posto 5: vena2001 (€4.57 chips) 
+Posto 6: madmike2850 (€9.94 chips) 
+brusco92: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4d 6c]
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: folda 
+brusco92: folda 
+La puntata non vista (€0.05) è restituita a caduceus369
+caduceus369 ha raccolto €0.10 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: caduceus369 (big blind) ha raccolto (€0.10)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933527341:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:04:47 CET [18/02/2025 18:04:47 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 2
+Posto 1: Dade_Giada (€7.32 chips) 
+Posto 2: brusco92 (€10.69 chips) 
+Posto 3: caduceus369 (€9.87 chips) 
+Posto 4: Ghjinni (€4.28 chips) 
+Posto 5: vena2001 (€4.57 chips) 
+Posto 6: madmike2850 (€9.94 chips) 
+caduceus369: versa il piccolo buio €0.05
+Ghjinni: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ad 8h]
+vena2001: chiama €0.10
+madmike2850: folda 
+Dade_Giada: chiama €0.10
+brusco92: chiama €0.10
+caduceus369: folda 
+Ghjinni: fa check 
+*** FLOP *** [5s 7d 7s]
+Ghjinni: fa check 
+vena2001: fa check 
+Dade_Giada: punta €0.22
+brusco92: folda 
+Ghjinni: folda 
+vena2001: folda 
+La puntata non vista (€0.22) è restituita a Dade_Giada
+Dade_Giada ha raccolto €0.43 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.45 | Rake €0.02 
+Board [5s 7d 7s]
+Posto 1: Dade_Giada ha raccolto (€0.43)
+Posto 2: brusco92 (bottone) ha foldato sul Flop
+Posto 3: caduceus369 (small blind) ha foldato prima del Flop
+Posto 4: Ghjinni (big blind) ha foldato sul Flop
+Posto 5: vena2001 ha foldato sul Flop
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933537207:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:05:25 CET [18/02/2025 18:05:25 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 3
+Posto 1: Dade_Giada (€7.65 chips) 
+Posto 2: brusco92 (€10.59 chips) 
+Posto 3: caduceus369 (€9.82 chips) 
+Posto 4: Ghjinni (€4.18 chips) 
+Posto 5: vena2001 (€4.47 chips) 
+Posto 6: madmike2850 (€9.94 chips) 
+Ghjinni: versa il piccolo buio €0.05
+vena2001: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h Jh]
+madmike2850: folda 
+Dade_Giada: folda 
+brusco92: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+Ghjinni: rilancia €0.20 fino a €0.50
+vena2001: folda 
+caduceus369: chiama €0.20
+*** FLOP *** [3d 4d 8h]
+Ghjinni: punta €0.52
+caduceus369: folda 
+La puntata non vista (€0.52) è restituita a Ghjinni
+Ghjinni ha raccolto €1.04 dal piatto
+Ghjinni: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €1.10 | Rake €0.06 
+Board [3d 4d 8h]
+Posto 1: Dade_Giada ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 (bottone) ha foldato sul Flop
+Posto 4: Ghjinni (small blind) ha raccolto (€1.04)
+Posto 5: vena2001 (big blind) ha foldato prima del Flop
+Posto 6: madmike2850 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933549951:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:06:15 CET [18/02/2025 18:06:15 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 4
+Posto 1: Dade_Giada (€7.65 chips) 
+Posto 2: brusco92 (€10.59 chips) 
+Posto 3: caduceus369 (€9.32 chips) 
+Posto 4: Ghjinni (€4.72 chips) 
+Posto 5: vena2001 (€4.37 chips) 
+Posto 6: madmike2850 (€9.94 chips) 
+vena2001: versa il piccolo buio €0.05
+madmike2850: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jh 6h]
+Dade_Giada: folda 
+brusco92: folda 
+caduceus369: folda 
+Ghjinni: rilancia €0.25 fino a €0.35
+vena2001: folda 
+madmike2850: folda 
+La puntata non vista (€0.25) è restituita a Ghjinni
+Ghjinni ha raccolto €0.25 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: Dade_Giada ha foldato prima del Flop (non ha puntato)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni (bottone) ha raccolto (€0.25)
+Posto 5: vena2001 (small blind) ha foldato prima del Flop
+Posto 6: madmike2850 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933554803:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:06:34 CET [18/02/2025 18:06:34 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 5
+Posto 1: Dade_Giada (€7.65 chips) 
+Posto 2: brusco92 (€10.59 chips) 
+Posto 3: caduceus369 (€9.32 chips) 
+Posto 4: Ghjinni (€4.87 chips) 
+Posto 5: vena2001 (€4.32 chips) 
+Posto 6: madmike2850 (€9.84 chips) 
+madmike2850: versa il piccolo buio €0.05
+Dade_Giada: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6s 3c]
+brusco92: folda 
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+La puntata non vista (€0.05) è restituita a Dade_Giada
+Dade_Giada ha raccolto €0.10 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: Dade_Giada (big blind) ha raccolto (€0.10)
+Posto 2: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933558278:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304117469YM] - 19/02/2025 0:06:47 CET [18/02/2025 18:06:47 ET]
+Tavolo 'Eumaios III' 6-max Il bottone è al posto 6
+Posto 1: Dade_Giada (€7.70 chips) 
+Posto 2: brusco92 (€10.59 chips) 
+Posto 3: caduceus369 (€9.32 chips) 
+Posto 4: Ghjinni (€4.87 chips) 
+Posto 5: vena2001 (€4.32 chips) 
+Posto 6: madmike2850 (€9.79 chips) 
+Dade_Giada: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3c 2s]
+caduceus369: folda 
+Ghjinni: folda 
+vena2001: folda 
+madmike2850: folda 
+Dade_Giada: chiama €0.05
+brusco92: fa check 
+*** FLOP *** [Ks As Th]
+Dade_Giada: punta €0.10
+brusco92: chiama €0.10
+*** TURN *** [Ks As Th] [2h]
+Dade_Giada: punta €0.20
+brusco92: folda 
+La puntata non vista (€0.20) è restituita a Dade_Giada
+Dade_Giada ha raccolto €0.38 dal piatto
+Dade_Giada: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.40 | Rake €0.02 
+Board [Ks As Th 2h]
+Posto 1: Dade_Giada (small blind) ha raccolto (€0.38)
+Posto 2: brusco92 (big blind) ha foldato sul Turn
+Posto 3: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: Ghjinni ha foldato prima del Flop (non ha puntato)
+Posto 5: vena2001 ha foldato prima del Flop (non ha puntato)
+Posto 6: madmike2850 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+

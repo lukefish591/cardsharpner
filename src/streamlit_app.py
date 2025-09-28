@@ -51,10 +51,10 @@ class HeroDataAnalyzer:
         self.parser = HeroAnalysisParser()
         self.df = None
     
-    def load_data(self, folder_path: str):
+    def load_data(self, folder_path: str, currency: str, username: str):
         """Load and process hand history data"""
         with st.spinner("Loading and analyzing hand histories..."):
-            self.df = self.parser.process_files(folder_path)
+            self.df = self.parser.process_files(folder_path, currency, username)
         return not self.df.empty
     
     def calculate_key_metrics(self):
@@ -177,7 +177,7 @@ class HeroDataAnalyzer:
             hovermode='x unified'
         )
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     
     def render_rake_analysis_chart(self):
         """Render rake analysis chart comparing profit with and without rake"""
@@ -237,7 +237,7 @@ class HeroDataAnalyzer:
         fig.update_yaxes(title_text="Cumulative Profit ($)", row=1, col=1)
         fig.update_yaxes(title_text="Cumulative Rake ($)", row=2, col=1)
         
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
     
     def render_position_analysis(self):
         """Render position-based analysis"""
@@ -258,7 +258,7 @@ class HeroDataAnalyzer:
         ]
         
         st.subheader("Position Analysis")
-        st.dataframe(position_stats, use_container_width=True)
+        st.dataframe(position_stats, width="stretch")
     
     def render_stakes_analysis(self):
         """Render stakes-based analysis"""
@@ -274,7 +274,7 @@ class HeroDataAnalyzer:
         stakes_stats.columns = ['Hands', 'Total_Profit', 'Avg_Profit', 'Showdown_Rate', 'Flop_Win_Rate']
         
         st.subheader("Stakes Analysis")
-        st.dataframe(stakes_stats, use_container_width=True)
+        st.dataframe(stakes_stats, width="stretch")
     
     def render_hand_strength_analysis(self):
         """Render hand strength analysis"""
@@ -330,7 +330,7 @@ class HeroDataAnalyzer:
         hand_type_stats.columns = ['Hands', 'Total_Profit', 'Avg_Profit', 'Showdown_Rate', 'Flop_Win_Rate']
         
         st.subheader("Hand Type Analysis")
-        st.dataframe(hand_type_stats, use_container_width=True)
+        st.dataframe(hand_type_stats, width="stretch")
     
     def render_detailed_data(self):
         """Render detailed hand data"""
@@ -370,7 +370,7 @@ class HeroDataAnalyzer:
             filtered_df[['Hand_ID', 'Timestamp', 'Position', 'Stakes', 'Hole_Cards', 
                        'Net_Profit', 'Went_to_Showdown', 'Won_When_Saw_Flop', 
                        'Preflop_Raised', 'CBet_Flop']],
-            use_container_width=True
+            width="stretch"
         )
     
     def export_data(self):
@@ -390,6 +390,8 @@ def main():
     st.title("📊 Hero Poker Data Analysis")
     st.markdown("Streamlined poker data analysis focused on Hero performance metrics")
     
+    
+
     # Initialize analyzer
     if 'analyzer' not in st.session_state:
         st.session_state.analyzer = HeroDataAnalyzer()
@@ -400,13 +402,27 @@ def main():
     with st.sidebar:
         st.header("📁 Data Controls")
         
-        folder_path = st.text_input("Hand History Folder:", "hand_histories")
+        folder_path = st.text_input("Hand History Folder:", "hand_ps")
+
+        folder_path = f"data/{folder_path}"
+
+        # files = st.file_uploader("📤 Upload file",  accept_multiple_files=True)
+        # print(files)        
+
+        currency = st.text_input("currency", "€")
+        username = st.text_input("Your username", "caduceus369")
         
         if st.button("🔄 Load Data"):
-            if analyzer.load_data(folder_path):
+            # for file in files:
+                # print(file.getvalue().decode())
+                # analyzer.parser.parse_file(file.getvalue().decode())
+
+            if analyzer.load_data(folder_path, currency, username):
                 st.success(f"Loaded {len(analyzer.df)} hands")
             else:
                 st.error("No data found. Please check the folder path.")
+
+        # print(analyzer.df)
         
         st.header("📊 Analysis Options")
         
@@ -414,9 +430,9 @@ def main():
         show_profit_chart = st.checkbox("Profit Chart", value=True)
         show_rake_analysis = st.checkbox("Rake Analysis", value=True)
         show_position_analysis = st.checkbox("Position Analysis", value=True)
-        show_stakes_analysis = st.checkbox("Stakes Analysis", value=False)
+        show_stakes_analysis = st.checkbox("Stakes Analysis", value=True)
         show_hand_analysis = st.checkbox("Hand Type Analysis", value=False)
-        show_detailed_data = st.checkbox("Detailed Data", value=False)
+        show_detailed_data = st.checkbox("Detailed Data", value=True)
     
     # Main content
     if analyzer.df is not None and not analyzer.df.empty:

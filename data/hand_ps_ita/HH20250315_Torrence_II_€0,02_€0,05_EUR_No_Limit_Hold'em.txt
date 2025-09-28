@@ -1,0 +1,941 @@
+﻿Mano PokerStars n° 255304380013:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:44:17 CET [15/03/2025 17:44:17 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 5: eliktiss (€5 chips) è in sit-out
+Posto 1: Themele24 (€5.31 chips) 
+Posto 2: caduceus369 (€5 chips) 
+Posto 4: JOKER67961 (€9.17 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+Themele24: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+eliktiss: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc 6s]
+JOKER67961: chiama €0.05
+pantrarocks5: rilancia €0.35 fino a €0.40
+Themele24: folda 
+caduceus369: folda 
+JOKER67961: folda 
+La puntata non vista (€0.35) è restituita a pantrarocks5
+pantrarocks5 ha raccolto €0.17 dal piatto
+pantrarocks5: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.17 | Rake €0 
+Posto 3: Idro2192
+Posto 5: eliktiss
+Posto 1: Themele24 (small blind) ha foldato prima del Flop
+Posto 2: caduceus369 (big blind) ha foldato prima del Flop
+Posto 4: JOKER67961 ha foldato prima del Flop
+Posto 6: pantrarocks5 (bottone) ha raccolto (€0.17)
+
+
+
+Mano PokerStars n° 255304390025:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:44:53 CET [15/03/2025 17:44:53 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 1
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 5: eliktiss (€5 chips) è in sit-out
+Posto 1: Themele24 (€5.29 chips) 
+Posto 2: caduceus369 (€4.95 chips) 
+Posto 4: JOKER67961 (€9.12 chips) 
+Posto 6: pantrarocks5 (€5.12 chips) 
+caduceus369: versa il piccolo buio €0.02
+JOKER67961: versa il grande buio €0.05
+eliktiss: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qc Kc]
+pantrarocks5: folda 
+Themele24: rilancia €0.07 fino a €0.12
+caduceus369: rilancia €0.27 fino a €0.39
+JOKER67961: folda 
+Themele24: chiama €0.27
+*** FLOP *** [Js 2d Jc]
+caduceus369: fa check 
+Themele24: fa check 
+*** TURN *** [Js 2d Jc] [Jh]
+caduceus369: fa check 
+Themele24: punta €0.17
+caduceus369: rilancia €0.27 fino a €0.44
+Themele24: chiama €0.27
+*** RIVER *** [Js 2d Jc Jh] [9c]
+caduceus369: punta €1.62
+Themele24: chiama €1.62
+*** SHOW DOWN ***
+caduceus369: mostra [Qc Kc] (un tris di Jack)
+Themele24: mostra [8s Ad] (un tris di Jack - Asso kicker)
+Themele24 ha raccolto €4.68 dal piatto
+*** RIASSUNTO ***
+Piatto totale €4.95 | Rake €0.27 
+Board [Js 2d Jc Jh 9c]
+Posto 3: Idro2192
+Posto 5: eliktiss
+Posto 1: Themele24 (bottone) ha mostrato [8s Ad] e ha vinto (€4.68) con un tris di Jack
+Posto 2: caduceus369 (small blind) ha mostrato [Qc Kc] e ha perso con un tris di Jack
+Posto 4: JOKER67961 (big blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304401739:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:45:36 CET [15/03/2025 17:45:36 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 2
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 1: Themele24 (€7.52 chips) 
+Posto 2: caduceus369 (€2.50 chips) 
+Posto 4: JOKER67961 (€9.07 chips) 
+Posto 5: eliktiss (€5 chips) 
+Posto 6: pantrarocks5 (€5.12 chips) 
+JOKER67961: versa il piccolo buio €0.02
+eliktiss: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qd 5h]
+pantrarocks5: folda 
+Themele24: folda 
+caduceus369: folda 
+JOKER67961: chiama €0.03
+eliktiss: fa check 
+*** FLOP *** [Jd 7c Ac]
+JOKER67961: fa check 
+eliktiss: fa check 
+*** TURN *** [Jd 7c Ac] [Ts]
+JOKER67961: fa check 
+eliktiss: fa check 
+*** RIVER *** [Jd 7c Ac Ts] [9c]
+JOKER67961: fa check 
+eliktiss: punta €0.10
+Themele24 è disconnesso 
+JOKER67961: folda 
+La puntata non vista (€0.10) è restituita a eliktiss
+eliktiss ha raccolto €0.10 dal piatto
+eliktiss: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Board [Jd 7c Ac Ts 9c]
+Posto 3: Idro2192
+Posto 1: Themele24 ha foldato prima del Flop (non ha puntato)
+Posto 2: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (small blind) ha foldato sul River
+Posto 5: eliktiss (big blind) ha raccolto (€0.10)
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304416630:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:46:30 CET [15/03/2025 17:46:30 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 4
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 1: Themele24 (€7.52 chips) 
+Posto 2: caduceus369 (€2.50 chips) 
+Posto 4: JOKER67961 (€9.02 chips) 
+Posto 5: eliktiss (€5.05 chips) 
+Posto 6: pantrarocks5 (€5.12 chips) 
+eliktiss: versa il piccolo buio €0.02
+pantrarocks5: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9d 9s]
+Themele24 ha esaurito il tempo  mentre era disconnesso
+Themele24: folda 
+caduceus369: rilancia €0.10 fino a €0.15
+JOKER67961: chiama €0.15
+eliktiss: folda 
+pantrarocks5: folda 
+*** FLOP *** [Tc 8h Js]
+caduceus369: fa check 
+JOKER67961: fa check 
+*** TURN *** [Tc 8h Js] [9c]
+caduceus369: fa check 
+JOKER67961: fa check 
+*** RIVER *** [Tc 8h Js 9c] [8s]
+caduceus369: punta €0.35
+JOKER67961: folda 
+La puntata non vista (€0.35) è restituita a caduceus369
+caduceus369 ha raccolto €0.35 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.37 | Rake €0.02 
+Board [Tc 8h Js 9c 8s]
+Posto 3: Idro2192
+Posto 1: Themele24 ha foldato prima del Flop (non ha puntato)
+Posto 2: caduceus369 ha raccolto (€0.35)
+Posto 4: JOKER67961 (bottone) ha foldato sul River
+Posto 5: eliktiss (small blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304433812:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:47:33 CET [15/03/2025 17:47:33 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 5
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5 chips) 
+Posto 4: JOKER67961 (€8.87 chips) 
+Posto 5: eliktiss (€5.03 chips) 
+Posto 6: pantrarocks5 (€5.07 chips) 
+pantrarocks5: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Js Ac]
+JOKER67961: chiama €0.05
+eliktiss: folda 
+pantrarocks5: folda 
+caduceus369: rilancia €0.15 fino a €0.20
+JOKER67961: chiama €0.15
+*** FLOP *** [2h 7s Jh]
+caduceus369: fa check 
+JOKER67961: fa check 
+*** TURN *** [2h 7s Jh] [Ad]
+caduceus369: punta €0.10
+JOKER67961: chiama €0.10
+*** RIVER *** [2h 7s Jh Ad] [Qc]
+caduceus369: punta €0.40
+JOKER67961: folda 
+La puntata non vista (€0.40) è restituita a caduceus369
+caduceus369 ha raccolto €0.59 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.62 | Rake €0.03 
+Board [2h 7s Jh Ad Qc]
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 (big blind) ha raccolto (€0.59)
+Posto 4: JOKER67961 ha foldato sul River
+Posto 5: eliktiss (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304450574:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:48:34 CET [15/03/2025 17:48:34 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5.29 chips) 
+Posto 4: JOKER67961 (€8.57 chips) 
+Posto 5: eliktiss (€5.03 chips) 
+Posto 6: pantrarocks5 (€5.05 chips) 
+caduceus369: versa il piccolo buio €0.02
+JOKER67961: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qh Kd]
+eliktiss: folda 
+pantrarocks5: rilancia €0.12 fino a €0.17
+caduceus369: rilancia €0.28 fino a €0.45
+JOKER67961: folda 
+pantrarocks5: folda 
+La puntata non vista (€0.28) è restituita a caduceus369
+caduceus369 ha raccolto €0.39 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.39 | Rake €0 
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 (small blind) ha raccolto (€0.39)
+Posto 4: JOKER67961 (big blind) ha foldato prima del Flop
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (bottone) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304457461:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:48:59 CET [15/03/2025 17:48:59 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 2
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5.51 chips) 
+Posto 4: JOKER67961 (€8.52 chips) 
+Posto 5: eliktiss (€5.03 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+JOKER67961: versa il piccolo buio €0.02
+eliktiss: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4d 2s]
+pantrarocks5: folda 
+caduceus369: folda 
+JOKER67961: chiama €0.03
+eliktiss: rilancia €0.15 fino a €0.20
+JOKER67961: chiama €0.15
+*** FLOP *** [9s Tc Js]
+JOKER67961: fa check 
+eliktiss: punta €0.19
+JOKER67961: chiama €0.19
+*** TURN *** [9s Tc Js] [3s]
+JOKER67961: fa check 
+eliktiss: fa check 
+*** RIVER *** [9s Tc Js 3s] [Ks]
+JOKER67961: punta €0.35
+eliktiss: rilancia €0.45 fino a €0.80
+JOKER67961: folda 
+La puntata non vista (€0.45) è restituita a eliktiss
+eliktiss ha raccolto €1.40 dal piatto
+eliktiss: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €1.48 | Rake €0.08 
+Board [9s Tc Js 3s Ks]
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (small blind) ha foldato sul River
+Posto 5: eliktiss (big blind) ha raccolto (€1.40)
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304477284:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:50:12 CET [15/03/2025 17:50:12 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 4
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5.51 chips) 
+Posto 4: JOKER67961 (€7.78 chips) 
+Posto 5: eliktiss (€5.69 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+eliktiss: versa il piccolo buio €0.02
+pantrarocks5: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Qd 2c]
+caduceus369: folda 
+JOKER67961: rilancia €0.05 fino a €0.10
+eliktiss: rilancia €0.30 fino a €0.40
+pantrarocks5: folda 
+JOKER67961: chiama €0.30
+*** FLOP *** [Ts 9c Ks]
+eliktiss: punta €0.41
+JOKER67961: folda 
+La puntata non vista (€0.41) è restituita a eliktiss
+eliktiss ha raccolto €0.81 dal piatto
+eliktiss: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.85 | Rake €0.04 
+Board [Ts 9c Ks]
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (bottone) ha foldato sul Flop
+Posto 5: eliktiss (small blind) ha raccolto (€0.81)
+Posto 6: pantrarocks5 (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304486796:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:50:47 CET [15/03/2025 17:50:47 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 5
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5.51 chips) 
+Posto 4: JOKER67961 (€7.38 chips) 
+Posto 5: eliktiss (€6.10 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+pantrarocks5: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [2c Ad]
+JOKER67961: chiama €0.05
+eliktiss: folda 
+pantrarocks5: folda 
+caduceus369: fa check 
+*** FLOP *** [6c 8c 3h]
+caduceus369: fa check 
+JOKER67961: fa check 
+*** TURN *** [6c 8c 3h] [7s]
+caduceus369: punta €0.10
+JOKER67961: chiama €0.10
+*** RIVER *** [6c 8c 3h 7s] [9h]
+caduceus369: fa check 
+JOKER67961: punta €2.25
+caduceus369: folda 
+La puntata non vista (€2.25) è restituita a JOKER67961
+JOKER67961 ha raccolto €0.31 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.32 | Rake €0.01 
+Board [6c 8c 3h 7s 9h]
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 (big blind) ha foldato sul River
+Posto 4: JOKER67961 ha raccolto (€0.31)
+Posto 5: eliktiss (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304498722:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:51:31 CET [15/03/2025 17:51:31 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 3: Idro2192 (€0 chips) è in sit-out
+Posto 2: caduceus369 (€5.36 chips) 
+Posto 4: JOKER67961 (€7.54 chips) 
+Posto 5: eliktiss (€6.10 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+caduceus369: versa il piccolo buio €0.02
+JOKER67961: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7s 5d]
+eliktiss: folda 
+pantrarocks5: rilancia €0.12 fino a €0.17
+caduceus369: folda 
+JOKER67961: chiama €0.12
+*** FLOP *** [Jh Jc Ad]
+JOKER67961: fa check 
+pantrarocks5: punta €0.19
+JOKER67961: folda 
+La puntata non vista (€0.19) è restituita a pantrarocks5
+pantrarocks5 ha raccolto €0.35 dal piatto
+Idro2192 si alza dal tavolo
+pantrarocks5: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.36 | Rake €0.01 
+Board [Jh Jc Ad]
+Posto 1: Themele24
+Posto 3: Idro2192
+Posto 2: caduceus369 (small blind) ha foldato prima del Flop
+Posto 4: JOKER67961 (big blind) ha foldato sul Flop
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (bottone) ha raccolto (€0.35)
+
+
+
+Mano PokerStars n° 255304505140:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:51:55 CET [15/03/2025 17:51:55 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 2
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.34 chips) 
+Posto 4: JOKER67961 (€7.37 chips) 
+Posto 5: eliktiss (€6.10 chips) 
+Posto 6: pantrarocks5 (€5.18 chips) 
+JOKER67961: versa il piccolo buio €0.02
+eliktiss: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [3s 7h]
+pantrarocks5: rilancia €0.12 fino a €0.17
+999rizla si siede al tavolo al posto #3 
+caduceus369: folda 
+JOKER67961: chiama €0.15
+eliktiss: folda 
+*** FLOP *** [8s 4c 4h]
+JOKER67961: fa check 
+pantrarocks5: punta €0.20
+JOKER67961: chiama €0.20
+*** TURN *** [8s 4c 4h] [7c]
+JOKER67961: fa check 
+pantrarocks5: fa check 
+*** RIVER *** [8s 4c 4h 7c] [2c]
+JOKER67961: fa check 
+pantrarocks5: fa check 
+*** SHOW DOWN ***
+JOKER67961: mostra [Kd 5d] (una coppia di Quattro)
+pantrarocks5: mostra [Ah 9h] (una coppia di Quattro - Asso kicker)
+pantrarocks5 ha raccolto €0.75 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.79 | Rake €0.04 
+Board [8s 4c 4h 7c 2c]
+Posto 1: Themele24
+Posto 2: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (small blind) ha mostrato [Kd 5d] e ha perso con una coppia di Quattro
+Posto 5: eliktiss (big blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 ha mostrato [Ah 9h] e ha vinto (€0.75) con una coppia di Quattro
+
+
+
+Mano PokerStars n° 255304520699:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:52:53 CET [15/03/2025 17:52:53 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 4
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.34 chips) 
+Posto 3: 999rizla (€2.56 chips) 
+Posto 4: JOKER67961 (€7 chips) 
+Posto 5: eliktiss (€6.05 chips) 
+Posto 6: pantrarocks5 (€5.56 chips) 
+eliktiss: versa il piccolo buio €0.02
+pantrarocks5: versa il grande buio €0.05
+999rizla: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th 2h]
+caduceus369: folda 
+999rizla: fa check 
+JOKER67961: folda 
+eliktiss: folda 
+pantrarocks5: fa check 
+*** FLOP *** [7c 8d Kh]
+pantrarocks5: fa check 
+999rizla: fa check 
+*** TURN *** [7c 8d Kh] [Ts]
+pantrarocks5: fa check 
+999rizla: fa check 
+*** RIVER *** [7c 8d Kh Ts] [3c]
+pantrarocks5: fa check 
+999rizla: fa check 
+*** SHOW DOWN ***
+pantrarocks5: mostra [8c 3h] (una doppia coppia, Otto e Tre)
+999rizla: non mostra le carte 
+pantrarocks5 ha raccolto €0.12 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.12 | Rake €0 
+Board [7c 8d Kh Ts 3c]
+Posto 1: Themele24
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: 999rizla non ha mostrato le carte [4d 2c]
+Posto 4: JOKER67961 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: eliktiss (small blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 (big blind) ha mostrato [8c 3h] e ha vinto (€0.12) con una doppia coppia, Otto e Tre
+
+
+
+Mano PokerStars n° 255304531109:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:53:32 CET [15/03/2025 17:53:32 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 5
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.34 chips) 
+Posto 3: 999rizla (€2.51 chips) 
+Posto 4: JOKER67961 (€7 chips) 
+Posto 5: eliktiss (€6.03 chips) 
+Posto 6: pantrarocks5 (€5.63 chips) 
+pantrarocks5: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5s Kh]
+999rizla: chiama €0.05
+JOKER67961: chiama €0.05
+eliktiss: rilancia €0.15 fino a €0.20
+pantrarocks5: folda 
+caduceus369: folda 
+999rizla: chiama €0.15
+JOKER67961: chiama €0.15
+*** FLOP *** [6s 4s Qh]
+999rizla: fa check 
+JOKER67961: punta €0.25
+eliktiss: folda 
+999rizla: folda 
+La puntata non vista (€0.25) è restituita a JOKER67961
+JOKER67961 ha raccolto €0.64 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.67 | Rake €0.03 
+Board [6s 4s Qh]
+Posto 1: Themele24
+Posto 2: caduceus369 (big blind) ha foldato prima del Flop
+Posto 3: 999rizla ha foldato sul Flop
+Posto 4: JOKER67961 ha raccolto (€0.64)
+Posto 5: eliktiss (bottone) ha foldato sul Flop
+Posto 6: pantrarocks5 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304539690:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:54:04 CET [15/03/2025 17:54:04 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.29 chips) 
+Posto 3: 999rizla (€2.31 chips) 
+Posto 4: JOKER67961 (€7.44 chips) 
+Posto 5: eliktiss (€5.83 chips) 
+Posto 6: pantrarocks5 (€5.61 chips) 
+caduceus369: versa il piccolo buio €0.02
+999rizla: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Td 8h]
+JOKER67961: rilancia €0.05 fino a €0.10
+eliktiss: folda 
+pantrarocks5: folda 
+caduceus369: folda 
+999rizla: folda 
+La puntata non vista (€0.05) è restituita a JOKER67961
+JOKER67961 ha raccolto €0.12 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.12 | Rake €0 
+Posto 1: Themele24
+Posto 2: caduceus369 (small blind) ha foldato prima del Flop
+Posto 3: 999rizla (big blind) ha foldato prima del Flop
+Posto 4: JOKER67961 ha raccolto (€0.12)
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304545497:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:54:26 CET [15/03/2025 17:54:26 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 2
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.27 chips) 
+Posto 3: 999rizla (€2.26 chips) 
+Posto 4: JOKER67961 (€7.51 chips) 
+Posto 5: eliktiss (€5.83 chips) 
+Posto 6: pantrarocks5 (€5.61 chips) 
+999rizla: versa il piccolo buio €0.02
+JOKER67961: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Js Ah]
+eliktiss: folda 
+pantrarocks5: folda 
+caduceus369: rilancia €0.10 fino a €0.15
+999rizla: folda 
+JOKER67961: chiama €0.10
+*** FLOP *** [8d Jh 8h]
+JOKER67961: fa check 
+caduceus369: punta €0.10
+JOKER67961: folda 
+La puntata non vista (€0.10) è restituita a caduceus369
+caduceus369 ha raccolto €0.31 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.32 | Rake €0.01 
+Board [8d Jh 8h]
+Posto 1: Themele24
+Posto 2: caduceus369 (bottone) ha raccolto (€0.31)
+Posto 3: 999rizla (small blind) ha foldato prima del Flop
+Posto 4: JOKER67961 (big blind) ha foldato sul Flop
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304552271:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:54:51 CET [15/03/2025 17:54:51 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 3
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.43 chips) 
+Posto 3: 999rizla (€2.24 chips) 
+Posto 4: JOKER67961 (€7.36 chips) 
+Posto 5: eliktiss (€5.83 chips) 
+Posto 6: pantrarocks5 (€5.61 chips) 
+JOKER67961: versa il piccolo buio €0.02
+eliktiss: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d 5s]
+pantrarocks5: folda 
+caduceus369: rilancia €0.10 fino a €0.15
+999rizla: folda 
+JOKER67961: chiama €0.13
+eliktiss: folda 
+*** FLOP *** [8h Kh 9d]
+JOKER67961: fa check 
+caduceus369: punta €0.15
+JOKER67961: folda 
+La puntata non vista (€0.15) è restituita a caduceus369
+caduceus369 ha raccolto €0.34 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.35 | Rake €0.01 
+Board [8h Kh 9d]
+Posto 1: Themele24
+Posto 2: caduceus369 ha raccolto (€0.34)
+Posto 3: 999rizla (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (small blind) ha foldato sul Flop
+Posto 5: eliktiss (big blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304559929:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:55:25 CET [15/03/2025 17:55:25 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 4
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.62 chips) 
+Posto 3: 999rizla (€2.24 chips) 
+Posto 4: JOKER67961 (€7.21 chips) 
+Posto 5: eliktiss (€5.78 chips) 
+Posto 6: pantrarocks5 (€5.61 chips) 
+eliktiss: versa il piccolo buio €0.02
+pantrarocks5: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6s Kd]
+caduceus369: folda 
+999rizla: folda 
+JOKER67961: folda 
+eliktiss: folda 
+La puntata non vista (€0.03) è restituita a pantrarocks5
+pantrarocks5 ha raccolto €0.04 dal piatto
+pantrarocks5: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.04 | Rake €0 
+Posto 1: Themele24
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: 999rizla ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: eliktiss (small blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 (big blind) ha raccolto (€0.04)
+
+
+
+Mano PokerStars n° 255304562873:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:55:41 CET [15/03/2025 17:55:41 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 5
+Posto 1: Themele24 (€7.52 chips) è in sit-out
+Posto 2: caduceus369 (€5.62 chips) 
+Posto 3: 999rizla (€2.24 chips) 
+Posto 4: JOKER67961 (€7.21 chips) 
+Posto 5: eliktiss (€5.76 chips) 
+Posto 6: pantrarocks5 (€5.63 chips) 
+pantrarocks5: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d Js]
+999rizla: chiama €0.05
+JOKER67961: chiama €0.05
+eliktiss: folda 
+pantrarocks5: rilancia €0.35 fino a €0.40
+caduceus369: folda 
+999rizla: folda 
+JOKER67961: chiama €0.35
+*** FLOP *** [6c 9s Qs]
+pantrarocks5: punta €0.60
+JOKER67961: chiama €0.60
+*** TURN *** [6c 9s Qs] [3c]
+pantrarocks5: fa check 
+Themele24 si alza dal tavolo
+JOKER67961: fa check 
+*** RIVER *** [6c 9s Qs 3c] [2d]
+pantrarocks5: punta €0.68
+igariok800 si siede al tavolo al posto #1 
+JOKER67961: chiama €0.68
+*** SHOW DOWN ***
+pantrarocks5: mostra [Ah 2h] (una coppia di Due)
+JOKER67961: mostra [Kh 9d] (una coppia di Nove)
+JOKER67961 ha raccolto €3.27 dal piatto
+*** RIASSUNTO ***
+Piatto totale €3.46 | Rake €0.19 
+Board [6c 9s Qs 3c 2d]
+Posto 1: Themele24
+Posto 2: caduceus369 (big blind) ha foldato prima del Flop
+Posto 3: 999rizla ha foldato prima del Flop
+Posto 4: JOKER67961 ha mostrato [Kh 9d] e ha vinto (€3.27) con una coppia di Nove
+Posto 5: eliktiss (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (small blind) ha mostrato [Ah 2h] e ha perso con una coppia di Due
+
+
+
+Mano PokerStars n° 255304572040:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:56:31 CET [15/03/2025 17:56:31 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 1: igariok800 (€5 chips) è in sit-out
+Posto 2: caduceus369 (€5.57 chips) 
+Posto 3: 999rizla (€2.19 chips) 
+Posto 4: JOKER67961 (€8.80 chips) 
+Posto 5: eliktiss (€5.76 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+caduceus369: versa il piccolo buio €0.02
+999rizla: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts 3c]
+JOKER67961: folda 
+eliktiss: folda 
+pantrarocks5: rilancia €0.12 fino a €0.17
+caduceus369: folda 
+999rizla: folda 
+La puntata non vista (€0.12) è restituita a pantrarocks5
+pantrarocks5 ha raccolto €0.12 dal piatto
+pantrarocks5: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.12 | Rake €0 
+Posto 1: igariok800
+Posto 2: caduceus369 (small blind) ha foldato prima del Flop
+Posto 3: 999rizla (big blind) ha foldato prima del Flop
+Posto 4: JOKER67961 ha foldato prima del Flop (non ha puntato)
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (bottone) ha raccolto (€0.12)
+
+
+
+Mano PokerStars n° 255304574545:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:56:45 CET [15/03/2025 17:56:45 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 2
+Posto 1: igariok800 (€5 chips) è in sit-out
+Posto 2: caduceus369 (€5.55 chips) 
+Posto 3: 999rizla (€2.14 chips) 
+Posto 4: JOKER67961 (€8.80 chips) 
+Posto 5: eliktiss (€5.76 chips) 
+Posto 6: pantrarocks5 (€5.07 chips) 
+999rizla: versa il piccolo buio €0.02
+JOKER67961: versa il grande buio €0.05
+igariok800: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6s Ah]
+eliktiss: folda 
+pantrarocks5: folda 
+caduceus369: rilancia €0.10 fino a €0.15
+999rizla: chiama €0.13
+JOKER67961: chiama €0.10
+*** FLOP *** [Qh 8c 9c]
+999rizla: fa check 
+JOKER67961: fa check 
+caduceus369: fa check 
+*** TURN *** [Qh 8c 9c] [Jc]
+999rizla: fa check 
+JOKER67961: punta €0.35
+caduceus369: folda 
+999rizla: folda 
+La puntata non vista (€0.35) è restituita a JOKER67961
+JOKER67961 ha raccolto €0.43 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.45 | Rake €0.02 
+Board [Qh 8c 9c Jc]
+Posto 1: igariok800
+Posto 2: caduceus369 (bottone) ha foldato sul Turn
+Posto 3: 999rizla (small blind) ha foldato sul Turn
+Posto 4: JOKER67961 (big blind) ha raccolto (€0.43)
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304582094:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:57:25 CET [15/03/2025 17:57:25 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 3
+Posto 1: igariok800 (€5 chips) è in sit-out
+Posto 2: caduceus369 (€5.40 chips) 
+Posto 3: 999rizla (€1.99 chips) 
+Posto 4: JOKER67961 (€9.08 chips) 
+Posto 5: eliktiss (€5.76 chips) 
+Posto 6: pantrarocks5 (€5.07 chips) 
+JOKER67961: versa il piccolo buio €0.02
+eliktiss: versa il grande buio €0.05
+igariok800: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [As Th]
+pantrarocks5: folda 
+caduceus369: rilancia €0.10 fino a €0.15
+999rizla: chiama €0.15
+JOKER67961: chiama €0.13
+eliktiss: folda 
+*** FLOP *** [3c Td Qs]
+JOKER67961: fa check 
+caduceus369: punta €0.15
+999rizla: rilancia €0.39 fino a €0.54
+JOKER67961: chiama €0.54
+caduceus369: folda 
+*** TURN *** [3c Td Qs] [Ks]
+JOKER67961: fa check 
+999rizla: punta €0.15
+JOKER67961: chiama €0.15
+*** RIVER *** [3c Td Qs Ks] [8s]
+JOKER67961: fa check 
+999rizla: fa check 
+*** SHOW DOWN ***
+JOKER67961: mostra [9h 8h] (una coppia di Otto)
+999rizla: mostra [Qd Tc] (una doppia coppia, Donne e Dieci)
+999rizla ha raccolto €1.92 dal piatto
+*** RIASSUNTO ***
+Piatto totale €2.03 | Rake €0.11 
+Board [3c Td Qs Ks 8s]
+Posto 1: igariok800
+Posto 2: caduceus369 ha foldato sul Flop
+Posto 3: 999rizla (bottone) ha mostrato [Qd Tc] e ha vinto (€1.92) con una doppia coppia, Donne e Dieci
+Posto 4: JOKER67961 (small blind) ha mostrato [9h 8h] e ha perso con una coppia di Otto
+Posto 5: eliktiss (big blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 255304589439:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:58:04 CET [15/03/2025 17:58:04 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 4
+Posto 1: igariok800 (€5 chips) è in sit-out
+Posto 2: caduceus369 (€5.10 chips) 
+Posto 3: 999rizla (€3.07 chips) 
+Posto 4: JOKER67961 (€8.24 chips) 
+Posto 5: eliktiss (€5.71 chips) 
+Posto 6: pantrarocks5 (€5.07 chips) 
+eliktiss: versa il piccolo buio €0.02
+pantrarocks5: versa il grande buio €0.05
+igariok800: va in sit-out 
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d 3s]
+caduceus369: folda 
+999rizla: folda 
+JOKER67961: chiama €0.05
+eliktiss: folda 
+pantrarocks5: fa check 
+*** FLOP *** [2s As Ad]
+pantrarocks5: fa check 
+JOKER67961: fa check 
+*** TURN *** [2s As Ad] [Kd]
+pantrarocks5: fa check 
+JOKER67961: punta €0.15
+pantrarocks5: folda 
+La puntata non vista (€0.15) è restituita a JOKER67961
+JOKER67961 ha raccolto €0.12 dal piatto
+*** RIASSUNTO ***
+Piatto totale €0.12 | Rake €0 
+Board [2s As Ad Kd]
+Posto 1: igariok800
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: 999rizla ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 (bottone) ha raccolto (€0.12)
+Posto 5: eliktiss (small blind) ha foldato prima del Flop
+Posto 6: pantrarocks5 (big blind) ha foldato sul Turn
+
+
+
+Mano PokerStars n° 255304595643:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:58:37 CET [15/03/2025 17:58:37 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 5
+Posto 1: igariok800 (€5 chips) 
+Posto 2: caduceus369 (€5.10 chips) 
+Posto 3: 999rizla (€3.07 chips) 
+Posto 4: JOKER67961 (€8.31 chips) 
+Posto 5: eliktiss (€5.69 chips) 
+Posto 6: pantrarocks5 (€5.02 chips) 
+pantrarocks5: versa il piccolo buio €0.02
+igariok800: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7d Kh]
+caduceus369: folda 
+999rizla: chiama €0.05
+JOKER67961: chiama €0.05
+eliktiss: rilancia €0.20 fino a €0.25
+pantrarocks5: folda 
+igariok800: folda 
+999rizla: chiama €0.20
+JOKER67961: chiama €0.20
+*** FLOP *** [2s 5c 3d]
+999rizla: fa check 
+JOKER67961: fa check 
+eliktiss: fa check 
+*** TURN *** [2s 5c 3d] [Jc]
+999rizla: fa check 
+JOKER67961: fa check 
+eliktiss: punta €0.39
+999rizla: folda 
+JOKER67961: chiama €0.39
+*** RIVER *** [2s 5c 3d Jc] [2c]
+JOKER67961: fa check 
+eliktiss: fa check 
+*** SHOW DOWN ***
+JOKER67961: mostra [Th 4h] (una coppia di Due)
+eliktiss: mostra [9c Jd] (una doppia coppia, Jack e Due)
+eliktiss ha raccolto €1.52 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1.60 | Rake €0.08 
+Board [2s 5c 3d Jc 2c]
+Posto 1: igariok800 (big blind) ha foldato prima del Flop
+Posto 2: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 3: 999rizla ha foldato sul Turn
+Posto 4: JOKER67961 ha mostrato [Th 4h] e ha perso con una coppia di Due
+Posto 5: eliktiss (bottone) ha mostrato [9c Jd] e ha vinto (€1.52) con una doppia coppia, Jack e Due
+Posto 6: pantrarocks5 (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 255304605265:   Hold'em No Limit (€0.02/€0.05 EUR) [ID ADM: M61F230417F6EAZJ] - 15/03/2025 22:59:28 CET [15/03/2025 17:59:28 ET]
+Tavolo 'Torrence II' 6-max Il bottone è al posto 6
+Posto 1: igariok800 (€5 chips) 
+Posto 2: caduceus369 (€5.10 chips) 
+Posto 3: 999rizla (€2.82 chips) 
+Posto 4: JOKER67961 (€7.67 chips) 
+Posto 5: eliktiss (€6.57 chips) 
+Posto 6: pantrarocks5 (€5 chips) 
+igariok800: versa il piccolo buio €0.02
+caduceus369: versa il grande buio €0.05
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d Qs]
+999rizla: folda 
+JOKER67961: chiama €0.05
+eliktiss: folda 
+pantrarocks5: folda 
+igariok800: chiama €0.03
+caduceus369: fa check 
+*** FLOP *** [4d Qd 3c]
+igariok800: fa check 
+caduceus369: punta €0.10
+JOKER67961: rilancia €0.30 fino a €0.40
+igariok800: chiama €0.40
+caduceus369: rilancia €1.10 fino a €1.50
+JOKER67961: chiama €1.10
+igariok800: folda 
+*** TURN *** [4d Qd 3c] [Ts]
+caduceus369: punta €3.55 ed è all-in
+JOKER67961: chiama €3.55
+*** RIVER *** [4d Qd 3c Ts] [Js]
+*** SHOW DOWN ***
+caduceus369: mostra [5d Qs] (una coppia di Donne)
+JOKER67961: mostra [3h Qh] (una doppia coppia, Donne e Tre)
+JOKER67961 ha raccolto €10.07 dal piatto
+*** RIASSUNTO ***
+Piatto totale €10.65 | Rake €0.58 
+Board [4d Qd 3c Ts Js]
+Posto 1: igariok800 (small blind) ha foldato sul Flop
+Posto 2: caduceus369 (big blind) ha mostrato [5d Qs] e ha perso con una coppia di Donne
+Posto 3: 999rizla ha foldato prima del Flop (non ha puntato)
+Posto 4: JOKER67961 ha mostrato [3h Qh] e ha vinto (€10.07) con una doppia coppia, Donne e Tre
+Posto 5: eliktiss ha foldato prima del Flop (non ha puntato)
+Posto 6: pantrarocks5 (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+

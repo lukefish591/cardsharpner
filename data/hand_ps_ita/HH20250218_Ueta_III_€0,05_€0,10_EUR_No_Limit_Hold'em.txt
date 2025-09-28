@@ -1,0 +1,777 @@
+﻿Mano PokerStars n° 254933625582:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:11:13 CET [18/02/2025 18:11:13 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 1
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.67 chips) 
+Posto 4: caduceus369 (€10 chips) 
+Posto 5: mazzo210986 (€12.95 chips) 
+Posto 6: Mentaleo (€17.38 chips) 
+K1KK1O: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5s Kc]
+mazzo210986: rilancia €0.12 fino a €0.22
+Mentaleo: folda 
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: chiama €0.12
+*** FLOP *** [6s 4s Jd]
+caduceus369: fa check 
+mazzo210986: punta €0.35
+caduceus369: chiama €0.35
+*** TURN *** [6s 4s Jd] [Ts]
+caduceus369: punta €0.20
+mazzo210986: chiama €0.20
+*** RIVER *** [6s 4s Jd Ts] [6d]
+caduceus369: punta €1.06
+mazzo210986: rilancia €1.46 fino a €2.52
+caduceus369: folda 
+La puntata non vista (€1.46) è restituita a mazzo210986
+mazzo210986 ha raccolto €3.51 dal piatto
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €3.71 | Rake €0.20 
+Board [6s 4s Jd Ts 6d]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (small blind) ha foldato prima del Flop
+Posto 4: caduceus369 (big blind) ha foldato sul River
+Posto 5: mazzo210986 ha raccolto (€3.51)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933645856:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:12:35 CET [18/02/2025 18:12:35 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 3
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.62 chips) 
+Posto 4: caduceus369 (€8.17 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€17.38 chips) 
+caduceus369: versa il piccolo buio €0.05
+mazzo210986: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ks 9h]
+Mentaleo: folda 
+brusco92: folda 
+K1KK1O: rilancia €0.15 fino a €0.25
+caduceus369: folda 
+mazzo210986: folda 
+La puntata non vista (€0.15) è restituita a K1KK1O
+K1KK1O ha raccolto €0.25 dal piatto
+K1KK1O: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (bottone) ha raccolto (€0.25)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: mazzo210986 (big blind) ha foldato prima del Flop
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933651143:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:12:57 CET [18/02/2025 18:12:57 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 4
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.77 chips) 
+Posto 4: caduceus369 (€8.12 chips) 
+Posto 5: mazzo210986 (€14.53 chips) 
+Posto 6: Mentaleo (€17.38 chips) 
+mazzo210986: versa il piccolo buio €0.05
+Mentaleo: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [4c Th]
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: folda 
+mazzo210986: rilancia €0.20 fino a €0.30
+Mentaleo: folda 
+La puntata non vista (€0.20) è restituita a mazzo210986
+mazzo210986 ha raccolto €0.20 dal piatto
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.20 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 (small blind) ha raccolto (€0.20)
+Posto 6: Mentaleo (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933658058:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:13:24 CET [18/02/2025 18:13:24 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 5
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.77 chips) 
+Posto 4: caduceus369 (€8.12 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€17.28 chips) 
+Mentaleo: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ts Ad]
+K1KK1O: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha raccolto (€0.25)
+Posto 5: mazzo210986 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933661554:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:13:38 CET [18/02/2025 18:13:38 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 6
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.77 chips) 
+Posto 4: caduceus369 (€8.27 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€17.23 chips) 
+brusco92: versa il piccolo buio €0.05
+K1KK1O: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9c 6d]
+caduceus369: folda 
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+La puntata non vista (€0.05) è restituita a K1KK1O
+K1KK1O ha raccolto €0.10 dal piatto
+K1KK1O: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: K1KK1O (big blind) ha raccolto (€0.10)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933663148:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:13:45 CET [18/02/2025 18:13:45 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 1
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.82 chips) 
+Posto 4: caduceus369 (€8.27 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€17.23 chips) 
+K1KK1O: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ac 3h]
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+K1KK1O: rilancia €0.20 fino a €0.30
+caduceus369: chiama €0.20
+*** FLOP *** [As 7s 2s]
+K1KK1O: fa check 
+caduceus369: punta €0.20
+K1KK1O: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.57 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.60 | Rake €0.03 
+Board [As 7s 2s]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (small blind) ha foldato sul Flop
+Posto 4: caduceus369 (big blind) ha raccolto (€0.57)
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933670570:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:14:15 CET [18/02/2025 18:14:15 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 3
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.52 chips) 
+Posto 4: caduceus369 (€8.54 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€17.23 chips) 
+caduceus369: versa il piccolo buio €0.05
+mazzo210986: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [9c 6s]
+Mentaleo: rilancia €0.12 fino a €0.22
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: folda 
+mazzo210986: folda 
+La puntata non vista (€0.12) è restituita a Mentaleo
+Mentaleo ha raccolto €0.25 dal piatto
+Mentaleo: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: mazzo210986 (big blind) ha foldato prima del Flop
+Posto 6: Mentaleo ha raccolto (€0.25)
+
+
+
+Mano PokerStars n° 254933676537:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:14:39 CET [18/02/2025 18:14:39 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 4
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.52 chips) 
+Posto 4: caduceus369 (€8.49 chips) 
+Posto 5: mazzo210986 (€14.53 chips) 
+Posto 6: Mentaleo (€17.38 chips) 
+mazzo210986: versa il piccolo buio €0.05
+Mentaleo: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Ad 7c]
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+mazzo210986: folda 
+Mentaleo: chiama €0.20
+*** FLOP *** [8c Td 2c]
+Mentaleo: fa check 
+caduceus369: fa check 
+*** TURN *** [8c Td 2c] [Qc]
+Mentaleo: fa check 
+caduceus369: punta €0.30
+Mentaleo: chiama €0.30
+*** RIVER *** [8c Td 2c Qc] [3s]
+Mentaleo: fa check 
+caduceus369: punta €0.40
+Mentaleo: chiama €0.40
+*** SHOW DOWN ***
+caduceus369: mostra [Ad 7c] (carta alta Asso)
+Mentaleo: mostra [8d Ac] (una coppia di Otto)
+Mentaleo ha raccolto €1.94 dal piatto
+*** RIASSUNTO ***
+Piatto totale €2.05 | Rake €0.11 
+Board [8c Td 2c Qc 3s]
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha mostrato [Ad 7c] e ha perso con carta alta Asso
+Posto 5: mazzo210986 (small blind) ha foldato prima del Flop
+Posto 6: Mentaleo (big blind) ha mostrato [8d Ac] e ha vinto (€1.94) con una coppia di Otto
+
+
+
+Mano PokerStars n° 254933692154:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:15:41 CET [18/02/2025 18:15:41 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 5
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.52 chips) 
+Posto 4: caduceus369 (€7.49 chips) 
+Posto 5: mazzo210986 (€14.48 chips) 
+Posto 6: Mentaleo (€18.32 chips) 
+Mentaleo: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s Kc]
+K1KK1O: folda 
+caduceus369: folda 
+mazzo210986: rilancia €0.20 fino a €0.30
+Mentaleo: folda 
+brusco92: folda 
+La puntata non vista (€0.20) è restituita a mazzo210986
+mazzo210986 ha raccolto €0.25 dal piatto
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 (big blind) ha foldato prima del Flop
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 (bottone) ha raccolto (€0.25)
+Posto 6: Mentaleo (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933697805:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:16:04 CET [18/02/2025 18:16:04 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 6
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.52 chips) 
+Posto 4: caduceus369 (€7.49 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€18.27 chips) 
+brusco92: versa il piccolo buio €0.05
+K1KK1O: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Tc Ks]
+caduceus369: folda 
+mazzo210986: folda 
+Mentaleo: rilancia €0.12 fino a €0.22
+brusco92: chiama €0.17
+K1KK1O: folda 
+*** FLOP *** [4d 7h 8d]
+brusco92: fa check 
+Mentaleo: punta €0.40
+brusco92: folda 
+La puntata non vista (€0.40) è restituita a Mentaleo
+Mentaleo ha raccolto €0.52 dal piatto
+Mentaleo: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.54 | Rake €0.02 
+Board [4d 7h 8d]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (small blind) ha foldato sul Flop
+Posto 3: K1KK1O (big blind) ha foldato prima del Flop
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (bottone) ha raccolto (€0.52)
+
+
+
+Mano PokerStars n° 254933704908:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:16:33 CET [18/02/2025 18:16:33 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 1
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€10 chips) 
+Posto 3: K1KK1O (€24.42 chips) 
+Posto 4: caduceus369 (€7.49 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€18.57 chips) 
+K1KK1O: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Tc As]
+mazzo210986: folda 
+Mentaleo: rilancia €0.12 fino a €0.22
+brusco92: rilancia €0.52 fino a €0.74
+K1KK1O: folda 
+caduceus369: folda 
+Mentaleo: chiama €0.52
+*** FLOP *** [2s 7c Qh]
+Mentaleo: fa check 
+brusco92: punta €0.88
+Mentaleo: chiama €0.88
+*** TURN *** [2s 7c Qh] [8s]
+Mentaleo: fa check 
+brusco92: punta €1.91
+Mentaleo: folda 
+La puntata non vista (€1.91) è restituita a brusco92
+brusco92 ha raccolto €3.21 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €3.39 | Rake €0.18 
+Board [2s 7c Qh 8s]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (bottone) ha raccolto (€3.21)
+Posto 3: K1KK1O (small blind) ha foldato prima del Flop
+Posto 4: caduceus369 (big blind) ha foldato prima del Flop
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo ha foldato sul Turn
+
+
+
+Mano PokerStars n° 254933717533:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:17:24 CET [18/02/2025 18:17:24 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 3
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€11.59 chips) 
+Posto 3: K1KK1O (€24.37 chips) 
+Posto 4: caduceus369 (€7.39 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€16.95 chips) 
+caduceus369: versa il piccolo buio €0.05
+mazzo210986: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [6c Jh]
+Mentaleo: folda 
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: folda 
+La puntata non vista (€0.05) è restituita a mazzo210986
+mazzo210986 ha raccolto €0.10 dal piatto
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: mazzo210986 (big blind) ha raccolto (€0.10)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933720336:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:17:36 CET [18/02/2025 18:17:36 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 4
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€11.59 chips) 
+Posto 3: K1KK1O (€24.37 chips) 
+Posto 4: caduceus369 (€7.34 chips) 
+Posto 5: mazzo210986 (€14.68 chips) 
+Posto 6: Mentaleo (€16.95 chips) 
+mazzo210986: versa il piccolo buio €0.05
+Mentaleo: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7c Qc]
+brusco92: chiama €0.10
+K1KK1O: folda 
+caduceus369: rilancia €0.30 fino a €0.40
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+La puntata non vista (€0.30) è restituita a caduceus369
+caduceus369 ha raccolto €0.35 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.35 | Rake €0 
+Posto 2: Dodo1975A
+Posto 1: brusco92 ha foldato prima del Flop
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha raccolto (€0.35)
+Posto 5: mazzo210986 (small blind) ha foldato prima del Flop
+Posto 6: Mentaleo (big blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933726011:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:17:59 CET [18/02/2025 18:17:59 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 5
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€11.49 chips) 
+Posto 3: K1KK1O (€24.37 chips) 
+Posto 4: caduceus369 (€7.59 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€16.85 chips) 
+Mentaleo: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5d 2s]
+K1KK1O: rilancia €0.10 fino a €0.20
+caduceus369: folda 
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: chiama €0.10
+*** FLOP *** [Ac 6d 2c]
+brusco92: fa check 
+K1KK1O: fa check 
+*** TURN *** [Ac 6d 2c] [Qs]
+brusco92: punta €0.43
+K1KK1O: folda 
+La puntata non vista (€0.43) è restituita a brusco92
+brusco92 ha raccolto €0.43 dal piatto
+brusco92: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.45 | Rake €0.02 
+Board [Ac 6d 2c Qs]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (big blind) ha raccolto (€0.43)
+Posto 3: K1KK1O ha foldato sul Turn
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933734152:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:18:33 CET [18/02/2025 18:18:33 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 6
+Posto 2: Dodo1975A (€0 chips) è in sit-out
+Posto 1: brusco92 (€11.72 chips) 
+Posto 3: K1KK1O (€24.17 chips) 
+Posto 4: caduceus369 (€7.59 chips) 
+Posto 5: mazzo210986 (€14.63 chips) 
+Posto 6: Mentaleo (€16.80 chips) 
+brusco92: versa il piccolo buio €0.05
+K1KK1O: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [7h 2d]
+caduceus369: folda 
+mazzo210986: rilancia €0.20 fino a €0.30
+Mentaleo: chiama €0.30
+brusco92: folda 
+K1KK1O: folda 
+*** FLOP *** [4c 6h Kh]
+mazzo210986: punta €0.31
+Mentaleo: folda 
+La puntata non vista (€0.31) è restituita a mazzo210986
+mazzo210986 ha raccolto €0.71 dal piatto
+Dodo1975A si alza dal tavolo
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.75 | Rake €0.04 
+Board [4c 6h Kh]
+Posto 2: Dodo1975A
+Posto 1: brusco92 (small blind) ha foldato prima del Flop
+Posto 3: K1KK1O (big blind) ha foldato prima del Flop
+Posto 4: caduceus369 ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 ha raccolto (€0.71)
+Posto 6: Mentaleo (bottone) ha foldato sul Flop
+
+
+
+Mano PokerStars n° 254933741877:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:19:04 CET [18/02/2025 18:19:04 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 1
+Posto 1: brusco92 (€11.67 chips) 
+Posto 3: K1KK1O (€24.07 chips) 
+Posto 4: caduceus369 (€7.59 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€16.50 chips) 
+K1KK1O: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [5c 3s]
+mazzo210986: folda 
+Mentaleo: rilancia €0.12 fino a €0.22
+brusco92: folda 
+K1KK1O: folda 
+caduceus369: folda 
+La puntata non vista (€0.12) è restituita a Mentaleo
+Mentaleo ha raccolto €0.25 dal piatto
+Mentaleo: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (small blind) ha foldato prima del Flop
+Posto 4: caduceus369 (big blind) ha foldato prima del Flop
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo ha raccolto (€0.25)
+
+
+
+Mano PokerStars n° 254933747347:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:19:26 CET [18/02/2025 18:19:26 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 3
+Posto 1: brusco92 (€11.67 chips) 
+Posto 3: K1KK1O (€24.02 chips) 
+Posto 4: caduceus369 (€7.49 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€16.65 chips) 
+caduceus369: versa il piccolo buio €0.05
+mazzo210986: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8d 4h]
+Mentaleo: folda 
+brusco92: folda 
+K1KK1O: folda 
+DUCA0502 si siede al tavolo al posto #2 
+caduceus369: folda 
+La puntata non vista (€0.05) è restituita a mazzo210986
+mazzo210986 ha raccolto €0.10 dal piatto
+mazzo210986: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.10 | Rake €0 
+Posto 1: brusco92 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (small blind) ha foldato prima del Flop
+Posto 5: mazzo210986 (big blind) ha raccolto (€0.10)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933751616:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:19:44 CET [18/02/2025 18:19:44 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 4
+Posto 1: brusco92 (€11.67 chips) 
+Posto 2: DUCA0502 (€6 chips) 
+Posto 3: K1KK1O (€24.02 chips) 
+Posto 4: caduceus369 (€7.44 chips) 
+Posto 5: mazzo210986 (€15.09 chips) 
+Posto 6: Mentaleo (€16.65 chips) 
+mazzo210986: versa il piccolo buio €0.05
+Mentaleo: versa il grande buio €0.10
+DUCA0502: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc 4h]
+brusco92: rilancia €0.20 fino a €0.30
+DUCA0502: folda 
+K1KK1O: folda 
+caduceus369: folda 
+mazzo210986: folda 
+Mentaleo: rilancia €0.90 fino a €1.20
+brusco92: folda 
+La puntata non vista (€0.90) è restituita a Mentaleo
+Mentaleo ha raccolto €0.75 dal piatto
+Mentaleo: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.75 | Rake €0 
+Posto 1: brusco92 ha foldato prima del Flop
+Posto 2: DUCA0502 ha foldato prima del Flop (non ha puntato)
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 5: mazzo210986 (small blind) ha foldato prima del Flop
+Posto 6: Mentaleo (big blind) ha raccolto (€0.75)
+
+
+
+Mano PokerStars n° 254933757122:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:20:07 CET [18/02/2025 18:20:07 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 5
+Posto 1: brusco92 (€11.37 chips) 
+Posto 2: DUCA0502 (€6 chips) 
+Posto 3: K1KK1O (€24.02 chips) 
+Posto 4: caduceus369 (€7.44 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€17.10 chips) 
+Mentaleo: versa il piccolo buio €0.05
+brusco92: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Th Ks]
+DUCA0502: rilancia €0.10 fino a €0.20
+K1KK1O: folda 
+caduceus369: chiama €0.20
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: chiama €0.10
+*** FLOP *** [Ah 6c Qc]
+brusco92: fa check 
+DUCA0502: punta €0.31
+caduceus369: chiama €0.31
+brusco92: chiama €0.31
+*** TURN *** [Ah 6c Qc] [4h]
+brusco92: fa check 
+DUCA0502: punta €1.50
+caduceus369: folda 
+brusco92: folda 
+La puntata non vista (€1.50) è restituita a DUCA0502
+DUCA0502 ha raccolto €1.50 dal piatto
+*** RIASSUNTO ***
+Piatto totale €1.58 | Rake €0.08 
+Board [Ah 6c Qc 4h]
+Posto 1: brusco92 (big blind) ha foldato sul Turn
+Posto 2: DUCA0502 ha raccolto (€1.50)
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha foldato sul Turn
+Posto 5: mazzo210986 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (small blind) ha foldato prima del Flop
+
+
+
+Mano PokerStars n° 254933774114:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:21:16 CET [18/02/2025 18:21:16 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 6
+Posto 1: brusco92 (€10.86 chips) 
+Posto 2: DUCA0502 (€6.99 chips) 
+Posto 3: K1KK1O (€24.02 chips) 
+Posto 4: caduceus369 (€6.93 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€17.05 chips) 
+brusco92: versa il piccolo buio €0.05
+DUCA0502: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [8s 8h]
+K1KK1O: folda 
+caduceus369: rilancia €0.20 fino a €0.30
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+DUCA0502: chiama €0.20
+*** FLOP *** [4c 3d 3s]
+DUCA0502: fa check 
+caduceus369: punta €0.20
+DUCA0502: chiama €0.20
+*** TURN *** [4c 3d 3s] [Th]
+DUCA0502: fa check 
+caduceus369: punta €0.50
+DUCA0502: chiama €0.50
+*** RIVER *** [4c 3d 3s Th] [6h]
+DUCA0502: fa check 
+caduceus369: punta €0.97
+DUCA0502: rilancia €5.02 fino a €5.99 ed è all-in
+caduceus369: folda 
+La puntata non vista (€5.02) è restituita a DUCA0502
+DUCA0502 ha raccolto €3.78 dal piatto
+*** RIASSUNTO ***
+Piatto totale €3.99 | Rake €0.21 
+Board [4c 3d 3s Th 6h]
+Posto 1: brusco92 (small blind) ha foldato prima del Flop
+Posto 2: DUCA0502 (big blind) ha raccolto (€3.78)
+Posto 3: K1KK1O ha foldato prima del Flop (non ha puntato)
+Posto 4: caduceus369 ha foldato sul River
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo (bottone) ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933791629:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:22:28 CET [18/02/2025 18:22:28 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 1
+Posto 1: brusco92 (€10.81 chips) 
+Posto 2: DUCA0502 (€8.80 chips) 
+Posto 3: K1KK1O (€24.02 chips) 
+Posto 4: caduceus369 (€4.96 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€17.05 chips) 
+DUCA0502: versa il piccolo buio €0.05
+K1KK1O: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Jc Ah]
+caduceus369: rilancia €0.20 fino a €0.30
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: folda 
+DUCA0502: folda 
+K1KK1O: folda 
+La puntata non vista (€0.20) è restituita a caduceus369
+caduceus369 ha raccolto €0.25 dal piatto
+caduceus369: non mostra il punto 
+*** RIASSUNTO ***
+Piatto totale €0.25 | Rake €0 
+Posto 1: brusco92 (bottone) ha foldato prima del Flop (non ha puntato)
+Posto 2: DUCA0502 (small blind) ha foldato prima del Flop
+Posto 3: K1KK1O (big blind) ha foldato prima del Flop
+Posto 4: caduceus369 ha raccolto (€0.25)
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+
+Mano PokerStars n° 254933794495:   Hold'em No Limit (€0.05/€0.10 EUR) [ID ADM: M61D9304116879JD] - 19/02/2025 0:22:40 CET [18/02/2025 18:22:40 ET]
+Tavolo 'Ueta III' 6-max Il bottone è al posto 2
+Posto 1: brusco92 (€10.81 chips) 
+Posto 2: DUCA0502 (€8.75 chips) 
+Posto 3: K1KK1O (€23.92 chips) 
+Posto 4: caduceus369 (€5.11 chips) 
+Posto 5: mazzo210986 (€15.04 chips) 
+Posto 6: Mentaleo (€17.05 chips) 
+K1KK1O: versa il piccolo buio €0.05
+caduceus369: versa il grande buio €0.10
+*** CARTE COPERTE ***
+Distribuite a caduceus369 [Kh Th]
+mazzo210986: folda 
+Mentaleo: folda 
+brusco92: rilancia €0.20 fino a €0.30
+DUCA0502: chiama €0.30
+K1KK1O: folda 
+caduceus369: rilancia €0.90 fino a €1.20
+brusco92: chiama €0.90
+DUCA0502: folda 
+*** FLOP *** [Jc 5h 6s]
+caduceus369: fa check 
+brusco92: fa check 
+*** TURN *** [Jc 5h 6s] [9d]
+caduceus369: punta €1.30
+brusco92: rilancia €5.20 fino a €6.50
+caduceus369: chiama €2.61 ed è all-in
+La puntata non vista (€2.59) è restituita a brusco92
+*** RIVER *** [Jc 5h 6s 9d] [5s]
+*** SHOW DOWN ***
+caduceus369: mostra [Kh Th] (una coppia di Cinque)
+brusco92: mostra [Qs Qh] (una doppia coppia, Donne e Cinque)
+brusco92 ha raccolto €9.99 dal piatto
+*** RIASSUNTO ***
+Piatto totale €10.57 | Rake €0.58 
+Board [Jc 5h 6s 9d 5s]
+Posto 1: brusco92 ha mostrato [Qs Qh] e ha vinto (€9.99) con una doppia coppia, Donne e Cinque
+Posto 2: DUCA0502 (bottone) ha foldato prima del Flop
+Posto 3: K1KK1O (small blind) ha foldato prima del Flop
+Posto 4: caduceus369 (big blind) ha mostrato [Kh Th] e ha perso con una coppia di Cinque
+Posto 5: mazzo210986 ha foldato prima del Flop (non ha puntato)
+Posto 6: Mentaleo ha foldato prima del Flop (non ha puntato)
+
+
+

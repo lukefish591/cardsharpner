@@ -1,0 +1,542 @@
+﻿PokerStars Zoom Hand #257906845279:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 16:45:06 CET [2025/09/27 10:45:06 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: cap e'bomb95 (€1.86 in chips) 
+Seat 2: LolloSpino (€5.99 in chips) 
+Seat 3: caduceus369 (€0.80 in chips) 
+Seat 4: pylonstrip (€2.08 in chips) 
+Seat 5: Obelix130130 (€2.03 in chips) 
+Seat 6: IamJewels (€2 in chips) 
+LolloSpino: posts small blind €0.01
+caduceus369: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [Ks Js]
+pylonstrip: raises €0.04 to €0.06
+Obelix130130: folds 
+IamJewels: folds 
+cap e'bomb95: folds 
+LolloSpino: folds 
+caduceus369: calls €0.04
+*** FLOP *** [7h Td 7c]
+caduceus369: checks 
+pylonstrip: bets €0.07
+caduceus369: folds 
+Uncalled bet (€0.07) returned to pylonstrip
+pylonstrip collected €0.13 from pot
+pylonstrip: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.13 | Rake €0 
+Board [7h Td 7c]
+Seat 1: cap e'bomb95 (button) folded before Flop (didn't bet)
+Seat 2: LolloSpino (small blind) folded before Flop
+Seat 3: caduceus369 (big blind) folded on the Flop
+Seat 4: pylonstrip collected (€0.13)
+Seat 5: Obelix130130 folded before Flop (didn't bet)
+Seat 6: IamJewels folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257906848512:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 16:45:27 CET [2025/09/27 10:45:27 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: ApeOnTheBack (€2.06 in chips) 
+Seat 2: caduceus369 (€0.74 in chips) 
+Seat 3: Gabrielefante (€3.35 in chips) 
+Seat 4: pylonstrip (€2.03 in chips) 
+Seat 5: IamJewels (€2.03 in chips) 
+Seat 6: arrybono (€3.09 in chips) 
+caduceus369: posts small blind €0.01
+Gabrielefante: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [2s 2d]
+pylonstrip: folds 
+IamJewels: folds 
+arrybono: folds 
+ApeOnTheBack: folds 
+caduceus369: calls €0.01
+Gabrielefante: checks 
+*** FLOP *** [Th Qh 7h]
+caduceus369: checks 
+Gabrielefante: checks 
+*** TURN *** [Th Qh 7h] [8s]
+caduceus369: checks 
+Gabrielefante: bets €0.02
+caduceus369: folds 
+Uncalled bet (€0.02) returned to Gabrielefante
+Gabrielefante collected €0.04 from pot
+Gabrielefante: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.04 | Rake €0 
+Board [Th Qh 7h 8s]
+Seat 1: ApeOnTheBack (button) folded before Flop (didn't bet)
+Seat 2: caduceus369 (small blind) folded on the Turn
+Seat 3: Gabrielefante (big blind) collected (€0.04)
+Seat 4: pylonstrip folded before Flop (didn't bet)
+Seat 5: IamJewels folded before Flop (didn't bet)
+Seat 6: arrybono folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910636667:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:20:13 CET [2025/09/27 15:20:13 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: Black98Demon (€2.84 in chips) 
+Seat 2: ghosto69 (€1.92 in chips) 
+Seat 3: caduceus369 (€2 in chips) 
+Seat 4: father2008 (€2.20 in chips) 
+Seat 5: lupen1963 (€1.29 in chips) 
+Seat 6: Pallina42 (€2.19 in chips) 
+ghosto69: posts small blind €0.01
+caduceus369: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [Jh Tc]
+father2008: folds 
+lupen1963: raises €0.02 to €0.04
+Pallina42: folds 
+Black98Demon: folds 
+ghosto69: folds 
+caduceus369: calls €0.02
+*** FLOP *** [7h 5d 2h]
+caduceus369: checks 
+lupen1963: checks 
+*** TURN *** [7h 5d 2h] [Ts]
+caduceus369: bets €0.04
+lupen1963: calls €0.04
+*** RIVER *** [7h 5d 2h Ts] [Td]
+caduceus369: bets €0.21
+lupen1963: folds 
+Uncalled bet (€0.21) returned to caduceus369
+caduceus369 collected €0.17 from pot
+caduceus369: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.17 | Rake €0 
+Board [7h 5d 2h Ts Td]
+Seat 1: Black98Demon (button) folded before Flop (didn't bet)
+Seat 2: ghosto69 (small blind) folded before Flop
+Seat 3: caduceus369 (big blind) collected (€0.17)
+Seat 4: father2008 folded before Flop (didn't bet)
+Seat 5: lupen1963 folded on the River
+Seat 6: Pallina42 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910647875:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:20:57 CET [2025/09/27 15:20:57 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: Pallina42 (€2.10 in chips) 
+Seat 2: caduceus369 (€2.09 in chips) 
+Seat 3: Macantoni (€1.28 in chips) 
+Seat 4: gAbryLopez (€5.90 in chips) 
+Seat 5: TurboMuletto (€1.15 in chips) 
+Seat 6: andresette (€9.38 in chips) 
+caduceus369: posts small blind €0.01
+Macantoni: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [2h Jh]
+gAbryLopez: folds 
+TurboMuletto: folds 
+andresette: folds 
+Pallina42: folds 
+caduceus369: folds 
+Uncalled bet (€0.01) returned to Macantoni
+Macantoni collected €0.02 from pot
+Macantoni: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.02 | Rake €0 
+Seat 1: Pallina42 (button) folded before Flop (didn't bet)
+Seat 2: caduceus369 (small blind) folded before Flop
+Seat 3: Macantoni (big blind) collected (€0.02)
+Seat 4: gAbryLopez folded before Flop (didn't bet)
+Seat 5: TurboMuletto folded before Flop (didn't bet)
+Seat 6: andresette folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910649663:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:21:04 CET [2025/09/27 15:21:04 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: caduceus369 (€2.08 in chips) 
+Seat 2: KilometroZer0 (€2.97 in chips) 
+Seat 3: bruciapelo (€2.10 in chips) 
+Seat 4: gAbryLopez (€3.01 in chips) 
+Seat 5: andresette (€3.97 in chips) 
+Seat 6: ghosto69 (€2.33 in chips) 
+KilometroZer0: posts small blind €0.01
+bruciapelo: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [Qc 5d]
+gAbryLopez: folds 
+andresette: folds 
+ghosto69: folds 
+caduceus369: folds 
+KilometroZer0: folds 
+Uncalled bet (€0.01) returned to bruciapelo
+bruciapelo collected €0.02 from pot
+bruciapelo: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.02 | Rake €0 
+Seat 1: caduceus369 (button) folded before Flop (didn't bet)
+Seat 2: KilometroZer0 (small blind) folded before Flop
+Seat 3: bruciapelo (big blind) collected (€0.02)
+Seat 4: gAbryLopez folded before Flop (didn't bet)
+Seat 5: andresette folded before Flop (didn't bet)
+Seat 6: ghosto69 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910651593:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:21:12 CET [2025/09/27 15:21:12 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: 777principe (€0.81 in chips) 
+Seat 2: DazeAK (€3.20 in chips) 
+Seat 3: gAbryLopez (€7.21 in chips) 
+Seat 4: Macantoni (€1.29 in chips) 
+Seat 5: caduceus369 (€2.08 in chips) 
+Seat 6: andresette (€5.90 in chips) 
+DazeAK: posts small blind €0.01
+gAbryLopez: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [Ts 9d]
+Macantoni: folds 
+caduceus369 has timed out
+caduceus369: folds 
+andresette: folds 
+777principe: calls €0.02
+DazeAK: raises €0.04 to €0.06
+gAbryLopez: folds 
+777principe: calls €0.04
+*** FLOP *** [8c 6c Kd]
+DazeAK: checks 
+777principe: checks 
+*** TURN *** [8c 6c Kd] [9c]
+DazeAK: checks 
+777principe: checks 
+*** RIVER *** [8c 6c Kd 9c] [Qh]
+DazeAK: checks 
+777principe: checks 
+*** SHOW DOWN ***
+DazeAK: shows [7d As] (high card Ace)
+777principe: shows [6h 5h] (a pair of Sixes)
+777principe collected €0.14 from pot
+*** SUMMARY ***
+Total pot €0.14 | Rake €0 
+Board [8c 6c Kd 9c Qh]
+Seat 1: 777principe (button) showed [6h 5h] and won (€0.14) with a pair of Sixes
+Seat 2: DazeAK (small blind) showed [7d As] and lost with high card Ace
+Seat 3: gAbryLopez (big blind) folded before Flop
+Seat 4: Macantoni folded before Flop (didn't bet)
+Seat 5: caduceus369 folded before Flop (didn't bet)
+Seat 6: andresette folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910705329:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:24:50 CET [2025/09/27 15:24:50 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: gAbryLopez (€7.39 in chips) 
+Seat 2: ispanico965 (€0.77 in chips) 
+Seat 3: bandito7878 (€1.55 in chips) 
+Seat 4: andresette (€5.73 in chips) 
+Seat 5: ghosto69 (€1.47 in chips) 
+Seat 6: caduceus369 (€2.08 in chips) 
+ispanico965: posts small blind €0.01
+bandito7878: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [6h Tc]
+andresette: folds 
+ghosto69: folds 
+caduceus369: folds 
+gAbryLopez: folds 
+ispanico965: raises €0.02 to €0.04
+bandito7878: folds 
+Uncalled bet (€0.02) returned to ispanico965
+ispanico965 collected €0.04 from pot
+ispanico965: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.04 | Rake €0 
+Seat 1: gAbryLopez (button) folded before Flop (didn't bet)
+Seat 2: ispanico965 (small blind) collected (€0.04)
+Seat 3: bandito7878 (big blind) folded before Flop
+Seat 4: andresette folded before Flop (didn't bet)
+Seat 5: ghosto69 folded before Flop (didn't bet)
+Seat 6: caduceus369 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910709003:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:25:05 CET [2025/09/27 15:25:05 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: trisco66 (€1.32 in chips) 
+Seat 2: caduceus369 (€2.08 in chips) 
+Seat 3: Mister.Santo01 (€0.22 in chips) 
+Seat 4: icerini (€4.21 in chips) 
+Seat 5: Semifonte (€2.86 in chips) 
+Seat 6: gAbryLopez (€7.39 in chips) 
+caduceus369: posts small blind €0.01
+Mister.Santo01: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [9h Kd]
+icerini: raises €0.04 to €0.06
+Semifonte: folds 
+gAbryLopez: folds 
+trisco66: raises €0.12 to €0.18
+caduceus369: folds 
+Mister.Santo01: folds 
+icerini: folds 
+Uncalled bet (€0.12) returned to trisco66
+trisco66 collected €0.15 from pot
+trisco66: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.15 | Rake €0 
+Seat 1: trisco66 (button) collected (€0.15)
+Seat 2: caduceus369 (small blind) folded before Flop
+Seat 3: Mister.Santo01 (big blind) folded before Flop
+Seat 4: icerini folded before Flop
+Seat 5: Semifonte folded before Flop (didn't bet)
+Seat 6: gAbryLopez folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910721376:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:25:55 CET [2025/09/27 15:25:55 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: caduceus369 (€2.05 in chips) 
+Seat 2: andresette (€5.80 in chips) 
+Seat 3: father2008 (€2.03 in chips) 
+Seat 4: ispanico965 (€0.80 in chips) 
+Seat 5: DazeAK (€3.03 in chips) 
+Seat 6: lupen1963 (€0.99 in chips) 
+andresette: posts small blind €0.01
+father2008: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [Ac 4d]
+ispanico965: folds 
+DazeAK: folds 
+lupen1963: folds 
+caduceus369: folds 
+andresette: folds 
+Uncalled bet (€0.01) returned to father2008
+father2008 collected €0.02 from pot
+father2008: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.02 | Rake €0 
+Seat 1: caduceus369 (button) folded before Flop (didn't bet)
+Seat 2: andresette (small blind) folded before Flop
+Seat 3: father2008 (big blind) collected (€0.02)
+Seat 4: ispanico965 folded before Flop (didn't bet)
+Seat 5: DazeAK folded before Flop (didn't bet)
+Seat 6: lupen1963 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910714219:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:25:27 CET [2025/09/27 15:25:27 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: bruciapelo (€2.55 in chips) 
+Seat 2: stagniarihd (€1.91 in chips) 
+Seat 3: caduceus369 (€2.07 in chips) 
+Seat 4: gAbryLopez (€7.39 in chips) 
+Seat 5: ghosto69 (€1.46 in chips) 
+Seat 6: sheikperbout (€1.11 in chips) 
+stagniarihd: posts small blind €0.01
+caduceus369: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [5c 3h]
+gAbryLopez: raises €0.03 to €0.05
+ghosto69: folds 
+sheikperbout: calls €0.05
+bruciapelo: calls €0.05
+stagniarihd: calls €0.04
+caduceus369: folds 
+*** FLOP *** [9s 2s 8h]
+stagniarihd: checks 
+gAbryLopez: checks 
+sheikperbout: checks 
+bruciapelo: checks 
+*** TURN *** [9s 2s 8h] [4h]
+stagniarihd: checks 
+gAbryLopez: bets €0.15
+sheikperbout: folds 
+bruciapelo: folds 
+stagniarihd: folds 
+Uncalled bet (€0.15) returned to gAbryLopez
+gAbryLopez collected €0.21 from pot
+gAbryLopez: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.22 | Rake €0.01 
+Board [9s 2s 8h 4h]
+Seat 1: bruciapelo (button) folded on the Turn
+Seat 2: stagniarihd (small blind) folded on the Turn
+Seat 3: caduceus369 (big blind) folded before Flop
+Seat 4: gAbryLopez collected (€0.21)
+Seat 5: ghosto69 folded before Flop (didn't bet)
+Seat 6: sheikperbout folded on the Turn
+
+
+
+PokerStars Zoom Hand #257910720107:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:25:50 CET [2025/09/27 15:25:50 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: Warterror90 (€5.61 in chips) 
+Seat 2: father2008 (€2.13 in chips) 
+Seat 3: MINCAECUADDU67 (€2.25 in chips) 
+Seat 4: caduceus369 (€2.05 in chips) 
+Seat 5: bandito7878 (€1.53 in chips) 
+Seat 6: Auscarm1 (€1.10 in chips) 
+father2008: posts small blind €0.01
+MINCAECUADDU67: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [2c Qc]
+caduceus369: folds 
+bandito7878: folds 
+Auscarm1: raises €0.04 to €0.06
+Warterror90: folds 
+father2008: folds 
+MINCAECUADDU67: calls €0.04
+*** FLOP *** [Js Jh 8d]
+MINCAECUADDU67: checks 
+Auscarm1: bets €0.13
+MINCAECUADDU67: folds 
+Uncalled bet (€0.13) returned to Auscarm1
+Auscarm1 collected €0.13 from pot
+Auscarm1: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.13 | Rake €0 
+Board [Js Jh 8d]
+Seat 1: Warterror90 (button) folded before Flop (didn't bet)
+Seat 2: father2008 (small blind) folded before Flop
+Seat 3: MINCAECUADDU67 (big blind) folded on the Flop
+Seat 4: caduceus369 folded before Flop (didn't bet)
+Seat 5: bandito7878 folded before Flop (didn't bet)
+Seat 6: Auscarm1 collected (€0.13)
+
+
+
+PokerStars Zoom Hand #257910718777:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:25:45 CET [2025/09/27 15:25:45 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: Black98Demon (€3.16 in chips) 
+Seat 2: gAbryLopez (€6.74 in chips) 
+Seat 3: icerini (€4.14 in chips) 
+Seat 4: trisco66 (€1.41 in chips) 
+Seat 5: caduceus369 (€2.05 in chips) 
+Seat 6: MINCAECUADDU67 (€2.25 in chips) 
+gAbryLopez: posts small blind €0.01
+icerini: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [8s 9h]
+trisco66: raises €0.06 to €0.08
+caduceus369: folds 
+MINCAECUADDU67: folds 
+Black98Demon: folds 
+gAbryLopez: calls €0.07
+icerini: folds 
+*** FLOP *** [Qd Tc 7d]
+gAbryLopez: checks 
+trisco66: bets €0.08
+gAbryLopez: calls €0.08
+*** TURN *** [Qd Tc 7d] [9c]
+gAbryLopez: checks 
+trisco66: checks 
+*** RIVER *** [Qd Tc 7d 9c] [Kh]
+gAbryLopez: bets €0.80
+trisco66: folds 
+Uncalled bet (€0.80) returned to gAbryLopez
+gAbryLopez collected €0.33 from pot
+gAbryLopez: doesn't show hand 
+*** SUMMARY ***
+Total pot €0.34 | Rake €0.01 
+Board [Qd Tc 7d 9c Kh]
+Seat 1: Black98Demon (button) folded before Flop (didn't bet)
+Seat 2: gAbryLopez (small blind) collected (€0.33)
+Seat 3: icerini (big blind) folded before Flop
+Seat 4: trisco66 folded on the River
+Seat 5: caduceus369 folded before Flop (didn't bet)
+Seat 6: MINCAECUADDU67 folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910725121:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:26:10 CET [2025/09/27 15:26:10 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: ghosto69 (€1.44 in chips) 
+Seat 2: Macantoni (€2.30 in chips) 
+Seat 3: caduceus369 (€2.05 in chips) 
+Seat 4: stagniarihd (€1.86 in chips) 
+Seat 5: Asso77407 (€1.66 in chips) 
+Seat 6: TurboMuletto (€1.84 in chips) 
+Macantoni: posts small blind €0.01
+caduceus369: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [8d 4s]
+stagniarihd: folds 
+Asso77407: calls €0.02
+TurboMuletto: folds 
+ghosto69: folds 
+Macantoni: calls €0.01
+caduceus369: checks 
+*** FLOP *** [Js 5s Ad]
+Macantoni: checks 
+caduceus369: checks 
+Asso77407: checks 
+*** TURN *** [Js 5s Ad] [7d]
+Macantoni: checks 
+caduceus369: checks 
+Asso77407: checks 
+*** RIVER *** [Js 5s Ad 7d] [Kh]
+Macantoni: bets €0.04
+caduceus369: folds 
+Asso77407: calls €0.04
+*** SHOW DOWN ***
+Macantoni: shows [Kc 8c] (a pair of Kings)
+Asso77407: shows [Kd 8h] (a pair of Kings)
+Macantoni collected €0.07 from pot
+Asso77407 collected €0.07 from pot
+*** SUMMARY ***
+Total pot €0.14 | Rake €0 
+Board [Js 5s Ad 7d Kh]
+Seat 1: ghosto69 (button) folded before Flop (didn't bet)
+Seat 2: Macantoni (small blind) showed [Kc 8c] and won (€0.07) with a pair of Kings
+Seat 3: caduceus369 (big blind) folded on the River
+Seat 4: stagniarihd folded before Flop (didn't bet)
+Seat 5: Asso77407 showed [Kd 8h] and won (€0.07) with a pair of Kings
+Seat 6: TurboMuletto folded before Flop (didn't bet)
+
+
+
+PokerStars Zoom Hand #257910740256:  Hold'em No Limit (€0.01/€0.02) [ADM ID: M62B430447BCF1BE] - 2025/09/27 21:27:12 CET [2025/09/27 15:27:12 ET]
+Table 'Sirio' 6-max Seat #1 is the button
+Seat 1: gAbryLopez (€6.89 in chips) 
+Seat 2: caduceus369 (€2.03 in chips) 
+Seat 3: maxedrum68 (€1.56 in chips) 
+Seat 4: andresette (€3.15 in chips) 
+Seat 5: trisco66 (€1.25 in chips) 
+Seat 6: F.Marotti (€2.72 in chips) 
+caduceus369: posts small blind €0.01
+maxedrum68: posts big blind €0.02
+*** HOLE CARDS ***
+Dealt to caduceus369 [2h 6d]
+andresette: folds 
+trisco66: folds 
+F.Marotti: raises €0.05 to €0.07
+gAbryLopez: raises €0.17 to €0.24
+caduceus369: folds 
+maxedrum68: calls €0.22
+F.Marotti: calls €0.17
+*** FLOP *** [6s Td 4d]
+maxedrum68: checks 
+F.Marotti: checks 
+gAbryLopez: checks 
+*** TURN *** [6s Td 4d] [Ad]
+maxedrum68: checks 
+F.Marotti: bets €0.35
+gAbryLopez: calls €0.35
+maxedrum68: calls €0.35
+*** RIVER *** [6s Td 4d Ad] [2s]
+maxedrum68: checks 
+F.Marotti: bets €0.85
+gAbryLopez: calls €0.85
+maxedrum68: folds 
+*** SHOW DOWN ***
+F.Marotti: shows [Ac 4c] (two pair, Aces and Fours)
+gAbryLopez: mucks hand 
+F.Marotti collected €3.29 from pot
+*** SUMMARY ***
+Total pot €3.48 | Rake €0.19 
+Board [6s Td 4d Ad 2s]
+Seat 1: gAbryLopez (button) mucked [As Kc]
+Seat 2: caduceus369 (small blind) folded before Flop
+Seat 3: maxedrum68 (big blind) folded on the River
+Seat 4: andresette folded before Flop (didn't bet)
+Seat 5: trisco66 folded before Flop (didn't bet)
+Seat 6: F.Marotti showed [Ac 4c] and won (€3.29) with two pair, Aces and Fours
+
+
+
