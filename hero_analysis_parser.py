@@ -53,6 +53,11 @@ class HeroData:
     preflop_raised: bool = False
     preflop_called: bool = False
     vpip: bool = False  # Voluntarily Put money In Pot (excluding blinds)
+    three_bet: bool = False  # Hero re-raised another player's open raise preflop
+    four_bet: bool = False  # Hero re-raised another player's 3-bet preflop
+    three_bet_opportunity: bool = False  # Hero faced an open raise and could 3-bet
+    four_bet_opportunity: bool = False  # Hero faced a 3-bet and could 4-bet
+    pot_type: str = ""  # SRP, 3-Bet Pot, 4-Bet Pot, 5+ Bet Pot, or Preflop Only
     cbet_flop: bool = False
     cbet_turn: bool = False
     cbet_river: bool = False
@@ -101,9 +106,68 @@ class HeroAnalysisParser:
         return m.group(1) if m else ""
     
     def extract_stakes(self, hand_text: str) -> str:
-        """Extract stakes from the header"""
+        """Extract and normalize stakes from the header"""
         m = re.search(r'\((\$[\d\.]+\/\$[\d\.]+)\)', hand_text)
-        return m.group(1) if m else ""
+        if m:
+            stakes = m.group(1)
+            return self.normalize_stakes(stakes)
+        return ""
+    
+    def normalize_stakes(self, stakes: str) -> str:
+        """Normalize and validate stakes format"""
+        try:
+            # Extract small blind and big blind values
+            parts = stakes.replace('$', '').split('/')
+            if len(parts) != 2:
+                return ""
+            
+            sb = float(parts[0])
+            bb = float(parts[1])
+            
+            # Validate that stakes make sense (BB should be 2x SB, or close to it)
+            # Common stakes patterns: 0.02/0.05, 0.05/0.10, 0.10/0.25, etc.
+            # BB should be roughly 2-2.5x SB
+            if bb < sb or bb > sb * 3:
+                # Likely a parsing error - try to infer correct stakes
+                logger.warning(f"Invalid stakes detected: ${sb}/${bb}, attempting to correct")
+                
+                # If BB is 0 or very small, infer from SB
+                if bb < 0.01:
+                    bb = sb * 2  # Standard ratio
+                
+                # If SB is too large compared to BB, might be reversed
+                if sb > bb:
+                    sb, bb = bb, sb
+            
+            # Round to 2 decimal places to handle floating point issues
+            sb = round(sb, 2)
+            bb = round(bb, 2)
+            
+            # Validate against common stakes
+            common_stakes = {
+                (0.01, 0.02), (0.02, 0.05), (0.05, 0.10), (0.05, 0.1),
+                (0.10, 0.25), (0.1, 0.25), (0.25, 0.50), (0.25, 0.5),
+                (0.50, 1.00), (0.5, 1.0), (1.00, 2.00), (1.0, 2.0),
+                (2.00, 5.00), (2.0, 5.0), (5.00, 10.00), (5.0, 10.0)
+            }
+            
+            # Normalize to standard format (always 2 decimal places)
+            if (sb, bb) in common_stakes or (round(sb, 2), round(bb, 2)) in common_stakes:
+                # Format with 2 decimal places for consistency
+                return f"${sb:.2f}/${bb:.2f}"
+            else:
+                # Check if it's close to a common stake (within rounding)
+                for csb, cbb in common_stakes:
+                    if abs(sb - csb) < 0.01 and abs(bb - cbb) < 0.01:
+                        return f"${csb:.2f}/${cbb:.2f}"
+                
+                # Unknown/invalid stakes - log warning and skip
+                logger.warning(f"Unrecognized stakes: ${sb}/{bb} - skipping hand")
+                return ""
+                
+        except (ValueError, IndexError) as e:
+            logger.warning(f"Failed to parse stakes '{stakes}': {e}")
+            return ""
     
     def extract_hero_position(self, hand_text: str) -> str:
         """Extract Hero's position"""
@@ -244,6 +308,11 @@ class HeroAnalysisParser:
             'preflop_raised': False,
             'preflop_called': False,
             'vpip': False,  # Voluntarily Put money In Pot (excluding blinds)
+            'three_bet': False,
+            'four_bet': False,
+            'three_bet_opportunity': False,
+            'four_bet_opportunity': False,
+            'pot_type': '',
             'cbet_flop': False,
             'cbet_turn': False,
             'cbet_river': False,
@@ -263,6 +332,10 @@ class HeroAnalysisParser:
         # C-bet tracking variables
         last_aggressor_by_street = {'preflop': '', 'flop': '', 'turn': '', 'river': ''}
         first_bet_made_by_street = {'flop': False, 'turn': False, 'river': False}
+        
+        # 3-bet and 4-bet tracking (preflop only)
+        preflop_raises_count = 0  # Track total raises preflop (excluding blinds)
+        hero_faced_open_raise = False  # Track if Hero faced an open raise
         
         for line in hand_text.splitlines():
             line = line.strip()
@@ -368,6 +441,17 @@ class HeroAnalysisParser:
                         # A raise is aggressive action; mark hero last aggressor on this street
                         if current_street in last_aggressor_by_street:
                             last_aggressor_by_street[current_street] = 'hero'
+                        
+                        # Track 3-bet and 4-bet on preflop
+                        if current_street == 'preflop':
+                            if preflop_raises_count == 1:
+                                # Hero is re-raising the first raise (open) -> This is a 3-bet
+                                actions['three_bet'] = True
+                            elif preflop_raises_count == 2:
+                                # Hero is re-raising a 3-bet -> This is a 4-bet
+                                actions['four_bet'] = True
+                            # Increment raise count after Hero acts
+                            preflop_raises_count += 1
                 
                 elif "shows" in line or "showed" in line:
                     actions['went_to_showdown'] = True
@@ -386,6 +470,17 @@ class HeroAnalysisParser:
                     
                     # Update last aggressor for non-Hero players
                     last_aggressor_by_street[current_street] = 'villain'
+                    
+                    # Track raises preflop for 3-bet/4-bet opportunities
+                    if current_street == 'preflop' and generic_aggr.group(1).lower() == 'raises':
+                        preflop_raises_count += 1
+                        # If this is the first raise (open), Hero now has 3-bet opportunity
+                        if preflop_raises_count == 1:
+                            hero_faced_open_raise = True
+                            actions['three_bet_opportunity'] = True
+                        # If this is the second raise (3-bet), Hero now has 4-bet opportunity
+                        elif preflop_raises_count == 2:
+                            actions['four_bet_opportunity'] = True
             
             # Handle uncalled bet returns FIRST (before Hero action processing)
             # This covers scenarios where Hero bets and villain folds
@@ -412,18 +507,19 @@ class HeroAnalysisParser:
         
         # Extract rake information
         rake_amount, total_pot_size = self.extract_rake_info(hand_text)
-        actions['rake_amount'] = rake_amount
         actions['total_pot_size'] = total_pot_size
         
         # Calculate net profit
         actions['net_profit'] = actions['total_collected'] - actions['total_contributed']
         
-        # Calculate net profit before rake (only add rake back if Hero collected money)
+        # Hero only pays rake when they win money from the pot
         if actions['total_collected'] > 0:
             # Hero won money, so rake was taken from their winnings
+            actions['rake_amount'] = rake_amount
             actions['net_profit_before_rake'] = actions['net_profit'] + rake_amount
         else:
             # Hero lost, so rake was taken from other players, not from Hero
+            actions['rake_amount'] = 0.0
             actions['net_profit_before_rake'] = actions['net_profit']
         
         # Determine if won when saw flop
@@ -435,6 +531,28 @@ class HeroAnalysisParser:
             # W$SD only counts if there was a multi-player showdown AND Hero won money
             if multi_player_showdown and actions['total_collected'] > 0:
                 actions['won_at_showdown'] = True  # W$SD - Hero won at multi-player showdown
+        
+        # Determine pot type based on preflop action
+        if not actions['saw_flop']:
+            # No flop seen - action ended preflop
+            actions['pot_type'] = 'Preflop Only'
+        else:
+            # Flop was seen - classify by number of preflop raises
+            if preflop_raises_count == 0:
+                # No raises preflop (limped pot)
+                actions['pot_type'] = 'Limped Pot'
+            elif preflop_raises_count == 1:
+                # Single raise preflop (SRP)
+                actions['pot_type'] = 'SRP'
+            elif preflop_raises_count == 2:
+                # 3-bet pot (open + 3-bet)
+                actions['pot_type'] = '3-Bet Pot'
+            elif preflop_raises_count == 3:
+                # 4-bet pot (open + 3-bet + 4-bet)
+                actions['pot_type'] = '4-Bet Pot'
+            else:
+                # 5+ bets (open + 3-bet + 4-bet + 5-bet+)
+                actions['pot_type'] = '5+ Bet Pot'
         
         return actions
 
@@ -711,18 +829,19 @@ class HeroAnalysisParser:
         
         # Extract rake information
         rake_amount, total_pot_size = self.extract_rake_info(hand_text)
-        actions['rake_amount'] = rake_amount
         actions['total_pot_size'] = total_pot_size
         
         # Calculate net profit
         actions['net_profit'] = actions['total_collected'] - actions['total_contributed']
         
-        # Calculate net profit before rake (only add rake back if Hero collected money)
+        # Hero only pays rake when they win money from the pot
         if actions['total_collected'] > 0:
             # Hero won money, so rake was taken from their winnings
+            actions['rake_amount'] = rake_amount
             actions['net_profit_before_rake'] = actions['net_profit'] + rake_amount
         else:
             # Hero lost, so rake was taken from other players, not from Hero
+            actions['rake_amount'] = 0.0
             actions['net_profit_before_rake'] = actions['net_profit']
         
         # Determine if won when saw flop
@@ -767,7 +886,7 @@ class HeroAnalysisParser:
         
         return actions
     
-    def parse_hand(self, hand_text: str) -> HeroData:
+    def parse_hand(self, hand_text: str) -> Optional[HeroData]:
         """Parse a single hand and extract Hero-specific data"""
         try:
             # Extract basic info
@@ -776,6 +895,12 @@ class HeroAnalysisParser:
             site = self.extract_site(hand_text)
             table_name = self.extract_table_name(hand_text)
             stakes = self.extract_stakes(hand_text)
+            
+            # Skip hand if stakes are invalid/malformed
+            if not stakes:
+                logger.warning(f"Skipping hand {hand_id} due to invalid stakes")
+                return None
+            
             position = self.extract_hero_position(hand_text)
             hole_cards = self.extract_hero_hole_cards(hand_text)
             
@@ -813,6 +938,11 @@ class HeroAnalysisParser:
                 preflop_raised=action_data['preflop_raised'],
                 preflop_called=action_data['preflop_called'],
                 vpip=action_data['vpip'],
+                three_bet=action_data['three_bet'],
+                four_bet=action_data['four_bet'],
+                three_bet_opportunity=action_data['three_bet_opportunity'],
+                four_bet_opportunity=action_data['four_bet_opportunity'],
+                pot_type=action_data['pot_type'],
                 cbet_flop=action_data['cbet_flop'],
                 cbet_turn=action_data['cbet_turn'],
                 cbet_river=action_data['cbet_river'],
@@ -841,7 +971,9 @@ class HeroAnalysisParser:
             for hand in hands:
                 if hand.strip():
                     result = self.parse_hand(hand)
-                    results.append(result)
+                    # Only add valid hands (skip None results from invalid stakes)
+                    if result is not None:
+                        results.append(result)
             return results
         except Exception as e:
             logger.error(f"Error parsing file: {e}")
@@ -909,6 +1041,11 @@ class HeroAnalysisParser:
                     'Preflop_Raised': hand.preflop_raised,
                     'Preflop_Called': hand.preflop_called,
                     'VPIP': hand.vpip,
+                    'Three_Bet': hand.three_bet,
+                    'Four_Bet': hand.four_bet,
+                    'Three_Bet_Opportunity': hand.three_bet_opportunity,
+                    'Four_Bet_Opportunity': hand.four_bet_opportunity,
+                    'Pot_Type': hand.pot_type,
                     'CBet_Flop': hand.cbet_flop,
                     'CBet_Turn': hand.cbet_turn,
                     'CBet_River': hand.cbet_river,
