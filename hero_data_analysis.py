@@ -156,10 +156,87 @@ class HeroDataAnalyzer:
         self.df = None
     
     def load_data(self, folder_path: str):
-        """Load and process hand history data"""
+        """Load and process hand history data from folder"""
         with st.spinner("Loading and analyzing hand histories..."):
             self.df = self.parser.process_files(folder_path)
         return not self.df.empty
+    
+    def load_uploaded_files(self, uploaded_files):
+        """Load and process hand history data from uploaded files"""
+        with st.spinner(f"Processing {len(uploaded_files)} uploaded file(s)..."):
+            all_hands = []
+            
+            for uploaded_file in uploaded_files:
+                try:
+                    # Read the file content
+                    text = uploaded_file.read().decode('utf-8')
+                    
+                    # Parse the file
+                    hands = self.parser.parse_file(text)
+                    all_hands.extend(hands)
+                    
+                except Exception as e:
+                    st.warning(f"Error processing {uploaded_file.name}: {e}")
+                    continue
+            
+            if not all_hands:
+                st.error("No hands could be processed from uploaded files")
+                return False
+            
+            # Convert to DataFrame (same logic as in parser.process_files)
+            data = []
+            for hand in all_hands:
+                data.append({
+                    'Hand_ID': hand.hand_id,
+                    'Timestamp': hand.timestamp,
+                    'Site': hand.site,
+                    'Stakes': hand.stakes,
+                    'Table_Name': hand.table_name,
+                    'Position': hand.position,
+                    'Hole_Cards': ' '.join(hand.hole_cards),
+                    'Went_to_Showdown': hand.went_to_showdown,
+                    'Won_at_Showdown': hand.won_at_showdown,
+                    'Won_When_Saw_Flop': hand.won_when_saw_flop,
+                    'Saw_Flop': hand.saw_flop,
+                    'Total_Contributed': hand.total_contributed,
+                    'Total_Collected': hand.total_collected,
+                    'Net_Profit': hand.net_profit,
+                    'Rake_Amount': hand.rake_amount,
+                    'Net_Profit_Before_Rake': hand.net_profit_before_rake,
+                    'Total_Pot_Size': hand.total_pot_size,
+                    'Preflop_Actions': hand.preflop_actions,
+                    'Flop_Actions': hand.flop_actions,
+                    'Turn_Actions': hand.turn_actions,
+                    'River_Actions': hand.river_actions,
+                    'Flop_Cards': ' '.join(hand.flop_cards),
+                    'Turn_Card': hand.turn_card,
+                    'River_Card': hand.river_card,
+                    'Preflop_Raised': hand.preflop_raised,
+                    'Preflop_Called': hand.preflop_called,
+                    'VPIP': hand.vpip,
+                    'Three_Bet': hand.three_bet,
+                    'Four_Bet': hand.four_bet,
+                    'Three_Bet_Opportunity': hand.three_bet_opportunity,
+                    'Four_Bet_Opportunity': hand.four_bet_opportunity,
+                    'Pot_Type': hand.pot_type,
+                    'CBet_Flop': hand.cbet_flop,
+                    'CBet_Turn': hand.cbet_turn,
+                    'CBet_River': hand.cbet_river,
+                    'CBet_Flop_Opportunity': hand.cbet_flop_opportunity,
+                    'CBet_Turn_Opportunity': hand.cbet_turn_opportunity,
+                    'CBet_River_Opportunity': hand.cbet_river_opportunity
+                })
+            
+            self.df = pd.DataFrame(data)
+            self.df = self.df.sort_values('Timestamp')
+            
+            # Add running totals
+            self.df['Running_Profit'] = self.df['Net_Profit'].cumsum()
+            self.df['Running_Profit_Before_Rake'] = self.df['Net_Profit_Before_Rake'].cumsum()
+            self.df['Running_Rake'] = self.df['Rake_Amount'].cumsum()
+            self.df['Hand_Number'] = range(1, len(self.df) + 1)
+            
+            return True
     
     def calculate_key_metrics(self):
         """Calculate key performance metrics"""
@@ -649,16 +726,105 @@ def main():
     
     # Sidebar controls
     with st.sidebar:
-        st.header("📁 Data Controls")
+        st.header("📁 Load Hand Histories")
         
-        folder_path = st.text_input("Hand History Folder:", "hand_histories")
+        # Add tabs for different loading methods
+        load_method = st.radio(
+            "Choose loading method:",
+            ["📤 Upload Files", "📂 Load from Folder"],
+            help="Upload files directly or load from a folder on your computer"
+        )
         
-        if st.button("🔄 Load Data"):
-            if analyzer.load_data(folder_path):
-                st.success(f"Loaded {len(analyzer.df)} hands")
-            else:
-                st.error("No data found. Please check the folder path.")
+        if load_method == "📤 Upload Files":
+            st.markdown("---")
+            st.markdown("**Drag & drop your hand history files here:**")
+            uploaded_files = st.file_uploader(
+                "Choose .txt files",
+                type=['txt'],
+                accept_multiple_files=True,
+                help="Upload one or more hand history .txt files from GGPoker, PokerStars, etc.",
+                label_visibility="collapsed"
+            )
+            
+            # Tips for selecting multiple files
+            with st.expander("💡 Tips for uploading multiple files"):
+                st.markdown("""
+                **To upload all files from a folder:**
+                1. Click "Browse files" above
+                2. Navigate to your hand history folder
+                3. Press `Ctrl+A` (Windows) or `Cmd+A` (Mac) to select all files
+                4. Click "Open"
+                
+                **Or drag & drop:**
+                - Select multiple files in your file explorer
+                - Drag them all into the upload box above
+                
+                ✨ You can upload hundreds of files at once!
+                """)
+            
+            if uploaded_files:
+                st.info(f"📎 {len(uploaded_files)} file(s) selected")
+                
+                if st.button("🚀 Process Uploaded Files", type="primary"):
+                    if analyzer.load_uploaded_files(uploaded_files):
+                        st.success(f"✅ Loaded {len(analyzer.df)} hands from {len(uploaded_files)} file(s)!")
+                    else:
+                        st.error("❌ Failed to process files. Please check the file format.")
         
+        else:  # Load from Folder
+            st.markdown("---")
+            st.markdown("**Enter or paste your folder path:**")
+            folder_path = st.text_input(
+                "Folder path",
+                "hand_histories",
+                help="Enter the path to folder containing your hand history files",
+                label_visibility="collapsed"
+            )
+            
+            # Tips for folder paths
+            with st.expander("💡 Tips for finding your folder path"):
+                st.markdown("""
+                **Windows:**
+                1. Open File Explorer and navigate to your folder
+                2. Click the address bar at the top
+                3. Copy the path (e.g., `C:\\Users\\YourName\\Documents\\PokerHands`)
+                4. Paste it above
+                
+                **Mac:**
+                1. Open Finder and navigate to your folder
+                2. Right-click the folder and hold `Option` key
+                3. Select "Copy as Pathname"
+                4. Paste it above
+                
+                **Relative paths:**
+                - `hand_histories` - subfolder in current directory
+                - `.` - current directory (all .txt files here)
+                - `../poker` - parent directory's poker folder
+                
+                📁 The system will automatically search all subfolders!
+                """)
+            
+            # Show folder info if path exists
+            if os.path.exists(folder_path):
+                try:
+                    file_pattern = os.path.join(folder_path, '**', '*.txt')
+                    all_files = glob.glob(file_pattern, recursive=True)
+                    if all_files:
+                        st.success(f"✅ Found {len(all_files)} .txt file(s) in this folder")
+                    else:
+                        st.warning(f"⚠️ No .txt files found in '{folder_path}'")
+                except Exception as e:
+                    st.warning(f"⚠️ Could not scan folder: {e}")
+            elif folder_path and folder_path != "hand_histories":
+                st.error(f"❌ Folder not found: '{folder_path}'")
+            
+            if st.button("🔄 Load from Folder", type="primary"):
+                if analyzer.load_data(folder_path):
+                    st.success(f"✅ Successfully loaded {len(analyzer.df)} hands!")
+                else:
+                    st.error("❌ No data found. Please check the folder path.")
+        
+        st.markdown("---")
         st.header("📊 Analysis Options")
         
         show_overview = st.checkbox("Overview Metrics", value=True)
@@ -700,18 +866,69 @@ def main():
         analyzer.export_data()
     
     else:
-        st.info("Please load hand histories using the sidebar controls.")
+        # Welcome screen for new users
+        st.info("👋 Welcome! Please load your hand histories using the sidebar to get started.")
+        
+        # Quick start guide
+        st.subheader("🚀 Quick Start Guide")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("""
+            ### 📤 Upload Files (Recommended!)
+            1. Click **"Upload Files"** in the sidebar
+            2. **Drag & drop** files or click "Browse files"
+            3. Select multiple files with `Ctrl+A` / `Cmd+A`
+            4. Click **"Process Uploaded Files"**
+            5. Start analyzing! 📊
+            
+            ✨ **Perfect for beginners** - no file paths needed!
+            
+            💡 **Tip:** You can upload 100+ files at once!
+            """)
+        
+        with col2:
+            st.markdown("""
+            ### 📂 Load from Folder (Advanced)
+            1. Click **"Load from Folder"** in the sidebar
+            2. Paste your folder path (auto-detects files!)
+            3. See file count preview
+            4. Click **"Load from Folder"**
+            5. Start analyzing! 📊
+            
+            🚀 **Automatically scans all subfolders!**
+            
+            💡 **Tip:** Great for permanent hand history folders!
+            """)
+        
+        st.markdown("---")
         
         # Show features
-        st.subheader("🚀 Features")
+        st.subheader("✨ Features")
         st.markdown("""
-        - **Hero-Focused Analysis**: Only tracks your performance, not opponents
-        - **Key Metrics**: Showdown rates, flop win rates, profit tracking
-        - **Position Analysis**: Performance breakdown by table position
-        - **Stakes Analysis**: Performance across different stake levels
-        - **Hand Type Analysis**: Performance by hole card types
-        - **Export Capabilities**: Download data for further analysis
-        - **Streamlined Interface**: Focus on data analysis, not hand replay
+        - **🎯 Hero-Focused Analysis**: Only tracks your performance, not opponents
+        - **📈 Key Metrics**: Showdown rates, flop win rates, profit tracking, VPIP, PFR, 3-bet, C-bet
+        - **📍 Position Analysis**: Performance breakdown by table position (UTG, CO, BTN, etc.)
+        - **💰 Stakes Analysis**: Performance across different stake levels
+        - **📊 Showdown Analysis**: Compare showdown vs non-showdown winnings
+        - **💾 Export Capabilities**: Download data as CSV for further analysis
+        - **🎨 Beautiful Visualizations**: Interactive charts and graphs
+        - **⚡ Fast Processing**: Analyze thousands of hands in seconds
+        """)
+        
+        st.markdown("---")
+        
+        st.subheader("🃏 Supported Poker Sites")
+        st.markdown("""
+        Works with hand histories from:
+        - GGPoker
+        - PokerStars
+        - 888poker
+        - Americas Cardroom (ACR)
+        - PartyPoker
+        - Winamax
+        - And more!
         """)
 
 if __name__ == "__main__":
