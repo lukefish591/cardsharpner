@@ -509,7 +509,7 @@ class HeroDataAnalyzer:
             go.Scatter(
                 x=filtered_df['Hand_Number'], 
                 y=filtered_df['Running_Non_Showdown_Profit'],
-                name='Non-Showdown Profit',
+                name='Non-Showdown Winnings',
                 line=dict(color='red', width=2),
                 hovertemplate='Hand %{x}<br>Non-Showdown: $%{y:.2f}<extra></extra>'
             )
@@ -520,7 +520,7 @@ class HeroDataAnalyzer:
             go.Scatter(
                 x=filtered_df['Hand_Number'], 
                 y=filtered_df['Running_Showdown_Profit'],
-                name='Showdown Profit',
+                name='Multiway Showdown Winnings',
                 line=dict(color='blue', width=2),
                 hovertemplate='Hand %{x}<br>Showdown: $%{y:.2f}<extra></extra>'
             )
@@ -531,7 +531,7 @@ class HeroDataAnalyzer:
             go.Scatter(
                 x=filtered_df['Hand_Number'], 
                 y=filtered_df['Running_Total_Profit'],
-                name='Total Profit',
+                name='Cumulative Total Profit',
                 line=dict(color='green', width=3),
                 hovertemplate='Hand %{x}<br>Total: $%{y:.2f}<extra></extra>'
             )
@@ -778,7 +778,7 @@ def main():
         
         # Try Demo button
         st.markdown("**Want to just try with my hand histories?**")
-        if st.button("Load a very losing sample", type="secondary", use_container_width=True):
+        if st.button("Load a very loosing sample", type="secondary", use_container_width=True):
             if analyzer.load_data("hand_histories"):
                 st.success(f"✅ Loaded {len(analyzer.df)} demo hands!")
                 st.rerun()
