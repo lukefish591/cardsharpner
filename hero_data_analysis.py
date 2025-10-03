@@ -755,7 +755,7 @@ def main():
             pass  # If logo not found, just skip it
     with col2:
         st.markdown("# <span style='font-size: 60px;'>♠️ Cardsharp</span>", unsafe_allow_html=True)
-        st.markdown("<p style='font-size: 18px; color: #666; margin-top: -10px;'>Powerful opensource analysis - made by your favourite theory nerd</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size: 18px; color: #666; margin-top: -10px;'>Powerful opensource analysis</p>", unsafe_allow_html=True)
     
     # Initialize analyzer
     if 'analyzer' not in st.session_state:
