@@ -754,8 +754,8 @@ def main():
         except:
             pass  # If logo not found, just skip it
     with col2:
-        st.title("♠️ Cardsharp")
-        st.markdown("Streamlined poker data analysis focused on Hero performance metrics")
+        st.markdown("# <span style='font-size: 60px;'>♠️ Cardsharp</span>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size: 18px; color: #666; margin-top: -10px;'>Powerful opensource analysis - made by your favourite theory nerd</p>", unsafe_allow_html=True)
     
     # Initialize analyzer
     if 'analyzer' not in st.session_state:
@@ -779,36 +779,21 @@ def main():
         # Add tabs for different loading methods
         load_method = st.radio(
             "Choose loading method:",
-            ["📤 Upload Files", "📂 Load from Folder"],
+            ["📤 Upload Files", "📂 Load from Path"],
             help="Upload files directly or load from a folder on your computer"
         )
         
         if load_method == "📤 Upload Files":
             st.markdown("---")
             st.markdown("**Drag & drop your hand history files here:**")
+            st.caption("📌 Currently only GG Poker hand histories supported")
             uploaded_files = st.file_uploader(
                 "Choose .txt files",
                 type=['txt'],
                 accept_multiple_files=True,
-                help="Upload one or more hand history .txt files from GGPoker, PokerStars, etc.",
+                help="Upload one or more hand history .txt files",
                 label_visibility="collapsed"
             )
-            
-            # Tips for selecting multiple files
-            with st.expander("💡 Tips for uploading multiple files"):
-                st.markdown("""
-                **To upload all files from a folder:**
-                1. Click "Browse files" above
-                2. Navigate to your hand history folder
-                3. Press `Ctrl+A` (Windows) or `Cmd+A` (Mac) to select all files
-                4. Click "Open"
-                
-                **Or drag & drop:**
-                - Select multiple files in your file explorer
-                - Drag them all into the upload box above
-                
-                ✨ You can upload hundreds of files at once!
-                """)
             
             if uploaded_files:
                 st.info(f"📎 {len(uploaded_files)} file(s) selected")
@@ -819,7 +804,7 @@ def main():
                     else:
                         st.error("❌ Failed to process files. Please check the file format.")
         
-        else:  # Load from Folder
+        else:  # Load from Path
             st.markdown("---")
             st.markdown("**Enter or paste your folder path:**")
             folder_path = st.text_input(
@@ -828,29 +813,6 @@ def main():
                 help="Enter the path to folder containing your hand history files",
                 label_visibility="collapsed"
             )
-            
-            # Tips for folder paths
-            with st.expander("💡 Tips for finding your folder path"):
-                st.markdown("""
-                **Windows:**
-                1. Open File Explorer and navigate to your folder
-                2. Click the address bar at the top
-                3. Copy the path (e.g., `C:\\Users\\YourName\\Documents\\PokerHands`)
-                4. Paste it above
-                
-                **Mac:**
-                1. Open Finder and navigate to your folder
-                2. Right-click the folder and hold `Option` key
-                3. Select "Copy as Pathname"
-                4. Paste it above
-                
-                **Relative paths:**
-                - `hand_histories` - subfolder in current directory
-                - `.` - current directory (all .txt files here)
-                - `../poker` - parent directory's poker folder
-                
-                📁 The system will automatically search all subfolders!
-                """)
             
             # Show folder info if path exists
             if os.path.exists(folder_path):
@@ -866,7 +828,7 @@ def main():
             elif folder_path and folder_path != "hand_histories":
                 st.error(f"❌ Folder not found: '{folder_path}'")
             
-            if st.button("🔄 Load from Folder", type="primary"):
+            if st.button("🔄 Load from Path", type="primary"):
                 if analyzer.load_data(folder_path):
                     st.success(f"✅ Successfully loaded {len(analyzer.df)} hands!")
                 else:
@@ -938,67 +900,25 @@ def main():
         # Welcome screen for new users
         st.info("👋 Welcome! Please load your hand histories using the sidebar to get started.")
         
-        # Quick start guide
-        st.subheader("🚀 Quick Start Guide")
+        st.markdown("<br>", unsafe_allow_html=True)
         
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            ### 📤 Upload Files (Recommended!)
-            1. Click **"Upload Files"** in the sidebar
-            2. **Drag & drop** files or click "Browse files"
-            3. Select multiple files with `Ctrl+A` / `Cmd+A`
-            4. Click **"Process Uploaded Files"**
-            5. Start analyzing! 📊
-            
-            ✨ **Perfect for beginners** - no file paths needed!
-            
-            💡 **Tip:** You can upload 100+ files at once!
-            """)
-        
-        with col2:
-            st.markdown("""
-            ### 📂 Load from Folder (Advanced)
-            1. Click **"Load from Folder"** in the sidebar
-            2. Paste your folder path (auto-detects files!)
-            3. See file count preview
-            4. Click **"Load from Folder"**
-            5. Start analyzing! 📊
-            
-            🚀 **Automatically scans all subfolders!**
-            
-            💡 **Tip:** Great for permanent hand history folders!
-            """)
-        
-        st.markdown("---")
-        
-        # Show features
-        st.subheader("✨ Features")
+        # About section
         st.markdown("""
-        - **🎯 Hero-Focused Analysis**: Only tracks your performance, not opponents
-        - **📈 Key Metrics**: Showdown rates, flop win rates, profit tracking, VPIP, PFR, 3-bet, C-bet
-        - **📍 Position Analysis**: Performance breakdown by table position (UTG, CO, BTN, etc.)
-        - **💰 Stakes Analysis**: Performance across different stake levels
-        - **📊 Showdown Analysis**: Compare showdown vs non-showdown winnings
-        - **💾 Export Capabilities**: Download data as CSV for further analysis
-        - **🎨 Beautiful Visualizations**: Interactive charts and graphs
-        - **⚡ Fast Processing**: Analyze thousands of hands in seconds
+        ### I am not paying £60 for a glorified excel spreadsheet, neither should you.
+        
+        Reviewing your play should be easy, because playing is the hard part. 
+        
+        Cardsharp is the easiest way to process your hand histories, no expensive, outdated applications required. 
+        
+        If you have any feedback or suggestions, you can message me on Discord: **mcmuffin7296**
+
+        Shout out Warwick Poker Society too
         """)
         
         st.markdown("---")
         
-        st.subheader("🃏 Supported Poker Sites")
-        st.markdown("""
-        Works with hand histories from:
-        - GGPoker
-        - PokerStars
-        - 888poker
-        - Americas Cardroom (ACR)
-        - PartyPoker
-        - Winamax
-        - And more!
-        """)
+        # Discord contact
+
 
 if __name__ == "__main__":
     main()
