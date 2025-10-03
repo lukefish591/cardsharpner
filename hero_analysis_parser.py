@@ -64,6 +64,9 @@ class HeroData:
     cbet_flop_opportunity: bool = False  # Hero was aggressor on previous street
     cbet_turn_opportunity: bool = False
     cbet_river_opportunity: bool = False
+    
+    # Raw hand history text for export
+    raw_text: str = ""
 
 class HeroAnalysisParser:
     """Streamlined parser focused on Hero data analysis only"""
@@ -948,7 +951,8 @@ class HeroAnalysisParser:
                 cbet_river=action_data['cbet_river'],
                 cbet_flop_opportunity=action_data['cbet_flop_opportunity'],
                 cbet_turn_opportunity=action_data['cbet_turn_opportunity'],
-                cbet_river_opportunity=action_data['cbet_river_opportunity']
+                cbet_river_opportunity=action_data['cbet_river_opportunity'],
+                raw_text=hand_text.strip()
             )
             
         except Exception as e:
@@ -1051,7 +1055,8 @@ class HeroAnalysisParser:
                     'CBet_River': hand.cbet_river,
                     'CBet_Flop_Opportunity': hand.cbet_flop_opportunity,
                     'CBet_Turn_Opportunity': hand.cbet_turn_opportunity,
-                    'CBet_River_Opportunity': hand.cbet_river_opportunity
+                    'CBet_River_Opportunity': hand.cbet_river_opportunity,
+                    'Raw_Text': hand.raw_text
                 })
             
             df = pd.DataFrame(data)
