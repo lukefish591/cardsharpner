@@ -776,6 +776,17 @@ def main():
         
         st.header("📁 Load Hand Histories")
         
+        # Try Demo button
+        st.markdown("**Want to just try with my hand histories?**")
+        if st.button("Load a very loosing sample", type="secondary", use_container_width=True):
+            if analyzer.load_data("hand_histories"):
+                st.success(f"✅ Loaded {len(analyzer.df)} demo hands!")
+                st.rerun()
+            else:
+                st.error("❌ Demo hands not found.")
+        
+        st.markdown("---")
+        
         # Add tabs for different loading methods
         load_method = st.radio(
             "Choose loading method:",
@@ -898,7 +909,7 @@ def main():
     
     else:
         # Welcome screen for new users
-        st.info("👋 Welcome! Please load your hand histories using the sidebar to get started.")
+        st.info("👋 Welcome! Click **🎮 Try Demo Hands** in the sidebar to see Cardsharp in action, or upload your own hand histories to get started.")
         
         st.markdown("<br>", unsafe_allow_html=True)
         
