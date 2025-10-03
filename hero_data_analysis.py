@@ -11,8 +11,8 @@ from datetime import datetime, timedelta
 
 # Page configuration
 st.set_page_config(
-    page_title="Hero Poker Data Analysis",
-    page_icon="📊",
+    page_title="CardSharp - Hero Poker Analysis",
+    page_icon="♠️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -95,6 +95,21 @@ st.markdown("""
     /* Sidebar styling */
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 100%);
+    }
+    
+    [data-testid="stSidebar"] img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 10px;
+    }
+    
+    /* Fix vertical alignment for hand images */
+    .stImage img {
+        vertical-align: middle;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
@@ -347,8 +362,16 @@ class HeroDataAnalyzer:
     def render_overview_metrics(self, metrics):
         """Render overview metrics organized by category"""
         
-        # Sample Stats Section
-        st.markdown("### 📊 Sample Stats")
+        # Sample Stats Section with KK image
+        col1, col2 = st.columns([0.2, 4])
+        with col1:
+            try:
+                st.image("Cardsharp hand -KK.png", width=80)
+            except:
+                pass
+        with col2:
+            st.markdown("### Sample Stats")
+        
         with st.container():
             col1, col2, col3, col4 = st.columns(4)
             
@@ -383,8 +406,16 @@ class HeroDataAnalyzer:
         
         st.markdown("---")
         
-        # Playstyle Section
-        st.markdown("### 🎮 Playstyle")
+        # Playstyle Section with 62s image
+        col1, col2 = st.columns([0.2, 4])
+        with col1:
+            try:
+                st.image("Cardhsarp 62s.png", width=80)
+            except:
+                pass
+        with col2:
+            st.markdown("### Playstyle")
+        
         with st.container():
             col1, col2, col3, col4 = st.columns(4)
             
@@ -715,8 +746,16 @@ class HeroDataAnalyzer:
         )
 
 def main():
-    st.title("📊 Hero Poker Data Analysis")
-    st.markdown("Streamlined poker data analysis focused on Hero performance metrics")
+    # Header with logo
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        try:
+            st.image("Cardsharp logo.png", width=120)
+        except:
+            pass  # If logo not found, just skip it
+    with col2:
+        st.title("♠️ Cardsharp")
+        st.markdown("Streamlined poker data analysis focused on Hero performance metrics")
     
     # Initialize analyzer
     if 'analyzer' not in st.session_state:
@@ -726,6 +765,15 @@ def main():
     
     # Sidebar controls
     with st.sidebar:
+        # Logo in sidebar (centered and bigger)
+        try:
+            col1, col2, col3 = st.columns([0.5, 4, 0.5])
+            with col2:
+                st.image("Cardsharp logo.png", use_container_width=True)
+            st.markdown("<br>", unsafe_allow_html=True)
+        except:
+            pass  # If logo not found, just skip it
+        
         st.header("📁 Load Hand Histories")
         
         # Add tabs for different loading methods
@@ -838,31 +886,52 @@ def main():
         metrics = analyzer.calculate_key_metrics()
         
         if show_overview:
-            st.header("📈 Overview Metrics")
+            st.header("Overview Metrics")
             analyzer.render_overview_metrics(metrics)
             st.markdown("<br>", unsafe_allow_html=True)
         
         if show_results:
-            st.header("📊 Results")
+            col1, col2 = st.columns([0.15, 4])
+            with col1:
+                try:
+                    st.image("Cardsharp hand -JTs.png", width=70)
+                except:
+                    pass
+            with col2:
+                st.header("Results")
             analyzer.render_showdown_analysis_chart()
             st.markdown("<br>", unsafe_allow_html=True)
 
         if show_position_analysis:
-            st.header("📍 Position Analysis")
+            col1, col2 = st.columns([0.15, 4])
+            with col1:
+                try:
+                    st.image("Cardsharp hand -KQo.png", width=70)
+                except:
+                    pass
+            with col2:
+                st.header("Position Analysis")
             analyzer.render_position_analysis()
             st.markdown("<br>", unsafe_allow_html=True)
         
         if show_stakes_analysis:
-            st.header("💵 Stakes Analysis")
+            col1, col2 = st.columns([0.15, 4])
+            with col1:
+                try:
+                    st.image("Cardsharp hand -64s.png", width=70)
+                except:
+                    pass
+            with col2:
+                st.header("Stakes Analysis")
             analyzer.render_stakes_analysis()
             st.markdown("<br>", unsafe_allow_html=True)
         
         if show_detailed_data:
-            st.header("📋 Detailed Hand Data")
+            st.header("Detailed Hand Data")
             analyzer.render_detailed_data()
         
         # Export section
-        st.header("💾 Export Data")
+        st.header("Export Data")
         analyzer.export_data()
     
     else:
