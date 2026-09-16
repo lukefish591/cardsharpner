@@ -1,4 +1,5 @@
 import type { AppScreen } from "../../types/poker";
+import { PaletteTrial } from "./PaletteTrial";
 
 const ITEMS: { id: AppScreen; label: string }[] = [
   { id: "import", label: "Import" },
@@ -34,6 +35,7 @@ export function Nav({ active, onNavigate }: NavProps) {
           {item.label}
         </button>
       ))}
+      <PaletteTrial />
       <div className="app-nav__footer">
         Hands stay on this Mac. No cloud upload.
       </div>

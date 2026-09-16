@@ -1,5 +1,9 @@
 :root {
-  /* Skeleton tokens — swap later for production look */
+  /* Skeleton tokens — trial palettes overwrite the first five via JS.
+   * Slot order for a pasted 5-hex array:
+   *   1 bg (--cs-bg) · 2 surface (--cs-bg-elevated) · 3 raised (--cs-bg-panel)
+   *   4 muted (--cs-border) · 5 accent (--cs-accent)
+   * Text + accent-muted are derived. Dark skeleton is this :root block. */
   --cs-bg: #1a1d23;
   --cs-bg-elevated: #242830;
   --cs-bg-panel: #2c313a;
@@ -12,10 +16,12 @@
   --cs-felt-edge: #16382a;
   --cs-danger: #c45c5c;
   --cs-ok: #5a9e6f;
+  --cs-table-line: color-mix(in srgb, var(--cs-text) 28%, transparent);
+  --cs-seat-line: color-mix(in srgb, var(--cs-text) 42%, transparent);
   --cs-radius: 6px;
   --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
   --cs-font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --cs-nav-width: 200px;
+  --cs-nav-width: 228px;
   --cs-gap: 12px;
 }
 
