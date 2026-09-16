@@ -1,4 +1,4 @@
-import type { ReplayFrame } from "../../lib/replay";
+import { formatAmount, type ReplayFrame } from "../../lib/replay";
 import { Board } from "./Board";
 import { ChipStack } from "./ChipStack";
 import { Pot } from "./Pot";
@@ -6,10 +6,11 @@ import { Seat } from "./Seat";
 
 interface PokerTableProps {
   frame?: ReplayFrame | null;
+  useBigBlinds?: boolean;
 }
 
-/** Skeleton oval table using separate DOM regions (not a canvas). */
-export function PokerTable({ frame }: PokerTableProps) {
+/** Skeleton racetrack table using separate DOM regions (not a canvas). */
+export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
   if (!frame) {
     return (
       <div className="replayer-table-region" data-region="table">
@@ -19,18 +20,21 @@ export function PokerTable({ frame }: PokerTableProps) {
     );
   }
 
+  const money = (value: number) =>
+    formatAmount(value, useBigBlinds, frame.bigBlind);
+
   return (
     <div className="replayer-table-region" data-region="table">
       <div className="poker-table" aria-hidden="true" />
       {frame.seats.map((seat) => (
         <Seat
           key={seat.key}
-          name={seat.name}
           position={seat.position}
-          stackLabel={seat.stackLabel}
+          stackLabel={money(seat.stack)}
           x={seat.x}
           y={seat.y}
           isHero={seat.isHero}
+          isDealer={seat.isDealer}
           folded={seat.folded}
           isActing={seat.isActing}
           allIn={seat.allIn}
@@ -43,14 +47,14 @@ export function PokerTable({ frame }: PokerTableProps) {
         .map((seat) => (
           <ChipStack
             key={`chips-${seat.key}`}
-            amount={seat.streetBet}
+            amountLabel={money(seat.streetBet)}
             size={seat.chipSize!}
             x={seat.chipX}
             y={seat.chipY}
           />
         ))}
       <Board cards={frame.board} />
-      <Pot amountLabel={frame.potLabel} />
+      <Pot amountLabel={money(frame.pot)} />
     </div>
   );
 }

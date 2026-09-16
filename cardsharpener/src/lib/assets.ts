@@ -20,6 +20,11 @@ export function cardAssetUrl(code: string | null | undefined): string | null {
   return key ? `/assets/cards/${key}.png` : null;
 }
 
+/** Luke's red lattice back from CardFaceAssets/Card Back.png */
+export function cardBackUrl(): string {
+  return "/assets/cards/back.png";
+}
+
 export function chipAssetUrl(size: "small" | "medium" | "big"): string {
   return `/assets/chips/${size}.png`;
 }

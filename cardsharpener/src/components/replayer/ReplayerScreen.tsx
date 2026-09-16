@@ -20,6 +20,7 @@ export function ReplayerScreen({
   const [hand, setHand] = useState<HandReplay | null>(null);
   const [step, setStep] = useState(0);
   const [error, setError] = useState<string | null>(null);
+  const [useBigBlinds, setUseBigBlinds] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -86,20 +87,38 @@ export function ReplayerScreen({
             on this Mac.
           </p>
         </div>
-        <HandPicker
-          hands={hands}
-          selectedId={activeId}
-          onSelect={(id) => {
-            onSelectHand?.(id);
-            setStep(0);
-          }}
-        />
+        <div className="replayer-header__tools">
+          <div className="amount-toggle" role="group" aria-label="Amount display">
+            <button
+              type="button"
+              className={`amount-toggle__btn${useBigBlinds ? "" : " is-active"}`}
+              onClick={() => setUseBigBlinds(false)}
+            >
+              $
+            </button>
+            <button
+              type="button"
+              className={`amount-toggle__btn${useBigBlinds ? " is-active" : ""}`}
+              onClick={() => setUseBigBlinds(true)}
+            >
+              BB
+            </button>
+          </div>
+          <HandPicker
+            hands={hands}
+            selectedId={activeId}
+            onSelect={(id) => {
+              onSelectHand?.(id);
+              setStep(0);
+            }}
+          />
+        </div>
       </header>
 
       {error ? <p style={{ color: "var(--cs-danger)" }}>{error}</p> : null}
 
       <div className="replayer-layout">
-        <PokerTable frame={frame} />
+        <PokerTable frame={frame} useBigBlinds={useBigBlinds} />
         <ActionLog
           actions={hand?.actions ?? []}
           appliedCount={step}

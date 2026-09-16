@@ -1,4 +1,4 @@
-import { cardAssetUrl } from "../../lib/assets";
+import { cardAssetUrl, cardBackUrl } from "../../lib/assets";
 
 interface CardProps {
   /** e.g. "As", "Td"; omit or "??" for face-down / unknown */
@@ -8,7 +8,14 @@ interface CardProps {
 
 export function Card({ code, faceDown }: CardProps) {
   if (faceDown || code === "??") {
-    return <span className="card card--back" aria-label="Face-down card" />;
+    return (
+      <img
+        className="card card--back"
+        src={cardBackUrl()}
+        alt="Face-down card"
+        draggable={false}
+      />
+    );
   }
   if (!code) {
     return <span className="card card--empty" aria-hidden="true" />;

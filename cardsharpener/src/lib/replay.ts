@@ -6,27 +6,24 @@ import type {
   ReplayPlayer,
 } from "../types/poker";
 
-/** Existing oval seat percentages — keep the current table layout. */
-export const TABLE_SLOTS: { x: number; y: number }[] = [
-  { x: 50, y: 88 },
-  { x: 18, y: 65 },
-  { x: 18, y: 35 },
-  { x: 35, y: 18 },
-  { x: 65, y: 18 },
-  { x: 82, y: 35 },
-  { x: 82, y: 65 },
-];
+/**
+ * Wide racetrack oval, in table-region percent.
+ * Must match `.poker-table` insets in app.css (cx/cy/rx/ry).
+ */
+export const TABLE_OVAL = { cx: 50, cy: 51, rx: 42, ry: 28 };
 
 export interface SeatFrame {
   key: string;
   seat: number | null;
   name: string;
   position: string;
+  stack: number;
   stackLabel: string;
   streetBet: number;
   folded: boolean;
   allIn: boolean;
   isHero: boolean;
+  isDealer: boolean;
   isActing: boolean;
   cards: (string | null)[];
   faceDown: boolean;
@@ -43,6 +40,7 @@ export interface ReplayFrame {
   board: (string | null)[];
   pot: number;
   potLabel: string;
+  bigBlind: number;
   seats: SeatFrame[];
   lastActionIndex: number;
   lastActionLabel: string;
@@ -66,6 +64,54 @@ export function formatMoney(value: number): string {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });
+}
+
+export function formatBb(value: number, bigBlind: number): string {
+  if (bigBlind <= 0) return `$${formatMoney(value)}`;
+  const bb = value / bigBlind;
+  const rounded = Math.round(bb * 10) / 10;
+  const text = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+  return `${text} BB`;
+}
+
+export function formatAmount(
+  value: number,
+  useBigBlinds: boolean,
+  bigBlind: number,
+): string {
+  return useBigBlinds ? formatBb(value, bigBlind) : `$${formatMoney(value)}`;
+}
+
+export function abbreviatePosition(raw: string | null | undefined): string {
+  if (!raw) return "";
+  const key = raw.trim().toLowerCase().replace(/[\s_+-]+/g, "");
+  const map: Record<string, string> = {
+    button: "BTN",
+    btn: "BTN",
+    dealer: "BTN",
+    smallblind: "SB",
+    sb: "SB",
+    bigblind: "BB",
+    bb: "BB",
+    cutoff: "CO",
+    co: "CO",
+    hijack: "HJ",
+    hj: "HJ",
+    lojack: "LJ",
+    lj: "LJ",
+    utg: "UTG",
+    utg1: "UTG1",
+    utgplus1: "UTG1",
+    utg2: "UTG2",
+    utgplus2: "UTG2",
+    mp: "MP",
+    mp1: "MP1",
+    mpplus1: "LJ",
+    mp2: "MP2",
+    ep: "EP",
+  };
+  if (map[key]) return map[key];
+  return raw.replace(/[\s+]/g, "").toUpperCase();
 }
 
 export function streetLabel(street: string): string {
@@ -131,10 +177,10 @@ function chipSizeFor(amount: number, bigBlind: number, allIn: boolean): ChipSize
   return "small";
 }
 
-function towardCenter(x: number, y: number, t = 0.36): { x: number; y: number } {
+function towardCenter(x: number, y: number, t = 0.3): { x: number; y: number } {
   return {
-    x: x + (50 - x) * t,
-    y: y + (50 - y) * t,
+    x: x + (TABLE_OVAL.cx - x) * t,
+    y: y + (TABLE_OVAL.cy - y) * t,
   };
 }
 
@@ -167,17 +213,16 @@ function actionLabel(action: ReplayAction): string {
 
 function assignSlots(count: number): { x: number; y: number }[] {
   if (count <= 0) return [];
-  if (count >= TABLE_SLOTS.length) return TABLE_SLOTS.slice();
-  if (count === TABLE_SLOTS.length - 1) {
-    return TABLE_SLOTS.slice(0, count);
+  const slots: { x: number; y: number }[] = [];
+  for (let i = 0; i < count; i += 1) {
+    // Hero at bottom (π/2), then counter-clockwise around the racetrack.
+    const angle = Math.PI / 2 + (2 * Math.PI * i) / count;
+    slots.push({
+      x: TABLE_OVAL.cx + TABLE_OVAL.rx * Math.cos(angle),
+      y: TABLE_OVAL.cy + TABLE_OVAL.ry * Math.sin(angle),
+    });
   }
-  const picked = [TABLE_SLOTS[0]];
-  const rest = TABLE_SLOTS.slice(1);
-  for (let i = 0; i < count - 1; i += 1) {
-    const idx = Math.round((i * (rest.length - 1)) / Math.max(1, count - 2));
-    picked.push(rest[Math.min(idx, rest.length - 1)]);
-  }
-  return picked;
+  return slots;
 }
 
 /**
@@ -276,7 +321,7 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
   const slots = assignSlots(seats.length);
 
   const seatFrames: SeatFrame[] = seats.map((seat, index) => {
-    const slot = slots[index] ?? TABLE_SLOTS[0];
+    const slot = slots[index] ?? { x: TABLE_OVAL.cx, y: TABLE_OVAL.cy + TABLE_OVAL.ry };
     const chips = towardCenter(slot.x, slot.y);
     const reveal =
       seat.player.isHero ||
@@ -287,6 +332,9 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
     const cards = seat.holeCards.length
       ? [seat.holeCards[0] ?? null, seat.holeCards[1] ?? null]
       : [null, null];
+    const position =
+      abbreviatePosition(seat.player.position) ||
+      (seat.player.seat != null ? `S${seat.player.seat}` : "");
     return {
       key: playerKey(seat.player, index),
       seat: seat.player.seat,
@@ -294,12 +342,14 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
         ? "Hero"
         : seat.player.name ||
           (seat.player.seat != null ? `Seat ${seat.player.seat}` : "Player"),
-      position: seat.player.position || "",
+      position,
+      stack: seat.stack,
       stackLabel: `$${formatMoney(seat.stack)}`,
       streetBet: seat.streetBet,
       folded: seat.folded,
       allIn: seat.allIn,
       isHero: seat.player.isHero,
+      isDealer: position === "BTN",
       isActing: Boolean(
         lastAction &&
           ((lastAction.actorSeat != null && lastAction.actorSeat === seat.player.seat) ||
@@ -324,6 +374,7 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
     board: boardForStreet(street, boardCards, atEnd),
     pot,
     potLabel: `$${formatMoney(pot)}`,
+    bigBlind,
     seats: seatFrames,
     lastActionIndex,
     lastActionLabel: lastAction ? actionLabel(lastAction) : "Start of hand",

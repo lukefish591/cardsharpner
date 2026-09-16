@@ -1,12 +1,12 @@
 import { Card } from "./Card";
 
 interface SeatProps {
-  name: string;
-  position?: string;
+  position: string;
   stackLabel: string;
   cards?: (string | null)[];
   faceDown?: boolean;
   isHero?: boolean;
+  isDealer?: boolean;
   folded?: boolean;
   isActing?: boolean;
   allIn?: boolean;
@@ -16,12 +16,12 @@ interface SeatProps {
 }
 
 export function Seat({
-  name,
   position,
   stackLabel,
   cards,
   faceDown,
   isHero,
+  isDealer,
   folded,
   isActing,
   allIn,
@@ -52,11 +52,17 @@ export function Seat({
           />
         ))}
       </div>
-      <div className="seat__name">{name}</div>
-      {position ? <div className="seat__position">{position}</div> : null}
+      <div className="seat__node">
+        {isDealer ? (
+          <span className="seat__dealer" aria-label="Dealer">
+            D
+          </span>
+        ) : null}
+        <span className="seat__position">{position}</span>
+      </div>
       <div className="seat__stack">
         {stackLabel}
-        {allIn ? " · all-in" : ""}
+        {allIn ? " AI" : ""}
       </div>
     </div>
   );

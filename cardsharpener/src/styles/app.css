@@ -242,28 +242,37 @@
   grid-column: 1;
   grid-row: 1;
   position: relative;
-  min-height: 360px;
-  background: radial-gradient(ellipse at center, var(--cs-felt) 0%, var(--cs-felt-edge) 70%);
+  min-height: 280px;
+  background: var(--cs-bg);
   border: 1px solid var(--cs-border);
   border-radius: var(--cs-radius);
   overflow: hidden;
 }
 
+/* Wide racetrack — insets must match TABLE_OVAL in replay.ts */
 .poker-table {
   position: absolute;
-  inset: 12%;
-  border: 3px solid rgba(255, 255, 255, 0.12);
+  left: 8%;
+  right: 8%;
+  top: 23%;
+  bottom: 21%;
+  border: 1.5px solid rgba(232, 234, 237, 0.28);
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.12);
+  background: transparent;
 }
 
 .poker-table__board {
   position: absolute;
   left: 50%;
-  top: 42%;
+  top: 43%;
   transform: translate(-50%, -50%);
   display: flex;
-  gap: 6px;
+  gap: 4px;
+}
+
+.poker-table__board .card {
+  width: 30px;
+  height: 42px;
 }
 
 .poker-table__pot {
@@ -271,58 +280,98 @@
   left: 50%;
   top: 58%;
   transform: translate(-50%, -50%);
-  padding: 4px 10px;
-  background: rgba(0, 0, 0, 0.35);
+  padding: 3px 10px;
+  background: transparent;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  font-family: var(--cs-font-mono);
+  color: var(--cs-text);
 }
 
 .seat {
   position: absolute;
-  width: 120px;
+  width: 72px;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
+  z-index: 3;
 }
 
-.seat__name {
-  font-size: 0.8rem;
-  font-weight: 600;
+.seat__node {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(232, 234, 237, 0.42);
+  background: var(--cs-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .seat__position {
-  font-size: 0.7rem;
-  color: var(--cs-text-muted);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--cs-text);
 }
 
 .seat__stack {
-  font-size: 0.75rem;
+  font-size: 0.68rem;
+  font-family: var(--cs-font-mono);
   color: var(--cs-text-muted);
+  white-space: nowrap;
 }
 
 .seat__cards {
   display: flex;
-  gap: 4px;
+  gap: 2px;
 }
 
-.seat--hero .seat__name {
+.seat__dealer {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e8eaed;
+  color: #1a1d23;
+  font-size: 0.55rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.seat--hero .seat__node {
+  border-color: var(--cs-accent);
+}
+
+.seat--hero .seat__position {
   color: var(--cs-accent);
 }
 
 .seat--folded {
-  opacity: 0.45;
+  opacity: 0.38;
 }
 
-.seat--acting .seat__name {
+.seat--acting .seat__node {
+  border-color: #f3d27a;
+  box-shadow: 0 0 0 2px rgba(243, 210, 122, 0.22);
+}
+
+.seat--acting .seat__position {
   color: #f3d27a;
 }
 
 .card {
-  width: 36px;
-  height: 50px;
-  border-radius: 4px;
+  width: 24px;
+  height: 34px;
+  border-radius: 3px;
   border: 1px solid var(--cs-border);
   background: #f4f4f0;
   color: #1a1a1a;
@@ -330,7 +379,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--cs-font-mono);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
 }
 
@@ -342,9 +391,10 @@
 }
 
 .card--back {
-  background: #2a3a6a;
-  color: transparent;
-  border-color: #1a2a4a;
+  border: none;
+  background: transparent;
+  object-fit: contain;
+  padding: 0;
 }
 
 .card--empty {
@@ -364,28 +414,31 @@
   z-index: 2;
 }
 
-.chip-stack__image {
-  display: block;
-  height: auto;
+.chip-stack__chip {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, #f4f4f0 0 38%, transparent 39%),
+    repeating-conic-gradient(#c45c5c 0 30deg, #f4f4f0 30deg 60deg);
+  box-shadow: 0 0 0 1px rgba(232, 234, 237, 0.25);
 }
 
-.chip-stack--small .chip-stack__image {
-  width: 36px;
+.chip-stack--medium .chip-stack__chip {
+  width: 14px;
+  height: 14px;
 }
 
-.chip-stack--medium .chip-stack__image {
-  width: 48px;
-}
-
-.chip-stack--big .chip-stack__image {
-  width: 62px;
+.chip-stack--big .chip-stack__chip {
+  width: 16px;
+  height: 16px;
 }
 
 .chip-stack__amount {
-  padding: 1px 6px;
+  padding: 1px 5px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
-  font-size: 0.7rem;
+  background: rgba(20, 22, 27, 0.72);
+  font-size: 0.65rem;
   font-family: var(--cs-font-mono);
   white-space: nowrap;
 }
@@ -396,6 +449,34 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 12px;
+}
+
+.replayer-header__tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.amount-toggle {
+  display: inline-flex;
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius);
+  overflow: hidden;
+}
+
+.amount-toggle__btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  padding: 7px 12px;
+  min-width: 40px;
+  color: var(--cs-text-muted);
+}
+
+.amount-toggle__btn.is-active {
+  background: var(--cs-bg-panel);
+  color: var(--cs-text);
 }
 
 .hand-picker {
