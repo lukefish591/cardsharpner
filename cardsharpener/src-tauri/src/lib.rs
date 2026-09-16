@@ -29,12 +29,13 @@ fn list_hands_page(
   date_to: Option<String>,
   position: Option<String>,
   pot_type: Option<String>,
+  sort: Option<String>,
   limit: Option<i64>,
   offset: Option<i64>,
 ) -> Result<db::HandPage, String> {
   db.read(|conn| {
     db::list_hands_page(
-      conn, query, site, stakes, date_from, date_to, position, pot_type, limit, offset,
+      conn, query, site, stakes, date_from, date_to, position, pot_type, sort, limit, offset,
     )
   })
 }

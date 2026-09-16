@@ -406,6 +406,15 @@ fn clamp_page(limit: Option<i64>, offset: Option<i64>) -> (i64, i64) {
   (limit, offset)
 }
 
+fn hands_order_sql(sort: &str) -> &'static str {
+  match sort.trim().to_ascii_lowercase().as_str() {
+    "oldest" => "h.played_at ASC, h.id ASC",
+    "won" => "COALESCE(h.hero_net, 0) DESC, h.id DESC",
+    "lost" => "COALESCE(h.hero_net, 0) ASC, h.id ASC",
+    _ => "h.played_at DESC, h.id DESC",
+  }
+}
+
 /// Paged hand search. Never selects `raw_text`. Empty query = newest page.
 /// Position / pot-type / exact stakes filter through `hand_stats` (no full-table load).
 pub fn list_hands_page(
@@ -417,6 +426,7 @@ pub fn list_hands_page(
   date_to: Option<String>,
   position: Option<String>,
   pot_type: Option<String>,
+  sort: Option<String>,
   limit: Option<i64>,
   offset: Option<i64>,
 ) -> Result<HandPage, String> {
@@ -448,6 +458,7 @@ pub fn list_hands_page(
   };
   let position_q = position.trim().to_string();
   let pot_type_q = pot_type.trim().to_string();
+  let order_sql = hands_order_sql(&sort.unwrap_or_default());
 
   const WHERE_SQL: &str = r#"
     WHERE (?1 = '' OR (
@@ -483,7 +494,7 @@ pub fn list_hands_page(
      FROM hands h
      LEFT JOIN hand_stats s ON s.hand_id = h.id
      {WHERE_SQL}
-     ORDER BY h.played_at DESC, h.id DESC
+     ORDER BY {order_sql}
      LIMIT ?8 OFFSET ?9"
   );
   let mut stmt = conn
@@ -871,6 +882,7 @@ mod tests {
       None,
       None,
       None,
+      None,
       Some(50),
       Some(0),
     )
@@ -882,6 +894,7 @@ mod tests {
     let search = list_hands_page(
       &conn,
       Some("qc".into()),
+      None,
       None,
       None,
       None,
@@ -935,6 +948,7 @@ mod tests {
       None,
       Some("Button".into()),
       Some("3-Bet Pot".into()),
+      None,
       Some(50),
       Some(0),
     )
@@ -956,11 +970,58 @@ mod tests {
       None,
       None,
       None,
+      None,
       Some(50),
       Some(0),
     )
     .unwrap();
     assert_eq!(by_stakes.match_count, 40);
     assert_eq!(by_stakes.hands.len(), 40);
+  }
+
+  #[test]
+  fn list_hands_page_sorts_by_date_and_net() {
+    let conn = Connection::open_in_memory().unwrap();
+    apply_schema(&conn).unwrap();
+    let rows = [
+      ("HH1", "2024-01-01 12:00:00", 5.0),
+      ("HH2", "2024-03-01 12:00:00", -2.0),
+      ("HH3", "2024-02-01 12:00:00", 1.0),
+    ];
+    for (id, when, net) in rows {
+      conn
+        .execute(
+          "INSERT INTO hands (external_hand_id, site, played_at, stakes, hero_cards, hero_net)
+           VALUES (?1, 'PokerStars', ?2, '$0.05/$0.10', 'Ah Kd', ?3)",
+          params![id, when, net],
+        )
+        .unwrap();
+    }
+
+    let ids = |sort: &str| {
+      list_hands_page(
+        &conn,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        Some(sort.into()),
+        Some(50),
+        Some(0),
+      )
+      .unwrap()
+      .hands
+      .into_iter()
+      .map(|h| h.external_hand_id.unwrap_or_default())
+      .collect::<Vec<_>>()
+    };
+
+    assert_eq!(ids("newest"), ["HH2", "HH3", "HH1"]);
+    assert_eq!(ids("oldest"), ["HH1", "HH3", "HH2"]);
+    assert_eq!(ids("won"), ["HH1", "HH3", "HH2"]);
+    assert_eq!(ids("lost"), ["HH2", "HH3", "HH1"]);
   }
 }

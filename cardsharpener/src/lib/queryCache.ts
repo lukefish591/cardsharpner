@@ -30,6 +30,7 @@ export function handsCacheKey(input: {
   dateTo: string;
   position: string;
   potType: string;
+  sort: string;
   limit: number;
   offset: number;
 }): string {
@@ -41,6 +42,7 @@ export function handsCacheKey(input: {
     input.dateTo,
     input.position,
     input.potType,
+    input.sort,
     input.limit,
     input.offset,
   ].join("|");

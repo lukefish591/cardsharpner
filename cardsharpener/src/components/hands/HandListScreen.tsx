@@ -22,6 +22,13 @@ const EMPTY_FILTERS: HandFilters = {
 
 const PAGE_SIZE = 50;
 
+const SORT_OPTIONS = [
+  { value: "newest", label: "Most recent" },
+  { value: "oldest", label: "Least recent" },
+  { value: "won", label: "Most won" },
+  { value: "lost", label: "Most lost" },
+] as const;
+
 const POT_TYPES = [
   "Preflop Only",
   "Limped Pot",
@@ -41,6 +48,7 @@ export function HandListScreen({
   dataRevision = 0,
 }: HandListScreenProps) {
   const [filters, setFilters] = useState<HandFilters>(EMPTY_FILTERS);
+  const [sort, setSort] = useState<string>("newest");
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState<HandPage | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -59,6 +67,7 @@ export function HandListScreen({
       dateTo: filters.dateTo,
       position: filters.position,
       potType: filters.potType,
+      sort,
       limit: PAGE_SIZE,
       offset,
     }),
@@ -70,6 +79,7 @@ export function HandListScreen({
       filters.dateTo,
       filters.position,
       filters.potType,
+      sort,
       offset,
     ],
   );
@@ -86,6 +96,7 @@ export function HandListScreen({
     filters.dateTo,
     filters.position,
     filters.potType,
+    sort,
   ]);
 
   useEffect(() => {
@@ -96,6 +107,7 @@ export function HandListScreen({
       potType: "",
       dateFrom: "",
       dateTo: "",
+      excludeRake: false,
     })
       .then((overview) => {
         if (cancelled) return;
@@ -161,7 +173,9 @@ export function HandListScreen({
       filters.potType,
   );
 
-  let statusText = "Newest hands";
+  const sortLabel =
+    SORT_OPTIONS.find((option) => option.value === sort)?.label ?? "Most recent";
+  let statusText = sortLabel;
   if (searching && dbTotal > 0) {
     statusText = `Searching ${dbTotal.toLocaleString()} hands…`;
   } else if (page) {
@@ -190,6 +204,19 @@ export function HandListScreen({
         <div className="panel hands-list-panel">
           <div className="hand-list__toolbar">
             <h2 className="panel__title">Hand list</h2>
+            <label className="hand-list__sort">
+              Sort
+              <select
+                value={sort}
+                onChange={(e) => setSort(e.target.value)}
+              >
+                {SORT_OPTIONS.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </label>
             <p className="hand-list__status" aria-live="polite">
               {statusText}
             </p>

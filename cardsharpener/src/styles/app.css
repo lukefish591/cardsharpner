@@ -269,12 +269,30 @@
 .hand-list__toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
 
+.hand-list__sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: var(--cs-text-muted);
+}
+
+.hand-list__sort select {
+  border: 1px solid var(--cs-border);
+  background: var(--cs-bg);
+  border-radius: var(--cs-radius);
+  padding: 6px 10px;
+  color: inherit;
+}
+
 .hand-list__status {
+  flex-basis: 100%;
   margin: 0 0 10px;
   font-size: 0.85rem;
   color: var(--cs-text-muted);
