@@ -526,7 +526,13 @@
   color: var(--cs-accent);
 }
 
-.seat--folded {
+.seat--folded .seat__node {
+  background: var(--cs-bg);
+}
+
+.seat--folded .seat__cards,
+.seat--folded .seat__stack,
+.seat--folded .seat__position {
   opacity: 0.38;
 }
 
