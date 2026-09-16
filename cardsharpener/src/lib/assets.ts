@@ -25,9 +25,7 @@ export function cardBackUrl(): string {
   return "/assets/cards/back.png";
 }
 
-export function chipAssetUrl(size: "small" | "medium" | "big"): string {
-  return `/assets/chips/${size}.png`;
-}
+export { chipStackUrl } from "./chips";
 
 /** Transparent pencil-through-ace mark from CardFaceAssets/Sharpenerlogo.png */
 export function logoUrl(): string {

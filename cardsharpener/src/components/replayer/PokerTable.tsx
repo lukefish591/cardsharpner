@@ -1,3 +1,4 @@
+import { chipBucketForAmount } from "../../lib/chips";
 import { formatAmount, type ReplayFrame } from "../../lib/replay";
 import { Board } from "./Board";
 import { ChipStack } from "./ChipStack";
@@ -22,6 +23,8 @@ export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
 
   const money = (value: number) =>
     formatAmount(value, useBigBlinds, frame.bigBlind);
+  const potBucket =
+    frame.pot > 0 ? chipBucketForAmount(frame.pot, frame.bigBlind) : null;
 
   return (
     <div className="replayer-table-region" data-region="table">
@@ -43,18 +46,20 @@ export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
         />
       ))}
       {frame.seats
-        .filter((seat) => seat.streetBet > 0 && seat.chipSize)
+        .filter((seat) => seat.streetBet > 0 && seat.chipBucket)
         .map((seat) => (
           <ChipStack
             key={`chips-${seat.key}`}
             amountLabel={money(seat.streetBet)}
-            size={seat.chipSize!}
+            bucket={seat.chipBucket!}
             x={seat.chipX}
             y={seat.chipY}
           />
         ))}
-      <Board cards={frame.board} />
-      <Pot amountLabel={money(frame.pot)} />
+      <div className="poker-table__center">
+        <Board cards={frame.board} />
+        <Pot amountLabel={money(frame.pot)} bucket={potBucket} />
+      </div>
     </div>
   );
 }

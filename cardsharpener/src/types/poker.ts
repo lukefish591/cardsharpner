@@ -102,7 +102,15 @@ export interface HandReplay {
   actions: ReplayAction[];
 }
 
-export type ChipSize = "small" | "medium" | "big";
+export type ChipBucket =
+  | "bb-0.5"
+  | "bb-1"
+  | "bb-1-5"
+  | "bb-5-10"
+  | "bb-10-20"
+  | "bb-20-30"
+  | "bb-30-50"
+  | "bb-50";
 
 export type AppScreen = "import" | "hands" | "replayer" | "stats";
 

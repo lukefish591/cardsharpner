@@ -1,10 +1,6 @@
 import { parseCardCodes } from "./assets";
-import type {
-  ChipSize,
-  HandReplay,
-  ReplayAction,
-  ReplayPlayer,
-} from "../types/poker";
+import { chipBucketForAmount, type ChipBucket } from "./chips";
+import type { HandReplay, ReplayAction, ReplayPlayer } from "../types/poker";
 
 /**
  * Wide racetrack oval, in table-region percent.
@@ -27,7 +23,7 @@ export interface SeatFrame {
   isActing: boolean;
   cards: (string | null)[];
   faceDown: boolean;
-  chipSize: ChipSize | null;
+  chipBucket: ChipBucket | null;
   x: number;
   y: number;
   chipX: number;
@@ -167,14 +163,6 @@ function collectStreetBets(seats: MutableSeat[]) {
   for (const seat of seats) {
     seat.streetBet = 0;
   }
-}
-
-function chipSizeFor(amount: number, bigBlind: number, allIn: boolean): ChipSize {
-  if (allIn) return "big";
-  const bb = bigBlind > 0 ? amount / bigBlind : amount;
-  if (bb >= 20) return "big";
-  if (bb >= 5) return "medium";
-  return "small";
 }
 
 function towardCenter(x: number, y: number, t = 0.5): { x: number; y: number } {
@@ -357,9 +345,9 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
       ),
       cards,
       faceDown: !reveal || seat.holeCards.length === 0,
-      chipSize:
+      chipBucket:
         seat.streetBet > 0
-          ? chipSizeFor(seat.streetBet, bigBlind, seat.allIn)
+          ? chipBucketForAmount(seat.streetBet, bigBlind)
           : null,
       x: slot.x,
       y: slot.y,

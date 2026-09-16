@@ -37,6 +37,8 @@ export function Seat({
     .filter(Boolean)
     .join(" ");
 
+  const stackText = `${stackLabel}${allIn ? " AI" : ""}`;
+
   return (
     <div
       className={classes}
@@ -52,17 +54,18 @@ export function Seat({
           />
         ))}
       </div>
-      <div className="seat__node">
-        {isDealer ? (
-          <span className="seat__dealer" aria-label="Dealer">
-            D
+      <div className="seat__body">
+        <div className="seat__node">
+          {isDealer ? (
+            <span className="seat__dealer" aria-label="Dealer">
+              D
+            </span>
+          ) : null}
+          <span className="seat__stack" title={stackText}>
+            {stackText}
           </span>
-        ) : null}
+        </div>
         <span className="seat__position">{position}</span>
-      </div>
-      <div className="seat__stack">
-        {stackLabel}
-        {allIn ? " AI" : ""}
       </div>
     </div>
   );

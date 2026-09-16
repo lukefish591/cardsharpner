@@ -63,7 +63,7 @@ const betting = frame.seats.filter((s) => s.streetBet > 0);
 console.log("step", step, frame.streetLabel, "board", frame.board, "pot", frame.potLabel);
 console.log(
   "chips",
-  betting.map((s) => `${s.name} ${s.streetBet} ${s.chipSize} @ ${s.chipX.toFixed(0)},${s.chipY.toFixed(0)}`),
+  betting.map((s) => `${s.name} ${s.streetBet} ${s.chipBucket} @ ${s.chipX.toFixed(0)},${s.chipY.toFixed(0)}`),
 );
 console.log("hero cards", frame.seats.find((s) => s.isHero)?.cards);
 if (betting.length === 0) {
