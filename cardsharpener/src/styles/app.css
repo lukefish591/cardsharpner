@@ -436,16 +436,25 @@
 
 .seat {
   position: absolute;
-  width: auto;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
+  width: 0;
+  height: 0;
   z-index: 3;
 }
 
+.seat__cards {
+  position: absolute;
+  right: 46px;
+  top: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 3px;
+}
+
 .seat__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -483,11 +492,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.seat__cards {
-  display: flex;
-  gap: 3px;
 }
 
 .seat .card {
