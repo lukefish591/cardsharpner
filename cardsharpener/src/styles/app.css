@@ -582,10 +582,6 @@
   box-shadow: 0 0 0 2px rgba(174, 240, 176, 0.22);
 }
 
-.seat--acting .seat__position {
-  color: #AEF0B0;
-}
-
 .card {
   width: 24px;
   height: 34px;
