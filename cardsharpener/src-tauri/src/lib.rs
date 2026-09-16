@@ -22,6 +22,11 @@ fn list_hands(app: tauri::AppHandle) -> Result<Vec<db::HandSummary>, String> {
   db::list_hands(&app)
 }
 
+#[tauri::command]
+fn get_hand_replay(app: tauri::AppHandle, hand_id: i64) -> Result<db::HandReplay, String> {
+  db::get_hand_replay(&app, hand_id)
+}
+
 /// Parse local files/folders with the repo Python parsers and write SQLite.
 /// Hands never leave this Mac.
 #[tauri::command]
@@ -64,6 +69,7 @@ pub fn run() {
       get_db_status,
       get_app_data_dir,
       list_hands,
+      get_hand_replay,
       import_hands
     ])
     .run(tauri::generate_context!())

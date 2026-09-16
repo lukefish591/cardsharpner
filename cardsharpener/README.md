@@ -114,6 +114,12 @@ On first launch the app creates:
 - App data dir (macOS typically `~/Library/Application Support/com.cardsharpener.app/`)
 - `cardsharpener.sqlite3` with tables: `hands`, `players`, `actions`, `import_batches`
 
+## Replayer
+
+Open **Hands**, click a row, or use the hand picker on **Replayer**. Playback is Start / Prev / Next / End only (no scrubber). Table state comes from the local `actions` / `players` rows: streets, board, pot, stacks, folds, hero cards, and a chip-stack image in front of any seat with a live bet.
+
+Card faces: `public/assets/cards/{rank}{suit}.png`. Chip stacks: `public/assets/chips/{small,medium,big}.png`.
+
 ## Out of scope (v1)
 
 - HUD over other poker clients

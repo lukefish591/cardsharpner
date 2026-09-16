@@ -10,14 +10,25 @@ import "./styles/app.css";
 
 function App() {
   const [screen, setScreen] = useState<AppScreen>("import");
+  const [selectedHandId, setSelectedHandId] = useState<number | null>(null);
 
   return (
     <AppShell active={screen} onNavigate={setScreen}>
       {screen === "import" ? <ImportScreen /> : null}
       {screen === "hands" ? (
-        <HandListScreen onOpenHand={() => setScreen("replayer")} />
+        <HandListScreen
+          onOpenHand={(hand) => {
+            setSelectedHandId(hand.id);
+            setScreen("replayer");
+          }}
+        />
       ) : null}
-      {screen === "replayer" ? <ReplayerScreen /> : null}
+      {screen === "replayer" ? (
+        <ReplayerScreen
+          selectedHandId={selectedHandId}
+          onSelectHand={setSelectedHandId}
+        />
+      ) : null}
       {screen === "stats" ? <StatsScreen /> : null}
     </AppShell>
   );

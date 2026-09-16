@@ -105,6 +105,51 @@ pub struct HandSummary {
 
 #[derive(Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
+pub struct ReplayPlayer {
+  pub seat: Option<i64>,
+  pub name: Option<String>,
+  pub position: Option<String>,
+  pub starting_stack: Option<f64>,
+  pub is_hero: bool,
+  pub hole_cards: Option<String>,
+}
+
+#[derive(Debug, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct ReplayAction {
+  pub id: i64,
+  pub seq: i64,
+  pub street: String,
+  pub actor_seat: Option<i64>,
+  pub actor_name: Option<String>,
+  pub action_type: String,
+  pub amount: Option<f64>,
+  pub is_all_in: bool,
+  pub pot_after: Option<f64>,
+}
+
+#[derive(Debug, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct HandReplay {
+  pub id: i64,
+  pub external_hand_id: Option<String>,
+  pub site: Option<String>,
+  pub played_at: Option<String>,
+  pub stakes: Option<String>,
+  pub table_name: Option<String>,
+  pub hero_seat: Option<i64>,
+  pub hero_name: Option<String>,
+  pub hero_cards: Option<String>,
+  pub board_cards: Option<String>,
+  pub pot_total: Option<f64>,
+  pub hero_net: Option<f64>,
+  pub raw_text: Option<String>,
+  pub players: Vec<ReplayPlayer>,
+  pub actions: Vec<ReplayAction>,
+}
+
+#[derive(Debug, Serialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ImportResult {
   pub file_count: i64,
   pub hand_count: i64,
@@ -257,6 +302,97 @@ pub fn list_hands(app: &AppHandle) -> Result<Vec<HandSummary>, String> {
     out.push(row.map_err(|e| format!("Failed to read hand row: {e}"))?);
   }
   Ok(out)
+}
+
+pub fn get_hand_replay(app: &AppHandle, hand_id: i64) -> Result<HandReplay, String> {
+  initialize(app)?;
+  let conn = open_connection(app)?;
+  let hand = conn
+    .query_row(
+      "SELECT id, external_hand_id, site, played_at, stakes, table_name,
+              hero_seat, hero_name, hero_cards, board_cards, pot_total, hero_net, raw_text
+       FROM hands WHERE id = ?1",
+      params![hand_id],
+      |row| {
+        Ok(HandReplay {
+          id: row.get(0)?,
+          external_hand_id: row.get(1)?,
+          site: row.get(2)?,
+          played_at: row.get(3)?,
+          stakes: row.get(4)?,
+          table_name: row.get(5)?,
+          hero_seat: row.get(6)?,
+          hero_name: row.get(7)?,
+          hero_cards: row.get(8)?,
+          board_cards: row.get(9)?,
+          pot_total: row.get(10)?,
+          hero_net: row.get(11)?,
+          raw_text: row.get(12)?,
+          players: Vec::new(),
+          actions: Vec::new(),
+        })
+      },
+    )
+    .optional()
+    .map_err(|e| format!("Failed to load hand {hand_id}: {e}"))?
+    .ok_or_else(|| format!("Hand {hand_id} not found"))?;
+
+  let mut replay = hand;
+
+  let mut player_stmt = conn
+    .prepare(
+      "SELECT seat, name, position, starting_stack, is_hero, hole_cards
+       FROM players WHERE hand_id = ?1 ORDER BY seat ASC, id ASC",
+    )
+    .map_err(|e| format!("Failed to prepare players: {e}"))?;
+  let player_rows = player_stmt
+    .query_map(params![hand_id], |row| {
+      let is_hero: i64 = row.get(4)?;
+      Ok(ReplayPlayer {
+        seat: row.get(0)?,
+        name: row.get(1)?,
+        position: row.get(2)?,
+        starting_stack: row.get(3)?,
+        is_hero: is_hero != 0,
+        hole_cards: row.get(5)?,
+      })
+    })
+    .map_err(|e| format!("Failed to query players: {e}"))?;
+  for row in player_rows {
+    replay
+      .players
+      .push(row.map_err(|e| format!("Failed to read player: {e}"))?);
+  }
+
+  let mut action_stmt = conn
+    .prepare(
+      "SELECT id, seq, street, actor_seat, actor_name, action_type, amount, is_all_in, pot_after
+       FROM actions WHERE hand_id = ?1 ORDER BY seq ASC, id ASC",
+    )
+    .map_err(|e| format!("Failed to prepare actions: {e}"))?;
+  let action_rows = action_stmt
+    .query_map(params![hand_id], |row| {
+      let is_all_in: i64 = row.get(7)?;
+      Ok(ReplayAction {
+        id: row.get(0)?,
+        seq: row.get(1)?,
+        street: row.get(2)?,
+        actor_seat: row.get(3)?,
+        actor_name: row.get(4)?,
+        action_type: row.get(5)?,
+        amount: row.get(6)?,
+        is_all_in: is_all_in != 0,
+        pot_after: row.get(8)?,
+      })
+    })
+    .map_err(|e| format!("Failed to query actions: {e}"))?;
+  for row in action_rows {
+    replay
+      .actions
+      .push(row.map_err(|e| format!("Failed to read action: {e}"))?);
+  }
+
+  Ok(replay)
 }
 
 fn empty_to_none(value: Option<String>) -> Option<String> {

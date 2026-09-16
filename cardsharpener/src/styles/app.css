@@ -292,6 +292,11 @@
   font-weight: 600;
 }
 
+.seat__position {
+  font-size: 0.7rem;
+  color: var(--cs-text-muted);
+}
+
 .seat__stack {
   font-size: 0.75rem;
   color: var(--cs-text-muted);
@@ -304,6 +309,14 @@
 
 .seat--hero .seat__name {
   color: var(--cs-accent);
+}
+
+.seat--folded {
+  opacity: 0.45;
+}
+
+.seat--acting .seat__name {
+  color: #f3d27a;
 }
 
 .card {
@@ -321,6 +334,13 @@
   font-weight: 600;
 }
 
+.card--face {
+  border: none;
+  background: transparent;
+  object-fit: contain;
+  padding: 0;
+}
+
 .card--back {
   background: #2a3a6a;
   color: transparent;
@@ -331,6 +351,75 @@
   background: transparent;
   border-style: dashed;
   color: transparent;
+}
+
+.chip-stack {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.chip-stack__image {
+  display: block;
+  height: auto;
+}
+
+.chip-stack--small .chip-stack__image {
+  width: 36px;
+}
+
+.chip-stack--medium .chip-stack__image {
+  width: 48px;
+}
+
+.chip-stack--big .chip-stack__image {
+  width: 62px;
+}
+
+.chip-stack__amount {
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  font-size: 0.7rem;
+  font-family: var(--cs-font-mono);
+  white-space: nowrap;
+}
+
+.replayer-header {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hand-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  min-width: 220px;
+}
+
+.hand-picker select {
+  border: 1px solid var(--cs-border);
+  background: var(--cs-bg-elevated);
+  border-radius: var(--cs-radius);
+  padding: 8px 10px;
+}
+
+.replayer-table-empty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: var(--cs-text-muted);
 }
 
 .replayer-action-log {
@@ -370,8 +459,7 @@
 }
 
 .replayer-controls__scrubber {
-  flex: 1;
-  min-width: 120px;
+  display: none;
 }
 
 /* Stats */

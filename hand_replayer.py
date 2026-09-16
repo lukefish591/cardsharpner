@@ -269,7 +269,7 @@ class HandReplayer:
             
             # Parse action line
             if ':' in line and any(keyword in line.lower() for keyword in 
-                                  ['folds', 'calls', 'raises', 'bets', 'checks', 'posts', 'collected']):
+                                  ['folds', 'calls', 'raises', 'bets', 'checks', 'posts', 'collected', 'shows']):
                 
                 parts = line.split(':', 1)
                 player_name = parts[0].strip()
@@ -285,6 +285,8 @@ class HandReplayer:
                 amount = 0.0
                 description = ""
                 
+                all_in = "all-in" in action_text.lower() or "all in" in action_text.lower()
+
                 if 'posts small blind' in action_text:
                     action_type = 'post'
                     m = re.search(r'\$([\d.]+)', action_text)
@@ -345,6 +347,16 @@ class HandReplayer:
                     if m:
                         amount = float(m.group(1))
                     description = f"collected ${amount:.2f}"
+
+                elif 'shows' in action_text:
+                    action_type = 'show'
+                    description = action_text
+                    shown = re.search(r'\[([^\]]+)\]', action_text)
+                    if shown and not player.hole_cards:
+                        player.hole_cards = shown.group(1).strip().split()
+                
+                if all_in and description:
+                    description = f"{description} and is all-in"
                 
                 # Create action step
                 if action_type != 'unknown':
@@ -363,9 +375,12 @@ class HandReplayer:
                         board_cards=current_board.copy()
                     ))
             
-            # Handle uncalled bet returns
+            # Handle uncalled bet returns (GG uses Uncalled bet ($x) returned to)
             elif 'Uncalled bet' in line and 'returned to' in line:
-                m = re.search(r'Uncalled bet \$([\d.]+) returned to ([^$]+)', line)
+                m = re.search(
+                    r'Uncalled bet \(?\$([\d.]+)\)? returned to (.+)',
+                    line,
+                )
                 if m:
                     amount = float(m.group(1))
                     player_name = m.group(2).strip()
@@ -381,12 +396,36 @@ class HandReplayer:
                             seat=player.seat,
                             action_type='return',
                             amount=amount,
-                            total_bet=0,
+                            total_bet=max(0.0, street_bets.get(player_name, 0.0) - amount),
                             pot_before=pot_size + amount,
                             pot_after=pot_size,
                             description=f"uncalled bet ${amount:.2f} returned",
                             board_cards=current_board.copy()
                         ))
+
+            # GG collect lines often omit the colon: "Name collected $1.23 from pot"
+            elif " collected $" in line:
+                m = re.search(r'^(.+?) collected \$([\d.]+)', line)
+                if m:
+                    player_name = m.group(1).strip()
+                    amount = float(m.group(2))
+                    player = next((p for p in players if p.name == player_name), None)
+                    if player:
+                        action_number += 1
+                        actions.append(ActionStep(
+                            action_number=action_number,
+                            street=current_street if current_street != 'preflop' else 'showdown',
+                            player=player_name,
+                            seat=player.seat,
+                            action_type='collect',
+                            amount=amount,
+                            total_bet=0,
+                            pot_before=pot_size,
+                            pot_after=max(0.0, pot_size - amount),
+                            description=f"collected ${amount:.2f}",
+                            board_cards=current_board.copy()
+                        ))
+                        pot_size = max(0.0, pot_size - amount)
         
         return actions
     

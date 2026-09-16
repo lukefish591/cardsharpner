@@ -45,15 +45,6 @@ export function PlaybackControls({
       >
         End
       </button>
-      <input
-        className="replayer-controls__scrubber"
-        type="range"
-        min={0}
-        max={maxStep}
-        value={step}
-        aria-label="Action scrubber"
-        onChange={(e) => onStepChange(Number(e.target.value))}
-      />
       <span className="muted" data-region="street">
         {streetLabel} · step {step}/{maxStep}
       </span>

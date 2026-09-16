@@ -10,7 +10,10 @@ export type ActionType =
   | "bet"
   | "raise"
   | "all-in"
-  | "deal";
+  | "deal"
+  | "collect"
+  | "return"
+  | "show";
 
 export interface HandSummary {
   id: number;
@@ -45,5 +48,46 @@ export interface ImportResult {
   batchId: number;
   notes: string;
 }
+
+export interface ReplayPlayer {
+  seat: number | null;
+  name: string | null;
+  position: string | null;
+  startingStack: number | null;
+  isHero: boolean;
+  holeCards: string | null;
+}
+
+export interface ReplayAction {
+  id: number;
+  seq: number;
+  street: string;
+  actorSeat: number | null;
+  actorName: string | null;
+  actionType: string;
+  amount: number | null;
+  isAllIn: boolean;
+  potAfter: number | null;
+}
+
+export interface HandReplay {
+  id: number;
+  externalHandId?: string | null;
+  site?: string | null;
+  playedAt?: string | null;
+  stakes?: string | null;
+  tableName?: string | null;
+  heroSeat?: number | null;
+  heroName?: string | null;
+  heroCards?: string | null;
+  boardCards?: string | null;
+  potTotal?: number | null;
+  heroNet?: number | null;
+  rawText?: string | null;
+  players: ReplayPlayer[];
+  actions: ReplayAction[];
+}
+
+export type ChipSize = "small" | "medium" | "big";
 
 export type AppScreen = "import" | "hands" | "replayer" | "stats";

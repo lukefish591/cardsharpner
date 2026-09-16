@@ -1,28 +1,56 @@
+import type { ReplayFrame } from "../../lib/replay";
 import { Board } from "./Board";
+import { ChipStack } from "./ChipStack";
 import { Pot } from "./Pot";
 import { Seat } from "./Seat";
 
+interface PokerTableProps {
+  frame?: ReplayFrame | null;
+}
+
 /** Skeleton oval table using separate DOM regions (not a canvas). */
-export function PokerTable() {
+export function PokerTable({ frame }: PokerTableProps) {
+  if (!frame) {
+    return (
+      <div className="replayer-table-region" data-region="table">
+        <div className="poker-table" aria-hidden="true" />
+        <p className="replayer-table-empty">Pick an imported hand to replay.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="replayer-table-region" data-region="table">
       <div className="poker-table" aria-hidden="true" />
-      <Seat name="UTG" stackLabel="100 bb" x={18} y={35} cards={[null, null]} />
-      <Seat name="MP" stackLabel="100 bb" x={18} y={65} cards={[null, null]} />
-      <Seat
-        name="Hero"
-        stackLabel="100 bb"
-        x={50}
-        y={88}
-        isHero
-        cards={["As", "Kd"]}
-      />
-      <Seat name="CO" stackLabel="100 bb" x={82} y={65} cards={[null, null]} />
-      <Seat name="BTN" stackLabel="100 bb" x={82} y={35} cards={[null, null]} />
-      <Seat name="SB" stackLabel="99.5 bb" x={65} y={18} cards={[null, null]} />
-      <Seat name="BB" stackLabel="99 bb" x={35} y={18} cards={[null, null]} />
-      <Board cards={[null, null, null, null, null]} />
-      <Pot amountLabel="1.5 bb" />
+      {frame.seats.map((seat) => (
+        <Seat
+          key={seat.key}
+          name={seat.name}
+          position={seat.position}
+          stackLabel={seat.stackLabel}
+          x={seat.x}
+          y={seat.y}
+          isHero={seat.isHero}
+          folded={seat.folded}
+          isActing={seat.isActing}
+          allIn={seat.allIn}
+          cards={seat.cards}
+          faceDown={seat.faceDown}
+        />
+      ))}
+      {frame.seats
+        .filter((seat) => seat.streetBet > 0 && seat.chipSize)
+        .map((seat) => (
+          <ChipStack
+            key={`chips-${seat.key}`}
+            amount={seat.streetBet}
+            size={seat.chipSize!}
+            x={seat.chipX}
+            y={seat.chipY}
+          />
+        ))}
+      <Board cards={frame.board} />
+      <Pot amountLabel={frame.potLabel} />
     </div>
   );
 }
