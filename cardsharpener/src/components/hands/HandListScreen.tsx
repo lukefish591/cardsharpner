@@ -93,9 +93,13 @@ export function HandListScreen({
     fetchStatsOverview({ position: "", stakes: "", potType: "" })
       .then((overview) => {
         if (cancelled) return;
-        setPositions(overview.positions);
-        setStakes(overview.stakes);
-        setPotTypes([...new Set([...overview.potTypes, ...POT_TYPES])]);
+        setPositions(overview.positions.filter((item) => item && item !== "Unknown"));
+        setStakes(overview.stakes.filter((item) => item && item !== "Unknown"));
+        setPotTypes(
+          [...new Set([...overview.potTypes, ...POT_TYPES])].filter(
+            (item) => item && item !== "Unknown",
+          ),
+        );
       })
       .catch(() => {
         /* Facets stay at last known / defaults; list query is independent. */

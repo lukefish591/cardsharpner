@@ -134,9 +134,11 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
         <>
           <StatsFilters
             value={filters}
-            positions={overview?.positions ?? []}
-            stakes={overview?.stakes ?? []}
-            potTypes={[...new Set([...(overview?.potTypes ?? []), ...POT_TYPES])]}
+            positions={(overview?.positions ?? []).filter((item) => item && item !== "Unknown")}
+            stakes={(overview?.stakes ?? []).filter((item) => item && item !== "Unknown")}
+            potTypes={[
+              ...new Set([...(overview?.potTypes ?? []), ...POT_TYPES]),
+            ].filter((item) => item && item !== "Unknown")}
             onChange={setFilters}
           />
 
