@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 import { open } from "@tauri-apps/plugin-dialog";
-import { fetchAppDataDir, fetchDbStatus } from "../../lib/db";
-import type { DbStatus } from "../../types/poker";
+import { fetchAppDataDir, fetchDbStatus, importHands } from "../../lib/db";
+import type { DbStatus, ImportResult } from "../../types/poker";
 
 export function ImportScreen() {
   const [db, setDb] = useState<DbStatus | null>(null);
   const [appDataDir, setAppDataDir] = useState<string>("");
   const [picked, setPicked] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState<ImportResult | null>(null);
+
+  async function refreshStatus() {
+    const [status, dir] = await Promise.all([
+      fetchDbStatus(),
+      fetchAppDataDir(),
+    ]);
+    setDb(status);
+    setAppDataDir(dir);
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -51,6 +62,7 @@ export function ImportScreen() {
       if (selection == null) return;
       const paths = Array.isArray(selection) ? selection : [selection];
       setPicked(paths);
+      setResult(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : "File dialog failed");
     }
@@ -69,8 +81,33 @@ export function ImportScreen() {
       });
       if (selection == null || Array.isArray(selection)) return;
       setPicked([selection]);
+      setResult(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Folder dialog failed");
+    }
+  }
+
+  async function importSelected() {
+    setError(null);
+    setResult(null);
+    if (picked.length === 0) {
+      setError("Choose files or a folder first.");
+      return;
+    }
+    setBusy(true);
+    try {
+      const imported = await importHands(picked);
+      setResult(imported);
+      await refreshStatus();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+      try {
+        await refreshStatus();
+      } catch {
+        // status refresh is best-effort after a failed import
+      }
+    } finally {
+      setBusy(false);
     }
   }
 
@@ -94,8 +131,13 @@ export function ImportScreen() {
           <button type="button" className="btn" onClick={pickFolder}>
             Choose folder…
           </button>
-          <button type="button" className="btn" disabled title="Parser hook later">
-            Import selected (stub)
+          <button
+            type="button"
+            className="btn"
+            onClick={importSelected}
+            disabled={busy || picked.length === 0}
+          >
+            {busy ? "Importing…" : "Import selected"}
           </button>
         </div>
         {picked.length > 0 ? (
@@ -109,6 +151,18 @@ export function ImportScreen() {
             No files selected yet.
           </p>
         )}
+        {result ? (
+          <p style={{ marginTop: 12 }}>
+            Imported {result.handCount} hands from {result.fileCount} files
+            {result.skippedCount > 0
+              ? ` · ${result.skippedCount} already in the database`
+              : ""}
+            {result.errorCount > 0
+              ? ` · ${result.errorCount} parser issues`
+              : ""}
+            . Open Hands to browse them.
+          </p>
+        ) : null}
         {error ? (
           <p style={{ color: "var(--cs-danger)", marginTop: 8 }}>{error}</p>
         ) : null}
@@ -128,11 +182,11 @@ export function ImportScreen() {
               : "—"}
           </dd>
           <dt>Status</dt>
-          <dd>{db?.ready ? "Ready (schema applied)" : "Not connected"}</dd>
+          <dd>{db?.ready ? "Ready" : "Not connected"}</dd>
         </dl>
         <p className="muted">
-          Schema stub is ready for hands, players, actions, and import batches.
-          Wire parsers here later (existing Python can stay local-only).
+          Parsers run locally on this Mac (Python). Hands, players, and actions
+          stay in SQLite. Nothing is uploaded.
         </p>
       </div>
     </section>

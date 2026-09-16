@@ -71,26 +71,46 @@ cardsharpener/
 │   │   ├── hands/            # Hand list + filters
 │   │   ├── replayer/         # DOM table, seats, cards, controls, action log
 │   │   └── stats/            # Data-only chart placeholders
-│   ├── lib/db.ts             # invoke wrappers for Rust DB commands
+│   ├── lib/db.ts             # invoke wrappers for Rust DB / import commands
 │   ├── styles/               # CSS variables + skeleton layout
 │   └── types/poker.ts
+├── scripts/
+│   ├── import_hands.py       # local Python bridge to existing parsers
+│   └── setup_import_venv.sh
 ├── src-tauri/
 │   ├── src/
-│   │   ├── db.rs             # SQLite schema stub + app-data path
+│   │   ├── db.rs             # SQLite schema + list/persist
+│   │   ├── import.rs         # spawn local Python parsers
 │   │   └── lib.rs            # Tauri commands
 │   ├── capabilities/
 │   └── tauri.conf.json
 └── package.json
 ```
 
+## Import (local parsers)
+
+**Import selected** walks the files/folders you pick, splits on `Poker Hand #`, and runs the existing repo-root Python parsers as a **local subprocess** (no network):
+
+- `hero_analysis_parser.py` — hero cards, stakes, net
+- `hand_replayer.py` — players, actions, board
+- `comprehensive_parser.py` — only if replay data is missing
+
+Rows are written to local SQLite (`hands`, `players`, `actions`, `import_batches`). Hands never leave this Mac.
+
+Python venv (once, from the repo root):
+
+```bash
+./cardsharpener/scripts/setup_import_venv.sh
+```
+
+That creates `.venv/` at the repo root and installs `pandas` (the parser dependency). The app prefers that interpreter; override with `CARDSHARPENER_PYTHON` or `CARDSHARPENER_REPO` if needed.
+
 ## SQLite
 
 On first launch the app creates:
 
 - App data dir (macOS typically `~/Library/Application Support/com.cardsharpener.app/`)
-- `cardsharpener.sqlite3` with empty tables: `hands`, `players`, `actions`, `import_batches`
-
-Schema is a stub for future import + replay + stats. No full PokerTracker engine yet.
+- `cardsharpener.sqlite3` with tables: `hands`, `players`, `actions`, `import_batches`
 
 ## Out of scope (v1)
 

@@ -1,5 +1,5 @@
 import { invoke } from "@tauri-apps/api/core";
-import type { DbStatus, HandSummary } from "../types/poker";
+import type { DbStatus, HandSummary, ImportResult } from "../types/poker";
 
 function isTauriRuntime(): boolean {
   return typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
@@ -29,4 +29,11 @@ export async function fetchHands(): Promise<HandSummary[]> {
     return [];
   }
   return invoke<HandSummary[]>("list_hands");
+}
+
+export async function importHands(paths: string[]): Promise<ImportResult> {
+  if (!isTauriRuntime()) {
+    throw new Error("Import needs the Tauri shell — run npm run tauri dev.");
+  }
+  return invoke<ImportResult>("import_hands", { paths });
 }

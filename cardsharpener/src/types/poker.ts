@@ -37,4 +37,13 @@ export interface DbStatus {
   ready: boolean;
 }
 
+export interface ImportResult {
+  fileCount: number;
+  handCount: number;
+  skippedCount: number;
+  errorCount: number;
+  batchId: number;
+  notes: string;
+}
+
 export type AppScreen = "import" | "hands" | "replayer" | "stats";

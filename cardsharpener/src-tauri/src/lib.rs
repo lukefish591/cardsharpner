@@ -1,4 +1,5 @@
 mod db;
+mod import;
 
 use tauri::Manager;
 
@@ -16,11 +17,16 @@ fn get_app_data_dir(app: tauri::AppHandle) -> Result<String, String> {
     .map_err(|e| format!("Failed to resolve app data dir: {e}"))
 }
 
-/// Placeholder import command — parsers can hook later (local-only).
 #[tauri::command]
-fn list_hands(_app: tauri::AppHandle) -> Result<Vec<serde_json::Value>, String> {
-  // Empty list until import/parser wiring lands.
-  Ok(Vec::new())
+fn list_hands(app: tauri::AppHandle) -> Result<Vec<db::HandSummary>, String> {
+  db::list_hands(&app)
+}
+
+/// Parse local files/folders with the repo Python parsers and write SQLite.
+/// Hands never leave this Mac.
+#[tauri::command]
+fn import_hands(app: tauri::AppHandle, paths: Vec<String>) -> Result<db::ImportResult, String> {
+  import::import_paths(&app, paths)
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
@@ -37,7 +43,8 @@ pub fn run() {
     .invoke_handler(tauri::generate_handler![
       get_db_status,
       get_app_data_dir,
-      list_hands
+      list_hands,
+      import_hands
     ])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
