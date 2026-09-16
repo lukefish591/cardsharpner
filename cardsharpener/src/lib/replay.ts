@@ -177,7 +177,7 @@ function chipSizeFor(amount: number, bigBlind: number, allIn: boolean): ChipSize
   return "small";
 }
 
-function towardCenter(x: number, y: number, t = 0.3): { x: number; y: number } {
+function towardCenter(x: number, y: number, t = 0.5): { x: number; y: number } {
   return {
     x: x + (TABLE_OVAL.cx - x) * t,
     y: y + (TABLE_OVAL.cy - y) * t,

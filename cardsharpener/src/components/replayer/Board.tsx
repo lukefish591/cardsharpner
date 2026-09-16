@@ -5,13 +5,13 @@ interface BoardProps {
 }
 
 export function Board({ cards }: BoardProps) {
-  const slots = [...cards];
-  while (slots.length < 5) slots.push(null);
+  const dealt = cards.filter((c): c is string => Boolean(c));
+  if (dealt.length === 0) return null;
 
   return (
     <div className="poker-table__board" data-region="board">
-      {slots.map((c, i) => (
-        <Card key={i} code={c} />
+      {dealt.map((c, i) => (
+        <Card key={`${c}-${i}`} code={c} />
       ))}
     </div>
   );
