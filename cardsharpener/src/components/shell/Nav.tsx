@@ -21,11 +21,10 @@ export function Nav({ active, onNavigate }: NavProps) {
         <img
           className="app-nav__logo"
           src={logoUrl()}
-          alt=""
+          alt="Cardsharpener"
           width={512}
           height={288}
         />
-        <span className="app-nav__brand-name">Cardsharpener</span>
       </div>
       {ITEMS.map((item) => (
         <button
