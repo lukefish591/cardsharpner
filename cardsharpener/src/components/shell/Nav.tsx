@@ -1,3 +1,4 @@
+import { logoUrl } from "../../lib/assets";
 import type { AppScreen } from "../../types/poker";
 import { ThemeSwitch } from "./ThemeSwitch";
 
@@ -17,7 +18,14 @@ export function Nav({ active, onNavigate }: NavProps) {
   return (
     <nav className="app-nav" aria-label="Primary">
       <div className="app-nav__brand">
-        Cardsharpener
+        <img
+          className="app-nav__logo"
+          src={logoUrl()}
+          alt=""
+          width={518}
+          height={462}
+        />
+        <span className="app-nav__brand-name">Cardsharpener</span>
         <span className="app-nav__brand-sub">Local · Mac desktop</span>
       </div>
       {ITEMS.map((item) => (

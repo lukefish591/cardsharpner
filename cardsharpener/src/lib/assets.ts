@@ -29,6 +29,11 @@ export function chipAssetUrl(size: "small" | "medium" | "big"): string {
   return `/assets/chips/${size}.png`;
 }
 
+/** Green AA wordmark from CardFaceAssets/Cardsharp logo green.png */
+export function logoUrl(): string {
+  return "/assets/logo/cardsharpener-logo-green.png";
+}
+
 export function parseCardCodes(raw: string | null | undefined): string[] {
   if (!raw) return [];
   return raw
