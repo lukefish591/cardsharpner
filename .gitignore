@@ -10,12 +10,13 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
+# Libraries (Python build layout only — do not ignore app source)
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
@@ -127,4 +128,19 @@ test_stats.csv
 # Temporary files
 *.tmp
 *.temp
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+*.local
+
+# Tauri / Rust
+cardsharpener/src-tauri/target/
+cardsharpener/dist/
+
+# Local SQLite (never commit user DBs)
+*.sqlite3
+*.sqlite
+*.db
 

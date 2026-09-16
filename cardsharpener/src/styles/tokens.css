@@ -1,0 +1,56 @@
+:root {
+  /* Skeleton tokens — swap later for production look */
+  --cs-bg: #1a1d23;
+  --cs-bg-elevated: #242830;
+  --cs-bg-panel: #2c313a;
+  --cs-border: #3d4450;
+  --cs-text: #e8eaed;
+  --cs-text-muted: #9aa0a6;
+  --cs-accent: #5b8def;
+  --cs-accent-muted: #3a5a9a;
+  --cs-felt: #1e4d3a;
+  --cs-felt-edge: #16382a;
+  --cs-danger: #c45c5c;
+  --cs-ok: #5a9e6f;
+  --cs-radius: 6px;
+  --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --cs-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --cs-nav-width: 200px;
+  --cs-gap: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--cs-font);
+  background: var(--cs-bg);
+  color: var(--cs-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--cs-accent);
+}
