@@ -38,6 +38,26 @@ pub fn run() {
       db::initialize(app.handle()).map_err(|e| {
         Box::<dyn std::error::Error>::from(std::io::Error::other(e))
       })?;
+      // Optional local automation: CARDSHARPENER_IMPORT_ON_START=/path/file.txt[:/path/dir]
+      if let Ok(raw) = std::env::var("CARDSHARPENER_IMPORT_ON_START") {
+        let paths: Vec<String> = raw
+          .split(':')
+          .map(str::trim)
+          .filter(|s| !s.is_empty())
+          .map(str::to_string)
+          .collect();
+        if !paths.is_empty() {
+          match import::import_paths(app.handle(), paths) {
+            Ok(result) => {
+              eprintln!(
+                "Startup import: {} hands from {} files ({})",
+                result.hand_count, result.file_count, result.notes
+              );
+            }
+            Err(e) => eprintln!("Startup import failed: {e}"),
+          }
+        }
+      }
       Ok(())
     })
     .invoke_handler(tauri::generate_handler![

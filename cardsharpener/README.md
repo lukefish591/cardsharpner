@@ -105,6 +105,8 @@ Python venv (once, from the repo root):
 
 That creates `.venv/` at the repo root and installs `pandas` (the parser dependency). The app prefers that interpreter; override with `CARDSHARPENER_PYTHON` or `CARDSHARPENER_REPO` if needed.
 
+Optional: set `CARDSHARPENER_IMPORT_ON_START=/path/to/file.txt` (colon-separated paths) to import when the app launches — same local parser path as **Import selected**.
+
 ## SQLite
 
 On first launch the app creates:
