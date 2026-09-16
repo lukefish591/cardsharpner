@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from "react";
 import { fetchHandReplay, fetchHandsPage } from "../../lib/db";
 import { buildPlayback, computeFrame } from "../../lib/replay";
 import type { HandReplay } from "../../types/poker";
-import { ActionLog } from "./ActionLog";
 import { HandPicker } from "./HandPicker";
 import { PlaybackControls } from "./PlaybackControls";
 import { PokerTable } from "./PokerTable";
@@ -125,11 +124,6 @@ export function ReplayerScreen({
 
       <div className="replayer-layout">
         <PokerTable frame={frame} useBigBlinds={useBigBlinds} />
-        <ActionLog
-          steps={playback}
-          currentStep={step}
-          onSelect={setStep}
-        />
         <PlaybackControls
           step={step}
           maxStep={maxStep}

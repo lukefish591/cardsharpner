@@ -359,7 +359,7 @@
 /* Replayer — DOM regions, not a canvas monolith */
 .replayer-layout {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr auto;
   gap: var(--cs-gap);
   flex: 1;
@@ -531,12 +531,12 @@
 }
 
 .seat--acting .seat__node {
-  border-color: #f3d27a;
-  box-shadow: 0 0 0 2px rgba(243, 210, 122, 0.22);
+  border-color: #AEF0B0;
+  box-shadow: 0 0 0 2px rgba(174, 240, 176, 0.22);
 }
 
 .seat--acting .seat__position {
-  color: #f3d27a;
+  color: #AEF0B0;
 }
 
 .card {
@@ -736,33 +736,6 @@
   transform: translate(-50%, -50%);
   margin: 0;
   color: var(--cs-text-muted);
-}
-
-.replayer-action-log {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  overflow: auto;
-}
-
-.action-log {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.action-log__item {
-  padding: 8px 10px;
-  border-radius: var(--cs-radius);
-  background: var(--cs-bg);
-  border: 1px solid transparent;
-  font-size: 0.85rem;
-}
-
-.action-log__item--active {
-  border-color: var(--cs-accent);
 }
 
 .replayer-controls {
