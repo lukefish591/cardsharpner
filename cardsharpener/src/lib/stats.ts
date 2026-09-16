@@ -67,6 +67,9 @@ export function filterStatRows(
     if (filters.position && row.position !== filters.position) return false;
     if (filters.stakes && row.stakes !== filters.stakes) return false;
     if (filters.potType && row.potType !== filters.potType) return false;
+    const played = row.playedAt ?? "";
+    if (filters.dateFrom && played < filters.dateFrom) return false;
+    if (filters.dateTo && played && played > `${filters.dateTo}z`) return false;
     return true;
   });
 }

@@ -56,18 +56,32 @@ fn backfill_hand_stats(db: State<db::AppDb>) -> Result<i64, String> {
   db.write(stats::backfill_missing)
 }
 
+fn stats_filter(
+  position: Option<String>,
+  stakes: Option<String>,
+  pot_type: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
+) -> stats::StatsFilter {
+  stats::StatsFilter {
+    position: position.unwrap_or_default(),
+    stakes: stakes.unwrap_or_default(),
+    pot_type: pot_type.unwrap_or_default(),
+    date_from: date_from.unwrap_or_default(),
+    date_to: date_to.unwrap_or_default(),
+  }
+}
+
 #[tauri::command]
 fn get_stats_overview(
   db: State<db::AppDb>,
   position: Option<String>,
   stakes: Option<String>,
   pot_type: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
 ) -> Result<stats::StatsOverview, String> {
-  let filter = stats::StatsFilter {
-    position: position.unwrap_or_default(),
-    stakes: stakes.unwrap_or_default(),
-    pot_type: pot_type.unwrap_or_default(),
-  };
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::overview(conn, &filter)
@@ -80,12 +94,10 @@ fn get_stats_playstyle(
   position: Option<String>,
   stakes: Option<String>,
   pot_type: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
 ) -> Result<stats::StatsPlaystyle, String> {
-  let filter = stats::StatsFilter {
-    position: position.unwrap_or_default(),
-    stakes: stakes.unwrap_or_default(),
-    pot_type: pot_type.unwrap_or_default(),
-  };
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::playstyle(conn, &filter)
@@ -98,12 +110,10 @@ fn get_equity_curve(
   position: Option<String>,
   stakes: Option<String>,
   pot_type: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
 ) -> Result<stats::EquityCurvePayload, String> {
-  let filter = stats::StatsFilter {
-    position: position.unwrap_or_default(),
-    stakes: stakes.unwrap_or_default(),
-    pot_type: pot_type.unwrap_or_default(),
-  };
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::equity_curve(conn, &filter)
@@ -116,12 +126,10 @@ fn get_stats_breakdown(
   position: Option<String>,
   stakes: Option<String>,
   pot_type: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
 ) -> Result<stats::StatsBreakdowns, String> {
-  let filter = stats::StatsFilter {
-    position: position.unwrap_or_default(),
-    stakes: stakes.unwrap_or_default(),
-    pot_type: pot_type.unwrap_or_default(),
-  };
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::breakdowns(conn, &filter)

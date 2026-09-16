@@ -66,6 +66,22 @@ export function StatsFilters({
             ))}
           </select>
         </label>
+        <label>
+          From
+          <input
+            type="date"
+            value={value.dateFrom}
+            onChange={(e) => patch({ dateFrom: e.target.value })}
+          />
+        </label>
+        <label>
+          To
+          <input
+            type="date"
+            value={value.dateTo}
+            onChange={(e) => patch({ dateTo: e.target.value })}
+          />
+        </label>
       </div>
     </div>
   );

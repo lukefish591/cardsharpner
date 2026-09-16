@@ -50,8 +50,10 @@ export function statsCacheKey(input: {
   position: string;
   stakes: string;
   potType: string;
+  dateFrom: string;
+  dateTo: string;
 }): string {
-  return [input.position, input.stakes, input.potType].join("|");
+  return [input.position, input.stakes, input.potType, input.dateFrom, input.dateTo].join("|");
 }
 
 export function getHandsCache(key: string): HandPage | null {

@@ -47,6 +47,10 @@ pub struct StatsFilter {
   pub stakes: String,
   #[serde(default)]
   pub pot_type: String,
+  #[serde(default)]
+  pub date_from: String,
+  #[serde(default)]
+  pub date_to: String,
 }
 
 #[derive(Debug, Serialize)]
@@ -140,11 +144,19 @@ pub(crate) struct ActionLoad {
 
 const CURVE_TARGET: usize = 600;
 
-fn filter_tuple(filter: &StatsFilter) -> (String, String, String) {
+fn filter_tuple(filter: &StatsFilter) -> (String, String, String, String, String) {
+  let date_from = filter.date_from.trim().to_string();
+  let date_to = if filter.date_to.trim().is_empty() {
+    String::new()
+  } else {
+    format!("{}z", filter.date_to.trim())
+  };
   (
     filter.position.trim().to_string(),
     filter.stakes.trim().to_string(),
     filter.pot_type.trim().to_string(),
+    date_from,
+    date_to,
   )
 }
 
@@ -152,6 +164,8 @@ const FILTER_SQL: &str = "
   (?1 = '' OR position = ?1)
   AND (?2 = '' OR stakes = ?2)
   AND (?3 = '' OR pot_type = ?3)
+  AND (?4 = '' OR COALESCE(played_at, '') >= ?4)
+  AND (?5 = '' OR COALESCE(played_at, '') <= ?5)
 ";
 
 fn rate(numer: f64, denom: f64) -> f64 {
@@ -335,7 +349,7 @@ pub fn ensure_stats(conn: &mut Connection) -> Result<i64, String> {
 }
 
 pub fn overview(conn: &Connection, filter: &StatsFilter) -> Result<StatsOverview, String> {
-  let (position, stakes, pot_type) = filter_tuple(filter);
+  let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
   let db_hand_count: i64 = conn
     .query_row("SELECT COUNT(*) FROM hands", [], |r| r.get(0))
     .map_err(|e| format!("Failed to count hands: {e}"))?;
@@ -352,7 +366,7 @@ pub fn overview(conn: &Connection, filter: &StatsFilter) -> Result<StatsOverview
   let (filtered_hands, total_profit, total_profit_before_rake, total_rake) = conn
     .query_row(
       &sql,
-      params![position, stakes, pot_type],
+      params![position, stakes, pot_type, date_from, date_to],
       |row| {
         Ok((
           row.get::<_, i64>(0)?,
@@ -424,7 +438,7 @@ pub fn overview(conn: &Connection, filter: &StatsFilter) -> Result<StatsOverview
 }
 
 pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaystyle, String> {
-  let (position, stakes, pot_type) = filter_tuple(filter);
+  let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
   let sql = format!(
     "SELECT
         COUNT(*),
@@ -450,7 +464,7 @@ pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaysty
      WHERE {FILTER_SQL}"
   );
   conn
-    .query_row(&sql, params![position, stakes, pot_type], |row| {
+    .query_row(&sql, params![position, stakes, pot_type, date_from, date_to], |row| {
       let total: i64 = row.get(0)?;
       let vpip: i64 = row.get(1)?;
       let pfr: i64 = row.get(2)?;
@@ -492,7 +506,7 @@ pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaysty
 }
 
 pub fn equity_curve(conn: &Connection, filter: &StatsFilter) -> Result<EquityCurvePayload, String> {
-  let (position, stakes, pot_type) = filter_tuple(filter);
+  let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
   let sql = format!(
     "SELECT hero_net, went_to_showdown
      FROM hand_stats
@@ -503,7 +517,7 @@ pub fn equity_curve(conn: &Connection, filter: &StatsFilter) -> Result<EquityCur
     .prepare(&sql)
     .map_err(|e| format!("Failed to prepare equity curve: {e}"))?;
   let rows = stmt
-    .query_map(params![position, stakes, pot_type], |row| {
+    .query_map(params![position, stakes, pot_type, date_from, date_to], |row| {
       Ok((row.get::<_, f64>(0)?, row.get::<_, i64>(1)? != 0))
     })
     .map_err(|e| format!("Failed to query equity curve: {e}"))?;
@@ -568,7 +582,7 @@ fn group_breakdown(
   column: &str,
   sort_positions: bool,
 ) -> Result<Vec<BreakdownRow>, String> {
-  let (position, stakes, pot_type) = filter_tuple(filter);
+  let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
   if column != "position" && column != "stakes" {
     return Err("Invalid breakdown column".into());
   }
@@ -591,7 +605,7 @@ fn group_breakdown(
     .prepare(&sql)
     .map_err(|e| format!("Failed to prepare {column} breakdown: {e}"))?;
   let rows = stmt
-    .query_map(params![position, stakes, pot_type], |row| {
+    .query_map(params![position, stakes, pot_type, date_from, date_to], |row| {
       let key: String = row
         .get::<_, Option<String>>(0)?
         .filter(|s| !s.is_empty())

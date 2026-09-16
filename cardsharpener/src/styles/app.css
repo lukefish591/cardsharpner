@@ -815,11 +815,13 @@
   color: var(--cs-text-muted);
 }
 
-.stats-filters select {
+.stats-filters select,
+.stats-filters input[type="date"] {
   border: 1px solid var(--cs-border);
   background: var(--cs-bg);
   border-radius: var(--cs-radius);
   padding: 8px 10px;
+  color: inherit;
 }
 
 .stats-split {
@@ -907,6 +909,12 @@
 .chart-label {
   fill: var(--cs-text-muted);
   font-size: 10px;
+}
+
+.chart-axis-title {
+  fill: var(--cs-text);
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .chart-legend {

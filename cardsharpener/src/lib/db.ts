@@ -104,6 +104,10 @@ function statsArgs(filters: StatsFilters) {
     stakes: filters.stakes,
     potType: filters.potType,
     pot_type: filters.potType,
+    dateFrom: filters.dateFrom,
+    dateTo: filters.dateTo,
+    date_from: filters.dateFrom,
+    date_to: filters.dateTo,
   };
 }
 

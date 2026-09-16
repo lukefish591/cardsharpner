@@ -29,6 +29,8 @@ const EMPTY_FILTERS: StatsFiltersValue = {
   position: "",
   stakes: "",
   potType: "",
+  dateFrom: "",
+  dateTo: "",
 };
 
 const POT_TYPES = [
@@ -224,10 +226,7 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
                 </div>
               </section>
 
-              <ChartPanel
-                title="Showdown vs non-showdown winnings"
-                note="Hand number on the x-axis. Built from imported hero net only."
-              >
+              <ChartPanel title="Results">
                 {curveLoading ? (
                   <ChartPlaceholder title="" note="" spinning />
                 ) : curve && curve.points.length > 0 ? (

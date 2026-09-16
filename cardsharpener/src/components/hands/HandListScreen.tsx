@@ -90,7 +90,13 @@ export function HandListScreen({
 
   useEffect(() => {
     let cancelled = false;
-    fetchStatsOverview({ position: "", stakes: "", potType: "" })
+    fetchStatsOverview({
+      position: "",
+      stakes: "",
+      potType: "",
+      dateFrom: "",
+      dateTo: "",
+    })
       .then((overview) => {
         if (cancelled) return;
         setPositions(overview.positions.filter((item) => item && item !== "Unknown"));

@@ -213,4 +213,6 @@ export interface StatsFilters {
   position: string;
   stakes: string;
   potType: string;
+  dateFrom: string;
+  dateTo: string;
 }
