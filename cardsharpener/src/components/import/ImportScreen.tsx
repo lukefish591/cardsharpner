@@ -38,6 +38,10 @@ export function ImportScreen() {
 
   async function pickFiles() {
     setError(null);
+    if (!("__TAURI_INTERNALS__" in window)) {
+      setError("File dialogs need the Tauri shell — run npm run tauri dev.");
+      return;
+    }
     try {
       const selection = await open({
         multiple: true,
@@ -54,6 +58,10 @@ export function ImportScreen() {
 
   async function pickFolder() {
     setError(null);
+    if (!("__TAURI_INTERNALS__" in window)) {
+      setError("Folder dialogs need the Tauri shell — run npm run tauri dev.");
+      return;
+    }
     try {
       const selection = await open({
         multiple: false,
