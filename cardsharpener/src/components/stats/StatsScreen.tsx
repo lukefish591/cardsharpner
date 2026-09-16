@@ -105,7 +105,17 @@ export function StatsScreen() {
             value={filters}
             positions={payload?.positions ?? []}
             stakes={payload?.stakes ?? []}
-            potTypes={payload?.potTypes ?? []}
+            potTypes={[
+              ...new Set([
+                ...(payload?.potTypes ?? []),
+                "Preflop Only",
+                "Limped Pot",
+                "SRP",
+                "3-Bet Pot",
+                "4-Bet Pot",
+                "5+ Bet Pot",
+              ]),
+            ]}
             onChange={setFilters}
           />
 
