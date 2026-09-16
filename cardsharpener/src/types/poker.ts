@@ -91,3 +91,45 @@ export interface HandReplay {
 export type ChipSize = "small" | "medium" | "big";
 
 export type AppScreen = "import" | "hands" | "replayer" | "stats";
+
+export interface HandStatRow {
+  id: number;
+  playedAt?: string | null;
+  stakes: string;
+  position: string;
+  potType: string;
+  heroNet: number;
+  rake: number;
+  netBeforeRake: number;
+  vpip: boolean;
+  preflopRaised: boolean;
+  preflopCalled: boolean;
+  threeBet: boolean;
+  threeBetOpportunity: boolean;
+  fourBet: boolean;
+  fourBetOpportunity: boolean;
+  sawFlop: boolean;
+  wonWhenSawFlop: boolean;
+  wentToShowdown: boolean;
+  wonAtShowdown: boolean;
+  cbetFlop: boolean;
+  cbetTurn: boolean;
+  cbetRiver: boolean;
+  cbetFlopOpportunity: boolean;
+  cbetTurnOpportunity: boolean;
+  cbetRiverOpportunity: boolean;
+}
+
+export interface HeroStatsPayload {
+  handCount: number;
+  positions: string[];
+  stakes: string[];
+  potTypes: string[];
+  rows: HandStatRow[];
+}
+
+export interface StatsFilters {
+  position: string;
+  stakes: string;
+  potType: string;
+}

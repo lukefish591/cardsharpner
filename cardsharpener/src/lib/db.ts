@@ -3,6 +3,7 @@ import type {
   DbStatus,
   HandReplay,
   HandSummary,
+  HeroStatsPayload,
   ImportResult,
 } from "../types/poker";
 
@@ -48,4 +49,17 @@ export async function importHands(paths: string[]): Promise<ImportResult> {
     throw new Error("Import needs the Tauri shell — run npm run tauri dev.");
   }
   return invoke<ImportResult>("import_hands", { paths });
+}
+
+export async function fetchHeroStats(): Promise<HeroStatsPayload> {
+  if (!isTauriRuntime()) {
+    return {
+      handCount: 0,
+      positions: [],
+      stakes: [],
+      potTypes: [],
+      rows: [],
+    };
+  }
+  return invoke<HeroStatsPayload>("get_hero_stats");
 }

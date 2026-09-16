@@ -1,5 +1,6 @@
 mod db;
 mod import;
+mod stats;
 
 use tauri::Manager;
 
@@ -32,6 +33,11 @@ fn get_hand_replay(app: tauri::AppHandle, hand_id: i64) -> Result<db::HandReplay
 #[tauri::command]
 fn import_hands(app: tauri::AppHandle, paths: Vec<String>) -> Result<db::ImportResult, String> {
   import::import_paths(&app, paths)
+}
+
+#[tauri::command]
+fn get_hero_stats(app: tauri::AppHandle) -> Result<stats::HeroStatsPayload, String> {
+  stats::hero_stats(&app)
 }
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
@@ -70,7 +76,8 @@ pub fn run() {
       get_app_data_dir,
       list_hands,
       get_hand_replay,
-      import_hands
+      import_hands,
+      get_hero_stats
     ])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");

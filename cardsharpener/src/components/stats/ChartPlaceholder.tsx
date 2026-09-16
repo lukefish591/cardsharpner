@@ -5,8 +5,8 @@ interface ChartPlaceholderProps {
 
 export function ChartPlaceholder({ title, note }: ChartPlaceholderProps) {
   return (
-    <div className="panel" data-region="chart-panel">
-      <h2 className="panel__title">{title}</h2>
+    <div className={title ? "panel" : undefined} data-region="chart-panel">
+      {title ? <h2 className="panel__title">{title}</h2> : null}
       <div className="chart-placeholder">
         {note ?? "Chart from gathered data only — stub"}
       </div>
