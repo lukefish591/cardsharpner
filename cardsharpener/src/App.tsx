@@ -22,14 +22,14 @@ function App() {
   return (
     <AppShell active={screen} onNavigate={setScreen}>
       <div
-        className="screen-slot"
+        className={`screen-slot${screen === "import" ? " screen-slot--active" : ""}`}
         hidden={screen !== "import"}
         aria-hidden={screen !== "import"}
       >
         <ImportScreen onImported={onDataChanged} />
       </div>
       <div
-        className="screen-slot"
+        className={`screen-slot${screen === "hands" ? " screen-slot--active" : ""}`}
         hidden={screen !== "hands"}
         aria-hidden={screen !== "hands"}
       >
@@ -42,7 +42,7 @@ function App() {
         />
       </div>
       <div
-        className="screen-slot"
+        className={`screen-slot${screen === "replayer" ? " screen-slot--active" : ""}`}
         hidden={screen !== "replayer"}
         aria-hidden={screen !== "replayer"}
       >
@@ -53,7 +53,7 @@ function App() {
         />
       </div>
       <div
-        className="screen-slot"
+        className={`screen-slot${screen === "stats" ? " screen-slot--active" : ""}`}
         hidden={screen !== "stats"}
         aria-hidden={screen !== "stats"}
       >
