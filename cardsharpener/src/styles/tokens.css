@@ -1,0 +1,61 @@
+:root {
+  /* Default Dark palette. Light/Dark switch overwrites the first five via JS.
+   * Slot order: 1 bg · 2 surface · 3 raised · 4 muted · 5 accent
+   * Dark:  #1c2e30 #023a40 #061c1f #3f4445 #536b70
+   * Light: #f1f2eb #d8dad3 #a4c2a5 #566246 #4a4a48 */
+  --cs-bg: #1c2e30;
+  --cs-bg-elevated: #023a40;
+  --cs-bg-panel: #061c1f;
+  --cs-border: #3f4445;
+  --cs-text: #e8eaed;
+  --cs-text-muted: #9aa0a6;
+  --cs-accent: #536b70;
+  --cs-accent-muted: #3a5256;
+  --cs-felt: #1e4d3a;
+  --cs-felt-edge: #16382a;
+  --cs-danger: #c45c5c;
+  --cs-ok: #5a9e6f;
+  --cs-table-line: color-mix(in srgb, var(--cs-text) 62%, transparent);
+  --cs-seat-line: color-mix(in srgb, var(--cs-text) 70%, transparent);
+  --cs-radius: 6px;
+  --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --cs-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --cs-nav-width: 200px;
+  --cs-gap: 12px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--cs-font);
+  background: var(--cs-bg);
+  color: var(--cs-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: var(--cs-accent);
+}
