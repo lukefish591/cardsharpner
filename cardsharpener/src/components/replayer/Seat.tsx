@@ -21,7 +21,6 @@ export function Seat({
   cards,
   faceDown,
   isHero,
-  isDealer,
   folded,
   isActing,
   allIn,
@@ -56,11 +55,6 @@ export function Seat({
       </div>
       <div className="seat__body">
         <div className="seat__node">
-          {isDealer ? (
-            <span className="seat__dealer" aria-label="Dealer">
-              D
-            </span>
-          ) : null}
           <span className="seat__stack" title={stackText}>
             {stackText}
           </span>

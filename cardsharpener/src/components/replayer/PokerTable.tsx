@@ -24,7 +24,9 @@ export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
   const money = (value: number) =>
     formatAmount(value, useBigBlinds, frame.bigBlind);
   const potBucket =
-    frame.pot > 0 ? chipBucketForAmount(frame.pot, frame.bigBlind) : null;
+    frame.streetStartPot > 0
+      ? chipBucketForAmount(frame.streetStartPot, frame.bigBlind)
+      : null;
 
   return (
     <div className="replayer-table-region" data-region="table">
@@ -37,7 +39,7 @@ export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
           x={seat.x}
           y={seat.y}
           isHero={seat.isHero}
-          isDealer={seat.isDealer}
+          isDealer={false}
           folded={seat.folded}
           isActing={seat.isActing}
           allIn={seat.allIn}
@@ -57,8 +59,11 @@ export function PokerTable({ frame, useBigBlinds = false }: PokerTableProps) {
           />
         ))}
       <div className="poker-table__center">
+        <div className="poker-table__total" data-region="pot-total">
+          {money(frame.pot)}
+        </div>
         <Board cards={frame.board} />
-        <Pot amountLabel={money(frame.pot)} bucket={potBucket} />
+        <Pot amountLabel={money(frame.streetStartPot)} bucket={potBucket} />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { fetchHandReplay, fetchHandsPage } from "../../lib/db";
-import { computeFrame } from "../../lib/replay";
+import { buildPlayback, computeFrame } from "../../lib/replay";
 import type { HandReplay } from "../../types/poker";
 import { ActionLog } from "./ActionLog";
 import { HandPicker } from "./HandPicker";
@@ -68,7 +68,8 @@ export function ReplayerScreen({
     };
   }, [activeId]);
 
-  const maxStep = hand?.actions.length ?? 0;
+  const playback = useMemo(() => (hand ? buildPlayback(hand) : []), [hand]);
+  const maxStep = Math.max(0, playback.length - 1);
   const frame = useMemo(
     () => (hand ? computeFrame(hand, step) : null),
     [hand, step],
@@ -125,8 +126,8 @@ export function ReplayerScreen({
       <div className="replayer-layout">
         <PokerTable frame={frame} useBigBlinds={useBigBlinds} />
         <ActionLog
-          actions={hand?.actions ?? []}
-          appliedCount={step}
+          steps={playback}
+          currentStep={step}
           onSelect={setStep}
         />
         <PlaybackControls

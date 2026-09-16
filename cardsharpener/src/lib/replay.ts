@@ -34,12 +34,31 @@ export interface ReplayFrame {
   street: string;
   streetLabel: string;
   board: (string | null)[];
+  /** Running pot including the current street's bets. */
   pot: number;
   potLabel: string;
+  /** Pot in the middle when this street began (blinds on preflop). Chip image uses this. */
+  streetStartPot: number;
   bigBlind: number;
   seats: SeatFrame[];
   lastActionIndex: number;
   lastActionLabel: string;
+  playbackKind: PlaybackStep["kind"];
+}
+
+export interface PlaybackStep {
+  kind: "start" | "deal" | "action";
+  street: string;
+  /** Inclusive last raw action index to apply. -1 = nothing yet. */
+  applyThrough: number;
+  actionIndex: number | null;
+  label: string;
+}
+
+const DEAL_STREETS = new Set(["flop", "turn", "river"]);
+
+export function isBlindPost(action: ReplayAction): boolean {
+  return action.actionType.toLowerCase() === "post";
 }
 
 interface MutableSeat {
@@ -213,12 +232,65 @@ function assignSlots(count: number): { x: number; y: number }[] {
   return slots;
 }
 
+/** Playback list: blinds applied at start, no post steps, deal is its own step. */
+export function buildPlayback(hand: HandReplay): PlaybackStep[] {
+  const actions = hand.actions;
+  let lastLeadingPost = -1;
+  for (let i = 0; i < actions.length; i += 1) {
+    if (!isBlindPost(actions[i])) break;
+    lastLeadingPost = i;
+  }
+
+  const steps: PlaybackStep[] = [
+    {
+      kind: "start",
+      street: "preflop",
+      applyThrough: lastLeadingPost,
+      actionIndex: null,
+      label: "Start",
+    },
+  ];
+
+  let lastStreet = "preflop";
+  for (let i = 0; i < actions.length; i += 1) {
+    const action = actions[i];
+    if (isBlindPost(action)) continue;
+    const street = (action.street || lastStreet).toLowerCase();
+    if (DEAL_STREETS.has(street) && street !== lastStreet) {
+      steps.push({
+        kind: "deal",
+        street,
+        applyThrough: i - 1,
+        actionIndex: null,
+        label: `Deal ${street}`,
+      });
+      lastStreet = street;
+    }
+    if (action.actionType.toLowerCase() === "deal") {
+      lastStreet = street;
+      continue;
+    }
+    lastStreet = street;
+    steps.push({
+      kind: "action",
+      street,
+      applyThrough: i,
+      actionIndex: i,
+      label: formatActionLine(action),
+    });
+  }
+  return steps;
+}
+
 /**
- * `step` is the number of actions applied: 0 = start, actions.length = end.
+ * `step` is an index into `buildPlayback(hand)`.
  */
 export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
+  const playback = buildPlayback(hand);
+  const idx = Math.max(0, Math.min(step, Math.max(0, playback.length - 1)));
+  const play = playback[idx] ?? playback[0];
+  const applyThrough = play?.applyThrough ?? -1;
   const actions = hand.actions;
-  const clamped = Math.max(0, Math.min(step, actions.length));
   const bigBlind = parseBigBlind(hand.stakes);
   const shown = parseShownCards(hand.rawText);
   const boardCards = parseCardCodes(hand.boardCards);
@@ -245,15 +317,19 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
 
   let street = "preflop";
   let pot = 0;
+  let streetStartPot = 0;
   let lastActionIndex = -1;
 
-  for (let i = 0; i < clamped; i += 1) {
+  for (let i = 0; i <= applyThrough && i < actions.length; i += 1) {
     const action = actions[i];
     const nextStreet = (action.street || street).toLowerCase();
     if (STREET_RESET.has(nextStreet) && nextStreet !== street) {
       collectStreetBets(seats);
+      street = nextStreet;
+      streetStartPot = pot;
+    } else {
+      street = nextStreet;
     }
-    street = nextStreet;
     lastActionIndex = i;
 
     const seat = findSeat(seats, action);
@@ -302,9 +378,20 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
     } else if (kind === "return") {
       pot = Math.max(0, pot - amount);
     }
+
+    if (isBlindPost(action)) {
+      streetStartPot = pot;
+    }
   }
 
-  const atEnd = clamped >= actions.length && actions.length > 0;
+  if (play?.kind === "deal") {
+    collectStreetBets(seats);
+    street = play.street;
+    streetStartPot = pot;
+  }
+
+  const atEnd =
+    playback.length > 0 && idx >= playback.length - 1 && actions.length > 0;
   const lastAction = lastActionIndex >= 0 ? actions[lastActionIndex] : null;
   const slots = assignSlots(seats.length);
 
@@ -337,9 +424,10 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
       folded: seat.folded,
       allIn: seat.allIn,
       isHero: seat.player.isHero,
-      isDealer: position === "BTN",
+      isDealer: false,
       isActing: Boolean(
-        lastAction &&
+        play?.kind === "action" &&
+          lastAction &&
           ((lastAction.actorSeat != null && lastAction.actorSeat === seat.player.seat) ||
             lastAction.actorName === seat.player.name),
       ),
@@ -362,10 +450,12 @@ export function computeFrame(hand: HandReplay, step: number): ReplayFrame {
     board: boardForStreet(street, boardCards, atEnd),
     pot,
     potLabel: `$${formatMoney(pot)}`,
+    streetStartPot,
     bigBlind,
     seats: seatFrames,
     lastActionIndex,
-    lastActionLabel: lastAction ? actionLabel(lastAction) : "Start of hand",
+    lastActionLabel: play?.label ?? "Start of hand",
+    playbackKind: play?.kind ?? "start",
   };
 }
 
