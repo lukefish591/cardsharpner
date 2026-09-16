@@ -1,17 +1,16 @@
 :root {
-  /* Skeleton tokens — trial palettes overwrite the first five via JS.
-   * Slot order for a pasted 5-hex array:
-   *   1 bg (--cs-bg) · 2 surface (--cs-bg-elevated) · 3 raised (--cs-bg-panel)
-   *   4 muted (--cs-border) · 5 accent (--cs-accent)
-   * Text + accent-muted are derived. Dark skeleton is this :root block. */
-  --cs-bg: #1a1d23;
-  --cs-bg-elevated: #242830;
-  --cs-bg-panel: #2c313a;
-  --cs-border: #3d4450;
+  /* Default Dark palette. Light/Dark switch overwrites the first five via JS.
+   * Slot order: 1 bg · 2 surface · 3 raised · 4 muted · 5 accent
+   * Dark:  #1c2e30 #023a40 #061c1f #3f4445 #536b70
+   * Light: #f1f2eb #d8dad3 #a4c2a5 #566246 #4a4a48 */
+  --cs-bg: #1c2e30;
+  --cs-bg-elevated: #023a40;
+  --cs-bg-panel: #061c1f;
+  --cs-border: #3f4445;
   --cs-text: #e8eaed;
   --cs-text-muted: #9aa0a6;
-  --cs-accent: #5b8def;
-  --cs-accent-muted: #3a5a9a;
+  --cs-accent: #536b70;
+  --cs-accent-muted: #3a5256;
   --cs-felt: #1e4d3a;
   --cs-felt-edge: #16382a;
   --cs-danger: #c45c5c;
@@ -21,7 +20,7 @@
   --cs-radius: 6px;
   --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
   --cs-font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --cs-nav-width: 228px;
+  --cs-nav-width: 200px;
   --cs-gap: 12px;
 }
 
