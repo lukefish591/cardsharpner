@@ -10,7 +10,7 @@ import {
   patchStatsCache,
   statsCacheKey,
 } from "../../lib/queryCache";
-import { money, pct } from "../../lib/stats";
+import { formatStakesNl, money, pct } from "../../lib/stats";
 import type {
   EquityCurvePayload,
   StatsBreakdowns,
@@ -121,10 +121,6 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
         <h1 id="stats-title" className="screen__title">
           Stats
         </h1>
-        <p className="screen__subtitle">
-          Reports and graphs from imported hand data only. No GTO / theory
-          comparison views.
-        </p>
       </header>
 
       {error ? <p style={{ color: "var(--cs-danger)" }}>{error}</p> : null}
@@ -303,10 +299,10 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
                     <ChartPlaceholder title="" note="" spinning />
                   ) : breakdowns && breakdowns.byStakes.length > 0 ? (
                     <BarChart
-                      data={breakdowns.byStakes.map((row) => ({
-                        label: row.key,
-                        value: row.totalProfit,
-                      }))}
+                    data={breakdowns.byStakes.map((row) => ({
+                      label: formatStakesNl(row.key),
+                      value: row.totalProfit,
+                    }))}
                       formatValue={(v) => money(v)}
                     />
                   ) : (
@@ -318,10 +314,10 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
                     <ChartPlaceholder title="" note="" spinning />
                   ) : breakdowns && breakdowns.byStakes.length > 0 ? (
                     <BarChart
-                      data={breakdowns.byStakes.map((row) => ({
-                        label: row.key,
-                        value: row.profitBb ?? 0,
-                      }))}
+                    data={breakdowns.byStakes.map((row) => ({
+                      label: formatStakesNl(row.key),
+                      value: row.profitBb ?? 0,
+                    }))}
                       formatValue={(v) => `${v.toFixed(1)} BB`}
                     />
                   ) : (

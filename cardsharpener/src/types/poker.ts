@@ -23,6 +23,7 @@ export interface HandSummary {
   stakes?: string | null;
   heroCards?: string | null;
   heroNet?: number | null;
+  boardCards?: string | null;
 }
 
 export interface HandFilters {
@@ -31,6 +32,8 @@ export interface HandFilters {
   dateFrom: string;
   dateTo: string;
   query: string;
+  position: string;
+  potType: string;
 }
 
 export interface DbStatus {

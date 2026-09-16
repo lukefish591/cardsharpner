@@ -172,6 +172,7 @@ pub struct HandSummary {
   pub stakes: Option<String>,
   pub hero_cards: Option<String>,
   pub hero_net: Option<f64>,
+  pub board_cards: Option<String>,
 }
 
 #[derive(Debug, Serialize)]
@@ -406,6 +407,7 @@ fn clamp_page(limit: Option<i64>, offset: Option<i64>) -> (i64, i64) {
 }
 
 /// Paged hand search. Never selects `raw_text`. Empty query = newest page.
+/// Position / pot-type / exact stakes filter through `hand_stats` (no full-table load).
 pub fn list_hands_page(
   conn: &Connection,
   query: Option<String>,
@@ -413,6 +415,8 @@ pub fn list_hands_page(
   stakes: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  position: Option<String>,
+  pot_type: Option<String>,
   limit: Option<i64>,
   offset: Option<i64>,
 ) -> Result<HandPage, String> {
@@ -422,6 +426,8 @@ pub fn list_hands_page(
   let stakes = stakes.unwrap_or_default();
   let date_from = date_from.unwrap_or_default();
   let date_to = date_to.unwrap_or_default();
+  let position = position.unwrap_or_default();
+  let pot_type = pot_type.unwrap_or_default();
 
   let q = if query.trim().is_empty() {
     String::new()
@@ -433,56 +439,69 @@ pub fn list_hands_page(
   } else {
     like_needle(&site)
   };
-  let stakes_q = if stakes.trim().is_empty() {
-    String::new()
-  } else {
-    like_needle(&stakes)
-  };
+  let stakes_q = stakes.trim().to_string();
   let from_q = date_from.trim().to_string();
   let to_q = if date_to.trim().is_empty() {
     String::new()
   } else {
     format!("{}z", date_to.trim())
   };
+  let position_q = position.trim().to_string();
+  let pot_type_q = pot_type.trim().to_string();
 
   const WHERE_SQL: &str = r#"
     WHERE (?1 = '' OR (
-      LOWER(COALESCE(external_hand_id, '')) LIKE ?1 ESCAPE '\'
-      OR LOWER(COALESCE(hero_cards, '')) LIKE ?1 ESCAPE '\'
-      OR LOWER(REPLACE(COALESCE(hero_cards, ''), ' ', '')) LIKE ?1 ESCAPE '\'
+      LOWER(COALESCE(h.external_hand_id, '')) LIKE ?1 ESCAPE '\'
+      OR LOWER(COALESCE(h.hero_cards, '')) LIKE ?1 ESCAPE '\'
+      OR LOWER(REPLACE(COALESCE(h.hero_cards, ''), ' ', '')) LIKE ?1 ESCAPE '\'
     ))
-    AND (?2 = '' OR LOWER(COALESCE(site, '')) LIKE ?2 ESCAPE '\')
-    AND (?3 = '' OR LOWER(COALESCE(stakes, '')) LIKE ?3 ESCAPE '\')
-    AND (?4 = '' OR COALESCE(played_at, '') >= ?4)
-    AND (?5 = '' OR COALESCE(played_at, '') <= ?5)
+    AND (?2 = '' OR LOWER(COALESCE(h.site, '')) LIKE ?2 ESCAPE '\')
+    AND (?3 = '' OR COALESCE(s.stakes, h.stakes) = ?3)
+    AND (?4 = '' OR COALESCE(h.played_at, '') >= ?4)
+    AND (?5 = '' OR COALESCE(h.played_at, '') <= ?5)
+    AND (?6 = '' OR s.position = ?6)
+    AND (?7 = '' OR s.pot_type = ?7)
   "#;
 
   let db_total: i64 = conn
     .query_row("SELECT COUNT(*) FROM hands", [], |r| r.get(0))
     .map_err(|e| format!("Failed to count hands: {e}"))?;
 
-  let match_sql = format!("SELECT COUNT(*) FROM hands {WHERE_SQL}");
+  let match_sql = format!(
+    "SELECT COUNT(*) FROM hands h LEFT JOIN hand_stats s ON s.hand_id = h.id {WHERE_SQL}"
+  );
   let match_count: i64 = conn
     .query_row(
       &match_sql,
-      params![q, site_q, stakes_q, from_q, to_q],
+      params![q, site_q, stakes_q, from_q, to_q, position_q, pot_type_q],
       |r| r.get(0),
     )
     .map_err(|e| format!("Failed to count matching hands: {e}"))?;
 
   let list_sql = format!(
-    "SELECT id, external_hand_id, site, played_at, stakes, hero_cards, hero_net
-     FROM hands
+    "SELECT h.id, h.external_hand_id, h.site, h.played_at, h.stakes, h.hero_cards, h.hero_net, h.board_cards
+     FROM hands h
+     LEFT JOIN hand_stats s ON s.hand_id = h.id
      {WHERE_SQL}
-     ORDER BY played_at DESC, id DESC
-     LIMIT ?6 OFFSET ?7"
+     ORDER BY h.played_at DESC, h.id DESC
+     LIMIT ?8 OFFSET ?9"
   );
   let mut stmt = conn
     .prepare(&list_sql)
     .map_err(|e| format!("Failed to prepare list_hands_page: {e}"))?;
   let rows = stmt
     .query_map(
-      params![q, site_q, stakes_q, from_q, to_q, limit, offset],
+      params![
+        q,
+        site_q,
+        stakes_q,
+        from_q,
+        to_q,
+        position_q,
+        pot_type_q,
+        limit,
+        offset
+      ],
       |row| {
         Ok(HandSummary {
           id: row.get(0)?,
@@ -492,6 +511,7 @@ pub fn list_hands_page(
           stakes: row.get(4)?,
           hero_cards: row.get(5)?,
           hero_net: row.get(6)?,
+          board_cards: row.get(7)?,
         })
       },
     )
@@ -849,6 +869,8 @@ mod tests {
       None,
       None,
       None,
+      None,
+      None,
       Some(50),
       Some(0),
     )
@@ -864,6 +886,8 @@ mod tests {
       None,
       None,
       None,
+      None,
+      None,
       Some(50),
       Some(0),
     )
@@ -874,5 +898,69 @@ mod tests {
       .hands
       .iter()
       .all(|h| h.hero_cards.as_deref() == Some("Qc Jd")));
+  }
+
+  #[test]
+  fn list_hands_page_filters_hand_stats_without_loading_all() {
+    let conn = Connection::open_in_memory().unwrap();
+    apply_schema(&conn).unwrap();
+    seed_hands(&conn, 40);
+    conn
+      .execute(
+        "UPDATE hands SET board_cards = 'Ah Kd Qc 2s 7h' WHERE id = 1",
+        [],
+      )
+      .unwrap();
+    conn
+      .execute(
+        "INSERT INTO hand_stats (hand_id, played_at, stakes, position, pot_type, hero_net)
+         VALUES (1, '2024-09-02 12:00:00', '$0.05/$0.10', 'Button', '3-Bet Pot', 0.5)",
+        [],
+      )
+      .unwrap();
+    conn
+      .execute(
+        "INSERT INTO hand_stats (hand_id, played_at, stakes, position, pot_type, hero_net)
+         VALUES (2, '2024-09-03 12:00:00', '$0.05/$0.10', 'Cutoff', 'SRP', 0.2)",
+        [],
+      )
+      .unwrap();
+
+    let filtered = list_hands_page(
+      &conn,
+      None,
+      None,
+      None,
+      None,
+      None,
+      Some("Button".into()),
+      Some("3-Bet Pot".into()),
+      Some(50),
+      Some(0),
+    )
+    .unwrap();
+    assert_eq!(filtered.match_count, 1);
+    assert_eq!(filtered.hands.len(), 1);
+    assert_eq!(filtered.hands[0].id, 1);
+    assert_eq!(
+      filtered.hands[0].board_cards.as_deref(),
+      Some("Ah Kd Qc 2s 7h")
+    );
+
+    let by_stakes = list_hands_page(
+      &conn,
+      None,
+      None,
+      Some("$0.05/$0.10".into()),
+      None,
+      None,
+      None,
+      None,
+      Some(50),
+      Some(0),
+    )
+    .unwrap();
+    assert_eq!(by_stakes.match_count, 40);
+    assert_eq!(by_stakes.hands.len(), 40);
   }
 }

@@ -29,21 +29,13 @@
 
 .app-nav__logo {
   display: block;
-  width: 112px;
+  width: 96px;
   height: auto;
   margin-bottom: 8px;
 }
 
 .app-nav__brand-name {
   display: block;
-}
-
-.app-nav__brand-sub {
-  display: block;
-  margin-top: 4px;
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: var(--cs-text-muted);
 }
 
 .app-nav__item {
@@ -67,13 +59,6 @@
   color: var(--cs-text);
 }
 
-.app-nav__footer {
-  padding: 12px 10px;
-  font-size: 0.75rem;
-  color: var(--cs-text-muted);
-  line-height: 1.4;
-}
-
 .app-nav__tools {
   margin-top: auto;
   padding: 12px 4px 4px;
@@ -81,24 +66,21 @@
 }
 
 .theme-switch {
-  display: flex;
-  border: 1px solid var(--cs-border);
-  border-radius: var(--cs-radius);
-  overflow: hidden;
-}
-
-.theme-switch__btn {
   appearance: none;
-  flex: 1;
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--cs-border);
+  border-radius: 999px;
   background: transparent;
-  padding: 7px 10px;
-  color: var(--cs-text-muted);
+  color: var(--cs-text);
 }
 
-.theme-switch__btn.is-active {
+.theme-switch:hover {
   background: var(--cs-bg-panel);
-  color: var(--cs-text);
 }
 
 .app-main {
@@ -244,10 +226,14 @@
 /* Hands */
 .hands-layout {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: var(--cs-gap);
+  align-items: start;
+}
+
+.hands-list-panel {
+  height: fit-content;
   min-height: 0;
-  flex: 1;
 }
 
 .hand-filters {
@@ -276,7 +262,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  min-height: 200px;
 }
 
 .hand-list.is-refreshing {
@@ -322,10 +307,10 @@
 
 .hand-list__row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 12px;
+  grid-template-columns: auto auto minmax(8rem, max-content) 1fr;
+  gap: 14px;
   align-items: center;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border: 1px solid var(--cs-border);
   border-radius: var(--cs-radius);
   background: var(--cs-bg);
@@ -334,6 +319,48 @@
 
 .hand-list__row:hover {
   border-color: var(--cs-accent-muted);
+}
+
+.hand-list__cards,
+.hand-list__board,
+.hand-list__runout {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.hand-list__board {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.hand-list__runout {
+  margin-left: 6px;
+  padding-left: 6px;
+  border-left: 1px solid var(--cs-border);
+}
+
+.hand-list .card {
+  width: 26px;
+  height: 36px;
+}
+
+.hand-list__net {
+  min-width: 4.5rem;
+  font-weight: 600;
+}
+
+.hand-list__net.is-pos {
+  color: var(--cs-ok);
+}
+
+.hand-list__net.is-neg {
+  color: var(--cs-danger);
+}
+
+.hand-list__when {
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 /* Replayer — DOM regions, not a canvas monolith */
@@ -350,7 +377,7 @@
   grid-column: 1;
   grid-row: 1;
   position: relative;
-  min-height: 280px;
+  min-height: 560px;
   background: var(--cs-bg);
   border: 1px solid var(--cs-border);
   border-radius: var(--cs-radius);
@@ -360,11 +387,11 @@
 /* Wide racetrack — insets must match TABLE_OVAL in replay.ts */
 .poker-table {
   position: absolute;
-  left: 8%;
-  right: 8%;
-  top: 23%;
-  bottom: 21%;
-  border: 1.5px solid var(--cs-table-line);
+  left: 14%;
+  right: 14%;
+  top: 29%;
+  bottom: 27%;
+  border: 4px solid var(--cs-table-line);
   border-radius: 50%;
   background: transparent;
 }
@@ -375,44 +402,45 @@
   top: 43%;
   transform: translate(-50%, -50%);
   display: flex;
-  gap: 4px;
+  gap: 6px;
 }
 
 .poker-table__board .card {
-  width: 30px;
-  height: 42px;
+  width: 54px;
+  height: 76px;
 }
 
 .poker-table__pot {
   position: absolute;
   left: 50%;
-  top: 58%;
+  top: 62%;
   transform: translate(-50%, -50%);
-  padding: 3px 10px;
+  padding: 4px 12px;
   background: transparent;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
   font-family: var(--cs-font-mono);
   color: var(--cs-text);
 }
 
 .seat {
   position: absolute;
-  width: 72px;
+  width: 120px;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 4px;
   z-index: 3;
 }
 
 .seat__node {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
-  border: 1.5px solid var(--cs-seat-line);
+  border: 3px solid var(--cs-seat-line);
   background: var(--cs-bg);
   display: flex;
   align-items: center;
@@ -420,34 +448,40 @@
 }
 
 .seat__position {
-  font-size: 0.62rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--cs-text);
 }
 
 .seat__stack {
-  font-size: 0.68rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   font-family: var(--cs-font-mono);
-  color: var(--cs-text-muted);
+  color: var(--cs-text);
   white-space: nowrap;
 }
 
 .seat__cards {
   display: flex;
-  gap: 2px;
+  gap: 4px;
+}
+
+.seat .card {
+  width: 54px;
+  height: 76px;
 }
 
 .seat__dealer {
   position: absolute;
-  top: -5px;
+  top: -6px;
   right: -6px;
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: var(--cs-text);
   color: var(--cs-bg);
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -523,8 +557,8 @@
 }
 
 .chip-stack__chip {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background:
     radial-gradient(circle at 50% 50%, #f4f4f0 0 36%, transparent 37%),
@@ -533,20 +567,21 @@
 }
 
 .chip-stack--medium .chip-stack__chip {
-  width: 14px;
-  height: 14px;
+  width: 22px;
+  height: 22px;
 }
 
 .chip-stack--big .chip-stack__chip {
-  width: 16px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
 }
 
 .chip-stack__amount {
-  padding: 1px 5px;
+  padding: 2px 7px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--cs-bg) 72%, #000);
-  font-size: 0.65rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   font-family: var(--cs-font-mono);
   white-space: nowrap;
 }

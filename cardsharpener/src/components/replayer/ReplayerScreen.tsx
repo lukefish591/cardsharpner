@@ -89,8 +89,7 @@ export function ReplayerScreen({
             Replayer
           </h1>
           <p className="screen__subtitle">
-            Step through an imported hand. Streets, pot, stacks, and chips stay
-            on this Mac.
+            Step through an imported hand.
           </p>
         </div>
         <div className="replayer-header__tools">

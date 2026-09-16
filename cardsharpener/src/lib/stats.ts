@@ -160,6 +160,47 @@ export function extractBb(stakes: string): number | null {
   return Number.isFinite(bb) && bb > 0 ? bb : null;
 }
 
+/** Display stakes as 5NL / 25NL. NL number = big blind in cents. */
+export function formatStakesNl(stakes: string | null | undefined): string {
+  if (!stakes) return "—";
+  const trimmed = stakes.trim();
+  if (/^\d+NL$/i.test(trimmed)) return trimmed.toUpperCase();
+  const bb = extractBb(trimmed);
+  if (bb == null) return trimmed;
+  return `${Math.round(bb * 100)}NL`;
+}
+
+export function formatNetBb(
+  net: number | null | undefined,
+  stakes: string | null | undefined,
+): string {
+  if (net == null) return "—";
+  const bb = stakes ? extractBb(stakes) : null;
+  if (bb == null) {
+    const sign = net > 0 ? "+" : "";
+    return `${sign}${net.toFixed(1)}`;
+  }
+  const value = net / bb;
+  const rounded = Math.round(value * 10) / 10;
+  const text = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1);
+  const sign = rounded > 0 ? "+" : "";
+  return `${sign}${text} BB`;
+}
+
+export function formatPlayedAt(raw: string | null | undefined): string {
+  if (!raw) return "—";
+  const isoish = raw.includes("T") ? raw : raw.replace(" ", "T");
+  const date = new Date(isoish);
+  if (Number.isNaN(date.getTime())) return raw;
+  return date.toLocaleString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
 export function breakdownBy(
   rows: HandStatRow[],
   keyOf: (row: HandStatRow) => string,

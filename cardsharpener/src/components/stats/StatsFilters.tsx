@@ -1,3 +1,4 @@
+import { formatStakesNl } from "../../lib/stats";
 import type { StatsFilters as StatsFiltersValue } from "../../types/poker";
 
 interface StatsFiltersProps {
@@ -46,7 +47,7 @@ export function StatsFilters({
             <option value="">All stakes</option>
             {stakes.map((item) => (
               <option key={item} value={item}>
-                {item}
+                {formatStakesNl(item)}
               </option>
             ))}
           </select>

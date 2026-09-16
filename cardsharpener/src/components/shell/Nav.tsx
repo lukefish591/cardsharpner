@@ -22,11 +22,10 @@ export function Nav({ active, onNavigate }: NavProps) {
           className="app-nav__logo"
           src={logoUrl()}
           alt=""
-          width={518}
-          height={462}
+          width={512}
+          height={288}
         />
         <span className="app-nav__brand-name">Cardsharpener</span>
-        <span className="app-nav__brand-sub">Local · Mac desktop</span>
       </div>
       {ITEMS.map((item) => (
         <button
@@ -45,9 +44,6 @@ export function Nav({ active, onNavigate }: NavProps) {
       ))}
       <div className="app-nav__tools">
         <ThemeSwitch />
-      </div>
-      <div className="app-nav__footer">
-        Hands stay on this Mac. No cloud upload.
       </div>
     </nav>
   );

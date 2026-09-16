@@ -1,4 +1,4 @@
-import { money, pct, type BreakdownRow } from "../../lib/stats";
+import { formatStakesNl, money, pct, type BreakdownRow } from "../../lib/stats";
 
 interface BreakdownTableProps {
   rows: BreakdownRow[];
@@ -26,7 +26,7 @@ export function BreakdownTable({ rows, keyLabel, showBb = false }: BreakdownTabl
         <tbody>
           {rows.map((row) => (
             <tr key={row.key}>
-              <td>{row.key}</td>
+              <td>{keyLabel === "Stakes" ? formatStakesNl(row.key) : row.key}</td>
               <td>{row.hands}</td>
               <td className={row.totalProfit >= 0 ? "is-pos" : "is-neg"}>
                 {money(row.totalProfit)}

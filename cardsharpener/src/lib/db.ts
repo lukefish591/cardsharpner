@@ -29,6 +29,8 @@ export interface HandsPageQuery {
   stakes?: string;
   dateFrom?: string;
   dateTo?: string;
+  position?: string;
+  potType?: string;
   limit?: number;
   offset?: number;
 }
@@ -67,6 +69,9 @@ export async function fetchHandsPage(input: HandsPageQuery = {}): Promise<HandPa
     dateTo: input.dateTo ?? "",
     date_from: input.dateFrom ?? "",
     date_to: input.dateTo ?? "",
+    position: input.position ?? "",
+    potType: input.potType ?? "",
+    pot_type: input.potType ?? "",
     limit: input.limit ?? 50,
     offset: input.offset ?? 0,
   });

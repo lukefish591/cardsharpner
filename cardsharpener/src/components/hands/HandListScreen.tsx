@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useDebouncedValue } from "../../hooks/useDebouncedValue";
-import { fetchHandsPage } from "../../lib/db";
+import { fetchHandsPage, fetchStatsOverview } from "../../lib/db";
 import {
   getHandsCache,
   handsCacheKey,
@@ -16,9 +16,20 @@ const EMPTY_FILTERS: HandFilters = {
   dateFrom: "",
   dateTo: "",
   query: "",
+  position: "",
+  potType: "",
 };
 
 const PAGE_SIZE = 50;
+
+const POT_TYPES = [
+  "Preflop Only",
+  "Limped Pot",
+  "SRP",
+  "3-Bet Pot",
+  "4-Bet Pot",
+  "5+ Bet Pot",
+];
 
 interface HandListScreenProps {
   onOpenHand?: (hand: HandSummary) => void;
@@ -34,6 +45,9 @@ export function HandListScreen({
   const [page, setPage] = useState<HandPage | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [positions, setPositions] = useState<string[]>([]);
+  const [stakes, setStakes] = useState<string[]>([]);
+  const [potTypes, setPotTypes] = useState<string[]>(POT_TYPES);
   const debouncedQuery = useDebouncedValue(filters.query, 250);
 
   const request = useMemo(
@@ -43,6 +57,8 @@ export function HandListScreen({
       stakes: filters.stakes,
       dateFrom: filters.dateFrom,
       dateTo: filters.dateTo,
+      position: filters.position,
+      potType: filters.potType,
       limit: PAGE_SIZE,
       offset,
     }),
@@ -52,6 +68,8 @@ export function HandListScreen({
       filters.stakes,
       filters.dateFrom,
       filters.dateTo,
+      filters.position,
+      filters.potType,
       offset,
     ],
   );
@@ -66,7 +84,26 @@ export function HandListScreen({
     filters.stakes,
     filters.dateFrom,
     filters.dateTo,
+    filters.position,
+    filters.potType,
   ]);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetchStatsOverview({ position: "", stakes: "", potType: "" })
+      .then((overview) => {
+        if (cancelled) return;
+        setPositions(overview.positions);
+        setStakes(overview.stakes);
+        setPotTypes([...new Set([...overview.potTypes, ...POT_TYPES])]);
+      })
+      .catch(() => {
+        /* Facets stay at last known / defaults; list query is independent. */
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [dataRevision]);
 
   useEffect(() => {
     const cached = getHandsCache(cacheKey);
@@ -104,7 +141,15 @@ export function HandListScreen({
   const limit = page?.limit ?? PAGE_SIZE;
   const pageNumber = Math.floor((page?.offset ?? offset) / limit) + 1;
   const pageCount = Math.max(1, Math.ceil(matchCount / limit));
-  const hasQuery = Boolean(debouncedQuery || filters.site || filters.stakes || filters.dateFrom || filters.dateTo);
+  const hasQuery = Boolean(
+    debouncedQuery ||
+      filters.site ||
+      filters.stakes ||
+      filters.dateFrom ||
+      filters.dateTo ||
+      filters.position ||
+      filters.potType,
+  );
 
   let statusText = "Newest hands";
   if (searching && dbTotal > 0) {
@@ -125,8 +170,14 @@ export function HandListScreen({
       </header>
 
       <div className="hands-layout">
-        <HandFiltersPanel value={filters} onChange={setFilters} />
-        <div className="panel" style={{ minHeight: 0 }}>
+        <HandFiltersPanel
+          value={filters}
+          positions={positions}
+          stakes={stakes}
+          potTypes={potTypes}
+          onChange={setFilters}
+        />
+        <div className="panel hands-list-panel">
           <div className="hand-list__toolbar">
             <h2 className="panel__title">Hand list</h2>
             <p className="hand-list__status" aria-live="polite">

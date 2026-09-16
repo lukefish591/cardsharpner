@@ -10,7 +10,7 @@ import type {
  * Wide racetrack oval, in table-region percent.
  * Must match `.poker-table` insets in app.css (cx/cy/rx/ry).
  */
-export const TABLE_OVAL = { cx: 50, cy: 51, rx: 42, ry: 28 };
+export const TABLE_OVAL = { cx: 50, cy: 51, rx: 36, ry: 22 };
 
 export interface SeatFrame {
   key: string;

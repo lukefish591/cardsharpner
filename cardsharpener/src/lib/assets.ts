@@ -29,9 +29,9 @@ export function chipAssetUrl(size: "small" | "medium" | "big"): string {
   return `/assets/chips/${size}.png`;
 }
 
-/** Green AA wordmark from CardFaceAssets/Cardsharp logo green.png */
+/** Pencil-through-ace mark from CardFaceAssets/Sharpenerlogo.png */
 export function logoUrl(): string {
-  return "/assets/logo/cardsharpener-logo-green.png";
+  return "/assets/logo/sharpenerlogo.png";
 }
 
 export function parseCardCodes(raw: string | null | undefined): string[] {

@@ -205,8 +205,7 @@ export function ImportScreen({ onImported }: ImportScreenProps) {
           <dd>{db?.ready ? "Ready" : "Not connected"}</dd>
         </dl>
         <p className="muted">
-          Parsers run locally on this Mac (Python). Hands, players, and actions
-          stay in SQLite. Nothing is uploaded.
+          Parsers run locally (Python) and write to the SQLite store.
         </p>
       </div>
     </section>

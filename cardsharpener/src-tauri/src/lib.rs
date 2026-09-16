@@ -27,11 +27,15 @@ fn list_hands_page(
   stakes: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  position: Option<String>,
+  pot_type: Option<String>,
   limit: Option<i64>,
   offset: Option<i64>,
 ) -> Result<db::HandPage, String> {
   db.read(|conn| {
-    db::list_hands_page(conn, query, site, stakes, date_from, date_to, limit, offset)
+    db::list_hands_page(
+      conn, query, site, stakes, date_from, date_to, position, pot_type, limit, offset,
+    )
   })
 }
 

@@ -15,8 +15,8 @@
   --cs-felt-edge: #16382a;
   --cs-danger: #c45c5c;
   --cs-ok: #5a9e6f;
-  --cs-table-line: color-mix(in srgb, var(--cs-text) 28%, transparent);
-  --cs-seat-line: color-mix(in srgb, var(--cs-text) 42%, transparent);
+  --cs-table-line: color-mix(in srgb, var(--cs-text) 62%, transparent);
+  --cs-seat-line: color-mix(in srgb, var(--cs-text) 70%, transparent);
   --cs-radius: 6px;
   --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
   --cs-font-mono: "IBM Plex Mono", ui-monospace, monospace;

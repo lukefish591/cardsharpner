@@ -1,11 +1,21 @@
+import { formatStakesNl } from "../../lib/stats";
 import type { HandFilters } from "../../types/poker";
 
 interface HandFiltersPanelProps {
   value: HandFilters;
+  positions: string[];
+  stakes: string[];
+  potTypes: string[];
   onChange: (next: HandFilters) => void;
 }
 
-export function HandFiltersPanel({ value, onChange }: HandFiltersPanelProps) {
+export function HandFiltersPanel({
+  value,
+  positions,
+  stakes,
+  potTypes,
+  onChange,
+}: HandFiltersPanelProps) {
   function patch(partial: Partial<HandFilters>) {
     onChange({ ...value, ...partial });
   }
@@ -17,31 +27,52 @@ export function HandFiltersPanel({ value, onChange }: HandFiltersPanelProps) {
         Search
         <input
           type="search"
-          placeholder="Hand ID, cards…"
+          placeholder="Cards…"
           value={value.query}
           onChange={(e) => patch({ query: e.target.value })}
         />
       </label>
       <label>
-        Site
+        Position
         <select
-          value={value.site}
-          onChange={(e) => patch({ site: e.target.value })}
+          value={value.position}
+          onChange={(e) => patch({ position: e.target.value })}
         >
-          <option value="">Any</option>
-          <option value="pokerstars">PokerStars</option>
-          <option value="gg">GG</option>
-          <option value="other">Other</option>
+          <option value="">All positions</option>
+          {positions.map((item) => (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          ))}
         </select>
       </label>
       <label>
         Stakes
-        <input
-          type="text"
-          placeholder="e.g. NL50"
+        <select
           value={value.stakes}
           onChange={(e) => patch({ stakes: e.target.value })}
-        />
+        >
+          <option value="">All stakes</option>
+          {stakes.map((item) => (
+            <option key={item} value={item}>
+              {formatStakesNl(item)}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label>
+        Pot type
+        <select
+          value={value.potType}
+          onChange={(e) => patch({ potType: e.target.value })}
+        >
+          <option value="">All pot types</option>
+          {potTypes.map((item) => (
+            <option key={item} value={item}>
+              {item}
+            </option>
+          ))}
+        </select>
       </label>
       <label>
         From
