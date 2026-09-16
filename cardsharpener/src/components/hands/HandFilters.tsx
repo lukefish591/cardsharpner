@@ -24,13 +24,16 @@ export function HandFiltersPanel({
     <aside className="panel hand-filters" aria-label="Hand filters">
       <h2 className="panel__title">Filters</h2>
       <label>
-        Search
+        Hole cards
         <input
           type="search"
-          placeholder="Cards…"
+          placeholder="AKs, AKo, or Ah Kd"
           value={value.query}
           onChange={(e) => patch({ query: e.target.value })}
         />
+        <span className="hand-filters__hint">
+          Exact suits (Ah Kd) or generic suited/offsuit (AKs / AKo). AK matches both.
+        </span>
       </label>
       <label>
         Position

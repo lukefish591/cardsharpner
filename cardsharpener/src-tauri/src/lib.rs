@@ -1,4 +1,5 @@
 mod db;
+mod hole;
 mod import;
 mod stats;
 

@@ -256,6 +256,12 @@
   padding: 8px 10px;
 }
 
+.hand-filters__hint {
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: var(--cs-text-muted);
+}
+
 .hand-list {
   display: flex;
   flex-direction: column;

@@ -11,6 +11,7 @@ use std::sync::Mutex;
 use std::time::Duration;
 use tauri::{AppHandle, Manager};
 
+use crate::hole;
 use crate::stats;
 
 const DB_FILE: &str = "cardsharpener.sqlite3";
@@ -460,11 +461,16 @@ pub fn list_hands_page(
   let pot_type_q = pot_type.trim().to_string();
   let order_sql = hands_order_sql(&sort.unwrap_or_default());
 
-  const WHERE_SQL: &str = r#"
+  let hole_sql = hole::hole_filter_sql(&query)
+    .map(|pred| format!(" OR ({pred})"))
+    .unwrap_or_default();
+  let where_sql = format!(
+    r#"
     WHERE (?1 = '' OR (
       LOWER(COALESCE(h.external_hand_id, '')) LIKE ?1 ESCAPE '\'
       OR LOWER(COALESCE(h.hero_cards, '')) LIKE ?1 ESCAPE '\'
       OR LOWER(REPLACE(COALESCE(h.hero_cards, ''), ' ', '')) LIKE ?1 ESCAPE '\'
+      {hole_sql}
     ))
     AND (?2 = '' OR LOWER(COALESCE(h.site, '')) LIKE ?2 ESCAPE '\')
     AND (?3 = '' OR COALESCE(s.stakes, h.stakes) = ?3)
@@ -472,14 +478,15 @@ pub fn list_hands_page(
     AND (?5 = '' OR COALESCE(h.played_at, '') <= ?5)
     AND (?6 = '' OR s.position = ?6)
     AND (?7 = '' OR s.pot_type = ?7)
-  "#;
+  "#
+  );
 
   let db_total: i64 = conn
     .query_row("SELECT COUNT(*) FROM hands", [], |r| r.get(0))
     .map_err(|e| format!("Failed to count hands: {e}"))?;
 
   let match_sql = format!(
-    "SELECT COUNT(*) FROM hands h LEFT JOIN hand_stats s ON s.hand_id = h.id {WHERE_SQL}"
+    "SELECT COUNT(*) FROM hands h LEFT JOIN hand_stats s ON s.hand_id = h.id {where_sql}"
   );
   let match_count: i64 = conn
     .query_row(
@@ -493,7 +500,7 @@ pub fn list_hands_page(
     "SELECT h.id, h.external_hand_id, h.site, h.played_at, h.stakes, h.hero_cards, h.hero_net, h.board_cards
      FROM hands h
      LEFT JOIN hand_stats s ON s.hand_id = h.id
-     {WHERE_SQL}
+     {where_sql}
      ORDER BY {order_sql}
      LIMIT ?8 OFFSET ?9"
   );
@@ -1023,5 +1030,58 @@ mod tests {
     assert_eq!(ids("oldest"), ["HH1", "HH3", "HH2"]);
     assert_eq!(ids("won"), ["HH1", "HH3", "HH2"]);
     assert_eq!(ids("lost"), ["HH2", "HH3", "HH1"]);
+  }
+
+  #[test]
+  fn list_hands_page_filters_exact_and_generic_hole_cards() {
+    let conn = Connection::open_in_memory().unwrap();
+    apply_schema(&conn).unwrap();
+    let rows = [
+      ("EX1", "Ah Kd"),
+      ("SU1", "Ah Kh"),
+      ("OF1", "As Kd"),
+      ("PR1", "Ah Ad"),
+      ("OT1", "Qc Jd"),
+    ];
+    for (id, cards) in rows {
+      conn
+        .execute(
+          "INSERT INTO hands (external_hand_id, site, played_at, stakes, hero_cards, hero_net)
+           VALUES (?1, 'PokerStars', '2024-01-01 12:00:00', '$0.05/$0.10', ?2, 0)",
+          params![id, cards],
+        )
+        .unwrap();
+    }
+
+    let ids = |query: &str| {
+      list_hands_page(
+        &conn,
+        Some(query.into()),
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        Some(50),
+        Some(0),
+      )
+      .unwrap()
+      .hands
+      .into_iter()
+      .map(|h| h.external_hand_id.unwrap_or_default())
+      .collect::<Vec<_>>()
+    };
+
+    assert_eq!(ids("Ah Kd"), ["EX1"]);
+    assert_eq!(ids("AKs"), ["SU1"]);
+    let offsuit = ids("AKo");
+    assert!(offsuit.contains(&"EX1".into()));
+    assert!(offsuit.contains(&"OF1".into()));
+    assert_eq!(offsuit.len(), 2);
+    let any_ak = ids("AK");
+    assert_eq!(any_ak.len(), 3);
+    assert_eq!(ids("AA"), ["PR1"]);
   }
 }
