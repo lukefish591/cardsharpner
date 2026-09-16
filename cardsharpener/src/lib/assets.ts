@@ -29,7 +29,7 @@ export function chipAssetUrl(size: "small" | "medium" | "big"): string {
   return `/assets/chips/${size}.png`;
 }
 
-/** Pencil-through-ace mark from CardFaceAssets/Sharpenerlogo.png */
+/** Transparent pencil-through-ace mark from CardFaceAssets/Sharpenerlogo.png */
 export function logoUrl(): string {
   return "/assets/logo/sharpenerlogo.png";
 }
