@@ -1,4 +1,4 @@
-import { chipStackUrl, type ChipBucket } from "../../lib/chips";
+import { chipNorm, chipStackUrl, type ChipBucket } from "../../lib/chips";
 
 interface ChipStackProps {
   amountLabel: string;
@@ -10,16 +10,22 @@ interface ChipStackProps {
 export function ChipStack({ amountLabel, bucket, x, y }: ChipStackProps) {
   return (
     <div
-      className={`chip-stack chip-stack--${bucket}`}
-      style={{ left: `${x}%`, top: `${y}%` }}
+      className="chip-stack"
+      style={{
+        left: `${x}%`,
+        top: `${y}%`,
+        ["--chip-norm" as string]: String(chipNorm(bucket)),
+      }}
       data-region="chip-stack"
     >
-      <img
-        className="chip-stack__image"
-        src={chipStackUrl(bucket)}
-        alt=""
-        draggable={false}
-      />
+      <span className="chip-stack__art">
+        <img
+          className="chip-stack__image"
+          src={chipStackUrl(bucket)}
+          alt=""
+          draggable={false}
+        />
+      </span>
       <span className="chip-stack__amount">{amountLabel}</span>
     </div>
   );

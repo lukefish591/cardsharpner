@@ -82,7 +82,7 @@ export function ReplayerScreen({
       : "Search hand ID or cards…";
 
   return (
-    <section className="screen" aria-labelledby="replayer-title">
+    <section className="screen screen--fill" aria-labelledby="replayer-title">
       <header className="screen__header replayer-header">
         <div>
           <h1 id="replayer-title" className="screen__title">

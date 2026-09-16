@@ -3,10 +3,10 @@ import { chipBucketForAmount, type ChipBucket } from "./chips";
 import type { HandReplay, ReplayAction, ReplayPlayer } from "../types/poker";
 
 /**
- * Wide racetrack oval, in table-region percent.
- * Must match `.poker-table` insets in app.css (cx/cy/rx/ry).
+ * Fallback racetrack in table-region percent.
+ * Live drawing uses `computeTableMetrics` / `layoutSeats` from the measured box.
  */
-export const TABLE_OVAL = { cx: 50, cy: 51, rx: 36, ry: 22 };
+export const TABLE_OVAL = { cx: 50, cy: 50, rx: 36, ry: 22 };
 
 export interface SeatFrame {
   key: string;

@@ -32,3 +32,22 @@ export function chipBucketForAmount(
 export function chipStackUrl(bucket: ChipBucket): string {
   return `/assets/chips/${bucket}.png`;
 }
+
+/**
+ * Zoom so the opaque content, not the PNG canvas, fills the master chip box.
+ * Factor = max(canvas) / max(content bbox), measured from the source files.
+ */
+export const CHIP_CONTENT_NORM: Record<ChipBucket, number> = {
+  "bb-0.5": 175 / 146,
+  "bb-1": 175 / 146,
+  "bb-1-5": 222 / 164,
+  "bb-5-10": 222 / 180,
+  "bb-10-20": 283 / 247,
+  "bb-20-30": 365 / 263,
+  "bb-30-50": 308 / 272,
+  "bb-50": 399 / 305,
+};
+
+export function chipNorm(bucket: ChipBucket): number {
+  return CHIP_CONTENT_NORM[bucket];
+}

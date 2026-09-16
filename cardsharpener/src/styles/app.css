@@ -119,6 +119,11 @@
   overflow: auto;
 }
 
+.screen--fill {
+  overflow: hidden;
+  min-height: 0;
+}
+
 .screen__header {
   display: flex;
   flex-direction: column;
@@ -367,24 +372,47 @@
 }
 
 .replayer-table-region {
+  --seat-d: 76px;
+  --seat-line: 3px;
+  --hole-card-w: 38px;
+  --hole-card-h: 54px;
+  --board-card-w: 54px;
+  --board-card-h: 76px;
+  --chip-box: 42px;
+  --chip-h: 42px;
+  --chip-norm: 1;
+  --crown-d: 14px;
+  --table-gap: 8px;
+  --card-gap: 4px;
+  --hole-offset: 46px;
+  --text-total: 22px;
+  --text-pos: 15px;
+  --text-stack: 9px;
+  --text-chip: 14px;
+  --oval-line: 4px;
+  --oval-left: 14%;
+  --oval-right: 14%;
+  --oval-top: 18%;
+  --oval-bottom: 18%;
+  --oval-cy: 50%;
   grid-column: 1;
   grid-row: 1;
   position: relative;
-  min-height: 560px;
+  min-height: 0;
   background: var(--cs-bg);
   border: 1px solid var(--cs-border);
   border-radius: var(--cs-radius);
   overflow: hidden;
 }
 
-/* Wide racetrack — insets must match TABLE_OVAL in replay.ts */
+/* Oval insets come from the measured table scale (--oval-*). */
 .poker-table {
   position: absolute;
-  left: 14%;
-  right: 14%;
-  top: 29%;
-  bottom: 27%;
-  border: 4px solid var(--cs-table-line);
+  left: var(--oval-left);
+  right: var(--oval-right);
+  top: var(--oval-top);
+  bottom: var(--oval-bottom);
+  border: var(--oval-line) solid var(--cs-table-line);
   border-radius: 50%;
   background: transparent;
 }
@@ -392,17 +420,17 @@
 .poker-table__center {
   position: absolute;
   left: 50%;
-  top: 48%;
+  top: var(--oval-cy);
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: var(--table-gap);
   z-index: 2;
 }
 
 .poker-table__total {
-  font-size: 1.4rem;
+  font-size: var(--text-total);
   font-weight: 800;
   font-family: var(--cs-font-mono);
   letter-spacing: 0.01em;
@@ -412,21 +440,21 @@
 
 .poker-table__board {
   display: flex;
-  gap: 6px;
+  gap: var(--card-gap);
 }
 
 .poker-table__board .card {
-  width: 54px;
-  height: 76px;
+  width: var(--board-card-w);
+  height: var(--board-card-h);
 }
 
 .poker-table__pot {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--table-gap);
   padding: 0;
   background: transparent;
-  font-size: 1.05rem;
+  font-size: var(--text-chip);
   font-weight: 600;
   font-family: var(--cs-font-mono);
   color: var(--cs-text);
@@ -445,11 +473,11 @@
 
 .seat__cards {
   position: absolute;
-  right: 46px;
+  right: var(--hole-offset);
   top: 0;
   transform: translateY(-50%);
   display: flex;
-  gap: 3px;
+  gap: var(--card-gap);
 }
 
 .seat__body {
@@ -465,10 +493,10 @@
 
 .seat__node {
   position: relative;
-  width: 76px;
-  height: 76px;
+  width: var(--seat-d);
+  height: var(--seat-d);
   border-radius: 50%;
-  border: 3px solid var(--cs-seat-line);
+  border: var(--seat-line) solid var(--cs-seat-line);
   background: var(--cs-bg);
   display: flex;
   align-items: center;
@@ -482,23 +510,23 @@
 }
 
 .seat__crown {
-  width: 14px;
-  height: 14px;
+  width: var(--crown-d);
+  height: var(--crown-d);
   display: block;
   flex-shrink: 0;
 }
 
 .seat__position {
-  font-size: 0.95rem;
+  font-size: var(--text-pos);
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--cs-text);
 }
 
 .seat__stack {
-  max-width: 64px;
+  max-width: calc(var(--seat-d) - 12px);
   padding: 0 4px;
-  font-size: 0.58rem;
+  font-size: var(--text-stack);
   font-weight: 700;
   font-family: var(--cs-font-mono);
   line-height: 1.15;
@@ -510,8 +538,8 @@
 }
 
 .seat .card {
-  width: 38px;
-  height: 54px;
+  width: var(--hole-card-w);
+  height: var(--hole-card-h);
 }
 
 .seat__dealer {
@@ -599,53 +627,34 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 6px;
+  gap: var(--table-gap);
   pointer-events: none;
   z-index: 2;
 }
 
+.chip-stack__art {
+  width: var(--chip-box);
+  height: var(--chip-box);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
 .chip-stack__image {
   display: block;
-  height: 40px;
-  width: auto;
+  width: var(--chip-box);
+  height: var(--chip-box);
   object-fit: contain;
-}
-
-.chip-stack--bb-0\.5 .chip-stack__image,
-.chip-stack--bb-1 .chip-stack__image {
-  height: 28px;
-}
-
-.chip-stack--bb-1-5 .chip-stack__image {
-  height: 36px;
-}
-
-.chip-stack--bb-5-10 .chip-stack__image {
-  height: 42px;
-}
-
-.chip-stack--bb-10-20 .chip-stack__image {
-  height: 46px;
-}
-
-.chip-stack--bb-20-30 .chip-stack__image,
-.chip-stack--bb-30-50 .chip-stack__image {
-  height: 52px;
-}
-
-.chip-stack--bb-50 .chip-stack__image {
-  height: 62px;
-}
-
-.poker-table__pot .chip-stack__image {
-  height: 40px;
+  transform: scale(var(--chip-norm));
 }
 
 .chip-stack__amount {
   padding: 2px 7px;
   border-radius: 999px;
   background: color-mix(in srgb, var(--cs-bg) 72%, #000);
-  font-size: 0.9rem;
+  font-size: var(--text-chip);
   font-weight: 600;
   font-family: var(--cs-font-mono);
   white-space: nowrap;
