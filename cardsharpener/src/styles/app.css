@@ -475,6 +475,19 @@
   justify-content: center;
 }
 
+.seat__role {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.seat__crown {
+  width: 14px;
+  height: 14px;
+  display: block;
+  flex-shrink: 0;
+}
+
 .seat__position {
   font-size: 0.95rem;
   font-weight: 700;
@@ -532,7 +545,7 @@
 
 .seat--folded .seat__cards,
 .seat--folded .seat__stack,
-.seat--folded .seat__position {
+.seat--folded .seat__role {
   opacity: 0.38;
 }
 

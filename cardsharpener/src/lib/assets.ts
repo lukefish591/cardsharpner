@@ -32,6 +32,11 @@ export function logoUrl(): string {
   return "/assets/logo/sharpenerlogo.png";
 }
 
+/** Gold crown dropped in the app folder as Crown PNG (1).png */
+export function crownUrl(): string {
+  return "/assets/icons/crown.png";
+}
+
 export function parseCardCodes(raw: string | null | undefined): string[] {
   if (!raw) return [];
   return raw

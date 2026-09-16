@@ -1,3 +1,4 @@
+import { crownUrl } from "../../lib/assets";
 import { Card } from "./Card";
 
 interface SeatProps {
@@ -59,7 +60,19 @@ export function Seat({
             {stackText}
           </span>
         </div>
-        <span className="seat__position">{position}</span>
+        <span className="seat__role">
+          {isHero ? (
+            <img
+              className="seat__crown"
+              src={crownUrl()}
+              alt=""
+              width={14}
+              height={14}
+              draggable={false}
+            />
+          ) : null}
+          <span className="seat__position">{position}</span>
+        </span>
       </div>
     </div>
   );
