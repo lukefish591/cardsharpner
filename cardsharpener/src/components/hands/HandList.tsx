@@ -3,20 +3,37 @@ import type { HandSummary } from "../../types/poker";
 interface HandListProps {
   hands: HandSummary[];
   onSelect?: (hand: HandSummary) => void;
+  loading?: boolean;
+  emptyLabel?: string;
 }
 
-export function HandList({ hands, onSelect }: HandListProps) {
+export function HandList({
+  hands,
+  onSelect,
+  loading = false,
+  emptyLabel,
+}: HandListProps) {
+  if (loading && hands.length === 0) {
+    return (
+      <div className="hand-list" role="status" aria-label="Loading hands">
+        {Array.from({ length: 9 }, (_, i) => (
+          <div key={i} className="hand-list__skeleton" />
+        ))}
+      </div>
+    );
+  }
+
   if (hands.length === 0) {
     return (
       <div className="empty-state" role="status">
-        No hands in the local database yet. Import histories to populate this
-        list.
+        {emptyLabel ??
+          "No hands in the local database yet. Import histories to populate this list."}
       </div>
     );
   }
 
   return (
-    <div className="hand-list" role="list">
+    <div className={`hand-list${loading ? " is-refreshing" : ""}`} role="list">
       {hands.map((hand) => (
         <button
           key={hand.id}

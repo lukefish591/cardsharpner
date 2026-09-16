@@ -1,17 +1,17 @@
 //! Local Python parser subprocess — no network, files stay on this Mac.
 
 use crate::db::{self, ImportResult, ParsedPayload};
+use rusqlite::Connection;
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::time::{SystemTime, UNIX_EPOCH};
-use tauri::AppHandle;
 
 const PARSER_MARKER: &str = "hero_analysis_parser.py";
 const IMPORT_SCRIPT: &str = "cardsharpener/scripts/import_hands.py";
 
-pub fn import_paths(app: &AppHandle, paths: Vec<String>) -> Result<ImportResult, String> {
+pub fn import_paths(conn: &mut Connection, paths: Vec<String>) -> Result<ImportResult, String> {
   if paths.is_empty() {
     return Err("No files or folders selected".into());
   }
@@ -74,7 +74,7 @@ pub fn import_paths(app: &AppHandle, paths: Vec<String>) -> Result<ImportResult,
   }
 
   let source_label = paths.join("; ");
-  db::persist_parsed_import(app, payload, &source_label)
+  db::persist_parsed_import(conn, payload, &source_label)
 }
 
 fn find_repo_root() -> Result<PathBuf, String> {

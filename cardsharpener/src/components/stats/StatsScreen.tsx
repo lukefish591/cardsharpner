@@ -1,15 +1,23 @@
-import { useEffect, useMemo, useState } from "react";
-import { fetchHeroStats } from "../../lib/db";
+import { useEffect, useState } from "react";
 import {
-  POSITION_ORDER,
-  aggregateMetrics,
-  breakdownBy,
-  buildEquityCurve,
-  filterStatRows,
-  money,
-  pct,
-} from "../../lib/stats";
-import type { HeroStatsPayload, StatsFilters as StatsFiltersValue } from "../../types/poker";
+  fetchEquityCurve,
+  fetchStatsBreakdown,
+  fetchStatsOverview,
+  fetchStatsPlaystyle,
+} from "../../lib/db";
+import {
+  getStatsCache,
+  patchStatsCache,
+  statsCacheKey,
+} from "../../lib/queryCache";
+import { money, pct } from "../../lib/stats";
+import type {
+  EquityCurvePayload,
+  StatsBreakdowns,
+  StatsFilters as StatsFiltersValue,
+  StatsOverview,
+  StatsPlaystyle,
+} from "../../types/poker";
 import { BarChart } from "./BarChart";
 import { BreakdownTable } from "./BreakdownTable";
 import { ChartPanel } from "./ChartPanel";
@@ -23,56 +31,89 @@ const EMPTY_FILTERS: StatsFiltersValue = {
   potType: "",
 };
 
-export function StatsScreen() {
-  const [payload, setPayload] = useState<HeroStatsPayload | null>(null);
-  const [error, setError] = useState<string | null>(null);
+const POT_TYPES = [
+  "Preflop Only",
+  "Limped Pot",
+  "SRP",
+  "3-Bet Pot",
+  "4-Bet Pot",
+  "5+ Bet Pot",
+];
+
+interface StatsScreenProps {
+  dataRevision?: number;
+}
+
+export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
   const [filters, setFilters] = useState<StatsFiltersValue>(EMPTY_FILTERS);
+  const [overview, setOverview] = useState<StatsOverview | null>(null);
+  const [playstyle, setPlaystyle] = useState<StatsPlaystyle | null>(null);
+  const [curve, setCurve] = useState<EquityCurvePayload | null>(null);
+  const [breakdowns, setBreakdowns] = useState<StatsBreakdowns | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    const key = statsCacheKey(filters);
+    const cached = getStatsCache(key);
+    if (cached?.overview) {
+      setOverview(cached.overview);
+      setPlaystyle(cached.playstyle ?? null);
+      setCurve(cached.curve ?? null);
+      setBreakdowns(cached.breakdowns ?? null);
+      setError(null);
+      if (cached.overview && cached.playstyle && cached.curve && cached.breakdowns) {
+        return;
+      }
+    } else {
+      setOverview(null);
+      setPlaystyle(null);
+      setCurve(null);
+      setBreakdowns(null);
+    }
+
     let cancelled = false;
-    fetchHeroStats()
-      .then((data) => {
-        if (!cancelled) {
-          setPayload(data);
-          setError(null);
-        }
-      })
-      .catch((e) => {
+    (async () => {
+      try {
+        const nextOverview = cached?.overview ?? (await fetchStatsOverview(filters));
+        if (cancelled) return;
+        setOverview(nextOverview);
+        patchStatsCache(key, { overview: nextOverview });
+        setError(null);
+
+        const nextPlay =
+          cached?.playstyle ?? (await fetchStatsPlaystyle(filters));
+        if (cancelled) return;
+        setPlaystyle(nextPlay);
+        patchStatsCache(key, { playstyle: nextPlay });
+
+        const nextCurve = cached?.curve ?? (await fetchEquityCurve(filters));
+        if (cancelled) return;
+        setCurve(nextCurve);
+        patchStatsCache(key, { curve: nextCurve });
+
+        const nextBreak =
+          cached?.breakdowns ?? (await fetchStatsBreakdown(filters));
+        if (cancelled) return;
+        setBreakdowns(nextBreak);
+        patchStatsCache(key, { breakdowns: nextBreak });
+      } catch (e) {
         if (!cancelled) {
           setError(e instanceof Error ? e.message : "Could not load stats");
-          setPayload({
-            handCount: 0,
-            positions: [],
-            stakes: [],
-            potTypes: [],
-            rows: [],
-          });
         }
-      });
+      }
+    })();
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [filters, dataRevision]);
 
-  const filtered = useMemo(
-    () => (payload ? filterStatRows(payload.rows, filters) : []),
-    [payload, filters],
-  );
-
-  const metrics = useMemo(() => aggregateMetrics(filtered), [filtered]);
-  const curve = useMemo(() => buildEquityCurve(filtered), [filtered]);
-  const byPosition = useMemo(
-    () => breakdownBy(filtered, (row) => row.position, POSITION_ORDER),
-    [filtered],
-  );
-  const byStakes = useMemo(
-    () => breakdownBy(filtered, (row) => row.stakes),
-    [filtered],
-  );
-
-  const loading = payload == null;
-  const emptyDb = payload != null && payload.handCount === 0;
-  const emptyFilter = payload != null && payload.handCount > 0 && filtered.length === 0;
+  const emptyDb = overview != null && overview.dbHandCount === 0;
+  const emptyFilter =
+    overview != null && overview.dbHandCount > 0 && overview.filteredHands === 0;
+  const overviewLoading = overview == null;
+  const playstyleLoading = playstyle == null;
+  const curveLoading = curve == null;
+  const breakdownLoading = breakdowns == null;
 
   return (
     <section className="screen" aria-labelledby="stats-title">
@@ -88,34 +129,18 @@ export function StatsScreen() {
 
       {error ? <p style={{ color: "var(--cs-danger)" }}>{error}</p> : null}
 
-      {loading ? (
-        <p className="muted">Loading gathered-hand stats…</p>
-      ) : null}
-
       {emptyDb ? (
         <div className="empty-state" data-region="stats-empty">
           No hands in the local database yet. Import a history folder, then
           come back — charts stay empty until there is gathered data.
         </div>
-      ) : null}
-
-      {!loading && !emptyDb ? (
+      ) : (
         <>
           <StatsFilters
             value={filters}
-            positions={payload?.positions ?? []}
-            stakes={payload?.stakes ?? []}
-            potTypes={[
-              ...new Set([
-                ...(payload?.potTypes ?? []),
-                "Preflop Only",
-                "Limped Pot",
-                "SRP",
-                "3-Bet Pot",
-                "4-Bet Pot",
-                "5+ Bet Pot",
-              ]),
-            ]}
+            positions={overview?.positions ?? []}
+            stakes={overview?.stakes ?? []}
+            potTypes={[...new Set([...(overview?.potTypes ?? []), ...POT_TYPES])]}
             onChange={setFilters}
           />
 
@@ -128,47 +153,76 @@ export function StatsScreen() {
               <section className="stats-section" data-region="overview-metrics">
                 <h2 className="stats-section__title">Overview</h2>
                 <div className="stats-grid">
-                  <Metric label="Hands in DB" value={String(metrics.totalHands)} />
+                  <Metric
+                    label="Hands in DB"
+                    value={overview ? String(overview.filteredHands) : ""}
+                    loading={overviewLoading}
+                  />
                   <Metric
                     label="Total profit (after rake)"
-                    value={money(metrics.totalProfit)}
-                    tone={metrics.totalProfit >= 0 ? "pos" : "neg"}
+                    value={overview ? money(overview.totalProfit) : ""}
+                    tone={
+                      overview
+                        ? overview.totalProfit >= 0
+                          ? "pos"
+                          : "neg"
+                        : undefined
+                    }
+                    loading={overviewLoading}
                   />
                   <Metric
                     label="Total profit (before rake)"
-                    value={money(metrics.totalProfitBeforeRake)}
+                    value={overview ? money(overview.totalProfitBeforeRake) : ""}
+                    loading={overviewLoading}
                   />
-                  <Metric label="Total rake paid" value={money(metrics.totalRake)} />
+                  <Metric
+                    label="Total rake paid"
+                    value={overview ? money(overview.totalRake) : ""}
+                    loading={overviewLoading}
+                  />
                   <Metric
                     label="Avg profit / hand"
-                    value={money(metrics.avgProfit)}
-                    tone={metrics.avgProfit >= 0 ? "pos" : "neg"}
+                    value={overview ? money(overview.avgProfit) : ""}
+                    tone={
+                      overview
+                        ? overview.avgProfit >= 0
+                          ? "pos"
+                          : "neg"
+                        : undefined
+                    }
+                    loading={overviewLoading}
                   />
                   <Metric
                     label="Avg profit / hand (before rake)"
-                    value={money(metrics.avgProfitBeforeRake)}
+                    value={overview ? money(overview.avgProfitBeforeRake) : ""}
+                    loading={overviewLoading}
                   />
-                  <Metric label="Avg rake / hand" value={money(metrics.avgRake)} />
+                  <Metric
+                    label="Avg rake / hand"
+                    value={overview ? money(overview.avgRake) : ""}
+                    loading={overviewLoading}
+                  />
                 </div>
               </section>
 
               <section className="stats-section" data-region="playstyle-metrics">
                 <h2 className="stats-section__title">Playstyle</h2>
                 <div className="stats-grid">
-                  <Metric label="VPIP" value={pct(metrics.vpipRate)} />
-                  <Metric label="PFR" value={pct(metrics.preflopRaiseRate)} />
-                  <Metric label="3-bet" value={pct(metrics.threeBetRate)} />
-                  <Metric label="4-bet" value={pct(metrics.fourBetRate)} />
-                  <Metric label="Saw flop" value={pct(metrics.flopRate)} />
-                  <Metric label="Flop win rate" value={pct(metrics.flopWinRate)} />
+                  <Metric label="VPIP" value={playstyle ? pct(playstyle.vpipRate) : ""} loading={playstyleLoading} />
+                  <Metric label="PFR" value={playstyle ? pct(playstyle.preflopRaiseRate) : ""} loading={playstyleLoading} />
+                  <Metric label="3-bet" value={playstyle ? pct(playstyle.threeBetRate) : ""} loading={playstyleLoading} />
+                  <Metric label="4-bet" value={playstyle ? pct(playstyle.fourBetRate) : ""} loading={playstyleLoading} />
+                  <Metric label="Saw flop" value={playstyle ? pct(playstyle.flopRate) : ""} loading={playstyleLoading} />
+                  <Metric label="Flop win rate" value={playstyle ? pct(playstyle.flopWinRate) : ""} loading={playstyleLoading} />
                   <Metric
                     label="Showdown rate (of flop)"
-                    value={pct(metrics.showdownRate)}
+                    value={playstyle ? pct(playstyle.showdownRate) : ""}
+                    loading={playstyleLoading}
                   />
-                  <Metric label="W$SD" value={pct(metrics.wonAtShowdownRate)} />
-                  <Metric label="C-bet flop" value={pct(metrics.cbetFlopRate)} />
-                  <Metric label="C-bet turn" value={pct(metrics.cbetTurnRate)} />
-                  <Metric label="C-bet river" value={pct(metrics.cbetRiverRate)} />
+                  <Metric label="W$SD" value={playstyle ? pct(playstyle.wonAtShowdownRate) : ""} loading={playstyleLoading} />
+                  <Metric label="C-bet flop" value={playstyle ? pct(playstyle.cbetFlopRate) : ""} loading={playstyleLoading} />
+                  <Metric label="C-bet turn" value={playstyle ? pct(playstyle.cbetTurnRate) : ""} loading={playstyleLoading} />
+                  <Metric label="C-bet river" value={playstyle ? pct(playstyle.cbetRiverRate) : ""} loading={playstyleLoading} />
                 </div>
               </section>
 
@@ -176,34 +230,57 @@ export function StatsScreen() {
                 title="Showdown vs non-showdown winnings"
                 note="Hand number on the x-axis. Built from imported hero net only."
               >
-                {curve.length > 0 ? (
-                  <LineChart points={curve} />
+                {curveLoading ? (
+                  <ChartPlaceholder title="" note="" spinning />
+                ) : curve && curve.points.length > 0 ? (
+                  <LineChart points={curve.points} />
                 ) : (
                   <ChartPlaceholder title="" note="No points to plot" />
                 )}
                 <div className="stats-grid stats-grid--compact">
-                  <Metric label="Showdown hands" value={String(metrics.showdownHands)} />
+                  <Metric
+                    label="Showdown hands"
+                    value={playstyle ? String(playstyle.showdownHands) : ""}
+                    loading={playstyleLoading}
+                  />
                   <Metric
                     label="Showdown profit"
-                    value={money(metrics.showdownProfit)}
-                    tone={metrics.showdownProfit >= 0 ? "pos" : "neg"}
+                    value={playstyle ? money(playstyle.showdownProfit) : ""}
+                    tone={
+                      playstyle
+                        ? playstyle.showdownProfit >= 0
+                          ? "pos"
+                          : "neg"
+                        : undefined
+                    }
+                    loading={playstyleLoading}
                   />
                   <Metric
                     label="Non-showdown hands"
-                    value={String(metrics.nonShowdownHands)}
+                    value={playstyle ? String(playstyle.nonShowdownHands) : ""}
+                    loading={playstyleLoading}
                   />
                   <Metric
                     label="Non-showdown profit"
-                    value={money(metrics.nonShowdownProfit)}
-                    tone={metrics.nonShowdownProfit >= 0 ? "pos" : "neg"}
+                    value={playstyle ? money(playstyle.nonShowdownProfit) : ""}
+                    tone={
+                      playstyle
+                        ? playstyle.nonShowdownProfit >= 0
+                          ? "pos"
+                          : "neg"
+                        : undefined
+                    }
+                    loading={playstyleLoading}
                   />
                 </div>
               </ChartPanel>
 
               <ChartPanel title="Results by position">
-                {byPosition.length > 0 ? (
+                {breakdownLoading ? (
+                  <ChartPlaceholder title="" note="" spinning />
+                ) : breakdowns && breakdowns.byPosition.length > 0 ? (
                   <BarChart
-                    data={byPosition.map((row) => ({
+                    data={breakdowns.byPosition.map((row) => ({
                       label: shortPosition(row.key),
                       value: row.totalProfit,
                     }))}
@@ -212,14 +289,21 @@ export function StatsScreen() {
                 ) : (
                   <ChartPlaceholder title="" note="No position rows" />
                 )}
-                <BreakdownTable rows={byPosition} keyLabel="Position" />
+                {breakdownLoading ? null : (
+                  <BreakdownTable
+                    rows={breakdowns?.byPosition ?? []}
+                    keyLabel="Position"
+                  />
+                )}
               </ChartPanel>
 
               <div className="stats-split">
                 <ChartPanel title="Profit by stakes ($)">
-                  {byStakes.length > 0 ? (
+                  {breakdownLoading ? (
+                    <ChartPlaceholder title="" note="" spinning />
+                  ) : breakdowns && breakdowns.byStakes.length > 0 ? (
                     <BarChart
-                      data={byStakes.map((row) => ({
+                      data={breakdowns.byStakes.map((row) => ({
                         label: row.key,
                         value: row.totalProfit,
                       }))}
@@ -230,9 +314,11 @@ export function StatsScreen() {
                   )}
                 </ChartPanel>
                 <ChartPanel title="Profit by stakes (BB)">
-                  {byStakes.length > 0 ? (
+                  {breakdownLoading ? (
+                    <ChartPlaceholder title="" note="" spinning />
+                  ) : breakdowns && breakdowns.byStakes.length > 0 ? (
                     <BarChart
-                      data={byStakes.map((row) => ({
+                      data={breakdowns.byStakes.map((row) => ({
                         label: row.key,
                         value: row.profitBb ?? 0,
                       }))}
@@ -245,12 +331,20 @@ export function StatsScreen() {
               </div>
 
               <ChartPanel title="Stakes summary">
-                <BreakdownTable rows={byStakes} keyLabel="Stakes" showBb />
+                {breakdownLoading ? (
+                  <ChartPlaceholder title="" note="" spinning />
+                ) : (
+                  <BreakdownTable
+                    rows={breakdowns?.byStakes ?? []}
+                    keyLabel="Stakes"
+                    showBb
+                  />
+                )}
               </ChartPanel>
             </>
           )}
         </>
-      ) : null}
+      )}
     </section>
   );
 }
@@ -259,19 +353,25 @@ function Metric({
   label,
   value,
   tone,
+  loading,
 }: {
   label: string;
   value: string;
   tone?: "pos" | "neg";
+  loading?: boolean;
 }) {
   return (
     <div className="panel stat-metric" data-region="stat-metric">
       <span className="stat-metric__label">{label}</span>
-      <span
-        className={`stat-metric__value${tone ? ` stat-metric__value--${tone}` : ""}`}
-      >
-        {value}
-      </span>
+      {loading ? (
+        <span className="spinner" aria-label="Loading" />
+      ) : (
+        <span
+          className={`stat-metric__value${tone ? ` stat-metric__value--${tone}` : ""}`}
+        >
+          {value}
+        </span>
+      )}
     </div>
   );
 }

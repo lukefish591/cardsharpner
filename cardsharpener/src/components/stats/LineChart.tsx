@@ -27,15 +27,17 @@ export function LineChart({ points }: LineChartProps) {
   const minY = Math.min(0, ...ys);
   const maxY = Math.max(0, ...ys);
   const spanY = maxY - minY || 1;
-  const maxX = Math.max(points.length - 1, 1);
+  const minX = points[0]?.handNumber ?? 1;
+  const maxX = points[points.length - 1]?.handNumber ?? 1;
+  const spanX = maxX - minX || 1;
 
-  const xAt = (index: number) => pad.left + (index / maxX) * innerW;
+  const xAt = (handNumber: number) => pad.left + ((handNumber - minX) / spanX) * innerW;
   const yAt = (value: number) =>
     pad.top + ((maxY - value) / spanY) * innerH;
 
   function pathFor(key: Series["key"]): string {
     return points
-      .map((p, i) => `${i === 0 ? "M" : "L"} ${xAt(i).toFixed(2)} ${yAt(p[key]).toFixed(2)}`)
+      .map((p, i) => `${i === 0 ? "M" : "L"} ${xAt(p.handNumber).toFixed(2)} ${yAt(p[key]).toFixed(2)}`)
       .join(" ");
   }
 
@@ -83,7 +85,7 @@ export function LineChart({ points }: LineChartProps) {
           </text>
         ))}
         <text className="chart-label" x={pad.left} y={height - 8}>
-          1
+          {minX}
         </text>
         <text
           className="chart-label"
@@ -91,7 +93,7 @@ export function LineChart({ points }: LineChartProps) {
           y={height - 8}
           textAnchor="end"
         >
-          {points.length}
+          {maxX}
         </text>
         {SERIES.map((series) => (
           <path

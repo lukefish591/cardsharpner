@@ -1,14 +1,36 @@
 import { invoke } from "@tauri-apps/api/core";
 import type {
   DbStatus,
+  EquityCurvePayload,
+  HandPage,
   HandReplay,
-  HandSummary,
-  HeroStatsPayload,
   ImportResult,
+  StatsBreakdowns,
+  StatsFilters,
+  StatsOverview,
+  StatsPlaystyle,
 } from "../types/poker";
 
 function isTauriRuntime(): boolean {
   return typeof window !== "undefined" && "__TAURI_INTERNALS__" in window;
+}
+
+const EMPTY_PAGE: HandPage = {
+  hands: [],
+  matchCount: 0,
+  dbTotal: 0,
+  limit: 50,
+  offset: 0,
+};
+
+export interface HandsPageQuery {
+  query?: string;
+  site?: string;
+  stakes?: string;
+  dateFrom?: string;
+  dateTo?: string;
+  limit?: number;
+  offset?: number;
 }
 
 export async function fetchDbStatus(): Promise<DbStatus> {
@@ -18,6 +40,9 @@ export async function fetchDbStatus(): Promise<DbStatus> {
       handCount: 0,
       actionCount: 0,
       ready: false,
+      statsReady: false,
+      statsPending: 0,
+      journalMode: "n/a",
     };
   }
   return invoke<DbStatus>("get_db_status");
@@ -30,11 +55,21 @@ export async function fetchAppDataDir(): Promise<string> {
   return invoke<string>("get_app_data_dir");
 }
 
-export async function fetchHands(): Promise<HandSummary[]> {
+export async function fetchHandsPage(input: HandsPageQuery = {}): Promise<HandPage> {
   if (!isTauriRuntime()) {
-    return [];
+    return { ...EMPTY_PAGE, limit: input.limit ?? 50, offset: input.offset ?? 0 };
   }
-  return invoke<HandSummary[]>("list_hands");
+  return invoke<HandPage>("list_hands_page", {
+    query: input.query ?? "",
+    site: input.site ?? "",
+    stakes: input.stakes ?? "",
+    dateFrom: input.dateFrom ?? "",
+    dateTo: input.dateTo ?? "",
+    date_from: input.dateFrom ?? "",
+    date_to: input.dateTo ?? "",
+    limit: input.limit ?? 50,
+    offset: input.offset ?? 0,
+  });
 }
 
 export async function fetchHandReplay(handId: number): Promise<HandReplay> {
@@ -51,15 +86,82 @@ export async function importHands(paths: string[]): Promise<ImportResult> {
   return invoke<ImportResult>("import_hands", { paths });
 }
 
-export async function fetchHeroStats(): Promise<HeroStatsPayload> {
+export async function backfillHandStats(): Promise<number> {
+  if (!isTauriRuntime()) {
+    return 0;
+  }
+  return invoke<number>("backfill_hand_stats");
+}
+
+function statsArgs(filters: StatsFilters) {
+  return {
+    position: filters.position,
+    stakes: filters.stakes,
+    potType: filters.potType,
+    pot_type: filters.potType,
+  };
+}
+
+export async function fetchStatsOverview(
+  filters: StatsFilters,
+): Promise<StatsOverview> {
   if (!isTauriRuntime()) {
     return {
-      handCount: 0,
+      dbHandCount: 0,
+      filteredHands: 0,
+      totalProfit: 0,
+      totalProfitBeforeRake: 0,
+      totalRake: 0,
+      avgProfit: 0,
+      avgProfitBeforeRake: 0,
+      avgRake: 0,
       positions: [],
       stakes: [],
       potTypes: [],
-      rows: [],
     };
   }
-  return invoke<HeroStatsPayload>("get_hero_stats");
+  return invoke<StatsOverview>("get_stats_overview", statsArgs(filters));
+}
+
+export async function fetchStatsPlaystyle(
+  filters: StatsFilters,
+): Promise<StatsPlaystyle> {
+  if (!isTauriRuntime()) {
+    return {
+      vpipRate: 0,
+      preflopRaiseRate: 0,
+      threeBetRate: 0,
+      fourBetRate: 0,
+      flopRate: 0,
+      flopWinRate: 0,
+      showdownRate: 0,
+      wonAtShowdownRate: 0,
+      cbetFlopRate: 0,
+      cbetTurnRate: 0,
+      cbetRiverRate: 0,
+      showdownHands: 0,
+      showdownProfit: 0,
+      nonShowdownHands: 0,
+      nonShowdownProfit: 0,
+    };
+  }
+  return invoke<StatsPlaystyle>("get_stats_playstyle", statsArgs(filters));
+}
+
+export async function fetchEquityCurve(
+  filters: StatsFilters,
+): Promise<EquityCurvePayload> {
+  if (!isTauriRuntime()) {
+    return { points: [], sampledFrom: 0 };
+  }
+  return invoke<EquityCurvePayload>("get_equity_curve", statsArgs(filters));
+}
+
+export async function fetchStatsBreakdown(
+  filters: StatsFilters,
+): Promise<StatsBreakdowns> {
+  if (!isTauriRuntime()) {
+    return { byPosition: [], byStakes: [] };
+  }
+  return invoke<StatsBreakdowns>("get_stats_breakdown", statsArgs(filters));
 }

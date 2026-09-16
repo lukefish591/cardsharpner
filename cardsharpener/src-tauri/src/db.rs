@@ -7,9 +7,15 @@ use rusqlite::{params, Connection, OptionalExtension};
 use serde::{Deserialize, Serialize};
 use std::fs;
 use std::path::PathBuf;
+use std::sync::Mutex;
+use std::time::Duration;
 use tauri::{AppHandle, Manager};
 
+use crate::stats;
+
 const DB_FILE: &str = "cardsharpener.sqlite3";
+const DEFAULT_PAGE_SIZE: i64 = 50;
+const MAX_PAGE_SIZE: i64 = 100;
 
 /// Empty schema stub sized for later import + replay + data-only stats.
 const SCHEMA: &str = r#"
@@ -69,6 +75,42 @@ CREATE TABLE IF NOT EXISTS actions (
 );
 
 CREATE INDEX IF NOT EXISTS idx_actions_hand_seq ON actions(hand_id, seq);
+CREATE INDEX IF NOT EXISTS idx_hands_hero_cards ON hands(hero_cards);
+CREATE INDEX IF NOT EXISTS idx_hands_stakes ON hands(stakes);
+CREATE INDEX IF NOT EXISTS idx_hands_hero_net ON hands(hero_net);
+
+CREATE TABLE IF NOT EXISTS hand_stats (
+  hand_id INTEGER PRIMARY KEY REFERENCES hands(id) ON DELETE CASCADE,
+  played_at TEXT,
+  stakes TEXT,
+  position TEXT,
+  pot_type TEXT,
+  hero_net REAL NOT NULL DEFAULT 0,
+  rake REAL NOT NULL DEFAULT 0,
+  net_before_rake REAL NOT NULL DEFAULT 0,
+  vpip INTEGER NOT NULL DEFAULT 0,
+  preflop_raised INTEGER NOT NULL DEFAULT 0,
+  preflop_called INTEGER NOT NULL DEFAULT 0,
+  three_bet INTEGER NOT NULL DEFAULT 0,
+  three_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+  four_bet INTEGER NOT NULL DEFAULT 0,
+  four_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+  saw_flop INTEGER NOT NULL DEFAULT 0,
+  won_when_saw_flop INTEGER NOT NULL DEFAULT 0,
+  went_to_showdown INTEGER NOT NULL DEFAULT 0,
+  won_at_showdown INTEGER NOT NULL DEFAULT 0,
+  cbet_flop INTEGER NOT NULL DEFAULT 0,
+  cbet_turn INTEGER NOT NULL DEFAULT 0,
+  cbet_river INTEGER NOT NULL DEFAULT 0,
+  cbet_flop_opportunity INTEGER NOT NULL DEFAULT 0,
+  cbet_turn_opportunity INTEGER NOT NULL DEFAULT 0,
+  cbet_river_opportunity INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE INDEX IF NOT EXISTS idx_hand_stats_position ON hand_stats(position);
+CREATE INDEX IF NOT EXISTS idx_hand_stats_stakes ON hand_stats(stakes);
+CREATE INDEX IF NOT EXISTS idx_hand_stats_pot_type ON hand_stats(pot_type);
+CREATE INDEX IF NOT EXISTS idx_hand_stats_played_at ON hand_stats(played_at);
 
 CREATE TABLE IF NOT EXISTS import_batches (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -82,6 +124,32 @@ CREATE TABLE IF NOT EXISTS import_batches (
 );
 "#;
 
+/// One reused SQLite connection (WAL). Commands take this via Tauri state.
+pub struct AppDb {
+  conn: Mutex<Connection>,
+}
+
+impl AppDb {
+  pub fn read<T>(&self, f: impl FnOnce(&Connection) -> Result<T, String>) -> Result<T, String> {
+    let guard = self
+      .conn
+      .lock()
+      .map_err(|e| format!("Database is locked: {e}"))?;
+    f(&guard)
+  }
+
+  pub fn write<T>(
+    &self,
+    f: impl FnOnce(&mut Connection) -> Result<T, String>,
+  ) -> Result<T, String> {
+    let mut guard = self
+      .conn
+      .lock()
+      .map_err(|e| format!("Database is locked: {e}"))?;
+    f(&mut guard)
+  }
+}
+
 #[derive(Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct DbStatus {
@@ -89,6 +157,9 @@ pub struct DbStatus {
   pub hand_count: i64,
   pub action_count: i64,
   pub ready: bool,
+  pub stats_ready: bool,
+  pub stats_pending: i64,
+  pub journal_mode: String,
 }
 
 #[derive(Debug, Serialize)]
@@ -101,6 +172,16 @@ pub struct HandSummary {
   pub stakes: Option<String>,
   pub hero_cards: Option<String>,
   pub hero_net: Option<f64>,
+}
+
+#[derive(Debug, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct HandPage {
+  pub hands: Vec<HandSummary>,
+  pub match_count: i64,
+  pub db_total: i64,
+  pub limit: i64,
+  pub offset: i64,
 }
 
 #[derive(Debug, Serialize)]
@@ -231,82 +312,206 @@ pub fn db_path(app: &AppHandle) -> Result<PathBuf, String> {
   Ok(dir.join(DB_FILE))
 }
 
-pub fn open_connection(app: &AppHandle) -> Result<Connection, String> {
-  let path = db_path(app)?;
-  let conn = Connection::open(&path).map_err(|e| format!("Failed to open SQLite: {e}"))?;
+fn apply_pragmas(conn: &Connection) -> Result<(), String> {
   conn
-    .execute_batch("PRAGMA foreign_keys = ON;")
-    .map_err(|e| format!("Failed to enable foreign keys: {e}"))?;
-  Ok(conn)
+    .busy_timeout(Duration::from_secs(5))
+    .map_err(|e| format!("Failed to set busy_timeout: {e}"))?;
+  conn
+    .query_row("PRAGMA journal_mode = WAL", [], |row| row.get::<_, String>(0))
+    .map_err(|e| format!("Failed to enable WAL: {e}"))?;
+  conn
+    .execute_batch(
+      "PRAGMA foreign_keys = ON;
+       PRAGMA synchronous = NORMAL;",
+    )
+    .map_err(|e| format!("Failed to apply SQLite pragmas: {e}"))?;
+  Ok(())
 }
 
-pub fn initialize(app: &AppHandle) -> Result<PathBuf, String> {
-  let path = db_path(app)?;
-  let conn = Connection::open(&path).map_err(|e| format!("Failed to open SQLite: {e}"))?;
+fn apply_schema(conn: &Connection) -> Result<(), String> {
   conn
     .execute_batch(SCHEMA)
     .map_err(|e| format!("Failed to apply schema: {e}"))?;
-  // Record stub migration id 1 once.
   conn
     .execute(
       "INSERT OR IGNORE INTO schema_migrations (id) VALUES (?1)",
       params![1],
     )
-    .map_err(|e| format!("Failed to record migration: {e}"))?;
+    .map_err(|e| format!("Failed to record migration 1: {e}"))?;
+  conn
+    .execute(
+      "INSERT OR IGNORE INTO schema_migrations (id) VALUES (?1)",
+      params![2],
+    )
+    .map_err(|e| format!("Failed to record migration 2: {e}"))?;
+  Ok(())
+}
+
+pub fn initialize(app: &AppHandle) -> Result<PathBuf, String> {
+  let path = db_path(app)?;
+  let conn = Connection::open(&path).map_err(|e| format!("Failed to open SQLite: {e}"))?;
+  apply_pragmas(&conn)?;
+  apply_schema(&conn)?;
   Ok(path)
 }
 
-pub fn status(app: &AppHandle) -> Result<DbStatus, String> {
+pub fn initialize_managed(app: &AppHandle) -> Result<AppDb, String> {
   let path = initialize(app)?;
-  let conn = open_connection(app)?;
+  let conn = Connection::open(&path).map_err(|e| format!("Failed to open SQLite: {e}"))?;
+  apply_pragmas(&conn)?;
+  apply_schema(&conn)?;
+  Ok(AppDb {
+    conn: Mutex::new(conn),
+  })
+}
+
+pub fn status(conn: &Connection, path: &str) -> Result<DbStatus, String> {
   let hand_count: i64 = conn
     .query_row("SELECT COUNT(*) FROM hands", [], |r| r.get(0))
     .unwrap_or(0);
   let action_count: i64 = conn
     .query_row("SELECT COUNT(*) FROM actions", [], |r| r.get(0))
     .unwrap_or(0);
+  let stats_count: i64 = conn
+    .query_row("SELECT COUNT(*) FROM hand_stats", [], |r| r.get(0))
+    .unwrap_or(0);
+  let stats_pending = (hand_count - stats_count).max(0);
+  let journal_mode: String = conn
+    .query_row("PRAGMA journal_mode", [], |r| r.get::<_, String>(0))
+    .unwrap_or_else(|_| "unknown".into());
   Ok(DbStatus {
-    path: path.display().to_string(),
+    path: path.to_string(),
     hand_count,
     action_count,
     ready: true,
+    stats_ready: stats_pending == 0,
+    stats_pending,
+    journal_mode,
   })
 }
 
-pub fn list_hands(app: &AppHandle) -> Result<Vec<HandSummary>, String> {
-  initialize(app)?;
-  let conn = open_connection(app)?;
-  let mut stmt = conn
-    .prepare(
-      "SELECT id, external_hand_id, site, played_at, stakes, hero_cards, hero_net
-       FROM hands
-       ORDER BY played_at DESC, id DESC",
-    )
-    .map_err(|e| format!("Failed to prepare list_hands: {e}"))?;
-  let rows = stmt
-    .query_map([], |row| {
-      Ok(HandSummary {
-        id: row.get(0)?,
-        external_hand_id: row.get(1)?,
-        site: row.get(2)?,
-        played_at: row.get(3)?,
-        stakes: row.get(4)?,
-        hero_cards: row.get(5)?,
-        hero_net: row.get(6)?,
-      })
-    })
-    .map_err(|e| format!("Failed to query hands: {e}"))?;
-
-  let mut out = Vec::new();
-  for row in rows {
-    out.push(row.map_err(|e| format!("Failed to read hand row: {e}"))?);
-  }
-  Ok(out)
+fn like_needle(raw: &str) -> String {
+  let trimmed = raw.trim().to_ascii_lowercase();
+  let escaped = trimmed
+    .replace('\\', "\\\\")
+    .replace('%', "\\%")
+    .replace('_', "\\_");
+  format!("%{escaped}%")
 }
 
-pub fn get_hand_replay(app: &AppHandle, hand_id: i64) -> Result<HandReplay, String> {
-  initialize(app)?;
-  let conn = open_connection(app)?;
+fn clamp_page(limit: Option<i64>, offset: Option<i64>) -> (i64, i64) {
+  let limit = limit.unwrap_or(DEFAULT_PAGE_SIZE).clamp(1, MAX_PAGE_SIZE);
+  let offset = offset.unwrap_or(0).max(0);
+  (limit, offset)
+}
+
+/// Paged hand search. Never selects `raw_text`. Empty query = newest page.
+pub fn list_hands_page(
+  conn: &Connection,
+  query: Option<String>,
+  site: Option<String>,
+  stakes: Option<String>,
+  date_from: Option<String>,
+  date_to: Option<String>,
+  limit: Option<i64>,
+  offset: Option<i64>,
+) -> Result<HandPage, String> {
+  let (limit, offset) = clamp_page(limit, offset);
+  let query = query.unwrap_or_default();
+  let site = site.unwrap_or_default();
+  let stakes = stakes.unwrap_or_default();
+  let date_from = date_from.unwrap_or_default();
+  let date_to = date_to.unwrap_or_default();
+
+  let q = if query.trim().is_empty() {
+    String::new()
+  } else {
+    like_needle(&query)
+  };
+  let site_q = if site.trim().is_empty() {
+    String::new()
+  } else {
+    like_needle(&site)
+  };
+  let stakes_q = if stakes.trim().is_empty() {
+    String::new()
+  } else {
+    like_needle(&stakes)
+  };
+  let from_q = date_from.trim().to_string();
+  let to_q = if date_to.trim().is_empty() {
+    String::new()
+  } else {
+    format!("{}z", date_to.trim())
+  };
+
+  const WHERE_SQL: &str = r#"
+    WHERE (?1 = '' OR (
+      LOWER(COALESCE(external_hand_id, '')) LIKE ?1 ESCAPE '\'
+      OR LOWER(COALESCE(hero_cards, '')) LIKE ?1 ESCAPE '\'
+      OR LOWER(REPLACE(COALESCE(hero_cards, ''), ' ', '')) LIKE ?1 ESCAPE '\'
+    ))
+    AND (?2 = '' OR LOWER(COALESCE(site, '')) LIKE ?2 ESCAPE '\')
+    AND (?3 = '' OR LOWER(COALESCE(stakes, '')) LIKE ?3 ESCAPE '\')
+    AND (?4 = '' OR COALESCE(played_at, '') >= ?4)
+    AND (?5 = '' OR COALESCE(played_at, '') <= ?5)
+  "#;
+
+  let db_total: i64 = conn
+    .query_row("SELECT COUNT(*) FROM hands", [], |r| r.get(0))
+    .map_err(|e| format!("Failed to count hands: {e}"))?;
+
+  let match_sql = format!("SELECT COUNT(*) FROM hands {WHERE_SQL}");
+  let match_count: i64 = conn
+    .query_row(
+      &match_sql,
+      params![q, site_q, stakes_q, from_q, to_q],
+      |r| r.get(0),
+    )
+    .map_err(|e| format!("Failed to count matching hands: {e}"))?;
+
+  let list_sql = format!(
+    "SELECT id, external_hand_id, site, played_at, stakes, hero_cards, hero_net
+     FROM hands
+     {WHERE_SQL}
+     ORDER BY played_at DESC, id DESC
+     LIMIT ?6 OFFSET ?7"
+  );
+  let mut stmt = conn
+    .prepare(&list_sql)
+    .map_err(|e| format!("Failed to prepare list_hands_page: {e}"))?;
+  let rows = stmt
+    .query_map(
+      params![q, site_q, stakes_q, from_q, to_q, limit, offset],
+      |row| {
+        Ok(HandSummary {
+          id: row.get(0)?,
+          external_hand_id: row.get(1)?,
+          site: row.get(2)?,
+          played_at: row.get(3)?,
+          stakes: row.get(4)?,
+          hero_cards: row.get(5)?,
+          hero_net: row.get(6)?,
+        })
+      },
+    )
+    .map_err(|e| format!("Failed to query hands page: {e}"))?;
+
+  let mut hands = Vec::with_capacity(limit as usize);
+  for row in rows {
+    hands.push(row.map_err(|e| format!("Failed to read hand row: {e}"))?);
+  }
+
+  Ok(HandPage {
+    hands,
+    match_count,
+    db_total,
+    limit,
+    offset,
+  })
+}
+
+pub fn get_hand_replay(conn: &Connection, hand_id: i64) -> Result<HandReplay, String> {
   let hand = conn
     .query_row(
       "SELECT id, external_hand_id, site, played_at, stakes, table_name,
@@ -422,12 +627,10 @@ fn hand_already_imported(conn: &Connection, external_id: &str) -> Result<bool, S
 }
 
 pub fn persist_parsed_import(
-  app: &AppHandle,
+  conn: &mut Connection,
   payload: ParsedPayload,
   source_label: &str,
 ) -> Result<ImportResult, String> {
-  initialize(app)?;
-  let mut conn = open_connection(app)?;
   let tx = conn
     .transaction()
     .map_err(|e| format!("Failed to start import transaction: {e}"))?;
@@ -526,6 +729,44 @@ pub fn persist_parsed_import(
       .map_err(|e| format!("Failed to insert action for hand {external_id}: {e}"))?;
     }
 
+    let position = hand
+      .players
+      .iter()
+      .find(|p| p.is_hero)
+      .and_then(|p| p.position.clone())
+      .and_then(|s| {
+        let trimmed = s.trim().to_string();
+        if trimmed.is_empty() {
+          None
+        } else {
+          Some(trimmed)
+        }
+      })
+      .unwrap_or_else(|| "Unknown".into());
+    let load = stats::HandLoad {
+      id: hand_id,
+      played_at: hand.played_at.clone(),
+      stakes: hand.stakes.clone(),
+      hero_name: hand.hero_name.clone(),
+      hero_net: hand.hero_net,
+      raw_text: hand.raw_text.clone(),
+      board_cards: hand.board_cards.clone(),
+    };
+    let actions: Vec<stats::ActionLoad> = hand
+      .actions
+      .iter()
+      .map(|action| stats::ActionLoad {
+        street: action.street.clone().unwrap_or_else(|| "unknown".into()),
+        actor_name: action.actor_name.clone(),
+        action_type: action
+          .action_type
+          .clone()
+          .unwrap_or_else(|| "unknown".into()),
+      })
+      .collect();
+    let row = stats::classify_hand(&load, &position, &actions);
+    stats::insert_row(&tx, &row)?;
+
     inserted += 1;
   }
 
@@ -571,4 +812,67 @@ pub fn persist_parsed_import(
     batch_id,
     notes,
   })
+}
+
+#[cfg(test)]
+mod tests {
+  use super::*;
+
+  fn seed_hands(conn: &Connection, count: i64) {
+    for i in 1..=count {
+      conn
+        .execute(
+          "INSERT INTO hands (external_hand_id, site, played_at, stakes, hero_cards, hero_net)
+           VALUES (?1, ?2, ?3, ?4, ?5, ?6)",
+          params![
+            format!("HH{i:04}"),
+            "PokerStars",
+            format!("2024-09-{:02} 12:00:00", (i % 28) + 1),
+            "$0.05/$0.10",
+            if i % 2 == 0 { "Qc Jd" } else { "Ah Kd" },
+            0.1 * i as f64,
+          ],
+        )
+        .unwrap();
+    }
+  }
+
+  #[test]
+  fn list_hands_page_returns_newest_slice_not_all_rows() {
+    let conn = Connection::open_in_memory().unwrap();
+    apply_schema(&conn).unwrap();
+    seed_hands(&conn, 120);
+    let page = list_hands_page(
+      &conn,
+      None,
+      None,
+      None,
+      None,
+      None,
+      Some(50),
+      Some(0),
+    )
+    .unwrap();
+    assert_eq!(page.db_total, 120);
+    assert_eq!(page.match_count, 120);
+    assert_eq!(page.hands.len(), 50);
+    assert_eq!(page.limit, 50);
+    let search = list_hands_page(
+      &conn,
+      Some("qc".into()),
+      None,
+      None,
+      None,
+      None,
+      Some(50),
+      Some(0),
+    )
+    .unwrap();
+    assert_eq!(search.match_count, 60);
+    assert_eq!(search.hands.len(), 50);
+    assert!(search
+      .hands
+      .iter()
+      .all(|h| h.hero_cards.as_deref() == Some("Qc Jd")));
+  }
 }

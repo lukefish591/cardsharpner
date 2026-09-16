@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { fetchHandReplay, fetchHands } from "../../lib/db";
+import { fetchHandReplay, fetchHandsPage } from "../../lib/db";
 import { computeFrame } from "../../lib/replay";
-import type { HandReplay, HandSummary } from "../../types/poker";
+import type { HandReplay } from "../../types/poker";
 import { ActionLog } from "./ActionLog";
 import { HandPicker } from "./HandPicker";
 import { PlaybackControls } from "./PlaybackControls";
@@ -10,36 +10,38 @@ import { PokerTable } from "./PokerTable";
 interface ReplayerScreenProps {
   selectedHandId?: number | null;
   onSelectHand?: (handId: number) => void;
+  dataRevision?: number;
 }
 
 export function ReplayerScreen({
   selectedHandId = null,
   onSelectHand,
+  dataRevision = 0,
 }: ReplayerScreenProps) {
-  const [hands, setHands] = useState<HandSummary[]>([]);
   const [hand, setHand] = useState<HandReplay | null>(null);
   const [step, setStep] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [useBigBlinds, setUseBigBlinds] = useState(false);
 
   useEffect(() => {
+    if (selectedHandId != null) return;
     let cancelled = false;
-    (async () => {
-      try {
-        const rows = await fetchHands();
-        if (!cancelled) setHands(rows);
-      } catch (e) {
+    fetchHandsPage({ query: "", limit: 1, offset: 0 })
+      .then((page) => {
+        const newest = page.hands[0];
+        if (!cancelled && newest) onSelectHand?.(newest.id);
+      })
+      .catch((e) => {
         if (!cancelled) {
           setError(e instanceof Error ? e.message : "Could not load hands");
         }
-      }
-    })();
+      });
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [selectedHandId, onSelectHand, dataRevision]);
 
-  const activeId = selectedHandId ?? hands[0]?.id ?? null;
+  const activeId = selectedHandId;
 
   useEffect(() => {
     if (activeId == null) {
@@ -54,9 +56,6 @@ export function ReplayerScreen({
         setHand(replay);
         setStep(0);
         setError(null);
-        if (onSelectHand && selectedHandId == null) {
-          onSelectHand(activeId);
-        }
       } catch (e) {
         if (!cancelled) {
           setHand(null);
@@ -67,13 +66,20 @@ export function ReplayerScreen({
     return () => {
       cancelled = true;
     };
-  }, [activeId, onSelectHand, selectedHandId]);
+  }, [activeId]);
 
   const maxStep = hand?.actions.length ?? 0;
   const frame = useMemo(
     () => (hand ? computeFrame(hand, step) : null),
     [hand, step],
   );
+  const selectedLabel = hand
+    ? `${hand.externalHandId ?? `Hand #${hand.id}`}${
+        hand.heroCards ? ` · ${hand.heroCards}` : ""
+      }`
+    : activeId != null
+      ? `Hand #${activeId}`
+      : "Search hand ID or cards…";
 
   return (
     <section className="screen" aria-labelledby="replayer-title">
@@ -105,8 +111,8 @@ export function ReplayerScreen({
             </button>
           </div>
           <HandPicker
-            hands={hands}
             selectedId={activeId}
+            selectedLabel={selectedLabel}
             onSelect={(id) => {
               onSelectHand?.(id);
               setStep(0);

@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
 import { open } from "@tauri-apps/plugin-dialog";
-import { fetchAppDataDir, fetchDbStatus, importHands } from "../../lib/db";
+import { backfillHandStats, fetchAppDataDir, fetchDbStatus, importHands } from "../../lib/db";
 import type { DbStatus, ImportResult } from "../../types/poker";
 
-export function ImportScreen() {
+interface ImportScreenProps {
+  onImported?: () => void;
+}
+
+export function ImportScreen({ onImported }: ImportScreenProps) {
   const [db, setDb] = useState<DbStatus | null>(null);
   const [appDataDir, setAppDataDir] = useState<string>("");
   const [picked, setPicked] = useState<string[]>([]);
@@ -31,6 +35,11 @@ export function ImportScreen() {
         if (!cancelled) {
           setDb(status);
           setAppDataDir(dir);
+        }
+        if (status.statsPending > 0) {
+          await backfillHandStats();
+          const refreshed = await fetchDbStatus();
+          if (!cancelled) setDb(refreshed);
         }
       } catch (e) {
         if (!cancelled) {
@@ -99,6 +108,7 @@ export function ImportScreen() {
       const imported = await importHands(picked);
       setResult(imported);
       await refreshStatus();
+      onImported?.();
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
       try {
@@ -181,6 +191,16 @@ export function ImportScreen() {
               ? `${db.handCount} hands · ${db.actionCount} actions`
               : "—"}
           </dd>
+          <dt>Hand stats</dt>
+          <dd>
+            {db
+              ? db.statsReady
+                ? `Ready · ${db.handCount} indexed`
+                : `Backfilling · ${db.statsPending} remaining`
+              : "—"}
+          </dd>
+          <dt>SQLite journal</dt>
+          <dd>{db?.journalMode ?? "—"}</dd>
           <dt>Status</dt>
           <dd>{db?.ready ? "Ready" : "Not connected"}</dd>
         </dl>

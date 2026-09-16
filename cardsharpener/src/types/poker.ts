@@ -38,6 +38,17 @@ export interface DbStatus {
   handCount: number;
   actionCount: number;
   ready: boolean;
+  statsReady: boolean;
+  statsPending: number;
+  journalMode: string;
+}
+
+export interface HandPage {
+  hands: HandSummary[];
+  matchCount: number;
+  dbTotal: number;
+  limit: number;
+  offset: number;
 }
 
 export interface ImportResult {
@@ -126,6 +137,65 @@ export interface HeroStatsPayload {
   stakes: string[];
   potTypes: string[];
   rows: HandStatRow[];
+}
+
+export interface StatsOverview {
+  dbHandCount: number;
+  filteredHands: number;
+  totalProfit: number;
+  totalProfitBeforeRake: number;
+  totalRake: number;
+  avgProfit: number;
+  avgProfitBeforeRake: number;
+  avgRake: number;
+  positions: string[];
+  stakes: string[];
+  potTypes: string[];
+}
+
+export interface StatsPlaystyle {
+  vpipRate: number;
+  preflopRaiseRate: number;
+  threeBetRate: number;
+  fourBetRate: number;
+  flopRate: number;
+  flopWinRate: number;
+  showdownRate: number;
+  wonAtShowdownRate: number;
+  cbetFlopRate: number;
+  cbetTurnRate: number;
+  cbetRiverRate: number;
+  showdownHands: number;
+  showdownProfit: number;
+  nonShowdownHands: number;
+  nonShowdownProfit: number;
+}
+
+export interface EquityCurvePayload {
+  points: Array<{
+    handNumber: number;
+    total: number;
+    showdown: number;
+    nonShowdown: number;
+  }>;
+  sampledFrom: number;
+}
+
+export interface BreakdownRow {
+  key: string;
+  hands: number;
+  totalProfit: number;
+  avgProfit: number;
+  profitBb: number | null;
+  showdownRate: number;
+  flopWinRate: number;
+  preflopRaiseRate: number;
+  cbetRate: number;
+}
+
+export interface StatsBreakdowns {
+  byPosition: BreakdownRow[];
+  byStakes: BreakdownRow[];
 }
 
 export interface StatsFilters {

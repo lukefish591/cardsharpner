@@ -1,4 +1,4 @@
-import type { HandStatRow, StatsFilters } from "../types/poker";
+import type { BreakdownRow, HandStatRow, StatsFilters } from "../types/poker";
 
 export interface OverviewMetrics {
   totalHands: number;
@@ -32,17 +32,7 @@ export interface CurvePoint {
   nonShowdown: number;
 }
 
-export interface BreakdownRow {
-  key: string;
-  hands: number;
-  totalProfit: number;
-  avgProfit: number;
-  profitBb: number | null;
-  showdownRate: number;
-  flopWinRate: number;
-  preflopRaiseRate: number;
-  cbetRate: number;
-}
+export type { BreakdownRow };
 
 const EMPTY_METRICS: OverviewMetrics = {
   totalHands: 0,
