@@ -215,4 +215,5 @@ export interface StatsFilters {
   potType: string;
   dateFrom: string;
   dateTo: string;
+  excludeRake: boolean;
 }

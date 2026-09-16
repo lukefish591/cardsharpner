@@ -824,6 +824,20 @@
   color: inherit;
 }
 
+.stats-filters__toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  color: var(--cs-text);
+}
+
+.stats-filters__toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--cs-accent);
+}
+
 .stats-split {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

@@ -82,6 +82,17 @@ export function StatsFilters({
             onChange={(e) => patch({ dateTo: e.target.value })}
           />
         </label>
+        <label className="stats-filters__toggle">
+          Rake
+          <span className="stats-filters__toggle-row">
+            <input
+              type="checkbox"
+              checked={value.excludeRake}
+              onChange={(e) => patch({ excludeRake: e.target.checked })}
+            />
+            Exclude rake
+          </span>
+        </label>
       </div>
     </div>
   );

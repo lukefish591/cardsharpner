@@ -51,6 +51,8 @@ pub struct StatsFilter {
   pub date_from: String,
   #[serde(default)]
   pub date_to: String,
+  #[serde(default)]
+  pub exclude_rake: bool,
 }
 
 #[derive(Debug, Serialize)]
@@ -167,6 +169,14 @@ const FILTER_SQL: &str = "
   AND (?4 = '' OR COALESCE(played_at, '') >= ?4)
   AND (?5 = '' OR COALESCE(played_at, '') <= ?5)
 ";
+
+fn profit_sql(filter: &StatsFilter) -> &'static str {
+  if filter.exclude_rake {
+    "net_before_rake"
+  } else {
+    "hero_net"
+  }
+}
 
 fn rate(numer: f64, denom: f64) -> f64 {
   if denom > 0.0 {
@@ -439,6 +449,7 @@ pub fn overview(conn: &Connection, filter: &StatsFilter) -> Result<StatsOverview
 
 pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaystyle, String> {
   let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
+  let profit = profit_sql(filter);
   let sql = format!(
     "SELECT
         COUNT(*),
@@ -458,8 +469,8 @@ pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaysty
         COALESCE(SUM(cbet_turn_opportunity), 0),
         COALESCE(SUM(cbet_river), 0),
         COALESCE(SUM(cbet_river_opportunity), 0),
-        COALESCE(SUM(CASE WHEN went_to_showdown = 1 THEN hero_net ELSE 0 END), 0),
-        COALESCE(SUM(CASE WHEN went_to_showdown = 0 THEN hero_net ELSE 0 END), 0)
+        COALESCE(SUM(CASE WHEN went_to_showdown = 1 THEN {profit} ELSE 0 END), 0),
+        COALESCE(SUM(CASE WHEN went_to_showdown = 0 THEN {profit} ELSE 0 END), 0)
      FROM hand_stats
      WHERE {FILTER_SQL}"
   );
@@ -507,8 +518,9 @@ pub fn playstyle(conn: &Connection, filter: &StatsFilter) -> Result<StatsPlaysty
 
 pub fn equity_curve(conn: &Connection, filter: &StatsFilter) -> Result<EquityCurvePayload, String> {
   let (position, stakes, pot_type, date_from, date_to) = filter_tuple(filter);
+  let profit = profit_sql(filter);
   let sql = format!(
-    "SELECT hero_net, went_to_showdown
+    "SELECT {profit}, went_to_showdown
      FROM hand_stats
      WHERE {FILTER_SQL}
      ORDER BY COALESCE(played_at, ''), hand_id ASC"
@@ -586,11 +598,12 @@ fn group_breakdown(
   if column != "position" && column != "stakes" {
     return Err("Invalid breakdown column".into());
   }
+  let profit = profit_sql(filter);
   let sql = format!(
     "SELECT
         {column},
         COUNT(*),
-        COALESCE(SUM(hero_net), 0),
+        COALESCE(SUM({profit}), 0),
         COALESCE(SUM(went_to_showdown), 0),
         COALESCE(SUM(saw_flop), 0),
         COALESCE(SUM(won_when_saw_flop), 0),
@@ -1053,6 +1066,98 @@ mod tests {
     let (rake, pot) = extract_rake_info("Total pot $0.6 | Rake $0.03 | Jackpot $0 | Bingo $0");
     assert!((pot - 0.6).abs() < 1e-9);
     assert!((rake - 0.03).abs() < 1e-9);
+  }
+
+  #[test]
+  fn profit_sql_switches_with_exclude_rake() {
+    assert_eq!(profit_sql(&StatsFilter::default()), "hero_net");
+    assert_eq!(
+      profit_sql(&StatsFilter {
+        exclude_rake: true,
+        ..StatsFilter::default()
+      }),
+      "net_before_rake"
+    );
+  }
+
+  fn curve_fixture() -> Connection {
+    let conn = Connection::open_in_memory().expect("memory db");
+    conn
+      .execute_batch(
+        "CREATE TABLE hands (id INTEGER PRIMARY KEY);
+         CREATE TABLE hand_stats (
+           hand_id INTEGER PRIMARY KEY,
+           played_at TEXT,
+           stakes TEXT,
+           position TEXT,
+           pot_type TEXT,
+           hero_net REAL NOT NULL DEFAULT 0,
+           rake REAL NOT NULL DEFAULT 0,
+           net_before_rake REAL NOT NULL DEFAULT 0,
+           vpip INTEGER NOT NULL DEFAULT 0,
+           preflop_raised INTEGER NOT NULL DEFAULT 0,
+           preflop_called INTEGER NOT NULL DEFAULT 0,
+           three_bet INTEGER NOT NULL DEFAULT 0,
+           three_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+           four_bet INTEGER NOT NULL DEFAULT 0,
+           four_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+           saw_flop INTEGER NOT NULL DEFAULT 0,
+           won_when_saw_flop INTEGER NOT NULL DEFAULT 0,
+           went_to_showdown INTEGER NOT NULL DEFAULT 0,
+           won_at_showdown INTEGER NOT NULL DEFAULT 0,
+           cbet_flop INTEGER NOT NULL DEFAULT 0,
+           cbet_turn INTEGER NOT NULL DEFAULT 0,
+           cbet_river INTEGER NOT NULL DEFAULT 0,
+           cbet_flop_opportunity INTEGER NOT NULL DEFAULT 0,
+           cbet_turn_opportunity INTEGER NOT NULL DEFAULT 0,
+           cbet_river_opportunity INTEGER NOT NULL DEFAULT 0
+         );
+         INSERT INTO hands (id) VALUES (1), (2);
+         INSERT INTO hand_stats (hand_id, played_at, position, stakes, pot_type, hero_net, rake, net_before_rake, went_to_showdown)
+         VALUES
+           (1, '2024-01-01', 'Button', '$0.05/$0.10', 'SRP', 1.00, 0.10, 1.10, 1),
+           (2, '2024-01-02', 'Cutoff', '$0.05/$0.10', 'SRP', -0.50, 0.00, -0.50, 0);",
+      )
+      .expect("fixture");
+    conn
+  }
+
+  #[test]
+  fn equity_curve_uses_net_before_rake_when_excluded() {
+    let conn = curve_fixture();
+    let after = equity_curve(&conn, &StatsFilter::default()).expect("after rake");
+    let before = equity_curve(
+      &conn,
+      &StatsFilter {
+        exclude_rake: true,
+        ..StatsFilter::default()
+      },
+    )
+    .expect("before rake");
+    assert_eq!(after.points.len(), 2);
+    assert!((after.points[1].total - 0.50).abs() < 1e-9);
+    assert!((after.points[1].showdown - 1.00).abs() < 1e-9);
+    assert!((before.points[1].total - 0.60).abs() < 1e-9);
+    assert!((before.points[1].showdown - 1.10).abs() < 1e-9);
+    assert!((before.points[1].non_showdown + 0.50).abs() < 1e-9);
+  }
+
+  #[test]
+  fn playstyle_profit_follows_exclude_rake() {
+    let conn = curve_fixture();
+    let after = playstyle(&conn, &StatsFilter::default()).expect("after");
+    let before = playstyle(
+      &conn,
+      &StatsFilter {
+        exclude_rake: true,
+        ..StatsFilter::default()
+      },
+    )
+    .expect("before");
+    assert!((after.showdown_profit - 1.00).abs() < 1e-9);
+    assert!((before.showdown_profit - 1.10).abs() < 1e-9);
+    assert!((after.non_showdown_profit + 0.50).abs() < 1e-9);
+    assert!((before.non_showdown_profit + 0.50).abs() < 1e-9);
   }
 
   #[test]

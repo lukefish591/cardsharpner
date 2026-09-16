@@ -108,6 +108,8 @@ function statsArgs(filters: StatsFilters) {
     dateTo: filters.dateTo,
     date_from: filters.dateFrom,
     date_to: filters.dateTo,
+    excludeRake: filters.excludeRake,
+    exclude_rake: filters.excludeRake,
   };
 }
 

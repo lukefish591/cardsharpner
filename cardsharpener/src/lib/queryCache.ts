@@ -52,8 +52,16 @@ export function statsCacheKey(input: {
   potType: string;
   dateFrom: string;
   dateTo: string;
+  excludeRake: boolean;
 }): string {
-  return [input.position, input.stakes, input.potType, input.dateFrom, input.dateTo].join("|");
+  return [
+    input.position,
+    input.stakes,
+    input.potType,
+    input.dateFrom,
+    input.dateTo,
+    input.excludeRake ? "norake" : "rake",
+  ].join("|");
 }
 
 export function getHandsCache(key: string): HandPage | null {
