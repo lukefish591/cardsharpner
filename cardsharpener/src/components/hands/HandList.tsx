@@ -5,13 +5,41 @@ import { Card } from "../replayer/Card";
 
 interface HandListProps {
   hands: HandSummary[];
+  sort?: string;
+  onSortChange?: (sort: string) => void;
   onSelect?: (hand: HandSummary) => void;
   loading?: boolean;
   emptyLabel?: string;
 }
 
+function SortHead({
+  label,
+  active,
+  direction,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  direction?: "asc" | "desc";
+  onClick?: () => void;
+}) {
+  const arrow = !active ? "" : direction === "asc" ? " ↑" : " ↓";
+  return (
+    <button
+      type="button"
+      className={`hand-list__head-btn${active ? " is-active" : ""}`}
+      onClick={onClick}
+    >
+      {label}
+      {arrow}
+    </button>
+  );
+}
+
 export function HandList({
   hands,
+  sort = "newest",
+  onSortChange,
   onSelect,
   loading = false,
   emptyLabel,
@@ -37,6 +65,28 @@ export function HandList({
 
   return (
     <div className={`hand-list${loading ? " is-refreshing" : ""}`} role="list">
+      <div className="hand-list__head" aria-label="Sort hands">
+        <span>Cards</span>
+        <SortHead
+          label={
+            sort === "lost"
+              ? "Most lost"
+              : sort === "won"
+                ? "Most won"
+                : "Result"
+          }
+          active={sort === "won" || sort === "lost"}
+          direction={sort === "lost" ? "asc" : "desc"}
+          onClick={() => onSortChange?.(sort === "lost" ? "won" : "lost")}
+        />
+        <SortHead
+          label="Date"
+          active={sort === "newest" || sort === "oldest"}
+          direction={sort === "oldest" ? "asc" : "desc"}
+          onClick={() => onSortChange?.(sort === "oldest" ? "newest" : "oldest")}
+        />
+        <span>Board</span>
+      </div>
       {hands.map((hand) => {
         const hole = parseCardCodes(hand.heroCards);
         const board = parseCardCodes(hand.boardCards);

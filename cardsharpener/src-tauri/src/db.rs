@@ -410,8 +410,8 @@ fn clamp_page(limit: Option<i64>, offset: Option<i64>) -> (i64, i64) {
 fn hands_order_sql(sort: &str) -> &'static str {
   match sort.trim().to_ascii_lowercase().as_str() {
     "oldest" => "h.played_at ASC, h.id ASC",
-    "won" => "COALESCE(h.hero_net, 0) DESC, h.id DESC",
-    "lost" => "COALESCE(h.hero_net, 0) ASC, h.id ASC",
+    "won" | "most-won" | "most_won" => "COALESCE(h.hero_net, 0) DESC, h.id DESC",
+    "lost" | "most-lost" | "most_lost" => "COALESCE(h.hero_net, 0) ASC, h.id ASC",
     _ => "h.played_at DESC, h.id DESC",
   }
 }

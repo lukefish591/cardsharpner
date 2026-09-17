@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useDebouncedValue } from "../../hooks/useDebouncedValue";
 import { fetchHandsPage, fetchStatsOverview } from "../../lib/db";
+import { handSortLabel } from "../../lib/handSort";
 import {
   getHandsCache,
   handsCacheKey,
@@ -21,13 +22,6 @@ const EMPTY_FILTERS: HandFilters = {
 };
 
 const PAGE_SIZE = 50;
-
-const SORT_OPTIONS = [
-  { value: "newest", label: "Most recent" },
-  { value: "oldest", label: "Least recent" },
-  { value: "won", label: "Most won" },
-  { value: "lost", label: "Most lost" },
-] as const;
 
 const POT_TYPES = [
   "Preflop Only",
@@ -173,9 +167,7 @@ export function HandListScreen({
       filters.potType,
   );
 
-  const sortLabel =
-    SORT_OPTIONS.find((option) => option.value === sort)?.label ?? "Most recent";
-  let statusText = sortLabel;
+  let statusText = handSortLabel(sort);
   if (searching && dbTotal > 0) {
     statusText = `Searching ${dbTotal.toLocaleString()} hands…`;
   } else if (page) {
@@ -196,27 +188,16 @@ export function HandListScreen({
       <div className="hands-layout">
         <HandFiltersPanel
           value={filters}
+          sort={sort}
           positions={positions}
           stakes={stakes}
           potTypes={potTypes}
           onChange={setFilters}
+          onSortChange={setSort}
         />
         <div className="panel hands-list-panel">
           <div className="hand-list__toolbar">
             <h2 className="panel__title">Hand list</h2>
-            <label className="hand-list__sort">
-              Sort
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value)}
-              >
-                {SORT_OPTIONS.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
-            </label>
             <p className="hand-list__status" aria-live="polite">
               {statusText}
             </p>
@@ -226,6 +207,8 @@ export function HandListScreen({
           ) : null}
           <HandList
             hands={page?.hands ?? []}
+            sort={sort}
+            onSortChange={setSort}
             onSelect={onOpenHand}
             loading={loading && !page}
             emptyLabel={
