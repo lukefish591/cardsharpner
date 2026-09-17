@@ -82,21 +82,28 @@ function count(rows: HandStatRow[], pred: (row: HandStatRow) => boolean): number
   return rows.reduce((sum, row) => sum + (pred(row) ? 1 : 0), 0);
 }
 
-export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
+function handProfit(row: HandStatRow, excludeRake = false): number {
+  return excludeRake ? row.netBeforeRake : row.heroNet;
+}
+
+export function aggregateMetrics(
+  rows: HandStatRow[],
+  excludeRake = false,
+): OverviewMetrics {
   if (rows.length === 0) return EMPTY_METRICS;
 
   const totalHands = rows.length;
-  const totalProfit = rows.reduce((s, r) => s + r.heroNet, 0);
+  const totalProfit = rows.reduce((s, r) => s + handProfit(r, excludeRake), 0);
   const totalProfitBeforeRake = rows.reduce((s, r) => s + r.netBeforeRake, 0);
   const totalRake = rows.reduce((s, r) => s + r.rake, 0);
   const sawFlop = count(rows, (r) => r.sawFlop);
   const wentSd = count(rows, (r) => r.wentToShowdown);
   const showdownProfit = rows
     .filter((r) => r.wentToShowdown)
-    .reduce((s, r) => s + r.heroNet, 0);
+    .reduce((s, r) => s + handProfit(r, excludeRake), 0);
   const nonShowdownProfit = rows
     .filter((r) => !r.wentToShowdown)
-    .reduce((s, r) => s + r.heroNet, 0);
+    .reduce((s, r) => s + handProfit(r, excludeRake), 0);
 
   return {
     totalHands,
@@ -139,14 +146,18 @@ export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
   };
 }
 
-export function buildEquityCurve(rows: HandStatRow[]): CurvePoint[] {
+export function buildEquityCurve(
+  rows: HandStatRow[],
+  excludeRake = false,
+): CurvePoint[] {
   let total = 0;
   let showdown = 0;
   let nonShowdown = 0;
   return rows.map((row, index) => {
-    total += row.heroNet;
-    if (row.wentToShowdown) showdown += row.heroNet;
-    else nonShowdown += row.heroNet;
+    const net = handProfit(row, excludeRake);
+    total += net;
+    if (row.wentToShowdown) showdown += net;
+    else nonShowdown += net;
     return {
       handNumber: index + 1,
       total,
@@ -208,6 +219,7 @@ export function breakdownBy(
   rows: HandStatRow[],
   keyOf: (row: HandStatRow) => string,
   order?: string[],
+  excludeRake = false,
 ): BreakdownRow[] {
   const groups = new Map<string, HandStatRow[]>();
   for (const row of rows) {
@@ -223,7 +235,7 @@ export function breakdownBy(
 
   return keys.map((key) => {
     const group = groups.get(key) ?? [];
-    const metrics = aggregateMetrics(group);
+    const metrics = aggregateMetrics(group, excludeRake);
     const bb = extractBb(key);
     return {
       key,

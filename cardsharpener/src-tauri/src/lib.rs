@@ -1,4 +1,5 @@
 mod db;
+mod hole;
 mod import;
 mod stats;
 
@@ -29,12 +30,13 @@ fn list_hands_page(
   date_to: Option<String>,
   position: Option<String>,
   pot_type: Option<String>,
+  sort: Option<String>,
   limit: Option<i64>,
   offset: Option<i64>,
 ) -> Result<db::HandPage, String> {
   db.read(|conn| {
     db::list_hands_page(
-      conn, query, site, stakes, date_from, date_to, position, pot_type, limit, offset,
+      conn, query, site, stakes, date_from, date_to, position, pot_type, sort, limit, offset,
     )
   })
 }
@@ -62,6 +64,7 @@ fn stats_filter(
   pot_type: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  exclude_rake: Option<bool>,
 ) -> stats::StatsFilter {
   stats::StatsFilter {
     position: position.unwrap_or_default(),
@@ -69,6 +72,7 @@ fn stats_filter(
     pot_type: pot_type.unwrap_or_default(),
     date_from: date_from.unwrap_or_default(),
     date_to: date_to.unwrap_or_default(),
+    exclude_rake: exclude_rake.unwrap_or(false),
   }
 }
 
@@ -80,8 +84,9 @@ fn get_stats_overview(
   pot_type: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  exclude_rake: Option<bool>,
 ) -> Result<stats::StatsOverview, String> {
-  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to, exclude_rake);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::overview(conn, &filter)
@@ -96,8 +101,9 @@ fn get_stats_playstyle(
   pot_type: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  exclude_rake: Option<bool>,
 ) -> Result<stats::StatsPlaystyle, String> {
-  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to, exclude_rake);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::playstyle(conn, &filter)
@@ -112,8 +118,9 @@ fn get_equity_curve(
   pot_type: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  exclude_rake: Option<bool>,
 ) -> Result<stats::EquityCurvePayload, String> {
-  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to, exclude_rake);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::equity_curve(conn, &filter)
@@ -128,8 +135,9 @@ fn get_stats_breakdown(
   pot_type: Option<String>,
   date_from: Option<String>,
   date_to: Option<String>,
+  exclude_rake: Option<bool>,
 ) -> Result<stats::StatsBreakdowns, String> {
-  let filter = stats_filter(position, stakes, pot_type, date_from, date_to);
+  let filter = stats_filter(position, stakes, pot_type, date_from, date_to, exclude_rake);
   db.write(|conn| {
     stats::ensure_stats(conn)?;
     stats::breakdowns(conn, &filter)

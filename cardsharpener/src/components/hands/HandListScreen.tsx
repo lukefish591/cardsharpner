@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useDebouncedValue } from "../../hooks/useDebouncedValue";
 import { fetchHandsPage, fetchStatsOverview } from "../../lib/db";
+import { handSortLabel } from "../../lib/handSort";
 import {
   getHandsCache,
   handsCacheKey,
@@ -41,6 +42,7 @@ export function HandListScreen({
   dataRevision = 0,
 }: HandListScreenProps) {
   const [filters, setFilters] = useState<HandFilters>(EMPTY_FILTERS);
+  const [sort, setSort] = useState<string>("newest");
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState<HandPage | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -59,6 +61,7 @@ export function HandListScreen({
       dateTo: filters.dateTo,
       position: filters.position,
       potType: filters.potType,
+      sort,
       limit: PAGE_SIZE,
       offset,
     }),
@@ -70,6 +73,7 @@ export function HandListScreen({
       filters.dateTo,
       filters.position,
       filters.potType,
+      sort,
       offset,
     ],
   );
@@ -86,6 +90,7 @@ export function HandListScreen({
     filters.dateTo,
     filters.position,
     filters.potType,
+    sort,
   ]);
 
   useEffect(() => {
@@ -96,6 +101,7 @@ export function HandListScreen({
       potType: "",
       dateFrom: "",
       dateTo: "",
+      excludeRake: false,
     })
       .then((overview) => {
         if (cancelled) return;
@@ -161,7 +167,7 @@ export function HandListScreen({
       filters.potType,
   );
 
-  let statusText = "Newest hands";
+  let statusText = handSortLabel(sort);
   if (searching && dbTotal > 0) {
     statusText = `Searching ${dbTotal.toLocaleString()} hands…`;
   } else if (page) {
@@ -182,10 +188,12 @@ export function HandListScreen({
       <div className="hands-layout">
         <HandFiltersPanel
           value={filters}
+          sort={sort}
           positions={positions}
           stakes={stakes}
           potTypes={potTypes}
           onChange={setFilters}
+          onSortChange={setSort}
         />
         <div className="panel hands-list-panel">
           <div className="hand-list__toolbar">
@@ -199,6 +207,8 @@ export function HandListScreen({
           ) : null}
           <HandList
             hands={page?.hands ?? []}
+            sort={sort}
+            onSortChange={setSort}
             onSelect={onOpenHand}
             loading={loading && !page}
             emptyLabel={
