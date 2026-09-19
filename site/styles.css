@@ -1,0 +1,175 @@
+:root {
+  /* Product palettes from the Mac app Light/Dark switch.
+   * Slot order: 1 bg · 2 surface · 3 raised · 4 muted · 5 accent */
+  --cs-bg: #1c2e30;
+  --cs-bg-elevated: #023a40;
+  --cs-bg-panel: #061c1f;
+  --cs-border: #3f4445;
+  --cs-text: #e8eaed;
+  --cs-text-muted: #9aa0a6;
+  --cs-accent: #536b70;
+  --cs-accent-muted: #3a5256;
+  --cs-radius: 6px;
+  --cs-font: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+:root[data-theme="light"] {
+  --cs-bg: #f1f2eb;
+  --cs-bg-elevated: #d8dad3;
+  --cs-bg-panel: #a4c2a5;
+  --cs-border: #566246;
+  --cs-text: #1f2419;
+  --cs-text-muted: #566246;
+  --cs-accent: #4a4a48;
+  --cs-accent-muted: #6b6b68;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--cs-font);
+  background:
+    radial-gradient(
+      900px 420px at 50% -10%,
+      color-mix(in srgb, var(--cs-bg-elevated) 70%, transparent),
+      transparent 70%
+    ),
+    var(--cs-bg);
+  color: var(--cs-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px 22px 0;
+}
+
+.theme {
+  display: inline-flex;
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius);
+  overflow: hidden;
+  background: var(--cs-bg-elevated);
+}
+
+.theme button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--cs-text-muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.theme button + button {
+  border-left: 1px solid var(--cs-border);
+}
+
+.theme button[aria-pressed="true"] {
+  background: var(--cs-bg-panel);
+  color: var(--cs-text);
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 20px 64px;
+}
+
+.logo {
+  width: min(220px, 58vw);
+  height: auto;
+  margin-bottom: 22px;
+  filter: drop-shadow(0 10px 24px color-mix(in srgb, var(--cs-bg-panel) 80%, transparent));
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.pitch {
+  margin: 0 0 28px;
+  max-width: 34rem;
+  color: var(--cs-text-muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  padding: 12px 18px;
+  border: 1px solid var(--cs-border);
+  border-radius: var(--cs-radius);
+  background: var(--cs-bg-panel);
+  color: var(--cs-text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border-color: var(--cs-accent);
+}
+
+.btn-primary {
+  background: var(--cs-accent-muted);
+  border-color: var(--cs-accent);
+}
+
+.notes {
+  margin: 22px 0 0;
+  font-size: 14px;
+}
+
+.notes a {
+  color: var(--cs-text-muted);
+  text-underline-offset: 3px;
+}
+
+.notes a:hover {
+  color: var(--cs-text);
+}
+
+@media (max-width: 520px) {
+  .btn {
+    min-width: min(280px, 100%);
+  }
+}

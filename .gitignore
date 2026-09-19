@@ -84,8 +84,8 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
+# Cloudflare Pages serves the static download site from site/.
+# (Do not ignore /site — that would hide index.html from Git and Pages.)
 
 # mypy
 .mypy_cache/
