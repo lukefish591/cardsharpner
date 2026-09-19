@@ -10,15 +10,15 @@ export interface OverviewMetrics {
   avgRake: number;
   vpipRate: number;
   preflopRaiseRate: number;
-  threeBetRate: number;
-  fourBetRate: number;
+  threeBetRate: number | null;
+  fourBetRate: number | null;
   flopRate: number;
-  flopWinRate: number;
-  showdownRate: number;
-  wonAtShowdownRate: number;
-  cbetFlopRate: number;
-  cbetTurnRate: number;
-  cbetRiverRate: number;
+  flopWinRate: number | null;
+  showdownRate: number | null;
+  wonAtShowdownRate: number | null;
+  cbetFlopRate: number | null;
+  cbetTurnRate: number | null;
+  cbetRiverRate: number | null;
   showdownHands: number;
   showdownProfit: number;
   nonShowdownHands: number;
@@ -44,15 +44,15 @@ const EMPTY_METRICS: OverviewMetrics = {
   avgRake: 0,
   vpipRate: 0,
   preflopRaiseRate: 0,
-  threeBetRate: 0,
-  fourBetRate: 0,
+  threeBetRate: null,
+  fourBetRate: null,
   flopRate: 0,
-  flopWinRate: 0,
-  showdownRate: 0,
-  wonAtShowdownRate: 0,
-  cbetFlopRate: 0,
-  cbetTurnRate: 0,
-  cbetRiverRate: 0,
+  flopWinRate: null,
+  showdownRate: null,
+  wonAtShowdownRate: null,
+  cbetFlopRate: null,
+  cbetTurnRate: null,
+  cbetRiverRate: null,
   showdownHands: 0,
   showdownProfit: 0,
   nonShowdownHands: 0,
@@ -74,29 +74,40 @@ export function filterStatRows(
   });
 }
 
-function rate(numer: number, denom: number): number {
-  return denom > 0 ? (numer / denom) * 100 : 0;
+function rate(numer: number, denom: number): number | null {
+  return denom > 0 ? (numer / denom) * 100 : null;
+}
+
+function handsRate(numer: number, denom: number): number {
+  return rate(numer, denom) ?? 0;
 }
 
 function count(rows: HandStatRow[], pred: (row: HandStatRow) => boolean): number {
   return rows.reduce((sum, row) => sum + (pred(row) ? 1 : 0), 0);
 }
 
-export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
+function handProfit(row: HandStatRow, excludeRake = false): number {
+  return excludeRake ? row.netBeforeRake : row.heroNet;
+}
+
+export function aggregateMetrics(
+  rows: HandStatRow[],
+  excludeRake = false,
+): OverviewMetrics {
   if (rows.length === 0) return EMPTY_METRICS;
 
   const totalHands = rows.length;
-  const totalProfit = rows.reduce((s, r) => s + r.heroNet, 0);
+  const totalProfit = rows.reduce((s, r) => s + handProfit(r, excludeRake), 0);
   const totalProfitBeforeRake = rows.reduce((s, r) => s + r.netBeforeRake, 0);
   const totalRake = rows.reduce((s, r) => s + r.rake, 0);
   const sawFlop = count(rows, (r) => r.sawFlop);
   const wentSd = count(rows, (r) => r.wentToShowdown);
   const showdownProfit = rows
     .filter((r) => r.wentToShowdown)
-    .reduce((s, r) => s + r.heroNet, 0);
+    .reduce((s, r) => s + handProfit(r, excludeRake), 0);
   const nonShowdownProfit = rows
     .filter((r) => !r.wentToShowdown)
-    .reduce((s, r) => s + r.heroNet, 0);
+    .reduce((s, r) => s + handProfit(r, excludeRake), 0);
 
   return {
     totalHands,
@@ -106,8 +117,8 @@ export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
     avgProfit: totalProfit / totalHands,
     avgProfitBeforeRake: totalProfitBeforeRake / totalHands,
     avgRake: totalRake / totalHands,
-    vpipRate: rate(count(rows, (r) => r.vpip), totalHands),
-    preflopRaiseRate: rate(count(rows, (r) => r.preflopRaised), totalHands),
+    vpipRate: handsRate(count(rows, (r) => r.vpip), totalHands),
+    preflopRaiseRate: handsRate(count(rows, (r) => r.preflopRaised), totalHands),
     threeBetRate: rate(
       count(rows, (r) => r.threeBet),
       count(rows, (r) => r.threeBetOpportunity),
@@ -116,7 +127,7 @@ export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
       count(rows, (r) => r.fourBet),
       count(rows, (r) => r.fourBetOpportunity),
     ),
-    flopRate: rate(sawFlop, totalHands),
+    flopRate: handsRate(sawFlop, totalHands),
     flopWinRate: rate(count(rows, (r) => r.wonWhenSawFlop), sawFlop),
     showdownRate: rate(wentSd, sawFlop),
     wonAtShowdownRate: rate(count(rows, (r) => r.wonAtShowdown), wentSd),
@@ -139,14 +150,18 @@ export function aggregateMetrics(rows: HandStatRow[]): OverviewMetrics {
   };
 }
 
-export function buildEquityCurve(rows: HandStatRow[]): CurvePoint[] {
+export function buildEquityCurve(
+  rows: HandStatRow[],
+  excludeRake = false,
+): CurvePoint[] {
   let total = 0;
   let showdown = 0;
   let nonShowdown = 0;
   return rows.map((row, index) => {
-    total += row.heroNet;
-    if (row.wentToShowdown) showdown += row.heroNet;
-    else nonShowdown += row.heroNet;
+    const net = handProfit(row, excludeRake);
+    total += net;
+    if (row.wentToShowdown) showdown += net;
+    else nonShowdown += net;
     return {
       handNumber: index + 1,
       total,
@@ -208,6 +223,7 @@ export function breakdownBy(
   rows: HandStatRow[],
   keyOf: (row: HandStatRow) => string,
   order?: string[],
+  excludeRake = false,
 ): BreakdownRow[] {
   const groups = new Map<string, HandStatRow[]>();
   for (const row of rows) {
@@ -223,7 +239,7 @@ export function breakdownBy(
 
   return keys.map((key) => {
     const group = groups.get(key) ?? [];
-    const metrics = aggregateMetrics(group);
+    const metrics = aggregateMetrics(group, excludeRake);
     const bb = extractBb(key);
     return {
       key,
@@ -244,7 +260,8 @@ export function money(value: number, digits = 2): string {
   return value < 0 ? `-$${abs}` : `$${abs}`;
 }
 
-export function pct(value: number): string {
+export function pct(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return "n/a";
   return `${value.toFixed(1)}%`;
 }
 

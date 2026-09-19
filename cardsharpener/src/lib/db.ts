@@ -31,6 +31,7 @@ export interface HandsPageQuery {
   dateTo?: string;
   position?: string;
   potType?: string;
+  sort?: string;
   limit?: number;
   offset?: number;
 }
@@ -72,6 +73,7 @@ export async function fetchHandsPage(input: HandsPageQuery = {}): Promise<HandPa
     position: input.position ?? "",
     potType: input.potType ?? "",
     pot_type: input.potType ?? "",
+    sort: input.sort ?? "newest",
     limit: input.limit ?? 50,
     offset: input.offset ?? 0,
   });
@@ -108,6 +110,8 @@ function statsArgs(filters: StatsFilters) {
     dateTo: filters.dateTo,
     date_from: filters.dateFrom,
     date_to: filters.dateTo,
+    excludeRake: filters.excludeRake,
+    exclude_rake: filters.excludeRake,
   };
 }
 
@@ -139,15 +143,15 @@ export async function fetchStatsPlaystyle(
     return {
       vpipRate: 0,
       preflopRaiseRate: 0,
-      threeBetRate: 0,
-      fourBetRate: 0,
+      threeBetRate: null,
+      fourBetRate: null,
       flopRate: 0,
-      flopWinRate: 0,
-      showdownRate: 0,
-      wonAtShowdownRate: 0,
-      cbetFlopRate: 0,
-      cbetTurnRate: 0,
-      cbetRiverRate: 0,
+      flopWinRate: null,
+      showdownRate: null,
+      wonAtShowdownRate: null,
+      cbetFlopRate: null,
+      cbetTurnRate: null,
+      cbetRiverRate: null,
       showdownHands: 0,
       showdownProfit: 0,
       nonShowdownHands: 0,

@@ -30,6 +30,7 @@ export function handsCacheKey(input: {
   dateTo: string;
   position: string;
   potType: string;
+  sort: string;
   limit: number;
   offset: number;
 }): string {
@@ -41,6 +42,7 @@ export function handsCacheKey(input: {
     input.dateTo,
     input.position,
     input.potType,
+    input.sort,
     input.limit,
     input.offset,
   ].join("|");
@@ -52,8 +54,16 @@ export function statsCacheKey(input: {
   potType: string;
   dateFrom: string;
   dateTo: string;
+  excludeRake: boolean;
 }): string {
-  return [input.position, input.stakes, input.potType, input.dateFrom, input.dateTo].join("|");
+  return [
+    input.position,
+    input.stakes,
+    input.potType,
+    input.dateFrom,
+    input.dateTo,
+    input.excludeRake ? "norake" : "rake",
+  ].join("|");
 }
 
 export function getHandsCache(key: string): HandPage | null {

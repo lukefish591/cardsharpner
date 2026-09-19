@@ -31,6 +31,7 @@ const EMPTY_FILTERS: StatsFiltersValue = {
   potType: "",
   dateFrom: "",
   dateTo: "",
+  excludeRake: false,
 };
 
 const POT_TYPES = [
@@ -226,7 +227,14 @@ export function StatsScreen({ dataRevision = 0 }: StatsScreenProps) {
                 </div>
               </section>
 
-              <ChartPanel title="Results">
+              <ChartPanel
+                title="Results"
+                note={
+                  filters.excludeRake
+                    ? "Profit before rake"
+                    : undefined
+                }
+              >
                 {curveLoading ? (
                   <ChartPlaceholder title="" note="" spinning />
                 ) : curve && curve.points.length > 0 ? (

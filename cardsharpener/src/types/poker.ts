@@ -167,15 +167,15 @@ export interface StatsOverview {
 export interface StatsPlaystyle {
   vpipRate: number;
   preflopRaiseRate: number;
-  threeBetRate: number;
-  fourBetRate: number;
+  threeBetRate: number | null;
+  fourBetRate: number | null;
   flopRate: number;
-  flopWinRate: number;
-  showdownRate: number;
-  wonAtShowdownRate: number;
-  cbetFlopRate: number;
-  cbetTurnRate: number;
-  cbetRiverRate: number;
+  flopWinRate: number | null;
+  showdownRate: number | null;
+  wonAtShowdownRate: number | null;
+  cbetFlopRate: number | null;
+  cbetTurnRate: number | null;
+  cbetRiverRate: number | null;
   showdownHands: number;
   showdownProfit: number;
   nonShowdownHands: number;
@@ -198,10 +198,10 @@ export interface BreakdownRow {
   totalProfit: number;
   avgProfit: number;
   profitBb: number | null;
-  showdownRate: number;
-  flopWinRate: number;
+  showdownRate: number | null;
+  flopWinRate: number | null;
   preflopRaiseRate: number;
-  cbetRate: number;
+  cbetRate: number | null;
 }
 
 export interface StatsBreakdowns {
@@ -215,4 +215,5 @@ export interface StatsFilters {
   potType: string;
   dateFrom: string;
   dateTo: string;
+  excludeRake: boolean;
 }

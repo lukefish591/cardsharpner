@@ -1,20 +1,25 @@
+import { HAND_SORTS } from "../../lib/handSort";
 import { formatStakesNl } from "../../lib/stats";
 import type { HandFilters } from "../../types/poker";
 
 interface HandFiltersPanelProps {
   value: HandFilters;
+  sort: string;
   positions: string[];
   stakes: string[];
   potTypes: string[];
   onChange: (next: HandFilters) => void;
+  onSortChange: (sort: string) => void;
 }
 
 export function HandFiltersPanel({
   value,
+  sort,
   positions,
   stakes,
   potTypes,
   onChange,
+  onSortChange,
 }: HandFiltersPanelProps) {
   function patch(partial: Partial<HandFilters>) {
     onChange({ ...value, ...partial });
@@ -24,13 +29,29 @@ export function HandFiltersPanel({
     <aside className="panel hand-filters" aria-label="Hand filters">
       <h2 className="panel__title">Filters</h2>
       <label>
-        Search
+        Sort
+        <select
+          value={sort}
+          onChange={(e) => onSortChange(e.target.value)}
+        >
+          {HAND_SORTS.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label>
+        Hole cards
         <input
           type="search"
-          placeholder="Cards…"
+          placeholder="AKs, AKo, or Ah Kd"
           value={value.query}
           onChange={(e) => patch({ query: e.target.value })}
         />
+        <span className="hand-filters__hint">
+          Exact suits (Ah Kd) or generic suited/offsuit (AKs / AKo). AK matches both.
+        </span>
       </label>
       <label>
         Position
