@@ -781,6 +781,11 @@ pub fn persist_parsed_import(
         }
       })
       .unwrap_or_else(|| "Unknown".into());
+    let hero_starting_stack = hand
+      .players
+      .iter()
+      .find(|p| p.is_hero)
+      .and_then(|p| p.starting_stack);
     let load = stats::HandLoad {
       id: hand_id,
       played_at: hand.played_at.clone(),
@@ -789,6 +794,7 @@ pub fn persist_parsed_import(
       hero_net: hand.hero_net,
       raw_text: hand.raw_text.clone(),
       board_cards: hand.board_cards.clone(),
+      hero_starting_stack,
     };
     let actions: Vec<stats::ActionLoad> = hand
       .actions
@@ -800,6 +806,8 @@ pub fn persist_parsed_import(
           .action_type
           .clone()
           .unwrap_or_else(|| "unknown".into()),
+        amount: action.amount,
+        is_all_in: action.is_all_in,
       })
       .collect();
     let row = stats::classify_hand(&load, &position, &actions);
