@@ -55,7 +55,7 @@ fn import_hands(db: State<db::AppDb>, paths: Vec<String>) -> Result<db::ImportRe
 
 #[tauri::command]
 fn backfill_hand_stats(db: State<db::AppDb>) -> Result<i64, String> {
-  db.write(stats::backfill_missing)
+  db.write(stats::ensure_stats)
 }
 
 fn stats_filter(
@@ -173,11 +173,11 @@ pub fn run() {
           }
         }
       }
-      match managed.write(stats::backfill_missing) {
+      match managed.write(stats::ensure_stats) {
         Ok(written) if written > 0 => {
-          eprintln!("Startup hand_stats backfill wrote {written} rows");
+          eprintln!("Startup hand_stats rematerialize/backfill wrote {written} rows");
         }
-        Err(e) => eprintln!("Startup hand_stats backfill failed: {e}"),
+        Err(e) => eprintln!("Startup hand_stats rematerialize/backfill failed: {e}"),
         _ => {}
       }
       app.manage(managed);

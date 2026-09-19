@@ -10,15 +10,15 @@ export interface OverviewMetrics {
   avgRake: number;
   vpipRate: number;
   preflopRaiseRate: number;
-  threeBetRate: number;
-  fourBetRate: number;
+  threeBetRate: number | null;
+  fourBetRate: number | null;
   flopRate: number;
-  flopWinRate: number;
-  showdownRate: number;
-  wonAtShowdownRate: number;
-  cbetFlopRate: number;
-  cbetTurnRate: number;
-  cbetRiverRate: number;
+  flopWinRate: number | null;
+  showdownRate: number | null;
+  wonAtShowdownRate: number | null;
+  cbetFlopRate: number | null;
+  cbetTurnRate: number | null;
+  cbetRiverRate: number | null;
   showdownHands: number;
   showdownProfit: number;
   nonShowdownHands: number;
@@ -44,15 +44,15 @@ const EMPTY_METRICS: OverviewMetrics = {
   avgRake: 0,
   vpipRate: 0,
   preflopRaiseRate: 0,
-  threeBetRate: 0,
-  fourBetRate: 0,
+  threeBetRate: null,
+  fourBetRate: null,
   flopRate: 0,
-  flopWinRate: 0,
-  showdownRate: 0,
-  wonAtShowdownRate: 0,
-  cbetFlopRate: 0,
-  cbetTurnRate: 0,
-  cbetRiverRate: 0,
+  flopWinRate: null,
+  showdownRate: null,
+  wonAtShowdownRate: null,
+  cbetFlopRate: null,
+  cbetTurnRate: null,
+  cbetRiverRate: null,
   showdownHands: 0,
   showdownProfit: 0,
   nonShowdownHands: 0,
@@ -74,8 +74,12 @@ export function filterStatRows(
   });
 }
 
-function rate(numer: number, denom: number): number {
-  return denom > 0 ? (numer / denom) * 100 : 0;
+function rate(numer: number, denom: number): number | null {
+  return denom > 0 ? (numer / denom) * 100 : null;
+}
+
+function handsRate(numer: number, denom: number): number {
+  return rate(numer, denom) ?? 0;
 }
 
 function count(rows: HandStatRow[], pred: (row: HandStatRow) => boolean): number {
@@ -113,8 +117,8 @@ export function aggregateMetrics(
     avgProfit: totalProfit / totalHands,
     avgProfitBeforeRake: totalProfitBeforeRake / totalHands,
     avgRake: totalRake / totalHands,
-    vpipRate: rate(count(rows, (r) => r.vpip), totalHands),
-    preflopRaiseRate: rate(count(rows, (r) => r.preflopRaised), totalHands),
+    vpipRate: handsRate(count(rows, (r) => r.vpip), totalHands),
+    preflopRaiseRate: handsRate(count(rows, (r) => r.preflopRaised), totalHands),
     threeBetRate: rate(
       count(rows, (r) => r.threeBet),
       count(rows, (r) => r.threeBetOpportunity),
@@ -123,7 +127,7 @@ export function aggregateMetrics(
       count(rows, (r) => r.fourBet),
       count(rows, (r) => r.fourBetOpportunity),
     ),
-    flopRate: rate(sawFlop, totalHands),
+    flopRate: handsRate(sawFlop, totalHands),
     flopWinRate: rate(count(rows, (r) => r.wonWhenSawFlop), sawFlop),
     showdownRate: rate(wentSd, sawFlop),
     wonAtShowdownRate: rate(count(rows, (r) => r.wonAtShowdown), wentSd),
@@ -256,7 +260,8 @@ export function money(value: number, digits = 2): string {
   return value < 0 ? `-$${abs}` : `$${abs}`;
 }
 
-export function pct(value: number): string {
+export function pct(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return "n/a";
   return `${value.toFixed(1)}%`;
 }
 
