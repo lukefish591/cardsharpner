@@ -1,8 +1,12 @@
 //! Hero stats from imported SQLite rows — gathered data only.
 //!
 //! Flags are materialized into `hand_stats` at import (and startup backfill).
+//! Formula changes bump `STATS_FORMULA_MIGRATION` so existing DBs recompute.
 //! Live queries use SQL aggregates and never SELECT `raw_text`.
 //! No GTO, theory, or range-chart baselines.
+
+/// Bump when `classify_hand` flags change so existing `hand_stats` rows rewrite.
+const STATS_FORMULA_MIGRATION: i64 = 3;
 
 use rusqlite::{params, Connection};
 use serde::{Deserialize, Serialize};
@@ -74,17 +78,17 @@ pub struct StatsOverview {
 #[derive(Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct StatsPlaystyle {
-  pub vpip_rate: f64,
-  pub preflop_raise_rate: f64,
-  pub three_bet_rate: f64,
-  pub four_bet_rate: f64,
-  pub flop_rate: f64,
-  pub flop_win_rate: f64,
-  pub showdown_rate: f64,
-  pub won_at_showdown_rate: f64,
-  pub cbet_flop_rate: f64,
-  pub cbet_turn_rate: f64,
-  pub cbet_river_rate: f64,
+  pub vpip_rate: Option<f64>,
+  pub preflop_raise_rate: Option<f64>,
+  pub three_bet_rate: Option<f64>,
+  pub four_bet_rate: Option<f64>,
+  pub flop_rate: Option<f64>,
+  pub flop_win_rate: Option<f64>,
+  pub showdown_rate: Option<f64>,
+  pub won_at_showdown_rate: Option<f64>,
+  pub cbet_flop_rate: Option<f64>,
+  pub cbet_turn_rate: Option<f64>,
+  pub cbet_river_rate: Option<f64>,
   pub showdown_hands: i64,
   pub showdown_profit: f64,
   pub non_showdown_hands: i64,
@@ -115,10 +119,10 @@ pub struct BreakdownRow {
   pub total_profit: f64,
   pub avg_profit: f64,
   pub profit_bb: Option<f64>,
-  pub showdown_rate: f64,
-  pub flop_win_rate: f64,
-  pub preflop_raise_rate: f64,
-  pub cbet_rate: f64,
+  pub showdown_rate: Option<f64>,
+  pub flop_win_rate: Option<f64>,
+  pub preflop_raise_rate: Option<f64>,
+  pub cbet_rate: Option<f64>,
 }
 
 #[derive(Debug, Serialize)]
@@ -136,12 +140,15 @@ pub(crate) struct HandLoad {
   pub hero_net: Option<f64>,
   pub raw_text: Option<String>,
   pub board_cards: Option<String>,
+  pub hero_starting_stack: Option<f64>,
 }
 
 pub(crate) struct ActionLoad {
   pub street: String,
   pub actor_name: Option<String>,
   pub action_type: String,
+  pub amount: Option<f64>,
+  pub is_all_in: bool,
 }
 
 const CURVE_TARGET: usize = 600;
@@ -178,11 +185,11 @@ fn profit_sql(filter: &StatsFilter) -> &'static str {
   }
 }
 
-fn rate(numer: f64, denom: f64) -> f64 {
+fn rate(numer: f64, denom: f64) -> Option<f64> {
   if denom > 0.0 {
-    (numer / denom) * 100.0
+    Some((numer / denom) * 100.0)
   } else {
-    0.0
+    None
   }
 }
 
@@ -244,29 +251,57 @@ fn flag(value: bool) -> i64 {
   }
 }
 
-/// One-time (or leftover) classify pass. Loads `raw_text` only for hands missing stats.
-pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
-  let pending: i64 = conn
+fn formula_applied(conn: &Connection) -> Result<bool, String> {
+  let count: i64 = conn
     .query_row(
-      "SELECT COUNT(*) FROM hands h
-       LEFT JOIN hand_stats s ON s.hand_id = h.id
-       WHERE s.hand_id IS NULL",
-      [],
+      "SELECT COUNT(*) FROM schema_migrations WHERE id = ?1",
+      params![STATS_FORMULA_MIGRATION],
       |r| r.get(0),
     )
-    .map_err(|e| format!("Failed to count pending hand_stats: {e}"))?;
-  if pending == 0 {
-    return Ok(0);
+    .map_err(|e| format!("Failed to read stats formula version: {e}"))?;
+  Ok(count > 0)
+}
+
+fn mark_formula_applied(conn: &Connection) -> Result<(), String> {
+  conn
+    .execute(
+      "INSERT OR IGNORE INTO schema_migrations (id) VALUES (?1)",
+      params![STATS_FORMULA_MIGRATION],
+    )
+    .map_err(|e| format!("Failed to record stats formula version: {e}"))?;
+  Ok(())
+}
+
+/// Classify pass. `only_missing` fills gaps; otherwise every hand is rewritten.
+pub fn materialize_stats(conn: &mut Connection, only_missing: bool) -> Result<i64, String> {
+  if only_missing {
+    let pending: i64 = conn
+      .query_row(
+        "SELECT COUNT(*) FROM hands h
+         LEFT JOIN hand_stats s ON s.hand_id = h.id
+         WHERE s.hand_id IS NULL",
+        [],
+        |r| r.get(0),
+      )
+      .map_err(|e| format!("Failed to count pending hand_stats: {e}"))?;
+    if pending == 0 {
+      return Ok(0);
+    }
   }
 
+  let hand_sql = if only_missing {
+    "SELECT h.id, h.played_at, h.stakes, h.hero_name, h.hero_net, h.raw_text, h.board_cards
+     FROM hands h
+     LEFT JOIN hand_stats s ON s.hand_id = h.id
+     WHERE s.hand_id IS NULL
+     ORDER BY h.id ASC"
+  } else {
+    "SELECT h.id, h.played_at, h.stakes, h.hero_name, h.hero_net, h.raw_text, h.board_cards
+     FROM hands h
+     ORDER BY h.id ASC"
+  };
   let mut hand_stmt = conn
-    .prepare(
-      "SELECT h.id, h.played_at, h.stakes, h.hero_name, h.hero_net, h.raw_text, h.board_cards
-       FROM hands h
-       LEFT JOIN hand_stats s ON s.hand_id = h.id
-       WHERE s.hand_id IS NULL
-       ORDER BY h.id ASC",
-    )
+    .prepare(hand_sql)
     .map_err(|e| format!("Failed to prepare stats backfill: {e}"))?;
   let hand_rows = hand_stmt
     .query_map([], |row| {
@@ -278,6 +313,7 @@ pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
         hero_net: row.get(4)?,
         raw_text: row.get(5)?,
         board_cards: row.get(6)?,
+        hero_starting_stack: None,
       })
     })
     .map_err(|e| format!("Failed to query backfill hands: {e}"))?;
@@ -288,39 +324,56 @@ pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
   drop(hand_stmt);
 
   let mut pos_stmt = conn
-    .prepare("SELECT hand_id, position FROM players WHERE is_hero = 1")
+    .prepare("SELECT hand_id, position, starting_stack FROM players WHERE is_hero = 1")
     .map_err(|e| format!("Failed to prepare hero positions: {e}"))?;
   let pos_rows = pos_stmt
     .query_map([], |row| {
-      Ok((row.get::<_, i64>(0)?, row.get::<_, Option<String>>(1)?))
+      Ok((
+        row.get::<_, i64>(0)?,
+        row.get::<_, Option<String>>(1)?,
+        row.get::<_, Option<f64>>(2)?,
+      ))
     })
     .map_err(|e| format!("Failed to query hero positions: {e}"))?;
   let mut positions_by_hand: HashMap<i64, String> = HashMap::new();
+  let mut stacks_by_hand: HashMap<i64, f64> = HashMap::new();
   for row in pos_rows {
-    let (hand_id, position) = row.map_err(|e| format!("Failed to read hero position: {e}"))?;
+    let (hand_id, position, stack) =
+      row.map_err(|e| format!("Failed to read hero position: {e}"))?;
     if let Some(position) = position.filter(|s| !s.trim().is_empty()) {
       positions_by_hand.insert(hand_id, position);
+    }
+    if let Some(stack) = stack.filter(|s| *s > 0.0) {
+      stacks_by_hand.insert(hand_id, stack);
     }
   }
   drop(pos_stmt);
 
+  let act_sql = if only_missing {
+    "SELECT a.hand_id, a.street, a.actor_name, a.action_type, a.amount, a.is_all_in
+     FROM actions a
+     LEFT JOIN hand_stats s ON s.hand_id = a.hand_id
+     WHERE s.hand_id IS NULL
+     ORDER BY a.hand_id ASC, a.seq ASC, a.id ASC"
+  } else {
+    "SELECT a.hand_id, a.street, a.actor_name, a.action_type, a.amount, a.is_all_in
+     FROM actions a
+     ORDER BY a.hand_id ASC, a.seq ASC, a.id ASC"
+  };
   let mut act_stmt = conn
-    .prepare(
-      "SELECT a.hand_id, a.street, a.actor_name, a.action_type
-       FROM actions a
-       LEFT JOIN hand_stats s ON s.hand_id = a.hand_id
-       WHERE s.hand_id IS NULL
-       ORDER BY a.hand_id ASC, a.seq ASC, a.id ASC",
-    )
+    .prepare(act_sql)
     .map_err(|e| format!("Failed to prepare backfill actions: {e}"))?;
   let act_rows = act_stmt
     .query_map([], |row| {
+      let is_all_in: i64 = row.get(5)?;
       Ok((
         row.get::<_, i64>(0)?,
         ActionLoad {
           street: row.get(1)?,
           actor_name: row.get(2)?,
           action_type: row.get(3)?,
+          amount: row.get(4)?,
+          is_all_in: is_all_in != 0,
         },
       ))
     })
@@ -331,6 +384,12 @@ pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
     actions_by_hand.entry(hand_id).or_default().push(action);
   }
   drop(act_stmt);
+
+  for hand in &mut hands {
+    if let Some(stack) = stacks_by_hand.get(&hand.id) {
+      hand.hero_starting_stack = Some(*stack);
+    }
+  }
 
   let tx = conn
     .transaction()
@@ -354,8 +413,23 @@ pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
   Ok(written)
 }
 
+/// One-time (or leftover) classify pass for hands missing stats.
+pub fn backfill_missing(conn: &mut Connection) -> Result<i64, String> {
+  materialize_stats(conn, true)
+}
+
+/// Rewrite every `hand_stats` row with the current formulas.
+pub fn recompute_all(conn: &mut Connection) -> Result<i64, String> {
+  materialize_stats(conn, false)
+}
+
 pub fn ensure_stats(conn: &mut Connection) -> Result<i64, String> {
-  backfill_missing(conn)
+  if formula_applied(conn)? {
+    return backfill_missing(conn);
+  }
+  let written = recompute_all(conn)?;
+  mark_formula_applied(conn)?;
+  Ok(written)
 }
 
 pub fn overview(conn: &Connection, filter: &StatsFilter) -> Result<StatsOverview, String> {
@@ -676,6 +750,24 @@ fn extract_bb(stakes: &str) -> Option<f64> {
   }
 }
 
+fn is_raise_sized(kind: &str) -> bool {
+  matches!(kind, "raise" | "bet" | "all-in")
+}
+
+fn action_amount(action: &ActionLoad) -> f64 {
+  action.amount.unwrap_or(0.0).max(0.0)
+}
+
+fn hero_can_reopen(hero_folded: bool, hero_all_in: bool, hero_stack: Option<f64>, to_call: f64) -> bool {
+  if hero_folded || hero_all_in {
+    return false;
+  }
+  match hero_stack {
+    Some(stack) => stack > to_call + 1e-9,
+    None => true,
+  }
+}
+
 pub(crate) fn classify_hand(hand: &HandLoad, position: &str, actions: &[ActionLoad]) -> HandStatRow {
   let hero_name = hand.hero_name.as_deref().unwrap_or("Hero");
   let hero_net = hand.hero_net.unwrap_or(0.0);
@@ -691,30 +783,49 @@ pub(crate) fn classify_hand(hand: &HandLoad, position: &str, actions: &[ActionLo
   let mut four_bet_opportunity = false;
   let mut hero_folded_preflop = false;
   let mut hero_folded = false;
+  let mut hero_all_in = false;
+  let mut hero_limped = false;
+  let mut hero_acted_facing_open = false;
   let mut hero_showed = false;
   let mut hero_postflop_action = false;
   let mut preflop_raises = 0i32;
   let mut last_aggressor = ["", "", "", ""]; // preflop, flop, turn, river
   let mut first_bet_made = [false, false, false]; // flop, turn, river
   let mut cbet = [false, false, false];
-  let mut cbet_opp = [false, false, false];
+  let mut cbet_pending = [false, false, false];
+  let mut cbet_killed = [false, false, false];
   let mut street_seen = [false, false, false];
+  let mut hero_acted_street = [false, false, false];
+  let mut hero_stack = hand.hero_starting_stack.filter(|s| *s > 0.0);
+  let mut hero_street_contrib = 0.0_f64;
+  let mut street_max = 0.0_f64;
+  let mut tracked_street = "";
 
   for action in actions {
     let street = norm_street(&action.street);
     let kind = action.action_type.trim().to_ascii_lowercase();
     let hero = is_hero_actor(action.actor_name.as_deref(), hero_name);
     let street_idx = street_index(street);
+    let amount = action_amount(action);
+    let all_in = action.is_all_in || kind == "all-in";
+
+    if !tracked_street.is_empty() && street != tracked_street && street != "unknown" {
+      hero_street_contrib = 0.0;
+      street_max = 0.0;
+    }
+    if street != "unknown" {
+      tracked_street = street;
+    }
 
     if street == "flop" && !street_seen[0] {
       street_seen[0] = true;
-      cbet_opp[0] = last_aggressor[0] == "hero";
+      cbet_pending[0] = last_aggressor[0] == "hero" && !hero_all_in;
     } else if street == "turn" && !street_seen[1] {
       street_seen[1] = true;
-      cbet_opp[1] = last_aggressor[1] == "hero";
+      cbet_pending[1] = cbet[0] && !hero_all_in;
     } else if street == "river" && !street_seen[2] {
       street_seen[2] = true;
-      cbet_opp[2] = last_aggressor[2] == "hero";
+      cbet_pending[2] = cbet[1] && !hero_all_in;
     }
 
     if hero && street != "preflop" && street != "unknown" {
@@ -724,57 +835,125 @@ pub(crate) fn classify_hand(hand: &HandLoad, position: &str, actions: &[ActionLo
       hero_folded = true;
       if street == "preflop" {
         hero_folded_preflop = true;
+        if preflop_raises >= 1 {
+          hero_acted_facing_open = true;
+        }
       }
     }
     if hero && (kind == "show" || kind == "shows" || kind == "showed") {
       hero_showed = true;
     }
 
-    let is_raise = kind == "raise";
-    let is_bet = kind == "bet" || kind == "all-in";
-    let is_call = kind == "call";
+    if kind == "post" || kind == "call" {
+      if hero {
+        hero_street_contrib += amount;
+        if let Some(ref mut stack) = hero_stack {
+          *stack = (*stack - amount).max(0.0);
+        }
+      }
+      if kind == "post" {
+        let posted = if hero { hero_street_contrib } else { amount };
+        street_max = street_max.max(posted);
+      }
+    }
+
+    let raise_sized = is_raise_sized(&kind);
 
     if street == "preflop" && hero {
-      if is_call {
+      if kind == "call" {
         preflop_called = true;
         vpip = true;
+        if preflop_raises == 0 {
+          hero_limped = true;
+        }
+        if preflop_raises >= 1 {
+          hero_acted_facing_open = true;
+        }
       }
-      if is_raise || (kind == "bet") {
-        vpip = true;
-      }
-      if is_raise {
+      if raise_sized {
+        if kind == "raise" || kind == "bet" {
+          vpip = true;
+        }
         preflop_raised = true;
-        if preflop_raises == 1 {
+        let limp_reraise = hero_limped && preflop_raises == 1;
+        if limp_reraise {
+          // HM/PT: limp-reraise is PFR, not a 3-bet.
+        } else if preflop_raises == 1 {
           three_bet = true;
         } else if preflop_raises == 2 {
           four_bet = true;
         }
+        if preflop_raises >= 1 {
+          hero_acted_facing_open = true;
+        }
+        let new_max = if kind == "raise" {
+          street_max + amount
+        } else {
+          street_max.max(amount)
+        };
+        let spent = (new_max - hero_street_contrib).max(0.0);
+        if let Some(ref mut stack) = hero_stack {
+          *stack = (*stack - spent).max(0.0);
+        }
+        hero_street_contrib = new_max;
+        street_max = new_max;
         preflop_raises += 1;
         last_aggressor[0] = "hero";
       }
-    } else if street == "preflop" && !hero && is_raise {
+    } else if street == "preflop" && !hero && raise_sized {
+      street_max = if kind == "raise" {
+        street_max + amount
+      } else {
+        street_max.max(amount)
+      };
       preflop_raises += 1;
-      if preflop_raises == 1 {
-        three_bet_opportunity = true;
-      } else if preflop_raises == 2 {
-        four_bet_opportunity = true;
+      let to_call = (street_max - hero_street_contrib).max(0.0);
+      let can_reopen = hero_can_reopen(hero_folded, hero_all_in, hero_stack, to_call);
+      if can_reopen {
+        if preflop_raises == 1 && !hero_limped {
+          three_bet_opportunity = true;
+        } else if preflop_raises == 2 {
+          four_bet_opportunity = true;
+        }
+      }
+      if preflop_raises >= 2 && !hero_acted_facing_open {
+        three_bet_opportunity = false;
       }
       last_aggressor[0] = "villain";
     }
 
+    if hero && all_in {
+      hero_all_in = true;
+    }
+    if hero {
+      if let Some(stack) = hero_stack {
+        if stack <= 1e-9 {
+          hero_all_in = true;
+        }
+      }
+    }
+
     if street_idx >= 1 && street_idx <= 3 {
       let post_idx = (street_idx - 1) as usize;
-      if is_bet {
-        if !first_bet_made[post_idx] {
-          if hero && cbet_opp[post_idx] && kind == "bet" {
+      if hero
+        && !matches!(
+          kind.as_str(),
+          "unknown" | "show" | "shows" | "showed" | "collect" | "return"
+        )
+      {
+        hero_acted_street[post_idx] = true;
+      }
+      let is_open_bet = kind == "bet" || kind == "all-in";
+      if is_open_bet || kind == "raise" {
+        if is_open_bet && !first_bet_made[post_idx] {
+          if !hero && !hero_acted_street[post_idx] {
+            cbet_killed[post_idx] = true;
+          }
+          if hero && kind == "bet" && cbet_pending[post_idx] && !cbet_killed[post_idx] {
             cbet[post_idx] = true;
           }
           first_bet_made[post_idx] = true;
         }
-        if let Some(slot) = last_aggressor.get_mut(street_idx) {
-          *slot = if hero { "hero" } else { "villain" };
-        }
-      } else if is_raise {
         if let Some(slot) = last_aggressor.get_mut(street_idx) {
           *slot = if hero { "hero" } else { "villain" };
         }
@@ -784,21 +963,25 @@ pub(crate) fn classify_hand(hand: &HandLoad, position: &str, actions: &[ActionLo
 
   // Streets can exist (board dealt) with no stored street actions.
   if board_count >= 3 && !street_seen[0] {
-    cbet_opp[0] = last_aggressor[0] == "hero";
+    cbet_pending[0] = last_aggressor[0] == "hero" && !hero_all_in;
   }
   if board_count >= 4 && !street_seen[1] {
-    cbet_opp[1] = last_aggressor[1] == "hero";
+    cbet_pending[1] = cbet[0] && !hero_all_in;
   }
   if board_count >= 5 && !street_seen[2] {
-    cbet_opp[2] = last_aggressor[2] == "hero";
+    cbet_pending[2] = cbet[1] && !hero_all_in;
   }
+
+  let cbet_opp = [
+    cbet_pending[0] && !cbet_killed[0],
+    cbet_pending[1] && !cbet_killed[1],
+    cbet_pending[2] && !cbet_killed[2],
+  ];
 
   let saw_flop = hero_postflop_action || (!hero_folded_preflop && board_count >= 3);
   let hero_showed_raw = hero_showed_in_text(raw);
-  let show_count = count_show_lines(raw);
-  // Match the web parser: showdown is cards shown, not merely a river.
-  let went_to_showdown =
-    hero_showed || hero_showed_raw || (!hero_folded && show_count >= 1);
+  // PT/HM WTSD: Hero's cards were tabled — not "anyone showed."
+  let went_to_showdown = hero_showed || hero_showed_raw;
   let won_at_showdown = went_to_showdown && hero_net > 0.0;
   let won_when_saw_flop = saw_flop && hero_net > 0.0;
 
@@ -918,13 +1101,6 @@ fn hero_showed_in_text(raw: &str) -> bool {
   false
 }
 
-fn count_show_lines(raw: &str) -> usize {
-  raw.lines().filter(|line| {
-    let lower = line.to_ascii_lowercase();
-    lower.contains("shows") || lower.contains("showed")
-  }).count()
-}
-
 fn extract_rake_info(raw: &str) -> (f64, f64) {
   let pot = labelled_amount(raw, "Total pot").unwrap_or(0.0);
   let rake = labelled_amount(raw, "Rake").unwrap_or(0.0)
@@ -1012,6 +1188,18 @@ mod tests {
       street: street.into(),
       actor_name: Some(name.into()),
       action_type: kind.into(),
+      amount: None,
+      is_all_in: false,
+    }
+  }
+
+  fn act_amt(street: &str, name: &str, kind: &str, amount: f64, is_all_in: bool) -> ActionLoad {
+    ActionLoad {
+      street: street.into(),
+      actor_name: Some(name.into()),
+      action_type: kind.into(),
+      amount: Some(amount),
+      is_all_in,
     }
   }
 
@@ -1024,7 +1212,14 @@ mod tests {
       hero_net: Some(net),
       raw_text: Some(raw.into()),
       board_cards: Some(board.into()),
+      hero_starting_stack: None,
     }
+  }
+
+  fn hand_stack(net: f64, board: &str, raw: &str, stack: f64) -> HandLoad {
+    let mut row = hand(net, board, raw);
+    row.hero_starting_stack = Some(stack);
+    row
   }
 
   #[test]
@@ -1158,6 +1353,320 @@ mod tests {
     assert!((before.showdown_profit - 1.10).abs() < 1e-9);
     assert!((after.non_showdown_profit + 0.50).abs() < 1e-9);
     assert!((before.non_showdown_profit + 0.50).abs() < 1e-9);
+  }
+
+  #[test]
+  fn no_three_bet_chance_after_hero_folds() {
+    let actions = [
+      act("preflop", "Hero", "fold"),
+      act("preflop", "BTN", "raise"),
+    ];
+    let row = classify_hand(&hand(0.0, "", ""), "UTG", &actions);
+    assert!(!row.three_bet_opportunity);
+    assert!(!row.three_bet);
+  }
+
+  #[test]
+  fn limp_reraise_is_pfr_not_three_bet() {
+    let actions = [
+      act("preflop", "Hero", "call"),
+      act("preflop", "BTN", "raise"),
+      act("preflop", "Hero", "raise"),
+    ];
+    let row = classify_hand(&hand(-1.0, "", ""), "Cutoff", &actions);
+    assert!(row.vpip);
+    assert!(row.preflop_raised);
+    assert!(!row.three_bet_opportunity);
+    assert!(!row.three_bet);
+  }
+
+  #[test]
+  fn pfr_counts_preflop_bet_as_raise_sized() {
+    let actions = [act("preflop", "Hero", "bet")];
+    let row = classify_hand(&hand(-0.25, "", ""), "Button", &actions);
+    assert!(row.preflop_raised);
+    assert!(row.vpip);
+    assert!(!row.three_bet);
+  }
+
+  #[test]
+  fn cold_four_bet_still_counts_when_hero_is_to_act() {
+    let actions = [
+      act("preflop", "UTG", "raise"),
+      act("preflop", "MP", "raise"),
+      act("preflop", "Hero", "raise"),
+    ];
+    let row = classify_hand(&hand(-2.0, "", ""), "Button", &actions);
+    assert!(!row.three_bet);
+    assert!(!row.three_bet_opportunity);
+    assert!(row.four_bet);
+    assert!(row.four_bet_opportunity);
+    assert!(row.preflop_raised);
+  }
+
+  #[test]
+  fn five_bet_is_not_rolled_into_four_bet() {
+    let actions = [
+      act("preflop", "UTG", "raise"),
+      act("preflop", "MP", "raise"),
+      act("preflop", "BTN", "raise"),
+      act("preflop", "Hero", "raise"),
+    ];
+    let row = classify_hand(&hand(-5.0, "", ""), "Big Blind", &actions);
+    assert!(row.four_bet_opportunity);
+    assert!(!row.four_bet);
+    assert!(!row.three_bet);
+  }
+
+  #[test]
+  fn flop_cbet_skips_already_all_in_hero() {
+    let actions = [
+      act_amt("preflop", "Hero", "raise", 0.25, true),
+    ];
+    let row = classify_hand(&hand(0.5, "Ah Kd 2c", ""), "Button", &actions);
+    assert!(row.saw_flop);
+    assert!(!row.cbet_flop_opportunity);
+    assert!(!row.cbet_flop);
+  }
+
+  #[test]
+  fn flop_donk_kills_cbet_chance() {
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("flop", "BB", "bet"),
+      act("flop", "Hero", "call"),
+    ];
+    let row = classify_hand(&hand(-1.0, "Ah Kd 2c", ""), "Button", &actions);
+    assert!(!row.cbet_flop_opportunity);
+    assert!(!row.cbet_flop);
+  }
+
+  #[test]
+  fn flop_check_raise_is_not_a_cbet() {
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("flop", "Hero", "check"),
+      act("flop", "BB", "bet"),
+      act("flop", "Hero", "raise"),
+    ];
+    let row = classify_hand(&hand(-1.0, "Ah Kd 2c", ""), "Button", &actions);
+    assert!(row.cbet_flop_opportunity);
+    assert!(!row.cbet_flop);
+  }
+
+  #[test]
+  fn turn_cbet_requires_flop_cbet_not_last_aggressor() {
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("flop", "BB", "bet"),
+      act("flop", "Hero", "raise"),
+      act("turn", "Hero", "bet"),
+    ];
+    let row = classify_hand(&hand(1.0, "Ah Kd 2c 9s", ""), "Button", &actions);
+    assert!(!row.cbet_flop);
+    assert!(!row.cbet_flop_opportunity);
+    assert!(!row.cbet_turn_opportunity);
+    assert!(!row.cbet_turn);
+  }
+
+  #[test]
+  fn turn_and_river_cbet_after_prior_street_cbets() {
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("flop", "Hero", "bet"),
+      act("turn", "Hero", "bet"),
+      act("river", "Hero", "bet"),
+    ];
+    let row = classify_hand(&hand(1.0, "Ah Kd 2c 9s 3d", ""), "Button", &actions);
+    assert!(row.cbet_flop && row.cbet_flop_opportunity);
+    assert!(row.cbet_turn && row.cbet_turn_opportunity);
+    assert!(row.cbet_river && row.cbet_river_opportunity);
+  }
+
+  #[test]
+  fn wtsd_requires_hero_cards_tabled() {
+    let raw = "Villain: shows [Ah Kd]\nHero: mucks";
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("flop", "Hero", "check"),
+      act("showdown", "Villain", "show"),
+    ];
+    let row = classify_hand(&hand(-1.0, "2c 3d 4s", raw), "Button", &actions);
+    assert!(row.saw_flop);
+    assert!(!row.went_to_showdown);
+    assert!(!row.won_at_showdown);
+  }
+
+  #[test]
+  fn wtsd_true_when_hero_shows() {
+    let raw = "Hero: shows [Kc Ks]";
+    let actions = [
+      act("preflop", "Hero", "raise"),
+      act("showdown", "Hero", "show"),
+    ];
+    let row = classify_hand(&hand(-1.0, "2c 3d 4s", raw), "Button", &actions);
+    assert!(row.went_to_showdown);
+  }
+
+  #[test]
+  fn covered_shove_is_not_a_three_bet_chance() {
+    let actions = [
+      act_amt("preflop", "Hero", "post", 0.10, false),
+      act_amt("preflop", "UTG", "raise", 0.40, true),
+    ];
+    let row = classify_hand(
+      &hand_stack(-0.10, "", "", 0.25),
+      "Big Blind",
+      &actions,
+    );
+    assert!(!row.three_bet_opportunity);
+    assert!(!row.three_bet);
+  }
+
+  #[test]
+  fn playstyle_empty_opportunity_is_none() {
+    let conn = curve_fixture();
+    let stats = playstyle(&conn, &StatsFilter::default()).expect("playstyle");
+    assert_eq!(stats.three_bet_rate, None);
+    assert_eq!(stats.four_bet_rate, None);
+    assert_eq!(stats.cbet_flop_rate, None);
+    assert_eq!(stats.flop_win_rate, None);
+    assert_eq!(stats.won_at_showdown_rate, Some(0.0));
+  }
+
+  #[test]
+  fn test_hands_check_raise_runout_is_not_a_turn_cbet() {
+    // Mirrors TestHands/test.txt: Hero 3-bets, checks flop, raises a donk, all-in, shows.
+    let raw = "Hero: shows [Kc Ks]\ncb0688f3: shows [7h 7c]";
+    let actions = [
+      act_amt("preflop", "Hero", "post", 0.05, false),
+      act_amt("preflop", "BB", "post", 0.10, false),
+      act_amt("preflop", "UTG", "raise", 0.12, false),
+      act_amt("preflop", "Hero", "raise", 0.78, false),
+      act("flop", "Hero", "check"),
+      act_amt("flop", "UTG", "bet", 1.58, false),
+      act_amt("flop", "Hero", "raise", 1.97, false),
+      act_amt("flop", "UTG", "raise", 23.74, true),
+      act_amt("flop", "Hero", "call", 15.8, true),
+      act("showdown", "UTG", "show"),
+      act("showdown", "Hero", "show"),
+    ];
+    let row = classify_hand(
+      &hand(-20.35, "3c 5c 7s 2d Jd", raw),
+      "Small Blind",
+      &actions,
+    );
+    assert!(row.three_bet && row.three_bet_opportunity);
+    assert!(row.cbet_flop_opportunity);
+    assert!(!row.cbet_flop);
+    assert!(!row.cbet_turn_opportunity);
+    assert!(!row.cbet_turn);
+    assert!(row.went_to_showdown);
+  }
+
+  fn classify_db() -> Connection {
+    let conn = Connection::open_in_memory().expect("memory db");
+    conn
+      .execute_batch(
+        "CREATE TABLE schema_migrations (
+           id INTEGER PRIMARY KEY,
+           applied_at TEXT NOT NULL DEFAULT (datetime('now'))
+         );
+         CREATE TABLE hands (
+           id INTEGER PRIMARY KEY,
+           played_at TEXT,
+           stakes TEXT,
+           hero_name TEXT,
+           hero_net REAL,
+           raw_text TEXT,
+           board_cards TEXT
+         );
+         CREATE TABLE players (
+           id INTEGER PRIMARY KEY,
+           hand_id INTEGER,
+           position TEXT,
+           starting_stack REAL,
+           is_hero INTEGER
+         );
+         CREATE TABLE actions (
+           id INTEGER PRIMARY KEY,
+           hand_id INTEGER,
+           seq INTEGER,
+           street TEXT,
+           actor_name TEXT,
+           action_type TEXT,
+           amount REAL,
+           is_all_in INTEGER DEFAULT 0
+         );
+         CREATE TABLE hand_stats (
+           hand_id INTEGER PRIMARY KEY,
+           played_at TEXT,
+           stakes TEXT,
+           position TEXT,
+           pot_type TEXT,
+           hero_net REAL NOT NULL DEFAULT 0,
+           rake REAL NOT NULL DEFAULT 0,
+           net_before_rake REAL NOT NULL DEFAULT 0,
+           vpip INTEGER NOT NULL DEFAULT 0,
+           preflop_raised INTEGER NOT NULL DEFAULT 0,
+           preflop_called INTEGER NOT NULL DEFAULT 0,
+           three_bet INTEGER NOT NULL DEFAULT 0,
+           three_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+           four_bet INTEGER NOT NULL DEFAULT 0,
+           four_bet_opportunity INTEGER NOT NULL DEFAULT 0,
+           saw_flop INTEGER NOT NULL DEFAULT 0,
+           won_when_saw_flop INTEGER NOT NULL DEFAULT 0,
+           went_to_showdown INTEGER NOT NULL DEFAULT 0,
+           won_at_showdown INTEGER NOT NULL DEFAULT 0,
+           cbet_flop INTEGER NOT NULL DEFAULT 0,
+           cbet_turn INTEGER NOT NULL DEFAULT 0,
+           cbet_river INTEGER NOT NULL DEFAULT 0,
+           cbet_flop_opportunity INTEGER NOT NULL DEFAULT 0,
+           cbet_turn_opportunity INTEGER NOT NULL DEFAULT 0,
+           cbet_river_opportunity INTEGER NOT NULL DEFAULT 0
+         );",
+      )
+      .expect("schema");
+    conn
+  }
+
+  #[test]
+  fn ensure_stats_recomputes_stale_three_bet_opportunity() {
+    let mut conn = classify_db();
+    conn
+      .execute_batch(
+        "INSERT INTO hands (id, hero_name, hero_net, raw_text, board_cards)
+         VALUES (1, 'Hero', 0, '', '');
+         INSERT INTO players (hand_id, position, starting_stack, is_hero)
+         VALUES (1, 'UTG', 20.0, 1);
+         INSERT INTO actions (hand_id, seq, street, actor_name, action_type, amount, is_all_in)
+         VALUES
+           (1, 1, 'preflop', 'Hero', 'fold', 0, 0),
+           (1, 2, 'preflop', 'BTN', 'raise', 0.25, 0);
+         INSERT INTO hand_stats (
+           hand_id, position, stakes, pot_type, three_bet_opportunity
+         ) VALUES (1, 'UTG', '$0.05/$0.10', 'Preflop Only', 1);",
+      )
+      .expect("stale row");
+    let written = ensure_stats(&mut conn).expect("recompute");
+    assert_eq!(written, 1);
+    let opp: i64 = conn
+      .query_row(
+        "SELECT three_bet_opportunity FROM hand_stats WHERE hand_id = 1",
+        [],
+        |r| r.get(0),
+      )
+      .expect("flag");
+    assert_eq!(opp, 0);
+    let applied: i64 = conn
+      .query_row(
+        "SELECT COUNT(*) FROM schema_migrations WHERE id = 3",
+        [],
+        |r| r.get(0),
+      )
+      .expect("migration");
+    assert_eq!(applied, 1);
+    assert_eq!(ensure_stats(&mut conn).expect("second pass"), 0);
   }
 
   #[test]

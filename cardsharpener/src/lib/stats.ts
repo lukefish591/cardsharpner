@@ -8,17 +8,17 @@ export interface OverviewMetrics {
   avgProfit: number;
   avgProfitBeforeRake: number;
   avgRake: number;
-  vpipRate: number;
-  preflopRaiseRate: number;
-  threeBetRate: number;
-  fourBetRate: number;
-  flopRate: number;
-  flopWinRate: number;
-  showdownRate: number;
-  wonAtShowdownRate: number;
-  cbetFlopRate: number;
-  cbetTurnRate: number;
-  cbetRiverRate: number;
+  vpipRate: number | null;
+  preflopRaiseRate: number | null;
+  threeBetRate: number | null;
+  fourBetRate: number | null;
+  flopRate: number | null;
+  flopWinRate: number | null;
+  showdownRate: number | null;
+  wonAtShowdownRate: number | null;
+  cbetFlopRate: number | null;
+  cbetTurnRate: number | null;
+  cbetRiverRate: number | null;
   showdownHands: number;
   showdownProfit: number;
   nonShowdownHands: number;
@@ -42,17 +42,17 @@ const EMPTY_METRICS: OverviewMetrics = {
   avgProfit: 0,
   avgProfitBeforeRake: 0,
   avgRake: 0,
-  vpipRate: 0,
-  preflopRaiseRate: 0,
-  threeBetRate: 0,
-  fourBetRate: 0,
-  flopRate: 0,
-  flopWinRate: 0,
-  showdownRate: 0,
-  wonAtShowdownRate: 0,
-  cbetFlopRate: 0,
-  cbetTurnRate: 0,
-  cbetRiverRate: 0,
+  vpipRate: null,
+  preflopRaiseRate: null,
+  threeBetRate: null,
+  fourBetRate: null,
+  flopRate: null,
+  flopWinRate: null,
+  showdownRate: null,
+  wonAtShowdownRate: null,
+  cbetFlopRate: null,
+  cbetTurnRate: null,
+  cbetRiverRate: null,
   showdownHands: 0,
   showdownProfit: 0,
   nonShowdownHands: 0,
@@ -74,8 +74,8 @@ export function filterStatRows(
   });
 }
 
-function rate(numer: number, denom: number): number {
-  return denom > 0 ? (numer / denom) * 100 : 0;
+function rate(numer: number, denom: number): number | null {
+  return denom > 0 ? (numer / denom) * 100 : null;
 }
 
 function count(rows: HandStatRow[], pred: (row: HandStatRow) => boolean): number {
@@ -256,7 +256,8 @@ export function money(value: number, digits = 2): string {
   return value < 0 ? `-$${abs}` : `$${abs}`;
 }
 
-export function pct(value: number): string {
+export function pct(value: number | null | undefined): string {
+  if (value == null || Number.isNaN(value)) return "—";
   return `${value.toFixed(1)}%`;
 }
 
